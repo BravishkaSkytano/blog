@@ -2,12 +2,6 @@
 title: "Why Did God Take My Daddy From Me?"
 published: true
 ---
-<style>
-    p {
-        margin: 10px;
-    }
-</style>
-
 "Why did God take him?" The girl yelled, "Why is he gone? Why would God take my Daddy from me?" She sobbed. "How can this part of God's plan for me?"
 
 She could still see her Daddy's face smiling at her. She could still feel him holding her hand.
@@ -15,7 +9,7 @@ She could still see her Daddy's face smiling at her. She could still feel him ho
 "Oh the times we shared and the fun we had, why did God take my Daddy from me?" She thought. "If I could ask Him one thing today it would be why is my Daddy not home with me?"
 
 With tear-stained eyes she looked to the heavens, "Tell me God why did you take him from me!" The girl lowered her head and sobbed in her hands. "Tell me... please... tell me... why..."
-
+<!--more-->
 "Child," a voice called, "child look at me."
 
 The girl slowly glanced up at the stranger and gasped at his face. It couldn't be! No, she was dreaming, it has to be.

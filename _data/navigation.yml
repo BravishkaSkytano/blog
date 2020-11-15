@@ -1,14 +1,14 @@
 - title: About
   url: /about/
+- title: Categories
+  url: /categories/
+- title: Tags
+  url: /tags/
 - title: Books
   url: /books/
 - title: More
   sublinks:
     - title: Sister Sites
       url: /sister-sites/
-    - title: Categories
-      url: /categories/
-    - title: Tags
-      url: /tags/
     - title: Archive
       url: /archive/
