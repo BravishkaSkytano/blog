@@ -2,8 +2,6 @@
   url: /about/
 - title: Books
   url: /books/
-- title: Series
-  url: /series/
 - title: More
   sublinks:
     - title: Sister Sites
