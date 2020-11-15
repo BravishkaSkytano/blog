@@ -12,6 +12,7 @@ avatar: /assets/images/avatar.jpg
 location: America/New_York
 
 paginate: 7
+future: false
 
 permalink: /:categories/:title.html
 defaults:
@@ -29,7 +30,6 @@ plugins:
   - jekyll-sitemap
   
 remote_theme: ngzhio/jekyll-theme-hamilton
-
 
 exclude:
   - .sass-cache/
