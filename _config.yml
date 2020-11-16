@@ -24,14 +24,6 @@ prose:
         field:
           element: "hidden"
           value: "post"
-      - name: "date"
-      	field:
-          element: "number"
-          label: "Date"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
       - name: "categories"
         field:
           element: "multiselect"
