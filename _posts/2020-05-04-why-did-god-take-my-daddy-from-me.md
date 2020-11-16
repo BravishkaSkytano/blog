@@ -1,6 +1,9 @@
 ---
 title: "Why Did God Take My Daddy From Me?"
 published: true
+excerpt: "A young woman questions why God would take away her beloved father and receives an unexpected answer in a unforgettable way."
+categories: [poems]
+tags: [death, sorrow, loss, comfort]
 ---
 "Why did God take him?" The girl yelled, "Why is he gone? Why would God take my Daddy from me?" She sobbed. "How can this part of God's plan for me?"
 
