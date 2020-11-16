@@ -11,7 +11,7 @@ The second book is a lot better (in my opinion) and I started writing it around 
 
 The following is a list of all the books I'm writing. You can find them all on my sister site, [Writing Buddies](https://writing-buddies.netlify.app), that I created as a free and privacy-conscious alternative to Wattpad and Inkitt. Eventually, you will be able to find them on this site as well.
 
-## [Kidnapped and Afraid](https://writing-buddies.netlify.app/thriller/kidnapped-and-afraid/)
+## Kidnapped and Afraid
 This is a thriller that came to me one day when I was trying to start being serious about my writing. Honestly, I keep getting stuck with this one. Many scenes will just come to me, the difficulty lies in connecting those scenes and adding proper transitions. I do feel like it's an interesting story, one where even I am guessing at the ending.
 
 ### Description (needs to be edited)
@@ -21,7 +21,9 @@ At first, I think he’s a psychopath, but then he starts doing things that seem
 
 He’s not a vampire. He’s not affected by blood, has no problem stalking me during the daylight, and lacks the fangs. He isn’t fae, no pointy ears. He can’t possibly be a werewolf, full moons have come and gone with no change. So, what is he? An alien? Who is he? And how will I finally escape him? Will I ever escape him?
 
-## [Test My Fire](https://writing-buddies.netlify.app/mystery-suspense/test-my-fire/)
+You can find this story [here](https://writing-buddies.netlify.app/thriller/kidnapped-and-afraid/)
+
+## Test My Fire
 I started writing this and *Kidnapped and Afraid* on the same day. They are very similiar in genre, however, this one is more of a mystery than a thriller. 
 
 ### Description
@@ -33,7 +35,9 @@ He killed my parents, not to mention dozens of other people. He’s only known b
 
 Yes, I’m a killer and I’m good at it. Hundreds have tried to find me, none have succeeded and that’s the way I like it. I wasn’t named “The Phantom’’ for nothing. Those who have gotten close I’ve gotten rid of, all except the cunning little spy known as the Phoenix Fox. She was at my brother’s party and now she’s in my head. I should kill her, I really should. She’s gotten too close and she knows it. She keeps toying with me, jumping in and out of the crossfire. She’s good at the game, but I’m better. The clock is ticking and I’m good at waiting. I know she’ll come to me, they always do. And when she does, I’ll take care of her too. Here little fox, come test my fire.
 
-## [Dear Diary, Do You Wanna Know A Secret?](https://writing-buddies.netlify.app/romance/dear-diary-do-you-wanna-know-a-secret/)
+You can find this story [here](https://writing-buddies.netlify.app/mystery-suspense/test-my-fire/)
+
+## Dear Diary, Do You Wanna Know A Secret?
 This is hands-down my favorite manuscript right now. It is so fun to write and the words just flow from my head onto my paper. It is a clean romance story and I think it will be a novella (little novel; longer than a short story and the plot and characters are a bit more detailed/developed).
 
 ### Description
@@ -47,7 +51,9 @@ Sasha has a lot of secrets and they’re kept that way for very good reasons. Th
 
 Do you wanna know a secret? Because I’ve got a big one and it just may get me in a whole lot of trouble. If it doesn’t kill me first.
 
-## [Murder in the Woods (title might change)]()
+You can find this story [here](https://writing-buddies.netlify.app/romance/dear-diary-do-you-wanna-know-a-secret/)
+
+## Murder in the Woods (title might change)
 This one is not available online yet and will probably be available here first. It is a short story and will probably be finished before all the others. It is part of a new plan I'm trying out, basically, writing one or two short stories a month. I hear it's good practice and helps exercise your imagination. I have heard it said many times and I do believe that short stories are a good way to start your writing journey. Perhaps, that's why I'm having trouble with my other stories...
 
 ### Description
