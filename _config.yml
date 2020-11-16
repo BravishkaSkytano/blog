@@ -30,10 +30,14 @@ prose:
           label: "Add Categories"
           placeholder: "Choose Categories"
           options:
-            - name: "poems"
+            - name: "Poem"
+              value: "poetry"
+            - name: "Article"
               value: "articles"
-            - name: "book"
-              value: "chapters"
+            - name: "Devotional"
+              value: "devotionals"
+            - name: "Tutorial"
+              value: "tutorials"
     _pages:
       - name: "layout"
         field:
