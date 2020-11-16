@@ -12,16 +12,33 @@ avatar: /assets/images/avatar.jpg
 location: Queens, New York, US
 
 paginate: 7
+permalink: /:categories/:title.html
 future: false
 
-permalink: /:categories/:title.html
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+prose:
+  siteurl: 'https://aspiring-writer.github.io'
+  media: 'assets/images'
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Add Categories"
+          placeholder: "Choose Categories"
+          options:
+            - name: "poems"
+              value: "articles"
+            - name: "book"
+              value: "chapters"
+    _pages:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
 
 # Build settings
 plugins:
