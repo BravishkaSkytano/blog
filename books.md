@@ -2,6 +2,7 @@
 layout: page
 title: "My Books"
 permalink: /books/
+toc: true
 ---
 
 I love writing, it is one of my favorite passtimes. Since I love writing, I have tried to write actual books as well as a blog. The first book I ever started writing was... well, bad. It needs a lot of editing and the storyline is a bit confusing. I started writing it when I was very young (12, I think) and it reflects that. I don't know if I will every rewrite that one and finish it, I just haven't found the inspiration for it yet.
