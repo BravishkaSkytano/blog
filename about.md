@@ -18,4 +18,4 @@ One day, the idea of writing devotionals leaped into my mind. I immediately grew
 Thank you for taking the time to read this. I hope you enjoy reading my blog as much as I enjoy writing in it.
 
 Sincerely,\
-Y. A. Olson
+Yoda Elentiya Atolkien
