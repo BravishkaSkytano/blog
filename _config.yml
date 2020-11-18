@@ -7,9 +7,9 @@ url: "https://aspiring-writer.github.io" # the base hostname & protocol for your
 #twitter_username: jekyllrb
 github_username:  Aspiring-Writer
 
-author: Y.A. Olson
+author: Yoda Elentiya Atolkien
 avatar: /assets/images/avatar.jpg
-location: Queens, New York, US
+location: Somewhere in an unidentified world
 
 paginate: 7
 permalink: /:categories/:title.html
