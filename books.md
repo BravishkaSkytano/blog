@@ -21,7 +21,7 @@ At first, I think he’s a psychopath, but then he starts doing things that seem
 
 He’s not a vampire. He’s not affected by blood, has no problem stalking me during the daylight, and lacks the fangs. He isn’t fae, no pointy ears. He can’t possibly be a werewolf, full moons have come and gone with no change. So, what is he? An alien? Who is he? And how will I finally escape him? Will I ever escape him?
 
-You can find this story [here](/kidnapped-and-afraid/) and on [here](https://writing-buddies.netlify.app/thriller/kidnapped-and-afraid/)
+You can find this story [here](https://aspiring-writer.github.io/kidnapped-and-afraid/) and on [here](https://writing-buddies.netlify.app/thriller/kidnapped-and-afraid/)
 
 ## Test My Fire
 I started writing this and *Kidnapped and Afraid* on the same day. They are very similiar in genre, however, this one is more of a mystery than a thriller. 
