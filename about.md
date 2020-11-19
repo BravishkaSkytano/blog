@@ -1,9 +1,11 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 published: true
 ---
+
+![Yoda Elentiya Atolkien](/assets/avatar.png)
 
 # Greetings
 
