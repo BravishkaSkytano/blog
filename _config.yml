@@ -1,7 +1,8 @@
 title: Elentiya's Journal
 # email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Follow along as I write my heart out and explore the world.
+  Follow along as I write my heart out and explore the unknown depths of my imagination.
+  Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://aspiring-writer.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
