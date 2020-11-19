@@ -8,8 +8,8 @@ url: "https://aspiring-writer.github.io" # the base hostname & protocol for your
 github_username:  Aspiring-Writer
 
 author: Yoda Elentiya Atolkien
-avatar: /assets/images/avatar.jpg
-location: Somewhere in an unidentified world
+avatar: /assets/avatar.png
+location: Who knows?...
 
 paginate: 7
 permalink: /:categories/:title.html
