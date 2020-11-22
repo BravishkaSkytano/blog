@@ -12,6 +12,7 @@ author: Yoda Elentiya Atolkien
 avatar: /assets/avatar.png
 location: Who knows?...
 
+excerpt_separator: <!--more-->
 paginate: 7
 permalink: /:categories/:title.html
 future: false
