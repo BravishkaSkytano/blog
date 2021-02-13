@@ -12,6 +12,18 @@ author: Bravisha Skietano
 avatar: /assets/avatar.png
 location: Who knows?...
 
+defaults:
+  -
+    scope:
+      path: "_pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "_posts"
+    values:
+      layout: "post"
+      
 paginate: 7
 permalink: /:categories/:title.html
 future: false
@@ -24,6 +36,9 @@ plugins:
   
 remote_theme: ngzhio/jekyll-theme-hamilton
 
+include:
+  - _pages
+  
 exclude:
   - .sass-cache/
   - .jekyll-cache/
