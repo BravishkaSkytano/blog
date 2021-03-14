@@ -1,7 +1,3 @@
----
-permalink: /404.html
-layout: null
----
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,17 +11,22 @@ layout: null
   
   <link rel="stylesheet" href="{{ '/assets/css/paper.min.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicons/apple-touch-icon.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicons/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicons/favicon-16x16.png' | relative_url }}">
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/favicons/favicon.ico' | relative_url }}">
+  <link rel="manifest" href="{{ '/assets/favicons/site.webmanifest' | relative_url }}">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Cinzel&display=swap">
   
   <script src="https://kit.fontawesome.com/42f6f50d63.js" crossorigin="anonymous"></script>
-  <script src="{{ '/assets/js/back2top.min.js' | relative_url }}"></script>
 </head>
 <body>
   <nav class="border split-nav">
     <div class="nav-brand">
-      <h3><a href="/">An Aspiring Writer's Journal</a></h3>
+      <h3><a href="/">{{ site.title }}</a></h3>
     </div>
     <div class="collapsible">
       <input id="collapsible1" type="checkbox" name="collapsible1">
@@ -36,25 +37,17 @@ layout: null
       </label>
       <div class="collapsible-body">
         <ul class="inline">
-          <li><a href="/about">About</a></li>
-          <li><a href="/about">Series</a></li>
-          <li><a href="/about">Books</a></li>
-          <li><a href="/about">Friends</a></li>
+          <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
+          <li><a href="{{ '/friends.html' | relative_url }}">Friends</a></li>
+          <li><a href="{{ '/books.html' | relative_url }}">Books</a></li>
+          <li><a href="{{ '/tags.html' | relative_url }}">Tags</a></li>
+          <li><a href="{{ '/archive.html' | relative_url }}">Archive</a></li>
         </ul>
       </div>
     </div>
   </nav>
   
-  <div class="container" syle="text-align:center">
-    <h1>404</h1>
-  
-    <p><strong>Hmm...</strong></p>
-    <p>Either I didn't write that yet or the URL is broken. My apologies.</p>
-    
-    <div class="row flex-center">
-      <a class="paper-btn" href="{{ site.url | prepend: site.baseurl }}">Back to Home</a>
-    </div>
-  </div>
+  {{ content }}
   
 </body>
 </html>

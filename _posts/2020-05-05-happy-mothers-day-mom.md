@@ -1,9 +1,7 @@
 ---
 title: "Happy Mother's Day, Mom"
-published: true
-excerpt: "A poem for all the wonderful mothers out there."
 categories: [poems]
-tags: [holidays, Mothers-Day]
+tags: [holidays, Mother's Day]
 ---
 
 You know that feeling you get when you've became one year older?\

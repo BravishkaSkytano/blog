@@ -19,42 +19,18 @@ layout: base
         <a class="paper-btn btn-small btn-primary-outline" href="https://www.reddit.com/user/Y_Mystake_O"><i class="fab fa-reddit"></i></a>
         <a class="paper-btn btn-small btn-primary-outline" href="https://www.goodreads.com/user/show/80834407-bravisha-skietano"><i class="fab fa-goodreads"></i></a>
       </div>
+      <hr>
     </div>
   </div>
   <div class="sm-12 md-8 col">
     <div class="paper">
       <article class="article">
-        {% if site.paginate %}
-          {% assign posts = paginator.posts %}
-        {% else %}
-          {% assign posts = site.posts %}
-        {% endif %}
-        {%- if posts.size > 0 -%}
-          {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-        {%- for post in posts -%}
         <h1 class="article-title">
-          {{ post.title | escape }}
+          {{ page.title }}
         </h1>
-        <p class="article-meta">{{ post.date | date: date_format }}</p>
-        <p class="text-lead">{{ post.content | truncatewords: 50 | strip_html }}</p>
-        <div class="row">
-          <a class="paper-btn" href="{{ post.url | relative_url }}">Read More</a>
-        </div>
-        {%- endfor -%}
-        {% if site.paginate %}
-        <div class="row flex-center">
-        {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path }}" class="paper-btn">&larr; Previous</a>
-        {% endif %}
-          <span class="badge margin-large">
-            Page: <br>{{ paginator.page }} of {{ paginator.total_pages }}
-          </span>
-        {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path }}" class="paper-btn">Next &rarr;</a>
-        {% endif %}
-        </div>
-        {%- endif %}{%- endif -%}
+        {{ content }}
       </article>
+      <hr>
     </div>
   </div>
 </div>

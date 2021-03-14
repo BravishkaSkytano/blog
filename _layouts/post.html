@@ -1,0 +1,71 @@
+---
+layout: base
+---
+<div class="row flex-center">
+  <div class="sm-12 md-8 lg-10 col">
+    <div class="paper">
+      <ul class="breadcrumb border">
+      {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+      <li><a href="/"><i class="fas fa-home"></i></a></li>
+      {% for crumb in crumbs offset: 1 %}
+        {% if forloop.last %}
+          <li>{{ page.title }}</li>
+        {% else %}
+          <li><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+      <article class="article">
+        <h1 class="article-title">{{ page.title }}</h1>
+        <p class="article-meta center">Written on
+          {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {{ page.date | date: date_format }}
+          </time>
+          {%- if page.last_modified_at -%}
+            ~ Last updated on
+            {%- assign mdate = page.last_modified_at | date_to_xmlschema -%}
+            <time datetime="{{ mdate }}" itemprop="dateModified">
+              {{ mdate | date: date_format }}
+            </time>
+          {%- endif -%}
+        </p>
+        {{ content }}
+        <br><hr><br>
+        <div class="article-meta">
+          {% if post %}
+            {% assign categories = post.categories %}
+          {% else %}
+            {% assign categories = page.categories %}
+          {% endif %}
+          <p>Categories:
+          {% for category in categories %}
+          <a class="paper-btn btn-small" href="{{site.baseurl}}/categories/#{{category|slugify}}">{{category}}</a>
+          {% unless forloop.last %}&nbsp;{% endunless %}
+          {% endfor %}
+          </p>
+          {% if post %}
+            {% assign tags = post.tags %}
+          {% else %}
+            {% assign tags = page.tags %}
+          {% endif %}
+          <p>Tags:
+          {% for tag in tags %}
+          <a class="paper-btn btn-small" href="{{site.baseurl}}/tags/#{{tag|slugify}}">{{tag}}</a>
+          {% unless forloop.last %}&nbsp;{% endunless %}
+          {% endfor %}
+          </p>
+        </div>
+        <br><hr><br>
+        <div class="row flex-center">
+          {% if page.previous.url %}
+            <a class="paper-btn" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+          {% endif %}
+          {% if page.next.url %}
+            <a class="paper-btn" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+          {% endif %}
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
