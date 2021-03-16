@@ -17,4 +17,4 @@ Sincerely,\
 *Yoela Olson*
 
 ### Acknowledgements
-Icons made by Eucalyp from www.flaticon.com
+* Icons are made by Eucalyp from www.flaticon.com
