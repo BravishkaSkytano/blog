@@ -32,13 +32,14 @@ layout: base
         {%- if posts.size > 0 -%}
           {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
         {%- for post in posts -%}
-        <h1 class="article-title">
-          {{ post.title | escape }}
-        </h1>
-        <p class="article-meta">{{ post.date | date: date_format }}</p>
-        <p class="text-lead">{{ post.content | truncatewords: 50 | strip_html }}</p>
-        <div class="row">
-          <a class="paper-btn" href="{{ post.url | relative_url }}">Read More</a>
+        <div class="card">
+          {% if post.image %}<img src="{{ post.image }}" alt="Post Image">{% endif %}
+          <div class="card-body">
+            <h1 class="card-title">{{ post.title | escape }}</h1>
+            <p class="card-subtitle">{{ post.date | date: date_format }}</p>
+            <p class="card-text">{{ post.content | truncatewords: 50 | strip_html }}</p>
+            <a class="card-link" href="{{ post.url | relative_url }}">Read More</a>
+          </div>
         </div>
         {%- endfor -%}
         {% if site.paginate %}

@@ -3,7 +3,7 @@ layout: base
 ---
 <div class="row flex-center">
   <div class="sm-12 md-8 lg-10 col">
-    <div class="paper">
+    <div class="container paper">
       <ul class="breadcrumb border">
       {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
       <li><a href="/"><i class="fas fa-home"></i></a></li>
@@ -16,6 +16,7 @@ layout: base
       {% endfor %}
       </ul>
       <article class="article">
+        {% if page.image %}<img src="{{ page.image }}" alt="Header image">{% endif %}
         <h1 class="article-title">{{ page.title }}</h1>
         <p class="article-meta center">Written on
           {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
