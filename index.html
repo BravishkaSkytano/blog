@@ -4,7 +4,7 @@ layout: base
 <div class="row">
   <div class="sm-12 md-4 col">
     <div class="paper">
-      <img src="https://www.gravatar.com/avatar/8305681be23372ec3c774233546f849f?s=500">
+      <p><img src="https://www.gravatar.com/avatar/8305681be23372ec3c774233546f849f?s=500" alt="Profile pic"></p>
       <h3>Yoela Olson</h3>
       <p>I'm a homeschooled, Christian student who is struggling to stay motivated and finish things.</p>
 
@@ -40,7 +40,7 @@ layout: base
             <p class="card-text">{{ post.content | truncatewords: 50 | strip_html }}</p>
             <a class="card-link" href="{{ post.url | relative_url }}">Read More</a>
           </div>
-        </div>
+        </div><br><br>
         {%- endfor -%}
         {% if site.paginate %}
         <div class="row flex-center">
