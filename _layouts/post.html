@@ -11,7 +11,7 @@ layout: base
         {% if forloop.last %}
           <li>{{ page.title }}</li>
         {% else %}
-          <li><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
+          <li><a href="/books{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
         {% endif %}
       {% endfor %}
       </ul>
@@ -41,7 +41,7 @@ layout: base
           {% endif %}
           <p>Categories:
           {% for category in categories %}
-          <a class="paper-btn btn-small" href="{{site.baseurl}}/categories/#{{category|slugify}}">{{category}}</a>
+          <a class="paper-btn btn-small" href="{{site.baseurl}}/books.html#{{category|slugify}}">{{category}}</a>
           {% unless forloop.last %}&nbsp;{% endunless %}
           {% endfor %}
           </p>
@@ -52,7 +52,7 @@ layout: base
           {% endif %}
           <p>Tags:
           {% for tag in tags %}
-          <a class="paper-btn btn-small" href="{{site.baseurl}}/tags/#{{tag|slugify}}">{{tag}}</a>
+          <a class="paper-btn btn-small" href="{{site.baseurl}}/tags.html#{{tag|slugify}}">{{tag}}</a>
           {% unless forloop.last %}&nbsp;{% endunless %}
           {% endfor %}
           </p>
@@ -68,5 +68,19 @@ layout: base
         </div>
       </article>
     </div>
+  </div>
+</div>
+
+<div class="row flex-center">
+  <div class="container paper">
+    <div id="hyvor-talk-view"></div>
+    <script type="text/javascript">
+        var HYVOR_TALK_WEBSITE = 3425; // DO NOT CHANGE THIS
+        var HYVOR_TALK_CONFIG = {
+            url: '{{ page.url | absolute_url }}',
+            id: '{{page.id}}'
+        };
+    </script>
+    <script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
   </div>
 </div>

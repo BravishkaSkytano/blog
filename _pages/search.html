@@ -1,0 +1,29 @@
+---
+layout: base
+title: Search
+permalink: /search.html
+---
+<div class="row flex-center">
+  <div class="sm-12 md-8 lg-10 col">
+    <div class="container paper">
+      <!-- Html Elements for Search -->
+      <div id="search">
+        <input type="text" id="search-input" placeholder="search...">
+        <ul id="results"></ul>
+        </div>
+        
+        <!-- Script pointing to search-script.js -->
+        <script src="{{ '/assets/js/search.js' | relative_url }}" type="text/javascript"></script>
+        
+        <!-- Configuration -->
+        <script>
+        SimpleJekyllSearch({
+          searchInput: document.getElementById('search-input'),
+          resultsContainer: document.getElementById('results'),
+          noResultsText: 'No result found, maybe check your spelling?',
+          json: '/search.json'
+        })
+        </script>
+    </div>
+  </div>
+</div>
