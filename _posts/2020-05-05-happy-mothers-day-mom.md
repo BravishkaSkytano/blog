@@ -1,7 +1,7 @@
 ---
 title: "Happy Mother's Day, Mom"
 categories: [poems]
-tags: [holidays, Mother's Day]
+tags: [holidays, mother's day]
 ---
 
 You know that feeling you get when you've became one year older?\

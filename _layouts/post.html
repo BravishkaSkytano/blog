@@ -11,7 +11,7 @@ layout: base
         {% if forloop.last %}
           <li>{{ page.title }}</li>
         {% else %}
-          <li><a href="{{ '/books' | relative_url }}/#{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
+          <li><a href="{{ '/books' | relative_url }}#{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
         {% endif %}
       {% endfor %}
       </ul>
