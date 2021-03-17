@@ -4,7 +4,7 @@ layout: base
 <div class="row">
   <div class="sm-12 md-4 col">
     <div class="paper">
-      <p><img src="https://www.gravatar.com/avatar/8305681be23372ec3c774233546f849f?s=500" alt="Profile pic"></p>
+      <p><img src="{{ site.logo }}" alt="Profile pic"></p>
       <h3>Yoela Olson</h3>
       <p>I'm a homeschooled, Christian student who is struggling to stay motivated and finish things.</p>
 
@@ -19,7 +19,22 @@ layout: base
         <a class="paper-btn btn-small" href="https://www.reddit.com/user/Y_Mystake_O" target="_blank"><i class="fab fa-reddit"></i></a>
         <a class="paper-btn btn-small" href="https://www.goodreads.com/user/show/80834407-bravisha-skietano" target="_blank"><i class="fab fa-goodreads"></i></a>
       </div>
-      <hr>
+    </div>
+
+    <div class="paper">
+      <h3 class="center">Books</h3>
+      {% assign categories = site.categories | sort %}
+      {% for category in categories %}
+      {% capture category_name %}{{ category | first }}{% endcapture %}
+        <a href="{{ '/books' | relative_url }}#{{ category_name | slugify }}" class="paper-btn">{{ category_name | capitalize }}</a>
+      {% endfor %}
+
+      <h3 class="center">Tags</h3>
+        {% assign tags = site.tags | sort %}
+        {% for tag in tags %}
+          {% capture tag_name %}{{ tag | first }}{% endcapture %}
+          <a href="{{ '/tags' | relative_url }}#{{ tag_name | slugify }}" class="paper-btn">{{ tag_name }}</a>
+        {% endfor %}
     </div>
   </div>
   <div class="sm-12 md-8 col">

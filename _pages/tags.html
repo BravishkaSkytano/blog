@@ -2,7 +2,8 @@
 title: Tags
 permalink: /tags.html
 ---
-{% for tag in site.tags %}
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
 {% capture tag_name %}{{ tag | first }}{% endcapture %}
 <p id="{{ tag_name | slugify }}"></p>
 <h2>{{ tag_name }}</h2>

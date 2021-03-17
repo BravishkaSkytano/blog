@@ -22,49 +22,6 @@ button#back2top{
   border-radius: 3px;
 }
 
-
-blockquote {
-  font-family: 'Cinzel', serif;
-  font-style: italic;
-  
-  /*Box Shadow - (Optional)*/
-  -moz-box-shadow: 2px 2px 15px #ccc;
-  -*Font*/*Font*/dow: 2px 2px 15px #ccc;
-  box-shadow: 2px 2px 15px #ccc;
-}
-
-blockquote p {
-  text-align: justify;
-  margin: 0px 40px;
-}
-
-blockquote:before {
-  color: #ccc;
-  content: "\201C";
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-
-blockquote:after {
-  color: #ccc;
-  content: "\201D";
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-left: 16em;
-  vertical-align: -0.8em;
-}
-
-cite {
-  position: relative;
-  display: block;
-  text-align: right;
-  margin-top: 5px;
-  margin-right: 25px;
-  color: #999;
-}
-
 figcaption {
   font-style: italic;
   text-align: center;

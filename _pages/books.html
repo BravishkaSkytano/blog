@@ -2,7 +2,8 @@
 title: Books
 permalink: /books.html
 ---
-{% for category in site.categories %}
+{% assign categories = site.categories | sort %}
+{% for category in categories %}
 {% capture category_name %}{{ category | first }}{% endcapture %}
 <p id="{{ category_name | slugify }}"></p>
 <h3>{{ category_name | capitalize }}</h3>

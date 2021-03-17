@@ -17,4 +17,7 @@ Sincerely,\
 *Yoela Olson*
 
 ### Acknowledgements
-* Icons are made by Eucalyp from www.flaticon.com
+* God and my parents
+* Jekyll + GitHub Pages
+* PaperCSS
+* Eucalyp from www.flaticon.com who made the site favicon
