@@ -4,12 +4,11 @@ permalink: /books.html
 ---
 {% for category in site.categories %}
 {% capture category_name %}{{ category | first }}{% endcapture %}
-<a name="{{ category_name | slugify }}"></a>
-<p></p>
+<p id="{{ category_name | slugify }}"></p>
 <h3>{{ category_name | capitalize }}</h3>
 <ul>
   {% for post in site.categories[category_name] %}
-  <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
+  <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
 {% endfor %}

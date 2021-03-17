@@ -21,7 +21,8 @@ permalink: /search.html
           searchInput: document.getElementById('search-input'),
           resultsContainer: document.getElementById('results'),
           noResultsText: 'No result found, maybe check your spelling?',
-          json: '/search.json'
+          json: '/search.json',
+          searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>'
         })
         </script>
     </div>

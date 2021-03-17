@@ -6,12 +6,12 @@ layout: base
     <div class="container paper">
       <ul class="breadcrumb border">
       {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-      <li><a href="/"><i class="fas fa-home"></i></a></li>
+      <li><a href="{{ site.url }}{{ site.baseurl }}"><i class="fas fa-home"></i></a></li>
       {% for crumb in crumbs offset: 1 %}
         {% if forloop.last %}
           <li>{{ page.title }}</li>
         {% else %}
-          <li><a href="/books{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
+          <li><a href="/books.html#{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
         {% endif %}
       {% endfor %}
       </ul>
@@ -39,9 +39,9 @@ layout: base
           {% else %}
             {% assign categories = page.categories %}
           {% endif %}
-          <p>Categories:
+          <p>Part of 
           {% for category in categories %}
-          <a class="paper-btn btn-small" href="{{site.baseurl}}/books.html#{{category|slugify}}">{{category}}</a>
+          <a class="paper-btn btn-small" href="{{ site.baseurl }}/books.html#{{ category | slugify }}">{{ category | capitalize }}</a>
           {% unless forloop.last %}&nbsp;{% endunless %}
           {% endfor %}
           </p>
@@ -50,9 +50,9 @@ layout: base
           {% else %}
             {% assign tags = page.tags %}
           {% endif %}
-          <p>Tags:
+          <p>Tags 
           {% for tag in tags %}
-          <a class="paper-btn btn-small" href="{{site.baseurl}}/tags.html#{{tag|slugify}}">{{tag}}</a>
+          <a class="paper-btn btn-small" href="{{ site.baseurl }}/tags.html#{{ tag | slugify }}">{{ tag }}</a>
           {% unless forloop.last %}&nbsp;{% endunless %}
           {% endfor %}
           </p>
@@ -60,10 +60,10 @@ layout: base
         <br><hr><br>
         <div class="row flex-center">
           {% if page.previous.url %}
-            <a class="paper-btn" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+            <a class="paper-btn" href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
           {% endif %}
           {% if page.next.url %}
-            <a class="paper-btn" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+            <a class="paper-btn" href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
           {% endif %}
         </div>
       </article>

@@ -4,12 +4,11 @@ permalink: /tags.html
 ---
 {% for tag in site.tags %}
 {% capture tag_name %}{{ tag | first }}{% endcapture %}
-<a name="{{ tag_name | slugify }}"></a>
-<p></p>
+<p id="{{ tag_name | slugify }}"></p>
 <h2>{{ tag_name }}</h2>
 <ul>
   {% for post in site.tags[tag_name] %}
-  <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
+  <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
 {% endfor %}
