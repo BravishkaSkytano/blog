@@ -46,6 +46,3 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - README.md
-  
-keep_files:
-  - assets/

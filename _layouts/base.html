@@ -23,10 +23,10 @@
   
   <script src="https://kit.fontawesome.com/42f6f50d63.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="top">
   <nav class="border split-nav">
     <div class="nav-brand">
-      <h3><a href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a></h3>
+      <h3><a class="fancy" href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a></h3>
     </div>
     <div class="collapsible">
       <input id="collapsible1" type="checkbox" name="collapsible1">
@@ -48,5 +48,7 @@
   
   {{ content }}
   
+  <a class="paper-btn" id="back2top" href="#top">^</a>
+
 </body>
 </html>

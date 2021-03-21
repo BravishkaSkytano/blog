@@ -11,7 +11,7 @@ layout: base
         {% if forloop.last %}
           <li>{{ page.title }}</li>
         {% else %}
-          <li><a href="{{ '/books' | relative_url }}#{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
+          <li><a href="{{ '/categories' | relative_url }}#{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
         {% endif %}
       {% endfor %}
       </ul>
@@ -31,6 +31,26 @@ layout: base
             </time>
           {%- endif -%}
         </p>
+        {% if page.series %}
+        <aside class="series">
+          <h4>This post is part of the <em>{{ site.data.series | where: 'id', page.series | map: 'title' }}</em> series</h4>
+          <ol>
+            {% assign series-posts = site.posts | reverse | where: 'series', page.series %}
+            {% for post in series-posts %}
+            <li>
+              {% if post.url == page.url %}
+              <strong>{{ post.title }}</strong>
+              {% else %}
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ol>
+          {% if series-posts.size == 1 %}
+          <p>More posts coming soon!</p>
+          {% endif %}
+        </aside>
+        {% endif %}
 
         {{ content }}
 
@@ -117,6 +137,33 @@ layout: base
         <br><hr><br>
 
         <div class="row flex-center">
+          {% if page.series %}
+            <h4><em>{{ site.data.series | where: 'id', page.series | map: 'title' }}</em> Series</h4>
+            {% assign series-posts = site.posts | reverse | where: 'series', page.series %}
+            {% for post in series-posts %}
+              {% if post.url == page.url %}
+                {% assign prev_post_index = forloop.index | minus: 1 %}
+                {% assign curr_post_index = forloop.index %}
+                {% assign next_post_index = forloop.index | plus: 1 %}
+              {% endif %}
+            {% endfor %}
+
+            <p>Post <strong>{{ curr_post_index }}</strong> of <strong>{{ series-posts.size }}</strong>.
+              {% if series-posts.size == 1 %}More posts coming soon!{% endif %}</p>
+
+            {% for post in series-posts %}
+              {% if prev_post_index == forloop.index %}
+                <a class="btn" rel="prev" href="{{ site.baseurl }}{{ post.url }}">&larr; Prev Post</a>
+              {% endif %}
+
+              {% if next_post_index == forloop.index %}
+                <a class="btn" rel="next" href="{{ site.baseurl }}{{ post.url }}">Next Post &rarr;</a>
+              {% endif %}
+            {% endfor %}
+        </div>
+        <div class="row flex-center">
+          {% endif %}
+
           {% if page.previous.url %}
             <a class="paper-btn" href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
           {% endif %}

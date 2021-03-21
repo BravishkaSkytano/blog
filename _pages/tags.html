@@ -3,6 +3,16 @@ title: Tags
 permalink: /tags.html
 ---
 {% assign tags = site.tags | sort %}
+
+<div id="toc">
+  <ul>
+    {% for tag in tags %}
+    {% capture tag_name %}{{ tag | first }}{% endcapture %}
+      <li><a href="#{{ tag_name | slugify }}">{{ tag_name }}  <span class="badge">{{ tag_name.size }}</span></a></li>
+    {% endfor %}
+  </ul>
+</div>
+
 {% for tag in tags %}
 {% capture tag_name %}{{ tag | first }}{% endcapture %}
 <p id="{{ tag_name | slugify }}"></p>

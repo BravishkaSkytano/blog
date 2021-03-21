@@ -3,7 +3,7 @@ title: "Why Did God Take My Daddy From Me?"
 categories: [poems]
 tags: [death, sorrow, loss, comfort]
 ---
-"Why did God take him?" The girl yelled, "Why is he gone? Why would God take my Daddy from me?" She sobbed. "How can this part of God's plan for me?"
+<span class="dropcap">"W</span>hy did God take him?" The girl yelled, "Why is he gone? Why would God take my Daddy from me?" She sobbed. "How can this part of God's plan for me?"
 
 She could still see her Daddy's face smiling at her. She could still feel him holding her hand.
 
