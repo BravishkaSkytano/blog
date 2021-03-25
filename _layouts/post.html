@@ -214,16 +214,18 @@ layout: base
 
 </div>
 
-<div class="row flex-center">
-  <div class="sm-12 md-8 lg-10 col">
-    <div class="paper">
-    <h2>Comments</h2>
-    <script>
-      var idcomments_acct = 'ed266ea380f61d806347e1ec998914cc';
-      var idcomments_post_id;
-      var idcomments_post_url;
-    </script>
-    <script type="text/javascript" src="https://www.intensedebate.com/js/genericLinkWrapperV2.js"></script>
-    </div>
-  </div>
-</div>
+<script> 
+  var jv_comments_config = {
+  website_id: 423,
+  is_open: 'false',
+  position: 'left' };
+  
+    (function () {
+      var d = document, s = d.createElement("script");
+      s.src = "https://widget.jointcomments.com/e/embed.prod.js";
+      if (/MSIE|Trident/.test(window.navigator.userAgent)) {
+          s.src = "https://widget.jointcomments.com/e/embed.prodIE.js";
+      }
+      (d.head || d.body).appendChild(s);
+    })();
+</script>
