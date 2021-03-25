@@ -13,7 +13,11 @@ layout: page
   {% if post.image %}<img src="{{ post.image }}" alt="Post Image">{% endif %}
   <div class="card-body">
     <h3 class="card-title">{{ post.title | escape }}</h3>
-    <p class="card-subtitle">{{ post.date | date: date_format }}</p>
+    <p class="card-subtitle center">
+      {{ post.date | date: date_format }}
+      {% if post.book %} | {{ site.data.books | where: 'id', post.book | map: 'title' }}{% endif %}
+      {% if post.series %} | {{ site.data.series | where: 'id', post.series | map: 'title' }}{% endif %}
+    </p>
     <p class="card-text">{{ post.content | truncatewords: 50 | strip_html }}</p>
     <a class="card-link" href="{{ post.url | relative_url }}">Read More</a>
   </div>

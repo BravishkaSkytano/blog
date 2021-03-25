@@ -26,22 +26,32 @@ layout: base
       {% assign categories = site.categories | sort %}
       {% for category in categories %}
       {% capture category_name %}{{ category | first }}{% endcapture %}
-        <a href="{{ '/categories' | relative_url }}#{{ category_name | slugify }}" class="paper-btn">{{ category_name | capitalize }} <span class="badge">{{ category_name.size }}</span></a>
+        <a href="{{ '/categories' | relative_url }}#{{ category_name | slugify }}" class="paper-btn btn-small">{{ category_name | capitalize }}</a>
       {% endfor %}
 
       <h3><a class="fancy" href="/tags">Tags</a></h3>
-        {% assign tags = site.tags | sort %}
-        {% for tag in tags %}
-          {% capture tag_name %}{{ tag | first }}{% endcapture %}
-          <a href="{{ '/tags' | relative_url }}#{{ tag_name | slugify }}" class="paper-btn">{{ tag_name }} <span class="badge">{{ tag_name.size }}</span></a>
-        {% endfor %}
+      {% assign tags = site.tags | sort %}
+      {% for tag in tags %}
+        {% capture tag_name %}{{ tag | first }}{% endcapture %}
+        <a href="{{ '/tags' | relative_url }}#{{ tag_name | slugify }}" class="paper-btn btn-small">{{ tag_name }}</a>
+      {% endfor %}
+
+      <h3><a class="fancy" href="/books">Books</a></h3>
+      {% for book in site.data.books %}
+      {% assign book-posts = site.posts | reverse | where: 'book', book.id %}
+      {% if book-posts.size > 0 %}
+        <a class="paper-btn btn-small" href="#{{ book.id}}">{{ book.title}} <span class="badge">{{ book-posts.size }}</span></a>
+      {% endif %}
+      {% assign book-posts = nil %}
+      {% endfor %}
+
       <h3><a class="fancy" href="/series">Series</a></h3>
-        {% for series in site.data.series %}
-        {% assign series-posts = site.posts | reverse | where: 'series', series.id %}
-        {% if series-posts.size > 0 %}
-          <a class="paper-btn" href="#{{ series.id}}">{{ series.title}} <span class="badge">{{ series-posts.size }}</span></a>
-        {% endif %}
-        {% assign series-posts = nil %}
+      {% for series in site.data.series %}
+      {% assign series-posts = site.posts | reverse | where: 'series', series.id %}
+      {% if series-posts.size > 0 %}
+        <a class="paper-btn btn-small" href="#{{ series.id}}">{{ series.title}} <span class="badge">{{ series-posts.size }}</span></a>
+      {% endif %}
+      {% assign series-posts = nil %}
       {% endfor %}
     </div>
   </div>

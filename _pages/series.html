@@ -7,7 +7,7 @@ permalink: /series
   {% for series in site.data.series %}
     {% assign series-posts = site.posts | reverse | where: 'series', series.id %}
     {% if series-posts.size > 0 %}
-      <li><a href="#{{ series.id}}">{{ series.title}} <span class="badge">{{ series-posts.size }}</span></a></li>
+      <li><a href="#{{ series.id }}">{{ series.title }} <span class="badge">{{ series-posts.size }}</span></a></li>
     {% endif %}
     {% assign series-posts = nil %}
   {% endfor %}
@@ -16,12 +16,12 @@ permalink: /series
 {% for series in site.data.series %}
   {% assign series-posts = site.posts | reverse | where: 'series', series.id %}
   {% if series-posts.size > 0 %}
-    <h3 id="{{ series.id }}">{{ series.title }}</h3>
+    <h3 id="{{ series.id }}">{{ series.title }} <span class="badge">{{ series-posts.size }}</span></h3>
     <p>{{ series.description }}</p>
     <ul>
       {% for post in series-posts %}
       <li><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>:
-        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
   {% endif %}

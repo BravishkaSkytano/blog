@@ -1,6 +1,6 @@
 ---
 title: "Prayer is a weapon..."
-categories: [poems]
+categories: [poetry]
 tags: [prayer, spiritual-weapons]
 ---
 

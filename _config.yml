@@ -19,7 +19,7 @@ defaults:
       layout: "post"
       
 paginate: 7
-permalink: /:categories/:title.html
+permalink: /:path:output_ext
 future: false
 
 # Build settings
@@ -46,3 +46,5 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - README.md
+
+staticman_url: https://staticman-aawh.herokuapp.com/v2/entry/Aspiring-Writer/aspiring-writer.github.io/master/comments

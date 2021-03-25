@@ -8,7 +8,7 @@ permalink: /tags.html
   <ul>
     {% for tag in tags %}
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
-      <li><a href="#{{ tag_name | slugify }}">{{ tag_name }}  <span class="badge">{{ tag_name.size }}</span></a></li>
+      <li><a href="#{{ tag_name | slugify }}">{{ tag_name }}</a></li>
     {% endfor %}
   </ul>
 </div>

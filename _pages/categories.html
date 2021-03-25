@@ -8,7 +8,7 @@ permalink: /categories.html
   <ul>
     {% for category in categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
-      <li><a href="#{{ category_name | slugify }}">{{ category_name | capitalize }}  <span class="badge">{{ category_name.size }}</span></a></li>
+      <li><a href="#{{ category_name | slugify }}">{{ category_name | capitalize }}</a></li>
     {% endfor %}
   </ul>
 </div>
@@ -17,7 +17,7 @@ permalink: /categories.html
 {% capture category_name %}{{ category | first }}{% endcapture %}
 
 <p id="{{ category_name | slugify }}"></p>
-<h3>{{ category_name | capitalize }} <span class="badge">{{ category_name.size }}</span></h3>
+<h3>{{ category_name | capitalize }}</h3>
 <ul>
   {% for post in site.categories[category_name] %}
   <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>

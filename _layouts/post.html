@@ -3,18 +3,7 @@ layout: base
 ---
 <div class="row flex-center">
   <div class="sm-12 md-8 lg-10 col">
-    <div class="container paper">
-      <ul class="breadcrumb border">
-      {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-      <li><a href="{{ site.url }}{{ site.baseurl }}"><i class="fas fa-home"></i></a></li>
-      {% for crumb in crumbs offset: 1 %}
-        {% if forloop.last %}
-          <li>{{ page.title }}</li>
-        {% else %}
-          <li><a href="{{ '/categories' | relative_url }}#{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
-        {% endif %}
-      {% endfor %}
-      </ul>
+    <div class="paper">
       <article class="article">
         {% if page.image %}<img src="{{ page.image }}" alt="Header image">{% endif %}
         <h1 class="article-title">{{ page.title }}</h1>
@@ -31,6 +20,26 @@ layout: base
             </time>
           {%- endif -%}
         </p>
+        {% if page.book %}
+        <aside class="book">
+          <h4>This chapter is part of <em>{{ site.data.books | where: 'id', page.book | map: 'title' }}</em></h4>
+          <ul>
+            {% assign book-posts = site.posts | reverse | where: 'book', page.book %}
+            {% for post in book-posts %}
+            <li>
+              {% if post.url == page.url %}
+              <strong>{{ post.title }}</strong>
+              {% else %}
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+          {% if book-posts.size == 1 %}
+          <p>More chapters coming soon!</p>
+          {% endif %}
+        </aside>
+        {% endif %}
         {% if page.series %}
         <aside class="series">
           <h4>This post is part of the <em>{{ site.data.series | where: 'id', page.series | map: 'title' }}</em> series</h4>
@@ -54,139 +63,167 @@ layout: base
 
         {{ content }}
 
-        <br><hr><br>
+        <hr>
 
-        <div class="row flex-center">
-          <div class="sm-4 col">
-            {% if post %}
-              {% assign categories = post.categories %}
-            {% else %}
-              {% assign categories = page.categories %}
-            {% endif %}
-            <h4 class="center">Book</h4>
-            <div class="row flex-center">
-              {% for category in categories %}
-              <a class="paper-btn btn-small" href="{{ '/books' | relative_url }}#{{ category | slugify }}">{{ category | capitalize }}</a>
-              {% unless forloop.last %}&nbsp;{% endunless %}
-              {% endfor %}
-            </div>
+      </article>
+    </div>
 
-            {% if post %}
-              {% assign tags = post.tags %}
-            {% else %}
-              {% assign tags = page.tags %}
-            {% endif %}
-            <h4 class="center">Tags</h4>
-            <div class="row flex-center">
-              {% for tag in tags %}
-              <a class="paper-btn btn-small" href="{{ '/tags' | relative_url }}#{{ tag | slugify }}">{{ tag }}</a>
-              {% unless forloop.last %}&nbsp;{% endunless %}
-              {% endfor %}
-            </div>
+    <div class="paper">
+      <div class="row flex-center">
+        <div class="sm-4 col">
+          {% if post %}
+            {% assign categories = post.categories %}
+          {% else %}
+            {% assign categories = page.categories %}
+          {% endif %}
+          <h4 class="center">Categories</h4>
+          <div class="row flex-center">
+            {% for category in categories %}
+            <a class="paper-btn btn-small" href="{{ '/categories' | relative_url }}#{{ category | slugify }}">{{ category | capitalize }}</a>
+            {% unless forloop.last %}&nbsp;{% endunless %}
+            {% endfor %}
           </div>
           
-          <div class="col-fill col">
-            <h4 class="center">You May Also Enjoy</h4>
-            {% assign RELATED_POSTS_THRESHOLD = 3 %}
-            {% assign related_post_count = 0 %}
-            {% for post in site.related_posts %}
-              {% if related_post_count == RELATED_POSTS_THRESHOLD %}
-                {% break %}
-              {% endif %}
-              {% for tag in post.tags %}
-                {% if page.tags contains tag %}
-                  <p>
-                    <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> &raquo; 
-                    <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> &raquo; 
-                    {{ post.content | truncatewords: 25 | strip_html | strip_newlines }}
-                  </p>
-                  {% assign related_post_count = related_post_count | plus: 1 %}
-                  {% break %}
-                {% endif %}
-              {% endfor %}
+          {% if post %}
+            {% assign tags = post.tags %}
+          {% else %}
+            {% assign tags = page.tags %}
+          {% endif %}
+          <h4 class="center">Tags</h4>
+          <div class="row flex-center">
+            {% for tag in tags %}
+            <a class="paper-btn btn-small" href="{{ '/tags' | relative_url }}#{{ tag | slugify }}">{{ tag }}</a>
+            {% unless forloop.last %}&nbsp;{% endunless %}
             {% endfor %}
-
-            {% assign posts_left = RELATED_POSTS_THRESHOLD | minus: related_post_count %}
-            {% unless posts_left == 0 %}
-              {% for post in site.related_posts %}
-                {% if posts_left == 0 %}
-                  {% break %}
-                {% endif %}
-
-                {% assign already_related = false %}
-                {% for tag in post.tags %}
-                  {% if page.tags contains tag %}
-                    {% assign already_related = true %}
-                    {% break %}
-                  {% endif %}
-                {% endfor %}
-                {% unless already_related %}
-                  {% assign posts_left = posts_left | minus: 1 %}
-                  <p>
-                    <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> &raquo; 
-                    <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> &raquo; 
-                    {{ post.content | truncatewords: 25 | strip_html | strip_newlines }}
-                  </p>
-                {% endunless %}
-              {% endfor %}
-            {% endunless %}
-
           </div>
         </div>
-
-        <br><hr><br>
-
-        <div class="row flex-center">
-          {% if page.series %}
-            <h4><em>{{ site.data.series | where: 'id', page.series | map: 'title' }}</em> Series</h4>
-            {% assign series-posts = site.posts | reverse | where: 'series', page.series %}
-            {% for post in series-posts %}
-              {% if post.url == page.url %}
-                {% assign prev_post_index = forloop.index | minus: 1 %}
-                {% assign curr_post_index = forloop.index %}
-                {% assign next_post_index = forloop.index | plus: 1 %}
+        
+        <div class="col-fill col">
+          <h4 class="center">You May Also Enjoy</h4>
+          {% assign RELATED_POSTS_THRESHOLD = 3 %}
+          {% assign related_post_count = 0 %}
+          {% for post in site.related_posts %}
+            {% if related_post_count == RELATED_POSTS_THRESHOLD %}
+              {% break %}
+            {% endif %}
+            {% for tag in post.tags %}
+              {% if page.tags contains tag %}
+                <p>
+                  <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> &raquo; 
+                  <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> &raquo; 
+                  {{ post.content | truncatewords: 25 | strip_html | strip_newlines }}
+                </p>
+                {% assign related_post_count = related_post_count | plus: 1 %}
+                {% break %}
               {% endif %}
             {% endfor %}
+          {% endfor %}
 
-            <p>Post <strong>{{ curr_post_index }}</strong> of <strong>{{ series-posts.size }}</strong>.
-              {% if series-posts.size == 1 %}More posts coming soon!{% endif %}</p>
-
-            {% for post in series-posts %}
-              {% if prev_post_index == forloop.index %}
-                <a class="btn" rel="prev" href="{{ site.baseurl }}{{ post.url }}">&larr; Prev Post</a>
+          {% assign posts_left = RELATED_POSTS_THRESHOLD | minus: related_post_count %}
+          {% unless posts_left == 0 %}
+            {% for post in site.related_posts %}
+              {% if posts_left == 0 %}
+                {% break %}
               {% endif %}
 
-              {% if next_post_index == forloop.index %}
-                <a class="btn" rel="next" href="{{ site.baseurl }}{{ post.url }}">Next Post &rarr;</a>
-              {% endif %}
+              {% assign already_related = false %}
+              {% for tag in post.tags %}
+                {% if page.tags contains tag %}
+                  {% assign already_related = true %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              {% unless already_related %}
+                {% assign posts_left = posts_left | minus: 1 %}
+                <p>
+                  <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> &raquo; 
+                  <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> &raquo; 
+                  {{ post.content | truncatewords: 25 | strip_html | strip_newlines }}
+                </p>
+              {% endunless %}
             {% endfor %}
+          {% endunless %}
+
         </div>
-        <div class="row flex-center">
+      </div>
+
+      <br><hr><br>
+
+      {% if page.book or page.series %}
+      {% if page.book %}
+      <div class="row flex-center">
+        {% assign book-posts = site.posts | reverse | where: 'book', page.book %}
+        {% for post in book-posts %}
+          {% if post.url == page.url %}
+            {% assign prev_post_index = forloop.index | minus: 1 %}
+            {% assign curr_post_index = forloop.index %}
+            {% assign next_post_index = forloop.index | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+        {% for post in book-posts %}
+          {% if prev_post_index == forloop.index %}
+            <a class="paper-btn" rel="prev" href="{{ site.baseurl }}{{ post.url }}">&laquo; Prev Chapter</a>
           {% endif %}
 
-          {% if page.previous.url %}
-            <a class="paper-btn" href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
+          {% if next_post_index == forloop.index %}
+            <a class="paper-btn" rel="next" href="{{ site.baseurl }}{{ post.url }}">Next Chapter &raquo;</a>
           {% endif %}
-          {% if page.next.url %}
-            <a class="paper-btn" href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
+
+          <p>{% if book-posts.size == 1 %}More chapters coming soon!{% endif %}</p>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      {% if page.series %}
+      <div class="row flex-center">
+        {% assign series-posts = site.posts | reverse | where: 'series', page.series %}
+        {% for post in series-posts %}
+          {% if post.url == page.url %}
+            {% assign prev_post_index = forloop.index | minus: 1 %}
+            {% assign curr_post_index = forloop.index %}
+            {% assign next_post_index = forloop.index | plus: 1 %}
           {% endif %}
-        </div>
-      </article>
+        {% endfor %}
+        
+        {% for post in series-posts %}
+          {% if prev_post_index == forloop.index %}
+            <a class="paper-btn" rel="prev" href="{{ site.baseurl }}{{ post.url }}">&laquo; Prev Post in series</a>
+          {% endif %}
+
+          {% if next_post_index == forloop.index %}
+            <a class="paper-btn" rel="next" href="{{ site.baseurl }}{{ post.url }}">Next post in series &raquo;</a>
+          {% endif %}
+
+          <p>{% if series-posts.size == 1 %}More posts coming soon!{% endif %}</p>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% else %}
+      
+      <div class="row flex-center">
+        {% if page.previous.url %}
+          <a class="paper-btn" href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
+        {% endif %}
+        {% if page.next.url %}
+          <a class="paper-btn" href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
+        {% endif %}
+      </div>
+      {% endif %}
     </div>
   </div>
 
 </div>
 
 <div class="row flex-center">
-  <div class="container paper">
-    <div id="hyvor-talk-view"></div>
-    <script type="text/javascript">
-        var HYVOR_TALK_WEBSITE = 3425; // DO NOT CHANGE THIS
-        var HYVOR_TALK_CONFIG = {
-            url: '{{ page.url | absolute_url }}',
-            id: '{{page.id}}'
-        };
+  <div class="sm-12 md-8 lg-10 col">
+    <div class="paper">
+    <h2>Comments</h2>
+    <script>
+      var idcomments_acct = 'ed266ea380f61d806347e1ec998914cc';
+      var idcomments_post_id;
+      var idcomments_post_url;
     </script>
-    <script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
+    <script type="text/javascript" src="https://www.intensedebate.com/js/genericLinkWrapperV2.js"></script>
+    </div>
   </div>
 </div>

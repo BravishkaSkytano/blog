@@ -1,6 +1,6 @@
 ---
 title: "Happy Mother's Day, Mom"
-categories: [poems]
+categories: [poetry]
 tags: [holidays, mother's day]
 ---
 

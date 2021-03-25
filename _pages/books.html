@@ -1,0 +1,29 @@
+---
+title: Books
+permalink: /books
+---
+
+<ul>
+  {% for book in site.data.books %}
+    {% assign book-posts = site.posts | reverse | where: 'book', book.id %}
+    {% if book-posts.size > 0 %}
+      <li><a href="#{{ book.id }}">{{ book.title }} <span class="badge">{{ book-posts.size }}</span></a></li>
+    {% endif %}
+    {% assign book-posts = nil %}
+  {% endfor %}
+</ul>
+
+{% for book in site.data.books %}
+  {% assign book-posts = site.posts | reverse | where: 'book', book.id %}
+  {% if book-posts.size > 0 %}
+    <h3 id="{{ book.id }}">{{ book.title }} <span class="badge">{{ book-posts.size }}</span></h3>
+    <p>{{ book.description }}</p>
+    <h4>Chapters</h4>
+    <ul>
+      {% for post in book-posts %}
+      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  {% assign book-posts = nil %}
+{% endfor %}
