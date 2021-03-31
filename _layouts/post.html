@@ -23,6 +23,15 @@ layout: base
             {% assign words = content | strip_html | number_of_words %}
             | {{ words | divided_by: 180 | plus: 1 }} min read.
           </span>
+          {% capture words %}
+            {{ page.content | number_of_words }}
+          {% endcapture %}
+          {% unless words contains "-" %}
+            | {{ words | append: " words" }}
+          {% endunless %}
+          {% unless words contains "-" %}
+            ~ {{ words | divided_by: 180 | append: " minute read" }}
+          {% endunless %}
         </p>
         {% if page.series %}
         <aside class="series">
