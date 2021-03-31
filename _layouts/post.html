@@ -19,27 +19,11 @@ layout: base
               {{ mdate | date: date_format }}
             </time>
           {%- endif -%}
+          <span class="reading-time" title="Estimated read time">
+            {% assign words = content | strip_html | number_of_words %}
+            ~ {{ words | divided_by: 180 | plus: 1 }} min read.
+          </span>
         </p>
-        {% if page.book %}
-        <aside class="book">
-          <h4>This chapter is part of <em>{{ site.data.books | where: 'id', page.book | map: 'title' }}</em></h4>
-          <ul>
-            {% assign book-posts = site.posts | reverse | where: 'book', page.book %}
-            {% for post in book-posts %}
-            <li>
-              {% if post.url == page.url %}
-              <strong>{{ post.title }}</strong>
-              {% else %}
-              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-              {% endif %}
-            </li>
-            {% endfor %}
-          </ul>
-          {% if book-posts.size == 1 %}
-          <p>More chapters coming soon!</p>
-          {% endif %}
-        </aside>
-        {% endif %}
         {% if page.series %}
         <aside class="series">
           <h4>This post is part of the <em>{{ site.data.series | where: 'id', page.series | map: 'title' }}</em> series</h4>
