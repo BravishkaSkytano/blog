@@ -37,13 +37,10 @@ layout: base
       {% endfor %}
 
       <h3><a class="fancy" href="/books">Books</a></h3>
-      {% for book in site.data.books %}
-      {% assign book-posts = site.posts | reverse | where: 'book', book.id %}
-      {% if book-posts.size > 0 %}
-        <a class="paper-btn btn-small" href="#{{ book.id}}">{{ book.title}} <span class="badge">{{ book-posts.size }}</span></a>
-      {% endif %}
-      {% assign book-posts = nil %}
-      {% endfor %}
+      <a class="paper-btn btn-small" href="/past-nightmares-present-ghosts-future-fears">Past Nightmares. Present Ghosts. Future Fears.</span></a>
+      <a class="paper-btn btn-small" href="/dear-diary-1">Dear Diary, Do You Wanna Know A Secret?</span></a>
+      <a class="paper-btn btn-small" href="/test-my-fire">Test My Fire</span></a>
+      <a class="paper-btn btn-small" href="/kidnapped-and-afraid">Kidnapped and Afraid</span></a>
 
       <h3><a class="fancy" href="/series">Series</a></h3>
       {% for series in site.data.series %}
