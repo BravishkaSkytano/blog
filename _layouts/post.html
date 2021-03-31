@@ -19,15 +19,11 @@ layout: base
               {{ mdate | date: date_format }}
             </time>
           {%- endif -%}
-          <span class="reading-time" title="Estimated read time">
-            {% assign words = content | strip_html | number_of_words %}
-            | {{ words | divided_by: 180 | plus: 1 }} min read.
-          </span>
           {% capture words %}
             {{ page.content | number_of_words }}
           {% endcapture %}
           {% unless words contains "-" %}
-            | {{ words | append: " words" }}, {{ words | divided_by: 180 | plus: 1 | append: " minute read" }}
+            | {{ words | append: " words" }}, {{ words | divided_by: 180 | plus: 1 | append: " min. read" }}
           {% endunless %}
         </p>
         {% if page.series %}
