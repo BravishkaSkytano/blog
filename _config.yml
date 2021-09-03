@@ -35,7 +35,9 @@ show_aboutme_card: true
 about_me_title: A Little About Me
 # about_me_description: This will be displayed under the title.
 about_me_description:
-  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. If you like this theme and want to use it for yourself, checkout the source code and the documentation at <a class="highlight-link" href="https://github.com/longpdo/neumorphism" target="_blank" rel="noreferrer"> Github </a>. You can also find me on <a class="highlight-link" href="https://jamstackthemes.dev/theme/jekyll-neumorphism/" target="_blank" rel="noreferrer">JAMstack Themes</a> and on <a class="highlight-link" href="https://jekyll-themes.com/neumorphism/" target="_blank" rel="noreferrer">Jekyll Themes</a>.
+  I'm a nineteen-year-old,  homeschooled, Christian student who is struggling to stay motivated and finish things. 
+  I love Jesus, pretty much any yarn crafts (crochet, knitting, macrame, been there done that), reading, writing, music, horses, developing websites (new at that), FOSS, and anything Linux (I'm not a complete tech geek but I definitely see myself getting there 😊). 
+  I'm very social, which isn't a very good thing since I trust people too easily 😉, but I'm getting better. I open my mouth a lot before thinking, but as I said, I'm getting better. I procrastinate way too much but prayerfully I will learn some self-control and apply it everywhere in my life (starting with my mouth😋).
 
 # SKILLS SECTION
 # show_skills_card:
@@ -83,7 +85,7 @@ show_contact_card: true
 contact_title: My Contact Info
 # contact_description: This will be displayed under the title.
 contact_description:
-  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. If you like this theme and want to use it for yourself, checkout the source code and the documentation at <a class="highlight-link" href="https://github.com/longpdo/neumorphism" target="_blank" rel="noreferrer"> Github </a>.
+  I'm not ready to accept job offerings yet (maybe internships), but you are welcome to contact me through my socials.
 
 # GITHUB-METADATA
 # Set this to your forked repository
