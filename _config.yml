@@ -85,7 +85,7 @@ show_contact_card: true
 contact_title: My Contact Info
 # contact_description: This will be displayed under the title.
 contact_description:
-  I'm not ready to accept job offerings yet (maybe internships), but you are welcome to contact me through my socials.
+  "I'm not ready to accept job offerings yet (maybe internships), but you are welcome to look through <a href="https://aspiring-writer.netlify.app/">my blog</a> and contact me through my socials.
 
 # GITHUB-METADATA
 # Set this to your forked repository
