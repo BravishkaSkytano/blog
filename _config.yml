@@ -1,132 +1,162 @@
-### VALUES YOU SHOULD CHANGE ###
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
 
-# GENERAL SITE SETTINGS
-# title: This will be displayed as the website's name in your browser tab.
-title: Yoela A. Olson
-# description: This will be meta HTML tag content. This can be ignored.
-description: Personal website powered by Jekyll
-# baseurl: The subpath of your site
-# > set this to "", if you renamed the repository to <user>.github.io
-baseurl: ""
+# Site
+title: "Aspiring Writer's Haven"
+subtitle: "A place to escape"
+description: ""
+keywords:
+author: "Bravisha Skietano"
+language: en
+timezone: "America/New_York"
 
-# LANDING PAGE
-# username: This will displayed on the landing page as your name.
-username: Yoela A. Olson
-# typing_text: This will be typed before 'scroll down for more'.
-# > set this to your job title, e.g. Fullstack Developer
-typing_text: Student
-# email: Your E-Mail address for the email button.
-email: yolson@liberty.edu
-# For every social button you want to display, set your username or userid
-# If you do not use one of the following websites, then leave it empty
-# > twitter_username:
-github_username: Aspiring-Writer
-# codepen_username: exampleUser
-# dev_username: exampleUser
-# linkedin_username: exampleUser
-# twitter_username: exampleUser
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: "https://aspiring-writer.github.io"
+permalink: :title.html
+permalink_defaults:
+pretty_urls:
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
-# ABOUT ME SECTION
-# show_aboutme_card:
-# > setting this to true, will display the About Me section
-# > setting this to false, will omit the About Me section
-show_aboutme_card: true
-# about_me_title: The will be displayed as the title in the About Me section
-about_me_title: A Little About Me
-# about_me_description: This will be displayed under the title.
-about_me_description:
-  I'm a nineteen-year-old,  homeschooled, Christian student who is struggling to stay motivated and finish things. 
-  I love Jesus, pretty much any yarn crafts (crochet, knitting, macrame, been there done that), reading, writing, music, horses, developing websites (new at that), FOSS, and anything Linux (I'm not a complete tech geek but I definitely see myself getting there 😊). 
-  I'm very social, which isn't a very good thing since I trust people too easily 😉, but I'm getting better. I open my mouth a lot before thinking too, but as I said, I'm getting better. Prayerfully, I will learn some self-control and apply it everywhere in my life (starting with my mouth😋).
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
 
-# SKILLS SECTION
-# show_skills_card:
-# > setting this to true, will display the Skills section
-# > setting this to false, will omit the Skills section
-show_skills_card: true
-# about_me_title: The will be displayed as the title in the Skills section
-skills_title: My Skills
+tag_generator:
+  enable_index_page: false
 
-# TIMELINE SECTION
-# show_timeline_card:
-# > setting this to true, will display the Timeline section
-# > setting this to false, will omit the Timeline section
-show_timeline_card: true
-# timeline_title: The will be displayed as the title in the Timeline section
-timeline_title: Education & Experience
-# cv_download_link: The link where you host your cv.
-# > e.g. you share your cv on your dropbox, then add the dropbox link here
-cv_download_link: https://example.com/
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ""
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: false
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ""
+  wrap: true
+  hljs: false
+  exclude_languages:
+    - mermaid
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ""
 
-# PROJECTS SECTION
-# show_projects_card:
-# > setting this to true, will display the Projects section
-# > setting this to false, will omit the Projects section
-show_projects_card: true
-# show_projects:
-# > setting this to true, will display your listed projects in _data/projects.yml
-# > setting this to false, will omit your listed projects
-show_projects: true
-# projects_title: The will be displayed as the title of your projects
-projects_title: My Projects
-# show_os_projects:
-# > setting this to true, will display your public projects on github
-# > setting this to false, will omit your public projects on github
-show_os_projects: true
-# os_projects_title: The will be displayed as the title of your open source projects
-os_projects_title: Open Source Projects
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ""
+  per_page: 10
+  order_by: -date
 
-# CONTACT SECTION
-# show_contact_card:
-# > setting this to true, will display the Contact section
-# > setting this to false, will omit the Contact section
-show_contact_card: true
-# contact_title: The will be displayed as the title in the Contact section
-contact_title: My Contact Info
-# contact_description: This will be displayed under the title.
-contact_description:
-  "I'm not ready to accept job offerings yet (maybe internships), but you are welcome to look through <a href='https://aspiring-writer.netlify.app/'>my blog</a> and contact me through my socials."
+# Category & Tag
+default_category: misc.
+category_map:
+tag_map:
 
-# GITHUB-METADATA
-# Set this to your forked repository
-# > e.g. <user>/<user>.github.io
-repository: Aspiring-Writer/aspiring-writer.github.io
-projects:
-  # sortby:
-  # > set this to pushed, if you want to sort your github repositories by time.
-  # > set this to stars, if you want to sort your github repositories by stars.
-  sort_by: pushed
-  exclude:
-    # archived:
-    # > setting this to true, will exclude archived repositories
-    # > setting this to false, will also display archived repositories
-    archived: true
-    # forks:
-    # > setting this to true, will exclude forked repositories
-    # > setting this to false, will also display forked repositories
-    forks: true
-    # projects: A list of the repository names you want to exclude from the listing.
-    projects:
-    # - repo1-to-be-excluded
-    # - repo2-to-be-excluded
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
 
-# GOOGLE-ANALYTICS
-# Set the id, if you want to track your website with Google Analytics
-# > set this to "", if you do not want to track with Google Analytics
-google-analytics:
-  id: ""
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: "mtime"
 
-### END OF VALUES YOU SHOULD CHANGE ###
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
 
-plugins:
-  - "jekyll-github-metadata"
+# Wordcount
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  awl: 4
+  wpm: 275
 
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+  - "**/*.jpg"
 exclude:
-  [
-    "_assets",
-    "Gemfile",
-    "Gemfile.lock",
-    "gulpfile.js",
-    "node_modules",
-    "package.json",
-  ]
+  - "tag-plugins.md"
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next
+
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: false
+  hub:
+  content: true
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: /images/favicons/favicon-16x16.png
+  autodiscovery: true
+  template:
+
+search:
+  path: search.xml
+  field: all
+  content: true
+  format: html
+
+# Likely Share
+# See: https://ilyabirman.net/projects/likely/, https://github.com/ilyabirman/Likely
+# Likely supports four looks, nine social networks, any button text.
+# You are free to modify the text value and order of any network.
+likely:
+  enable: true
+  cdn:
+    js: //cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.min.js
+    css: //cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.min.css
+  look: normal # available values: normal, light, small, big
+  networks:
+    twitter: Tweet
+    facebook: Share
+    #linkedin: Link
+    #gplus: Plus
+    #vkontakte: Share
+    #odnoklassniki: Class
+    telegram: Send
+    whatsapp: Send
+    pinterest: Pin
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: ""
