@@ -16,3 +16,7 @@ I started seriously writing when I was about eighteen. During this time, many th
 One day, the idea of writing devotionals leaped into my mind. I immediately grew excited about the idea and reached out to some friends about what they thought. I received much enthusiasm and encouragement. Many said that I was a great writer and that meant a lot to a girl with low self-esteem like me. I started jotting down ideas and writing my devotionals. Some just came up spontaneously, others are things I struggled with for a long time and didn’t know how to talk about. My writing became my diary. My devotionals became a personal encouragement to not only myself, but those around me. I found peace and wisdom in the arms of my Father as I started to look at His Word and encourage others. I began to find myself and believe that I was something more than just a sheltered young woman. I learned how to love me.
 
 Thank you for taking the time to read this. I hope you enjoy reading my blog as much as I enjoy writing in it.
+
+{% note info %}
+The name un-Graphophobia comes from the word graphophobia, which means the "fear of writing." I couldn't find a word that meant the oppsite of graphophobia, so I just added the prefix "un-" which means "not" or "opposite."
+{% endnote %}

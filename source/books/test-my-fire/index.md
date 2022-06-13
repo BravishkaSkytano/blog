@@ -3,7 +3,7 @@ title: Test My Fire
 date: 2022-06-08
 tags: [Mystery, Thriller, spy]
 ---
-{% note %}
+{% note info %}
 I started writing this and [*Kidnapped and Afraid*](/books/kidnapped-and-afraid) on the same day. They are very similiar in genre, however, this one is more of a mystery than a thriller.
 {% endnote %}
 

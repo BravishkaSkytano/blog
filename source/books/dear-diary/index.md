@@ -3,7 +3,7 @@ title: Dear Diary...
 date: 2020-11-21T23:51:39.611Z
 tags: [Romance, Mystery]
 ---
-{% note %}
+{% note info %}
 This is one of my favorite manuscript. It's so fun to write and the words just flow from my head onto my paper. It is a clean romance story and I plan for it to be a series of novellas.
 {% endnote %}
 

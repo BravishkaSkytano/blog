@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: "Aspiring Writer's Haven"
-subtitle: "A place to escape"
-description: ""
+title: "un-Graphophobia"
+subtitle: ""
+description: "A place to open up and share my mind."
 keywords:
 author: "Bravisha Skietano"
 language: en
@@ -123,7 +123,7 @@ feed:
   hub:
   content: true
   content_limit: 140
-  content_limit_delim: ' '
+  content_limit_delim: " "
   order_by: -date
   icon: /images/favicons/favicon-16x16.png
   autodiscovery: true
