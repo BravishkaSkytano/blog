@@ -125,12 +125,12 @@ menu:
     Court of Shadows and Ruin:
       default: /court-of-shadows-and-ruin/ || fa fa-dragon
       Prologue: /0.html
-      #I: /1.html
-      #II: /2.html
-      #III: /3.html
+      I: /1.html
+      II: /2.html
+      III: /3.html
 
-  tags: /tags.html || fa fa-tags
   categories: /categories.html || fa fa-th
+  tags: /tags.html || fa fa-tags
   archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
@@ -226,7 +226,7 @@ toc:
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
-  expand_all: false
+  expand_all: true
   # Maximum heading depth of generated toc.
   max_depth: 6
 
@@ -418,7 +418,7 @@ back2top:
 
 # Reading progress bar
 reading_progress:
-  enable: true
+  enable: false
   # Available values: left | right
   start_at: right
   # Available values: top | bottom
