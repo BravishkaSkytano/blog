@@ -1,23 +1,18 @@
 ---
 title: Court of Shadows and Ruin
-date: 2022-01-24
-tags: [Fantasy, Romance]
+date: {}
+tags:
+  - Fantasy
+  - Romance
+published: true
 ---
-
-<!---
-
-Azura is a Thunderbird who gets abducted by this power-hungry freak. Válgr knows she's the key to his revenge and the beginning of his reign, by controlling her and accessing her power proves to be... difficult.
-
-Faelynn Farwynn is the son and heir of one of the fae's most legendary High Lords, Vulas Farwynn of the Shadow Court. Faelynn has a great legacy to uphold and he will do everything to uphold it. Yet, when the newest threat to the Shadow Court begins to be a real problem.  And, somehow, Azura is involved in it all.
--->
-
 Trust. Treachery. Deception.
 
 Nearly two millennia ago, the Shadow Court was formed, and what was then ruled by the Thunderbirds fell under the control of Vulas Farwynn. The Shadow Court, known for the most dangerous and deadly creatures, with guidance from the deadliest fae alive grew into a symbol of the fae's superiority and strength.
 
-Much of the Shadow Court's beginnings are shrouded in myths and suspicions, but it all began with one fae---Vulas Farwynn---and the annihilation of an entire race---the Thunderbirds. When whispers of their return reach the Shadow Court, the High Lord tasks his son, the High Prince Faelynn Farwynn, with discovering the truth. This task could not have come at a better time, for the young prince has grown restless and is eager for a challenge. However, things change when the whispers are not only confirmed, but Faelynn comes face-to-face with the being; and she has a score to settle with the High Lord of the Shadow Court. And she will settle it, even if she has to kill the entire court.
+Much of the Shadow Court's beginnings are shrouded in myths and suspicions, but it all began with one fae---Vulas Farwynn---and the annihilation of an entire race. When whispers of their return reach the Shadow Court, the High Lord tasks his son, the High Prince Faelynn Farwynn, with discovering the truth. This task could not have come at a better time, for the young prince has grown restless and is eager for a challenge. However, things change when the whispers are not only confirmed, but Faelynn comes face-to-face with the being; and she has a score to settle with the High Lord of the Shadow Court. And she will settle it, even if she has to kill the entire court.
 
-During the centuries, Azura has only longed for one thing---to avenge the death of her people and give them rest. Nearly one millennium ago, the fae came with talks of peace and friendship; but left with enough bloodshed to cover the planet. The massacre had lasted three days, but the outcome was still affecting the Shadow Court. Azura could still remember the blood-soaked fields, the broken bodies, the screams of terror. For nearly a millennium, she carried those horrors in her mind, the only relief being that she would avenge it all. The fae unleashed a great evil that day, an evil that only the Thunderbirds themselves had known about. And Azura was the only one who could stop it... after, of course, she enacted a different type of evil over the Shadow Court.
+During the centuries, Azura has only longed for one thing---to avenge the death of her people and give them rest. Nearly one millennium ago, the fae came with talks of peace and friendship; but left with enough bloodshed to cover the planet. The massacre had lasted three days. Azura could still remember the blood-soaked fields, the broken bodies, the screams of terror. For nearly a millennium, she carried those horrors in her mind, the only relief being that she would avenge it all. The fae unleashed a great evil that day, an evil that only her and her people themselves had known about. And Azura was the only one who could stop it... after, of course, she enacted a different type of evil over the Shadow Court.
 
 ## Places
 
@@ -58,13 +53,13 @@ graph TD
   C[Azura]
   R[Antagonist<br> Love interest]
   A[2802 years old]
-  N[Thunderbird]
-  O[Last Queen<br> of the Thunderbirds]
-  B[5ft 6in<br> Tall, slender<br>White, curly hair<br> Blue eyes]
-  F[Multiple scars<br> across arms, legs,<br> and stomach]
-  G[Electrokinesis<br> electrical absorption<br> electric mimicry<br> electrical transportation]
-  P[Skeptic<br> Extrovert<br> Street-smart]
-  M[Wings<br> black feathers<br> tipped in blue<br> span of 8 feet]
+  N[Unknown species]
+  O[Claims to be of royal blood,<br> a Queen]
+  B[5ft 6in<br> Tall, slender<br>Green skin<br>Black, curly hair<br>Blue eyes]
+  F[Multiple scars<br>across arms, legs,<br>and stomach]
+  G[Unknown abilities]
+  P[Skeptic<br>Extrovert<br>Street-smart]
+  M[Wings, scaled<br>span of 6 feet]
 
   C---R---A---N---O
   C---B---F---G---P---M
@@ -122,7 +117,7 @@ graph TD
 
 <!--
 
-At 532, destroyed the Thunderbirds.
+At 532, destroyed the _____.
 
 #### Válgr
 
