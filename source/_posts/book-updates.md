@@ -8,11 +8,11 @@ sticky: 100
 If you haven't yet, read the info about my book drafts [here](/books).
 {% endnote %}
 
-<!--* 06-07 ~ [Court of Shadows and Ruin](/books/court-of-shadows-and-ruin/4)-->
-* 06-17 ~ [Court of Shadows and Ruin - 3](/books/court-of-shadows-and-ruin/3)
+* 06-23 ~ [Court of Shadows and Ruin - IV](/books/court-of-shadows-and-ruin/4)
+* 06-17 ~ [Court of Shadows and Ruin - III](/books/court-of-shadows-and-ruin/3)
 * 01-25 ~ [Kidnapped and Afraid - Ch 4. Magic Exists?](/books/kidnapped-and-afraid/4)
-* 01-13 ~ [Court of Shadows and Ruin - 2](/books/court-of-shadows-and-ruin/2)
-* 01-13 ~ [Court of Shadows and Ruin - 1](/books/court-of-shadows-and-ruin/1)
+* 01-13 ~ [Court of Shadows and Ruin - II](/books/court-of-shadows-and-ruin/2)
+* 01-13 ~ [Court of Shadows and Ruin - I](/books/court-of-shadows-and-ruin/1)
 * 01-13 ~ [Court of Shadows and Ruin - Prologue](/books/court-of-shadows-and-ruin/0)<!-- more -->
 * 01-15 ~ [Kidnapped and Afraid - Ch 3. Intriguing...](/books/kidnapped-and-afraid/1)
 * 01-24 ~ [Court of Shadows and Ruin](/books/court-of-shadows-and-ruin)
