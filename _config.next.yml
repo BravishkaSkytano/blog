@@ -127,7 +127,6 @@ menu:
   categories: /categories.html || fa fa-th
   tags: /tags.html || fa fa-tags
   archives: /archives/ || fa fa-archive
-  Diary: /diary/ || fa fa-calendar
 
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
