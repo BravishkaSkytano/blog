@@ -30,8 +30,8 @@ custom_file_path:
 
 # Schemes
 #scheme: Muse
-scheme: Mist
-#scheme: Pisces
+#scheme: Mist
+scheme: Pisces
 #scheme: Gemini
 
 # Dark Mode
@@ -59,7 +59,7 @@ creative_commons:
   # Available values: big | small
   size: big
   sidebar: true
-  post: true
+  post: false
   # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
   # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
   language:
@@ -87,7 +87,7 @@ open_graph:
 # Value before `||` delimiter is the target link, value after `||` delimiter is the name of Font Awesome icon.
 # External url should start with http:// or https://
 menu:
-  #home: / || fa fa-home
+  home: / || fa fa-home
   Me: /about.html || fa fa-user
   Books:
     default: /books/ || fa fa-book
@@ -107,8 +107,11 @@ menu:
       default: /dear-diary/ || fa fa-shield-heart
       Book 1:
         default: /book-1/ || fa fa-heart-pulse
-        1: /1-1.html
-        2: /1-2.html
+        1: /1.html
+        2: /2.html
+        3: /3.html
+        4: /4.html
+        5: /5.html
 
     Past Nightmares. Present Ghosts. Future Fears.:
       default: /past-nightmares-present-ghosts-future-fears/ || fa fa-handcuffs
@@ -124,9 +127,9 @@ menu:
       III: /3.html
       IV: /4.html
 
-  categories: /categories.html || fa fa-th
-  tags: /tags.html || fa fa-tags
-  archives: /archives/ || fa fa-archive
+  #categories: /categories.html || fa fa-th
+  #tags: /tags.html || fa fa-tags
+  #archives: /archives/ || fa fa-archive
 
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
@@ -135,7 +138,7 @@ menu:
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: false
+  badges: true
 
 # ---------------------------------------------------------------
 # Sidebar Settings
@@ -211,6 +214,7 @@ links_settings:
   layout: block
 
 links:
+  Telegram: https://t.me/unGraphophobia
   Writing Buddies: https://writing-buddies.netlify.app/
 
 # Table of Contents in the Sidebar
@@ -222,7 +226,7 @@ toc:
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
-  expand_all: true
+  expand_all: false
   # Maximum heading depth of generated toc.
   max_depth: 6
 
@@ -319,7 +323,7 @@ follow_me:
 # Related popular posts
 # Dependencies: https://github.com/sergeyzwezdin/hexo-related-posts
 related_posts:
-  enable: false
+  enable: true
   title: # Custom header, leave empty to use the default one
   display_in_home: false
 

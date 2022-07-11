@@ -1,7 +1,7 @@
 ---
 title: How To Stay Productive
 categories: Study Strategies
-tags: [Bullet Journaling]
+tags: [bullet journaling]
 ---
 To start off, I thought it would be good to split this long post into a few sections. Now, this post will probably be updated as I move through the year(s) so look out for those callouts.
 

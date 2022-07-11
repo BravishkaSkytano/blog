@@ -2,7 +2,7 @@
 title: 'Nietzsche, Nihilism, and the 20th Century: The Beginning of an Empty and Meaningless Life'
 date: 2022-02-07
 category: Re-Examining History
-tags: [depression, suicide, nihilism, Social Darwinism]
+tags: [depression, suicide, nihilism, social darwinism]
 ---
 
 Friedrich Nietzsche (1844-1900), was a German philosopher and writer who greatly influenced Western philosophy and modern intellectual history. He was a strong advocate of Social Darwinism, and his views contributed to nihilism. This new philosophy taught that life is empty, meaningless, and ultimately ends in death. And as you can imagine, nihilism led many to inner withdrawal, despair, frustration, violence, depression, and/or suicide.
