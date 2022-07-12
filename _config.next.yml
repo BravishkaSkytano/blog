@@ -17,7 +17,7 @@ custom_file_path:
   #header: source/_data/header.njk
   #sidebar: source/_data/sidebar.njk
   #postMeta: source/_data/post-meta.njk
-  #postBodyEnd: source/_data/post-body-end.njk
+  postBodyEnd: source/_data/post-body-end.njk
   #footer: source/_data/footer.njk
   #bodyEnd: source/_data/body-end.njk
   #variable: source/_data/variables.styl
@@ -88,44 +88,13 @@ open_graph:
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  Me: /about.html || fa fa-user
-  Books:
-    default: /books/ || fa fa-book
-
-    Kidnapped and Afraid:
-      default: /kidnapped-and-afraid/ || fa fa-link
-      1: /1.html
-      2: /2.html
-      3: /3.html
-      4: /4.html
-
-    Test My Fire:
-      default: /test-my-fire/ || fa fa-mask
-      1: /1.html
-
-    Dear Diary:
-      default: /dear-diary/ || fa fa-shield-heart
-      Book 1:
-        default: /book-1/ || fa fa-heart-pulse
-        1: /1.html
-        2: /2.html
-        3: /3.html
-        4: /4.html
-        5: /5.html
-
-    Past Nightmares. Present Ghosts. Future Fears.:
-      default: /past-nightmares-present-ghosts-future-fears/ || fa fa-handcuffs
-      1: /1.html
-      2: /2.html
-      3: /3.html
-
-    Court of Shadows and Ruin:
-      default: /court-of-shadows-and-ruin/ || fa fa-dragon
-      Prologue: /0.html
-      I: /1.html
-      II: /2.html
-      III: /3.html
-      IV: /4.html
+  About Me: /about.html || fa fa-user
+  Books: /categories/books/ || fa fa-book
+  Kidnapped and Afraid: /categories/books/kidnapped-and-afraid/ || fa fa-link
+  Test My Fire: /categories/books/test-my-fire/ || fa fa-mask
+  Dear Diary: /categories/books/dear-diary/ || fa fa-shield-heart
+  Past Nightmares. Present Ghosts. Future Fears.: /categories/books/past-nightmares-present-ghosts-future-fears/ || fa fa-handcuffs
+  Court of Shadows and Ruin: /categories/books/court-of-shadows-and-ruin/ || fa fa-dragon
 
   #categories: /categories.html || fa fa-th
   #tags: /tags.html || fa fa-tags
@@ -138,7 +107,7 @@ menu:
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: true
+  badges: false
 
 # ---------------------------------------------------------------
 # Sidebar Settings
@@ -214,7 +183,6 @@ links_settings:
   layout: block
 
 links:
-  Telegram: https://t.me/unGraphophobia
   Writing Buddies: https://writing-buddies.netlify.app/
 
 # Table of Contents in the Sidebar
