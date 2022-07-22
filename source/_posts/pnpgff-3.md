@@ -122,3 +122,9 @@ Jared watched Reila drive away. This was getting interesting and confusing at th
 "Great."
 
 "My sentements exactly."
+
+{% note default %}
+
+- Previous: {% post_link pnpgff-2 %}
+
+{% endnote %}

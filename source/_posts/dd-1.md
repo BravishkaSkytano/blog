@@ -10,3 +10,10 @@ Caden Stone is… hot. That’s the only way Sasha can describe him without soun
 Jennifer Stone is that blond brat that everyone has met at least once and either befriends her immediately or loathes her forever. She wasn’t really a problem until she decided she wanted to uncover all of Sasha’s past and reveal every little secret, and that’s ignoring the fact that she seems to want to hook Sasha up with Caden for God knows why.
 
 Sasha has a lot of secrets, and they’re kept that way for very good reasons. Those secrets can kill, and there are people who would kill for them. If Sasha doesn’t stop Jennifer, there’s going to be a war and the whole town might get destroyed in the crossfire.
+
+{% note default %}
+
+- Previous: {% post_link dd %}
+- Next: {% post_link dd-1-1 %}
+
+{% endnote %}

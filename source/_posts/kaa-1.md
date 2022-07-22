@@ -73,3 +73,10 @@ I did. I really tried to move, but it felt like I was frozen in place. My skin g
 “You’re something Vixen, I’m gonna keep you for a long time.”
 
 That was the last thing I heard before I blacked out.
+
+{% note default %}
+
+- Previous: {% post_link kaa %}
+- Next: {% post_link kaa-2 %}
+
+{% endnote %}

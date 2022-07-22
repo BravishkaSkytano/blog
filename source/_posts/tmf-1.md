@@ -152,3 +152,9 @@ She turned and followed Dorian to the floor. When she glanced back, Vladimir was
 She was playing a dangerous game, a very dangerous game.
 
 This was going to be fun.
+
+{% note default %}
+
+- Previous: {% post_link tmf %}
+
+{% endnote %}

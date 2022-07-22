@@ -123,3 +123,10 @@ Folluin nodded, "If that is all we know, We are in for a true battle."
 A cry went up among the ranks, Carlhaven's walls had been breached, and the ley lines were to be activated immediately."
 
 "Yes," Faelyn agreed, "a true battle indeed."
+
+{% note default %}
+
+- Previous: {% post_link cosar-2 %}
+- Next: {% post_link cosar-4 %}
+
+{% endnote %}

@@ -168,3 +168,9 @@ We continued to glare at each other. *Why is he being like this? It's not like I
 "Just, shut up!" Teagan stood up and stormed out of the room.
 
 I blinked, *I hadn't even said anything.* I looked at my plate, I was halfway finished.
+
+{% note default %}
+
+- Previous: {% post_link kaa-3 %}
+
+{% endnote %}

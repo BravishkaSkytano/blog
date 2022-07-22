@@ -127,3 +127,10 @@ Jared burst out laughing, "No way!"
 "Brutal? How?"
 
 "Like you said, a story for another time, we're almost there."
+
+{% note default %}
+
+- Previous: {% post_link pnpgff %}
+- Next: {% post_link pnpgff-2 %}
+
+{% endnote %}

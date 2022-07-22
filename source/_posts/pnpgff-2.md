@@ -1,6 +1,6 @@
 ---
 title: PNPGFF ~ Chapter 2
-date: 2022-03-30
+date: 2021-03-30
 categories: [books, past nightmares. present ghosts. future fears.]
 ---
 Reila Pru watched her horses galloping around the pasture. One of her dogs, Hunter, whined beside her. She smiled, he wanted to be out there running with the horses too. She decided to oblige him and opened the porch door. Like a rocket, Wolf shot out the door howling for joy and his two brothers were running downstairs to join him. Reila smiled to herself, those three loved the woods as much as she did.
@@ -120,3 +120,10 @@ Reila nodded.
 The three headed out and into their vehicles. Reila started her truck and followed Jared out.
 
 That girl almost didn't make it out alive, not without help from an unexpected place.
+
+{% note default %}
+
+- Previous: {% post_link pnpgff-1 %}
+- Next: {% post_link pnpgff-3 %}
+
+{% endnote %}

@@ -72,3 +72,10 @@ She flew two miles before the first wave of pain hit. Azura screamed as her magi
 ---
 
 Válgr smiled to himself and glanced at his hand. The ring burned, and he could feel the pain it was inflicting. *Yes,* he thought, *remind that witch who her master is.*
+
+{% note default %}
+
+- Previous: {% post_link cosar-1 %}
+- Next: {% post_link cosar-3 %}
+
+{% endnote %}

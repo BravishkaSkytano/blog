@@ -64,13 +64,13 @@ graph TD
   C---R---A---N---O
   C---B---F---G---P---M
 ```
-
+<!--
 At age 439, Azura watched [Vulas Farwynn](#Vulas-Farwynn) murder her family and her entire race. Since that night, she has vowed revenge on the High Lord of the Shadow Court. She plans to make him watch his Court fall apart, just as he had done to her father.
 
 At age 792, Azura was captured by [Válgr](#Valgr), a jotunn who sought to use her for his own agenda. She was then bound and controlled by a ring magically linked to a set of two bracelets and two anklets an old friend had given her. Despite this, she still found ways to defy Válgr. The two may have a common enemy, but Azura has made it clear that she is only interested in punishing the guilty ones, not an entire race.
 
 Her first encounter with Vulas Farwynn's son, [Faelynn](#Faelynn-Farwynn), has her questioning her plans. Faelyn is... unique. She isn't sure what it is about the young prince that fascinates her, but he is different from his father. She keeps telling herself that she is only interested in Faelyn because of his father; yet her mind, and her body, hint at the real truth she doesn't wish to accept. But, denying the thin bond that ties her to him is no easy task, nor can its existence be ignored for much longer.
-
+-->
 #### Faelynn Farwynn
 
 ```mermaid
@@ -129,3 +129,15 @@ At 532, destroyed the _____.
 
 #### Vulen Fendan
 -->
+
+{% note primary %}
+
+## Chapters
+
+- {% post_link cosar-0 %}
+- {% post_link cosar-1 %}
+- {% post_link cosar-2 %}
+- {% post_link cosar-3 %}
+- {% post_link cosar-4 %}
+
+{% endnote %}

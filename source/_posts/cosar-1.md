@@ -80,3 +80,10 @@ The captain looked out over the city walls. A cloud of ashes drifted towards the
 “Yes, sir?”
 
 “Send word to the Council, the Lesser Army is on its way to Carlhaven.”
+
+{% note default %}
+
+- Previous: {% post_link cosar-1 %}
+- Next: {% post_link cosar-2 %}
+
+{% endnote %}

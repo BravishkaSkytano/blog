@@ -52,4 +52,9 @@ A flash of blue. Screams. Complete silence.
 
 *HE will pay.*
 
-{% post_link cosar-1 'Next Chapter' %}
+{% note default %}
+
+- Previous: {% post_link cosar %}
+- Next: {% post_link cosar-1 %}
+
+{% endnote %}

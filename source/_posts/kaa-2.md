@@ -172,3 +172,10 @@ He watched as she slowly stopped struggling and went limp in his arms. He sighed
 He picked her up and continued walking down the hallway, *She'll awaken soon. When she does, I'll crame food and medicine down her throat.*
 
 *And then... then we'll play a little.*
+
+{% note default %}
+
+- Previous: {% post_link kaa-1 %}
+- Next: {% post_link kaa-3 %}
+
+{% endnote %}

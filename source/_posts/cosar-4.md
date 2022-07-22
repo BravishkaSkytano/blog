@@ -79,3 +79,9 @@ Rothilion's cry sounded again. *"You should help them."* Azura smirked.
 Azura just laughed and flew towards the band of fae rallying around their general.
 
 Faelynn narrowed his eyes at her. Her position in the sky must have given her insight into what Rothilion was so riled up about. Faelynn snarled, it was probably nothing. Unless... he had forgotten about the supposed Ancient that fought with the Lessers. Perhaps that was what Rothilion was yelling about. Hopefully, whatever it was, would be worth the skills of the Shadow Court.
+
+{% note default %}
+
+- Previous: {% post_link cosar-3 %}
+
+{% endnote %}

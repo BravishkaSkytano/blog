@@ -150,3 +150,10 @@ He opened a door and glanced back at me, "Try and leave, Marissa. You will find 
 And with that, he shut the door.
 
 I was utterly confused and angry. If Carlos was behind this, I was going to ruin his life the next chance I got. That man had gotten off *way* too easy and now it was coming back to bite me.
+
+{% note default %}
+
+- Previous: {% post_link kaa-2 %}
+- Next: {% post_link kaa-4 %}
+
+{% endnote %}
