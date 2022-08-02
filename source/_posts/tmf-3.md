@@ -1,7 +1,13 @@
 ---
+layout: post
 title: TMF ~ 3. Close Call, Or Maybe Not...
-categories: [books, test my fire]
+categories:
+  - books
+  - test my fire
+date: 2022-08-01 01:55:55
+tags:
 ---
+
 Samantha Rose found herself counting to ten, again, as the pompous gentleman before her rattled off
 about his *highly* expensive business ventures. It seemed like him and the other gentleman currently
 occupying his attention were having a dominance battle. She idly sipped her cocktail, and tried to
