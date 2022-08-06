@@ -4,3 +4,6 @@
 [submodule "themes/paper"]
 	path = themes/paper
 	url = https://github.com/Aspiring-Writer/hexo-paper-theme
+[submodule "source/_drafts"]
+	path = source/_drafts
+	url = https://github.com/Aspiring-Writer/_drafts
