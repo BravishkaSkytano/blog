@@ -7,14 +7,14 @@ title: "un-Graphophobia"
 subtitle: ""
 description: "A place to open up and share my mind."
 keywords:
-author: "Bravisha Skietano"
+author: "Bravishka Skytano"
 language: en
 timezone: "America/New_York"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: "https://aspiring-writer.github.io"
-permalink: categories/:category/:title.html
+permalink: /:category/:title.html
 permalink_defaults:
 pretty_urls:
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
@@ -30,7 +30,21 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
+archive_generator:
+  enabled: true
+  per_page: 0
+  yearly: true
+  monthly: false
+  daily: false
+  order_by: -date
+
+category_generator:
+  per_page: 0
+  order_by: -date
+
 tag_generator:
+  per_page: 0
+  order_by: -date
   enable_index_page: false
 
 # Writing
@@ -112,7 +126,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: paper
 
 feed:
   enable: true

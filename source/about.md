@@ -3,16 +3,13 @@ title: A Little About Me...
 date: 2022-05-04 21:21:29
 ---
 
-{% note info %}
-
 ## About the blog name
 
 The name un-Graphophobia comes from the word graphophobia, which means the "fear of writing." I couldn't find a word that meant the oppsite of graphophobia, so I just added the prefix "un-" which means "not" or "opposite."
-{% endnote %}
 
 ## Summary
 
-![gravatar](https://www.gravatar.com/avatar/8305681be23372ec3c774233546f849f?s=300)
+<img class="float-left" src="https://www.gravatar.com/avatar/8305681be23372ec3c774233546f849f?s=250" alt="Gravatar">
 
 I'm a twenty-year-old,  homeschooled, Christian student who is struggling to stay motivated and finish things. I love Jesus, pretty much any yarn crafts (crochet, knitting, macrame, been there done that), reading, writing, music, horses, developing websites (new at that), FOSS, and anything Linux (I'm not a complete tech geek but I definitely see myself getting there 😊). I'm very social, which isn't a very good thing since I trust people too easily 😉, but I'm getting better. I open my mouth a lot before thinking, but as I said, I'm getting better. I procrastinate way too much but prayerfully I will learn some self-control and apply it everywhere in my life (starting with my mouth😋).
 

@@ -1,0 +1,16 @@
+location: "Somewhere in the USA"
+gravatar: "yolson@liberty.edu"
+bio: "Christian. Programmer. Student. Aspiring Writer."
+
+menu:
+  About Me: /about.html
+  Github: https://github.com/Aspiring-Writer
+
+diff_blog: "q7f864hffi8m218eaq6d623sezfgkz1vzfva4oxjeyxq9l2dwp"
+
+utterances:
+  repo: Aspiring-Writer/aspiring-writer.github.io # Github repository owner and name
+  # Available values: pathname | url | title | og:title
+  issue_term: pathname
+  # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
+  theme: preferred-color-scheme
