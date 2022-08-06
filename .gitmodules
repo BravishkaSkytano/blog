@@ -1,3 +1,6 @@
 [submodule "source/_posts"]
 	path = source/_posts
 	url = https://github.com/Aspiring-Writer/_posts
+[submodule "themes/paper"]
+	path = themes/paper
+	url = https://github.com/Aspiring-Writer/hexo-paper-theme
