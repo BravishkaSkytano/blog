@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master # default branch
+    paths-ignore:
+      - '.github/**'
 
 jobs:
   pages:
