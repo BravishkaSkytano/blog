@@ -4,13 +4,18 @@ on:
   push:
     branches:
       - master # default branch
+    paths-ignore:
+      - '.github/**'
 
 jobs:
   pages:
     runs-on: ubuntu-latest
     name: A job to deploy blog to gh-pages.
     steps:
-      - name: Checkout
+      - name: Checkout blog
+        uses: actions/checkout@v3
+        
+      - name: Checkout theme submodule
         uses: actions/checkout@v3
         with:
           repository: Aspiring-Writer/hexo-paper-theme

@@ -14,7 +14,7 @@ timezone: "America/New_York"
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: "https://aspiring-writer.github.io"
-permalink: /:category/:title.html
+permalink: /:category/:name.html
 permalink_defaults:
 pretty_urls:
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
@@ -67,8 +67,6 @@ highlight:
   tab_replace: ""
   wrap: true
   hljs: false
-  exclude_languages:
-    - mermaid
 prismjs:
   enable: false
   preprocess: true
@@ -141,6 +139,31 @@ feed:
   icon: /images/favicons/favicon-16x16.png
   autodiscovery: true
   template:
+
+markdown:
+  preset: 'default'
+  render:
+    html: true
+    xhtmlOut: false
+    langPrefix: 'language-'
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  enable_rules:
+  disable_rules:
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+  anchors:
+    level: 2
+    collisionSuffix: ''
+    permalink: false
+    permalinkClass: 'header-anchor'
+    permalinkSide: 'left'
+    permalinkSymbol: '¶'
+    case: 0
+    separator: '-'
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
