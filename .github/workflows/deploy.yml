@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy to gh-pages
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
       - '.github/**'
 
 jobs:
-  pages:
+  gh-pages:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
