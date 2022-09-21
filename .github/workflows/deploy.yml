@@ -10,52 +10,25 @@ on:
 jobs:
   pages:
     runs-on: ubuntu-latest
-    name: A job to deploy blog to gh-pages.
     steps:
-      - name: Checkout blog
-        uses: actions/checkout@v3
-        
-      - name: Checkout theme submodule
-        uses: actions/checkout@v3
-        with:
-          repository: Aspiring-Writer/hexo-paper-theme
-          path: themes/paper
+      - uses: actions/checkout@v3
       
       - name: Checkout _posts submodule
         uses: actions/checkout@v3
         with:
           repository: Aspiring-Writer/_posts
           token: ${{ secrets.DEPLOY_KEY }}
-          path: source/_posts
-          
-      - name: Checkout _drafts submodule
-        uses: actions/checkout@v3
-        with:
-          repository: Aspiring-Writer/_drafts
-          token: ${{ secrets.DEPLOY_KEY }}
-          path: source/_drafts
-
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v2
-        with:
-          node-version: "16"
+          path: _posts
       
-      - name: Cache NPM dependencies
+      - name: Cache
         uses: actions/cache@v2
         with:
-          path: node_modules
-          key: ${{ runner.OS }}-npm-cache
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
-            ${{ runner.OS }}-npm-cache
-      
-      - name: Install Dependencies
-        run: npm install
-      
-      - name: Build
-        run: npm run build
-      
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+            ${{ runner.os }}-gems-
+            
+      - name: Build Jekyll for GitHub Pages
+        uses: actions/jekyll-build-pages@v1.0.5
         with:
-          github_token: ${{ secrets.DEPLOY_KEY }}
-          publish_dir: ./public
+          token: ${{ secrets.DEPLOY_KEY }}
