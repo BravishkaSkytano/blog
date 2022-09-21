@@ -20,7 +20,7 @@ utterances:
 # Build settings
 remote_theme: Aspiring-Writer/jekyll-papercss-theme
 paginate: 10
-permalink: /:slugified_categories/:title:output_ext
+permalink: none
 defaults:
   - scope:
       path: ""
