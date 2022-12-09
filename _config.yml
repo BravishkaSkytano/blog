@@ -1,26 +1,22 @@
-title: un-Graphophobia
+title: un-Graphophobic
+author: Bravishka Skytano
 description: >- # this means to ignore newlines until "baseurl:"
   A place to open up and share my mind.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://aspiring-writer.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
+#favicon: ./logo.png
 location: "Somewhere in the USA"
 gravatar: "yolson@liberty.edu"
 bio: "Christian. Programmer. Student. Aspiring Writer."
 
-diff_blog: "q7f864hffi8m218eaq6d623sezfgkz1vzfva4oxjeyxq9l2dwp"
-
-utterances:
-  repo: Aspiring-Writer/aspiring-writer.github.io # Github repository owner and name
-  # Available values: pathname | url | title | og:title
-  issue_term: pathname
-  # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
-  theme: preferred-color-scheme
-
 # Build settings
-remote_theme: Aspiring-Writer/jekyll-papercss-theme
-paginate: 10
+remote_theme: abhinavs/moonwalk
 permalink: none
+highlighter: rouge
+sass:
+  style: :compressed
+  
 defaults:
   - scope:
       path: ""
@@ -28,15 +24,46 @@ defaults:
     values:
       layout: "post"
       excerpt_separator: <!-- more -->
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+
+theme_config:
+  appearance: "auto" # can be "light", "dark" or "auto"
+  appearance_toggle: true # if appearance can be switched by user
+  back_home_text: "	↢	home" # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: true # show blog description
+  show_navbar: true # show horizontal navbar
+  show_footer: true # show footer links in home page,add in _data/home.yml
+  show_copyright: true # show copyright notice in footer
+  # following keys are using to create home layout
+  show_projects: true # show projects as cards, add in _data/home.yml
+  show_blog: true # show blog posts added in _posts
+  show_old_projects: false # show old projects as cards, add in _data/home.yml
+  show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
+  show_reading_time: true # show number of words and reading time in the blog posts
+  show_tags: true # show tags in a blog posts
+  # options for "home" page
+  home:
+    title_projects: WIP Books
+    title_misc_list: Details
+    title_blog: Blog
+    title_old_projects: Finished Books
+
+#soopr:
+#  publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
+  
+diff_blog: "q7f864hffi8m218eaq6d623sezfgkz1vzfva4oxjeyxq9l2dwp"
+
+#utterances:
+#  repo: Aspiring-Writer/aspiring-writer.github.io # Github repository owner and name
+#  # Available values: pathname | url | title | og:title
+#  issue_term: pathname
+#  # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
+#  theme: preferred-color-scheme
 
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-seo-tag
   
 # Exclude from processing.cd
 # The following items will not be processed, by default.
