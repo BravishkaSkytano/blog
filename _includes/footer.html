@@ -1,0 +1,56 @@
+<hr>
+<footer>
+  {% assign tags = site.tags | sort %}{% assign categories = site.categories | sort %}
+  <div class="grid md:grid-cols-2 gap-4 py-8 px-6">
+    <div>
+      <h2 class="mb-6 text-sm font-semibold uppercase text-center">Categories</h2>
+      <ul class="gap-4 columns-2">
+        {% for category in categories %}
+        <li class="mb-4">
+          <a href="{{ '/categories' | relative_url }}/#{{ category[0] | slugify }}" class="capitalize">{{ category[0] }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h2 class="mb-6 text-sm font-semibold uppercase text-center">Tags</h2>
+      <ul class="gap-4 columns-2 md:columns-3">
+        {% for tag in tags %}
+        <li class="mb-4">
+          <a href="{{ '/tags' | relative_url }}/#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="py-6 px-4 theme-colors rounded grid md:grid-cols-3">
+    <span class="text-sm text-center">
+      © {{ site.start }} - 22 <a href="{{ '/' | relative_url }}">{{ site.title }}</a>.
+    </span>
+    <div class="flex mt-4 space-x-6 justify-center md:mt-0">
+      {% for item in site.data.nav %}
+      <a href="{{ item.url }}">
+        {{ item.name }}
+      </a>
+      {% endfor %}
+    </div>
+    <div class="flex mt-4 space-x-6 justify-center md:mt-0">
+      <a href="{{ '/categories/' | relative_url }}" class="mx-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z" />
+        </svg>
+      </a>
+      <a href="{{ '/tags/' | relative_url }}" class="mx-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path fill-rule="evenodd" d="M5.25 2.25a3 3 0 00-3 3v4.318a3 3 0 00.879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 005.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 00-2.122-.879H5.25zM6.375 7.5a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z" clip-rule="evenodd" />
+        </svg>
+      </a>
+      <a href="{{ '/feed.xml' | relative_url }}" class="mx-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"  class="w-6 h-6">
+          <path d="M3.75 3a.75.75 0 00-.75.75v.5c0 .414.336.75.75.75H4c6.075 0 11 4.925 11 11v.25c0 .414.336.75.75.75h.5a.75.75 0 00.75-.75V16C17 8.82 11.18 3 4 3h-.25z" />
+          <path d="M3 8.75A.75.75 0 013.75 8H4a8 8 0 018 8v.25a.75.75 0 01-.75.75h-.5a.75.75 0 01-.75-.75V16a6 6 0 00-6-6h-.25A.75.75 0 013 9.25v-.5zM7 15a2 2 0 11-4 0 2 2 0 014 0z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>

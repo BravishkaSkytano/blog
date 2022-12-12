@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<article class="article">
+  <div class="mb-5 text-center">
+    <nav class="highlight w-full mb-2 p-1">
+      <div>
+        <span><a href="{{ '/' | relative_url }}">Home</a></span>
+        <span> >> </span>
+        <span class="capitalize"><a href="#">{{ page.collection }}</a></span>
+        <span> >> </span>
+        <span class="capitalize"><a href="{{ '/categories' | relative_url }}/#{{ page.category | slugify }}">{{ page.category }}</a></span>
+      </div>
+    </nav>
+    {% if page.image %}
+    <img class="w-full h-auto" src="{{ page.image | relative_url }}" alt="cover image">
+    {% endif %}
+    <h1 class="mt-5">{{ page.title }}</h1>
+    <div class="flex justify-center items-center space-x-2">
+      <span class="highlight">{{ page.date | date_to_string: "ordinal", "US" }}</span>
+      <span class="highlight">{{ content | number_of_words }} words</span>
+    </div>
+    <div class="flex justify-center items-center space-x-2 mt-3">
+      {% for tag in page.tags %}
+      <a class="highlight no-underline" href="{{ '/tags' | relative_url }}/#{{ tag[0] | slugify }}">
+        #{{ tag }}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  <hr>
+  {{ content }}
+</article>

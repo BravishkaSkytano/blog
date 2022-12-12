@@ -1,2 +1,10 @@
-source "https://rubygems.org"
-gemspec
+source 'https://rubygems.org'
+
+gem 'jekyll'
+gem 'webrick'
+gem 'jekyll-postcss'
+gem 'jekyll-seo-tag'
+gem 'jekyll-feed'
+gem 'jekyll-paginate-v2'
+gem 'jekyll-avatar'
+gem 'jekyll-sitemap'
