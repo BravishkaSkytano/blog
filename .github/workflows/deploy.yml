@@ -11,41 +11,41 @@ jobs:
   gh-pages:
     runs-on: ubuntu-latest
     steps:
-      - name: 📂 setup
+      - name: "📂 setup"
       	uses: actions/checkout@v3
       
-      - name: 📂 checkout _posts submodule
+      - name: "📂 checkout _posts submodule"
         uses: actions/checkout@v3
         with:
           repository: Aspiring-Writer/_posts
           token: ${{ secrets.DEPLOY_KEY }}
           path: collections/_posts
       
-      - name: 📂 checkout _poetry submodule
+      - name: "📂 checkout _poetry submodule"
         uses: actions/checkout@v3
         with:
           repository: Aspiring-Writer/_poetry
           token: ${{ secrets.DEPLOY_KEY }}
           path: collections/_poetry
           
-      - name: 💎 setup ruby
+      - name: "💎 setup ruby"
       	uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.1
           bundler-cache: true
       
-      - name: setup node
+      - name: "setup node"
         uses: actions/setup-node@v2
         with:
           node-version: '18'
       - run: npm install
       
-      - name: 🔨 install dependencies & build site
+      - name: "🔨 install dependencies & build site"
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
       
-      - name: 🚀 deploy
+      - name: "🚀 deploy"
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.DEPLOY_KEY }}
