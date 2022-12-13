@@ -1,24 +1,24 @@
-<header class="flex items-center justify-between py-6 px-4 theme-colors rounded">
-  <div>
+<header class="grid md:grid-cols-3 gap-4 py-6 px-4 theme-colors rounded">
+  <div class="inline-flex">
     <a aria-label="{{ site.title }}" href="{{ '/' | relative_url }}">
       <div class="flex items-center justify-between">
         <div class="mr-3">
           <img src="{{ site.logo | relative_url }}">
         </div>
-        <div class="hidden h-6 text-2xl font-semibold sm:block">
+        <span class="hidden text-2xl font-semibold sm:block">
           {{ site.title }}
-        </div>
+        </span>
       </div>
     </a>
   </div>
-  <div class="flex items-center text-base leading-5">
-    <div class="hidden sm:block">
-      {% for item in site.data.nav %}
-      <a class="p-1 font-medium sm:p-4" href="{{ item.url }}">
-        {{ item.name }}
-      </a>
-      {% endfor %}
-    </div>
+  <div class="flex space-x-6 justify-center">
+    {% for item in site.data.nav %}
+    <a href="{{ item.url }}">
+      {{ item.name }}
+    </a>
+    {% endfor %}
+  </div>
+  <div class="flex space-x-6 justify-center">
     <a href="{{ '/categories/' | relative_url }}" class="mx-1">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
         <path d="M19.5 21a3 3 0 003-3v-4.5a3 3 0 00-3-3h-15a3 3 0 00-3 3V18a3 3 0 003 3h15zM1.5 10.146V6a3 3 0 013-3h5.379a2.25 2.25 0 011.59.659l2.122 2.121c.14.141.331.22.53.22H19.5a3 3 0 013 3v1.146A4.483 4.483 0 0019.5 9h-15a4.483 4.483 0 00-3 1.146z" />
@@ -35,7 +35,7 @@
         <path d="M3 8.75A.75.75 0 013.75 8H4a8 8 0 018 8v.25a.75.75 0 01-.75.75h-.5a.75.75 0 01-.75-.75V16a6 6 0 00-6-6h-.25A.75.75 0 013 9.25v-.5zM7 15a2 2 0 11-4 0 2 2 0 014 0z" />
       </svg>
     </a>
-    <button aria-label="Toggle Dark Mode" id="theme-toggle" type="button" class="mx-1">
+    <button aria-label="Toggle Dark Mode" id="theme-toggle" type="button" class="mx-1 border-none">
       <svg id="theme-toggle-dark-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="hidden w-6 h-6">
         <path fill-rule="evenodd" d="M7.455 2.004a.75.75 0 01.26.77 7 7 0 009.958 7.967.75.75 0 011.067.853A8.5 8.5 0 116.647 1.921a.75.75 0 01.808.083z" clip-rule="evenodd" />
       </svg>

@@ -8,8 +8,6 @@ layout: default
         <span><a href="{{ '/' | relative_url }}">Home</a></span>
         <span> >> </span>
         <span class="capitalize"><a href="#">{{ page.collection }}</a></span>
-        <span> >> </span>
-        <span class="capitalize"><a href="{{ '/categories' | relative_url }}/#{{ page.category | slugify }}">{{ page.category }}</a></span>
       </div>
     </nav>
     {% if page.image %}
@@ -21,6 +19,13 @@ layout: default
       <span class="highlight">{{ content | number_of_words }} words</span>
     </div>
     <div class="flex justify-center items-center space-x-2 mt-3">
+      {% for category in page.category %}
+      <a class="highlight no-underline" href="{{ '/categories' | relative_url }}/#{{ category[0] | slugify }}">
+        {{ category }}
+      </a>
+      {% endfor %}
+    </div>
+    <div class="flex justify-center items-center space-x-2 mt-3">
       {% for tag in page.tags %}
       <a class="highlight no-underline" href="{{ '/tags' | relative_url }}/#{{ tag[0] | slugify }}">
         #{{ tag }}
@@ -28,6 +33,5 @@ layout: default
       {% endfor %}
     </div>
   </div>
-  <hr>
   {{ content }}
 </article>

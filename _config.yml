@@ -12,23 +12,19 @@ location: "Somewhere in the USA"
 start: 2019
 
 # Build settings
-permalink: pretty
+permalink: /:collection/:slugified_categories/:title/
+collections_dir: collections
+collections:
+  poetry:
+    output: true
+    permalink: /:collection/:slugified_categories/:title/
+
 defaults:
   - scope:
       path: ""
-      type: "posts"
     values:
       layout: "post"
       excerpt_separator: <!-- more -->
-
-diff_blog: "q7f864hffi8m218eaq6d623sezfgkz1vzfva4oxjeyxq9l2dwp"
-
-utterances:
-  repo: Aspiring-Writer/aspiring-writer.github.io # Github repository owner and name
-  # Available values: pathname | url | title | og:title
-  issue_term: pathname
-  # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
-  theme: preferred-color-scheme
 
 plugins:
   - jekyll-seo-tag
@@ -43,37 +39,44 @@ postcss:
 
 pagination:
   enabled: true
-  debug: false
-  collection: 'posts' # The default document collection to paginate if nothing is specified ('posts' is default)
-  per_page: 25 # How many objects per paginated page, used to be `paginate` (default: 0, means all)
+  per_page: 25
   permalink: '/page/:num/' # Pages are index.html inside this folder (default)
   #permalink: '/page/:num.html' # Pages are simple html files
   #permalink: '/page/:num' # Pages are html files, linked jekyll extensionless permalink style.
   title: ':title - page :num of :max' # optional
-  limit: 0 # Limit how many pagenated pages to create (default: 0, means all)
-  sort_field: 'date' # Optional, defines the field that the posts should be sorted on (omit to default to 'date')
-  sort_reverse: true # Optional, sorts the posts in reverse order (omit to default decending or sort_reverse: true)
-  #category: 'posts' # Optional, the default category to use, omit or just leave this as 'posts' to get a backwards-compatible behavior (all posts)
-  tag: '' # Optional, the default tag to use, omit to disable
-
-  # Optional, the default locale to use, omit to disable (depends on a field 'locale' to be specified in the posts,
-  # in reality this can be any value, suggested are the Microsoft locale-codes (e.g. en_US, en_GB) or simply the ISO-639 language code )
-  locale: ''
-
- # Optional,omit or set both before and after to zero to disable.
- # Controls how the pagination trail for the paginated pages look like.
+  sort_field: 'date'
   trail:
     before: 2
     after: 2
 
-  # Optional, the default file extension for generated pages (e.g html, json, xml).
-  # Internally this is set to html by default
-  extension: html
+autopages:
+  enabled: true
+  tags:
+    enabled: false
+  categories:
+    enabled: false
+  collections:
+    layouts:
+      - 'collection.html'
+    title: ':coll'
+    permalink: '/:coll'
+    slugify:
+      mode: 'default'
+      case: true
 
-  # Optional, the default name of the index file for generated pages (e.g. 'index.html')
-  # Without file extension
-  indexpage: 'index'
-  
+feed:
+  collections:
+    - poetry
+
+diff_blog: "q7f864hffi8m218eaq6d623sezfgkz1vzfva4oxjeyxq9l2dwp"
+
+utterances:
+  repo: Aspiring-Writer/aspiring-writer.github.io # Github repository owner and name
+  # Available values: pathname | url | title | og:title
+  issue_term: pathname
+  # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
+  theme: preferred-color-scheme
+
 # Exclude from processing.cd
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

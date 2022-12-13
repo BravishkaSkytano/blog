@@ -1,2 +1,5 @@
 - name: About
   url: /about/
+
+- name: Poetry
+  url: /poetry/

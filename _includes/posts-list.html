@@ -1,0 +1,43 @@
+<div class="columns-3xs gap-6 space-y-12">
+  {% for post in paginator.posts %}
+  <article class="break-inside-avoid-column">
+    {% if post.image %}
+    <img class="w-full h-auto" src="{{ post.image | relative_url }}" alt="post image">
+    {% endif %}
+    <div class="flex justify-between items-center my-5">
+      <span class="highlight capitalize">
+        <a href="{{ post.collection | relative_url }}">
+          {{ post.collection }}
+        </a>
+      </span>
+      <span class="highlight">{{ post.date | date_to_string: "ordinal", "US" }}</span>
+    </div>
+    <a href="{{ post.url }}">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight">
+        {{ post.title }}
+      </h2>
+      <p class="mb-5 font-light">
+        {{ post.excerpt }}
+      </p>
+    </a>
+    {% if post.category %}
+    <p class="text-center mt-5">
+      {% for cat in post.category %}
+      <a href="{{ '/categories' | relative_url }}/#{{ cat | slugify }}" class="highlight">
+        {{ cat }}
+      </a>
+      {% endfor %}
+    </p>
+    {% endif %}{% if post.tags %}
+    <p class="text-center mt-5">
+      {% for tag in post.tags %}
+      <a href="{{ '/tags' | relative_url }}/#{{ tag | slugify }}" class="highlight">
+        #{{ tag }}
+      </a>
+      {% endfor %}
+    </p>
+    {% endif %}
+    <div class="my-8 text-center font-semibold">~~~</div>
+  </article>
+  {% endfor %}
+</div>

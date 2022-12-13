@@ -9,9 +9,6 @@
   html {
     font-family: 'Kalam', cursive;
   }
-  .prose-lol {
-    @apply text-gray-700 dark:text-green-200;
-  }
   .article {
     @apply mx-auto prose prose-headings:text-gray-700 dark:prose-headings:text-green-200 prose-p:text-gray-700 dark:prose-p:text-green-200 prose-a:text-blue-500 lg:prose-xl py-8 lg:py-16;
   }

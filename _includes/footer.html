@@ -1,25 +1,37 @@
-<hr>
-<footer>
+<footer class="border-t-2">
   {% assign tags = site.tags | sort %}{% assign categories = site.categories | sort %}
-  <div class="grid md:grid-cols-2 gap-4 py-8 px-6">
+  <div class="grid md:grid-cols-3 gap-8 py-8 px-6">
     <div>
       <h2 class="mb-6 text-sm font-semibold uppercase text-center">Categories</h2>
-      <ul class="gap-4 columns-2">
+      <ul class="text-center">
         {% for category in categories %}
         <li class="mb-4">
-          <a href="{{ '/categories' | relative_url }}/#{{ category[0] | slugify }}" class="capitalize">{{ category[0] }}</a>
+          <a href="{{ '/categories' | relative_url }}/#{{ category[0] | slugify }}">
+            {{ category[0] }}
+          </a>
         </li>
         {% endfor %}
       </ul>
     </div>
     <div>
       <h2 class="mb-6 text-sm font-semibold uppercase text-center">Tags</h2>
-      <ul class="gap-4 columns-2 md:columns-3">
+      <ul class="text-center gap-4 columns-2 md:columns-2 lg:columns-3">
         {% for tag in tags %}
         <li class="mb-4">
           <a href="{{ '/tags' | relative_url }}/#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
         </li>
         {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h2 class="mb-6 text-sm font-semibold uppercase text-center">Feeds</h2>
+      <ul class="text-center">
+        <li class="mb-4">
+          <a href="{{ '/feed.xml' | relative_url }}">Posts</a>
+        </li>
+        <li class="mb-4">
+          <a href="{{ '/feed/poetry.xml' | relative_url }}">Poetry</a>
+        </li>
       </ul>
     </div>
   </div>
