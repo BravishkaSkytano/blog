@@ -1,6 +1,3 @@
 [submodule "collections/_posts"]
 	path = collections/_posts
 	url = https://github.com/Aspiring-Writer/_posts
-[submodule "collections/_poetry"]
-	path = collections/_poetry
-	url = https://github.com/Aspiring-Writer/_poetry
