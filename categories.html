@@ -12,7 +12,7 @@ title: Categories
   </span>
   {% endfor %}
 </section>
-<hr>
+
 <section>
   {% for category in categories %}
   <h2 id="{{ category[0] | slugify }}" class="capitalize">{{ category | first }}</h2>

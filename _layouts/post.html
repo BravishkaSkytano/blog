@@ -36,32 +36,4 @@ layout: default
   {{ content }}
 </article>
 
-{% if site.diff_blog %}
-<section>
-  <script
-    id="diffblog-plugin-script"
-    async="false"
-    src="https://diff.blog/static/js/diffblog_plugin_v1.js"
-  ></script>
-  <script>
-    document
-      .getElementById("diffblog-plugin-script")
-      .addEventListener("load", function () {
-        DiffBlog("{{ site.diff_blog }}");
-      });
-  </script>
-</section>
-{% endif %}
-
-{% if site.utterances %}
-<section>
-  <script
-    src="https://utteranc.es/client.js"
-    repo="{{ site.utterances.repo }}"
-    issue-term="{{ site.utterances.issue_term }}"
-    theme="{{ site.utterances.theme }}"
-    crossorigin="anonymous"
-    async
-  ></script>
-</section>
-{% endif %}
+{% include comments.html %}
