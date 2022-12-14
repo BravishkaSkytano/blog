@@ -23,19 +23,14 @@ defaults:
   -
     scope:
       path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: ""
       type: "posts"
     values:
       layout: "post"
       excerpt_separator: <!-- more -->
   -
     scope:
-      path: "collections/_books"
+      path: ""
+      type: "books"
     values:
       layout: chapter
 
