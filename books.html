@@ -7,7 +7,7 @@ title: Books
   {% assign book-chapters = site.books | where: 'book', book.id %}
   {% if book-chapters.size > 0 %}
   <span class="highlight">
-    <a href="#{{ book.id }}" class="capitalize no-underline" style="font-size: {{ book-chapters.size | times: 4 | plus: 80 }}%">
+    <a href="#{{ book.id }}" class="no-underline" style="font-size: {{ book-chapters.size | times: 4 | plus: 80 }}%">
       {{ book.title }} ({{ book-chapters.size }})
     </a>
   </span>

@@ -3,7 +3,7 @@ module.exports = {
     './_drafts/**/*.html',
     './_includes/**/*.html',
     './_layouts/**/*.html',
-    './_posts/*.md',
+    './collections/*/*.md',
     './*.md',
     './*.html',
   ],

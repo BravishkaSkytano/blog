@@ -6,7 +6,7 @@ title: Categories
 <section class="not-prose text-center">
   {% for category in categories %}
   <span class="highlight">
-    <a href="#{{ category | first | slugify }}" class="capitalize no-underline" style="font-size: {{ category | last | size  |  times: 4 | plus: 80  }}%">
+    <a href="#{{ category | first | slugify }}" class="no-underline" style="font-size: {{ category | last | size  |  times: 4 | plus: 80  }}%">
       {{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})
     </a>
   </span>
@@ -15,7 +15,7 @@ title: Categories
 
 <section>
   {% for category in categories %}
-  <h2 id="{{ category[0] | slugify }}" class="capitalize">{{ category | first }}</h2>
+  <h2 id="{{ category[0] | slugify }}">{{ category | first }}</h2>
   <ul>
     {% for post in category[1] %}
     <li>
