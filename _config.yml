@@ -2,8 +2,8 @@ title: un-Graphophobic
 author: Bravishka Skytano
 description: >- # this means to ignore newlines until "baseurl:"
   A place to open up and share my mind.
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://aspiring-writer.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
 
 logo: "/assets/favicons/favicon-32x32.png"
 avatar: "https://www.gravatar.com/avatar/8305681be23372ec3c774233546f849f.jpg?s=200"

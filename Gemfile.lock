@@ -32,9 +32,6 @@ GEM
       webrick (~> 1.7)
     jekyll-avatar (0.8.0)
       jekyll (>= 3.0, < 5.0)
-    jekyll-books (0.3.1)
-      jekyll (>= 3.5)
-      nokogiri (~> 1.9)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-paginate-v2 (3.0.0)
@@ -57,12 +54,9 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    nokogiri (1.13.10-aarch64-linux)
-      racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (5.0.1)
-    racc (1.6.1)
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -78,11 +72,11 @@ GEM
 
 PLATFORMS
   aarch64-linux
+  x86_64-linux
 
 DEPENDENCIES
   jekyll
   jekyll-avatar
-  jekyll-books
   jekyll-feed
   jekyll-paginate-v2
   jekyll-postcss
