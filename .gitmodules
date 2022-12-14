@@ -1,6 +1,0 @@
-[submodule "collections/_posts"]
-	path = collections/_posts
-	url = https://github.com/Aspiring-Writer/_posts
-[submodule "collections/_books"]
-	path = collections/_books
-	url = https://github.com/Aspiring-Writer/_books
