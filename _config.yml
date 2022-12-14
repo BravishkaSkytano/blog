@@ -12,12 +12,12 @@ location: "Somewhere in the USA"
 start: 2019
 
 # Build settings
-permalink: /:collection/:slugified_categories/:title/
+permalink: none
 collections_dir: collections
 collections:
   books:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:path:output_ext
 
 defaults:
   -
