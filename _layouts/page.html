@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<section>
+  <article class="article">
+    <div class="mb-5 text-center">
+      <h1>{{ page.title }}</h1>
+      <p>{{ page.description }}</p>
+    </div>
+    
+    {{ content }}
+    
+  </article>
+</section>
+<section>
+  {% include pagination.html %}
+</section>

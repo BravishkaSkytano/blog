@@ -1,0 +1,5 @@
+- name: About
+  url: /about/
+
+- name: Books
+  url: /books/
