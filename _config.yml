@@ -35,9 +35,9 @@ defaults:
       layout: chapter
 
 plugins:
+  - jekyll-postcss
   - jekyll-seo-tag
   - jekyll-feed
-  - jekyll-postcss
   - jekyll-paginate-v2
   - jekyll-avatar
   - jekyll-sitemap

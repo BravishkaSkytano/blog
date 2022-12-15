@@ -82,7 +82,6 @@ DEPENDENCIES
   jekyll-postcss
   jekyll-seo-tag
   jekyll-sitemap
-  webrick
 
 BUNDLED WITH
    2.3.22
