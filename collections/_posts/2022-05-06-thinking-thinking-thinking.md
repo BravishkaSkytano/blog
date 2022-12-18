@@ -1,6 +1,7 @@
 ---
 title: Thinking, thinking, thinking...
 date: 2022-05-06
+category: Poetry
 ---
 Thoughts run around in my head.\
 Thinking, thinking, thinking...

@@ -9,7 +9,7 @@
     font-family: 'Kalam', cursive;
   }
   .article {
-    @apply mx-auto prose prose-headings:text-gray-700 dark:prose-headings:text-green-200 prose-p:text-gray-700 dark:prose-p:text-green-200 prose-a:text-blue-500 lg:prose-xl py-8 lg:py-16;
+    @apply mx-auto prose prose-headings:text-gray-700 dark:prose-headings:text-green-200 prose-p:text-gray-700 dark:prose-p:text-green-200 prose-a:text-blue-500 prose-strong:text-gray-700 dark:prose-strong:text-green-200 lg:prose-xl py-8 lg:py-16;
   }
 }
 

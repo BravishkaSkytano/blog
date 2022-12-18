@@ -10,6 +10,7 @@ avatar: "https://www.gravatar.com/avatar/8305681be23372ec3c774233546f849f.jpg?s=
 bio: "Christian. Programmer. Student. Aspiring Writer."
 location: "Somewhere in the USA"
 start: 2019
+current: 2022
 
 # Build settings
 permalink: none
@@ -32,30 +33,16 @@ defaults:
       path: ""
       type: "books"
     values:
-      layout: chapter
+      layout: post
 
 plugins:
   - jekyll-postcss
   - jekyll-seo-tag
   - jekyll-feed
-  - jekyll-paginate-v2
-  - jekyll-avatar
   - jekyll-sitemap
  
 postcss:
   cache: false
-
-pagination:
-  enabled: true
-  per_page: 25
-  permalink: '/page/:num/' # Pages are index.html inside this folder (default)
-  #permalink: '/page/:num.html' # Pages are simple html files
-  #permalink: '/page/:num' # Pages are html files, linked jekyll extensionless permalink style.
-  title: ':title - page :num of :max' # optional
-  sort_field: 'date'
-  trail:
-    before: 2
-    after: 2
 
 diff_blog: "q7f864hffi8m218eaq6d623sezfgkz1vzfva4oxjeyxq9l2dwp"
 
@@ -64,7 +51,7 @@ utterances:
   # Available values: pathname | url | title | og:title
   issue_term: pathname
   # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
-  theme: dark-blue
+  theme: preferred-color-scheme
 
 # Exclude from processing.cd
 # The following items will not be processed, by default.

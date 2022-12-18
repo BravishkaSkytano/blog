@@ -1,6 +1,7 @@
 ---
 title: "Prayer is a weapon..."
 date: 2020-05-03
+category: Poetry
 ---
 
 Prayer is a weapon.\

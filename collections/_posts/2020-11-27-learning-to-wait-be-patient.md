@@ -1,7 +1,7 @@
 ---
 title: Learning To Wait and Be Patient
 date: 2020-11-27
-category: devotionals
+category: Devotionals
 tags: [patience, angels, prayer]
 ---
 

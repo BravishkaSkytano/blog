@@ -15,7 +15,8 @@ title: Categories
 
 <section>
   {% for category in categories %}
-  <h2 id="{{ category[0] | slugify }}">{{ category | first }}</h2>
+  <div id="{{ category[0] | slugify }}"></div>
+  <h2>{{ category | first }}</h2>
   <ul>
     {% for post in category[1] %}
     <li>

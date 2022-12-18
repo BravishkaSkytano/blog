@@ -1,7 +1,0 @@
-* [Locations](locations.md)
-* [Characters](characters.md)
-* [Prologue](prologue.md)
-* [I](I.md)
-* [II](II.md)
-* [III](III.md)
-* [IV](IV.md)

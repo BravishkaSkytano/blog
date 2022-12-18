@@ -1,7 +1,7 @@
 ---
 title: 'Nietzsche, Nihilism, and the 20th Century: The Beginning of an Empty and Meaningless Life'
 date: 2022-02-07
-category: re-examinining history
+category: Re-Examinining History
 tags: [depression, suicide, nihilism, Social Darwinism]
 ---
 

@@ -1,5 +1,7 @@
-# IV
-
+---
+title: IV
+book: cosaf
+---
 Azura was used to watching a battle from the skies, but this one was... interesting. What had given the Lesser Army an advantage against all their enemies was their unique lack of strategy. Each army acted, mostly, independent of the other; both were working towards the same goal, just using their own methods. There was no strategizing between armies, no organizing, nothing; it was chaos. And from her perch in the sky, Azura kept watch on all this chaos and made sure it was all going in the right direction while staying hidden in the clouds. She sighed, despite her unwillingness to participate in this particular war, she wanted to do something; even her magic ached to be released. Watching from the sky was boring, she'd rather be fighting something. Sadly, the only beings in the sky were the gargoyles and the few jotunns that towered above the ground. Azura sighed again, _boring._ Her magic fluttered, and her eyes caught a flash of light zip across the ground. She smirked, the ley lines were being activated, and things were about to get more interesting. Azura's smirk only grew when the first fae appeared, dressed in the gray of the Shadow Court. _Looks like Válgr got much more than he bargained for._ She laughed.
 
 Speaking of the jotunn, his boasting turned into bellowing when he noticed the small band of fae quickly tearing through his forces. The warriors of the Shadow Court, though few, were the most elite of the fae; no court surpassed their skill and cunning. Válgr had great reason to panic. And he did, summoning her at once.

@@ -1,5 +1,7 @@
-# II
-
+---
+title: II
+book: cosaf
+---
 It was two days of marching and pillaging before the army was near their final target—Carlhaven, a well-populated city full of many species and cultures. Attacking this city would make a bold statement.
 
 Válgr and his army were full of anticipation for the mighty battle ahead. Every soldier was either sparring or preparing weapons. Any moment now, Válgr would begin giving out orders for the army to march on and destroy the fae stronghold. Azura watched them all with boredom and pity. Válgr hadn't revealed his master plans yet, but she was sure it involved rivers of blood and world enslavement. And all of these men would be drunk on the spoils of war, numb to the reality that their leader was a power-hungry jotunn to the core.

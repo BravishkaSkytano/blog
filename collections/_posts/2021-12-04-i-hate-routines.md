@@ -1,6 +1,7 @@
 ---
 title: I Hate Routines
 date: 2021-12-04
+category: Poetry
 ---
 I hate routines,\
 I hate the never-ending routines that plague my life.\

@@ -1,7 +1,7 @@
 ---
 title: The Power of Instructions
 date: 2020-11-20
-category: devotionals
+category: Devotionals
 tags: [instructions, patience]
 ---
 

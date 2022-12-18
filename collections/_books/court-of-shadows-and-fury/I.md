@@ -1,5 +1,7 @@
-# I
-
+---
+title: I
+book: cosaf
+---
 The slave watched as the town slowly burned. Guilt tugged on her as the screams of the innocent villagers being burned in their homes began to lessen, and the fire began to be sated.
 
 _"So many innocent lives destroyed for nothing,"_ She turned to the general beside her, _"is this truly necessary?"_
