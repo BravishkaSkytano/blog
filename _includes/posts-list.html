@@ -1,16 +1,16 @@
-<div class="columns-3xs gap-6 space-y-12">
+<div class="columns-3xs gap-8 space-y-12">
   {% for post in site.posts limit: page.limit %}
-  <article class="break-inside-avoid-column">
+  <div class="break-inside-avoid-column">
     {% if post.image %}
     <img class="w-full h-auto" src="{{ post.image | relative_url }}" alt="post image">
     {% endif %}
     <div class="flex justify-between items-center my-5">
-      <span class="highlight">
+      <span class="badge">
         <a href="{{ '/categories' | relative_url }}#{{ post.category | slugify }}">
           {{ post.category }}
         </a>
       </span>
-      <span class="highlight">{{ post.date | date_to_string: "ordinal", "US" }}</span>
+      <span class="badge">{{ post.date | date_to_string: "ordinal", "US" }}</span>
     </div>
     <a href="{{ post.url }}">
       <h2 class="mb-2 text-2xl font-bold tracking-tight">
@@ -23,13 +23,13 @@
     {% if post.tags %}
     <div class="text-center mt-5">
       {% for tag in post.tags %}
-      <a href="{{ '/tags' | relative_url }}#{{ tag | slugify }}" class="highlight m-1">
+      <a href="{{ '/tags' | relative_url }}#{{ tag | slugify }}" class="badge m-1">
         #{{ tag }}
       </a>
       {% endfor %}
     </div>
     {% endif %}
     <div class="my-8 text-center font-semibold">~~~</div>
-  </article>
+  </div>
   {% endfor %}
 </div>

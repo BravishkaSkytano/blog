@@ -60,11 +60,11 @@ Azura only smiled, _"I would love to watch as they carved out your flesh. Tell m
 
 "Get out!" Válgr yelled, "Threaten me again, and I will carve out your flesh myself!"
 
-Azura felt the ring compelling her to leave, but she just laughed, _"You couldn't Válgr and you know it. Isn't that why you hate me so much? You can NEVER control me like you control all others; I am a Thunderbird, a being who thrives on delivering justice, don't forget it. My revenge will be sweet."_
+Azura felt the ring compelling her to leave, but she just laughed, _"You couldn't Válgr and you know it. Isn't that why you hate me so much? You can NEVER control me like you control all others; I am an Ancient, a being who thrives on delivering justice, don't forget it. My revenge will be sweet."_
 
 He glared at her as she left his tent.
 
-Azura kept her smile planted on her face as she strode through the camp. She had disobeyed a direct order from the ring, and there would be consequences for that. When the pain hit her, she didn't want to be anywhere near the army. With one last glance, Azura opened her wings and leaped into the air.
+Azura kept her smile planted on her face as she strode through the camp. She had disobeyed a direct order from the ring while it's bearer was very angry, and there would be consequences for that. When the pain hit her, she didn't want to be anywhere near the army. With one last glance, Azura opened her wings and leaped into the air.
 
 She flew two miles before the first wave of pain hit. Azura screamed as her magic turned on her. Her wings failed her. There was no way to soften her fall as she plummeted to the ground. There was no peace in the darkness that overtook her senses, no peace at all.
 

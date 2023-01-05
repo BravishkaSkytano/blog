@@ -1,55 +1,44 @@
 ---
 layout: default
 ---
-<article class="article">
+<article>
   <div class="mb-5 text-center">
-    <nav class="highlight w-full mb-2 p-1">
-      <div>
-        <span><a href="{{ '/' | relative_url }}">Home</a></span>
-        <span> >> </span>
-        <span class="capitalize">
-          <a href="{{ '/' | relative_url }}{{ page.collection }}">{{ page.collection }}</a>
-        </span>
-        {% if page.category %}
-        <span> >> </span>
-        <span>
-          <a href="{{ '/categories' | relative_url }}#{{ page.category | slugify }}">
-            {{ page.category }}
-          </a>
-        </span>
-        {% endif %}
-        {% if page.book %}
-        <span> >> </span>
-        <span class="capitalize">
-          <a href="{{ '/books' | relative_url }}#{{ page.book }}">
-            {{ site.data.books | where: 'id', page.book | map: 'title' }}
-          </a>
-        </span>
-        {% endif %}
-      </div>
-    </nav>
     {% if page.image %}
     <img class="w-full h-auto" src="{{ page.image | relative_url }}" alt="cover image">
     {% endif %}
     <h1 class="mt-5">{{ page.title }}</h1>
+    {% unless page.book %}
+    <div class="flex justify-center items-center space-x-2">
+      <span class="badge">{{ page.date | date_to_string: "ordinal", "US" }}</span>
+      {% if page.modified %}<span class="badge">Modified {{ page.modified | date_to_string: "ordinal", "US" }}</span>{% endif %}
+      <span class="badge">{{ content | number_of_words }} words</span>
+    </div>
+    {% if page.category %}
+    <div class="flex justify-center items-center space-x-2 mt-3">
+      <span class="badge">
+        <a href="{{ '/categories' | relative_url }}#{{ page.category | slugify }}" class="no-underline">
+          {{ page.category }}
+        </a>
+      </span>
+    </div>
+    {% endif %}
     {% if page.book %}
-    <div class="flex justify-center items-center space-x-2">
-      <span class="highlight">{{ content | number_of_words }} words</span>
+    <div class="flex justify-center items-center space-x-2 mt-3">
+      <span class="badge capitalize">
+        <a href="{{ '/books' | relative_url }}#{{ page.book }}" class="no-underline">
+          {{ site.data.books | where: 'id', page.book | map: 'title' }}
+        </a>
+      </span>
     </div>
-    {% else %}
-    <div class="flex justify-center items-center space-x-2">
-      <span class="highlight">{{ page.date | date_to_string: "ordinal", "US" }}</span>
-      {% if page.modified %}<span class="highlight">Modified {{ page.modified | date_to_string: "ordinal", "US" }}</span>{% endif %}
-      <span class="highlight">{{ content | number_of_words }} words</span>
-    </div>
+    {% endif %}
     <div class="flex justify-center items-center space-x-2 mt-3">
       {% for tag in page.tags %}
-      <a class="highlight no-underline" href="{{ '/tags' | relative_url }}#{{ tag | slugify }}">
+      <a class="badge no-underline" href="{{ '/tags' | relative_url }}#{{ tag | slugify }}">
         #{{ tag }}
       </a>
       {% endfor %}
     </div>
-    {% endif %}
+    {% endunless %}
   </div>
   {{ content }}
 </article>
@@ -72,14 +61,14 @@ layout: default
   {% for chapter in book-chapters %}
   <div class="inline-flex mt-2 xs:mt-0">
     {% if prev_page_index == forloop.index %}
-    <a class="inline-flex items-center px-4 py-2 text-sm font-medium rounded theme-colors hover:bg-gray-700 dark:hover:bg-green-200" href="{{ chapter.url | relative_url }}">
+    <a class="button" href="{{ chapter.url | relative_url }}">
       <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2">
         <path fill-rule="evenodd" d="M18 10a.75.75 0 01-.75.75H4.66l2.1 1.95a.75.75 0 11-1.02 1.1l-3.5-3.25a.75.75 0 010-1.1l3.5-3.25a.75.75 0 111.02 1.1l-2.1 1.95h12.59A.75.75 0 0118 10z" clip-rule="evenodd" />
       </svg>
       Prev
     </a>
     {% endif %}{% if next_page_index == forloop.index %}
-    <a class="inline-flex items-center px-4 py-2 text-sm font-medium rounded highlight hover:bg-gray-700 dark:hover:bg-green-200" href="{{ chapter.url | relative_url }}">
+    <a class="button" href="{{ chapter.url | relative_url }}">
       Next
       <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 ml-2">
         <path fill-rule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z" clip-rule="evenodd" />

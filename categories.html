@@ -3,9 +3,9 @@ layout: page
 title: Categories
 ---
 {% assign categories = site.categories | sort %}
-<section class="not-prose text-center">
+<section class="text-center">
   {% for category in categories %}
-  <span class="highlight">
+  <span>
     <a href="#{{ category | first | slugify }}" class="no-underline" style="font-size: {{ category | last | size  |  times: 4 | plus: 80  }}%">
       {{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})
     </a>
@@ -20,7 +20,7 @@ title: Categories
   <ul>
     {% for post in category[1] %}
     <li>
-      <small class="highlight">{{ post.date | date_to_string: "ordinal", "US" }}</small>
+      <small class="badge">{{ post.date | date_to_string: "ordinal", "US" }}</small>
       <span class="mx-2"> ~ </span>
       <a href="{{ post.url }}">
         {{ post.title }}

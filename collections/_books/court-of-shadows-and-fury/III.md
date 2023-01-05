@@ -2,7 +2,7 @@
 title: III
 book: cosaf
 ---
-The general studied the army approaching Carlhaven's borders. His own army waited down below for the first defensive wave. The sun was slowly disappearing from the horizon, and it was predicted that the advancing forces would reach the outer border when the sun finally disappeared. The captain scowled, this battle wouldn't last far into the night, a complete waste of time; but if the lessors wished to test the might of the fae, Rothilion Ennan will be happy to oblige.
+The general studied the army approaching Carlhaven's borders. His own army waited down below for the first defensive wave. The sun was slowly disappearing from the horizon, and it was predicted that the advancing forces would reach the outer border when the sun finally disappeared. The captain scowled, this battle wouldn't last far into the night, a complete waste of time; but if the lessors wished to test the might of the fae, Rothilion Ennan would be happy to oblige.
 
 "General?"
 
@@ -32,7 +32,7 @@ The soldier bowed, "Yes, sir."
 
 ---
 
-From her viewpoint in the clouds, Azura could see Carlhaven in all its glory, without being spotted by the mighty towers. The multi-level fortress had some of the strongest reinforced walls she had ever seen. It had grown much in the last seven centuries than when it was merely a village. She had watched the first walls rise up, and even helped with development. Now, that small village had grown into a thriving stronghold that rivaled those older than it. Nixarza sighed, she could not, would not, destroy those walls.
+From her viewpoint in the clouds, Azura could see Carlhaven in all its glory, without being spotted by the mighty towers. The multi-level fortress had some of the strongest reinforced walls she had ever seen. It had grown much in the last seven centuries than when it was merely a village. She had watched the first walls rise up, and even helped with development. Now, that small village had grown into a thriving stronghold that rivaled those older than it. Azura sighed, she could not, would not, destroy those walls.
 
 A slight tug called her back down to Válgr's side. She had barely landed before he began questioning her. "How thick are the walls?"
 
@@ -99,10 +99,6 @@ Faelynn just laughed. "But, regarding the matters at hand."
 "Yes, Sire, that."
 
 "There are rumors that an Ancient fights with the Lessers, a being said to have been created in the Nameless Realm."
-
-"And why are we being sent?"
-
-Faelyn turned to his second, "An Ancient fights with the enemy, a being said to have been created in the Nameless Realm."
 
 "An Ancient from the Nameless Realm? I have not heard of this."
 

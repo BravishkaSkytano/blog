@@ -8,17 +8,90 @@
   html {
     font-family: 'Kalam', cursive;
   }
-  .article {
-    @apply mx-auto prose prose-headings:text-gray-700 dark:prose-headings:text-green-200 prose-p:text-gray-700 dark:prose-p:text-green-200 prose-a:text-blue-500 prose-strong:text-gray-700 dark:prose-strong:text-green-200 lg:prose-xl py-8 lg:py-16;
+
+  article {
+    @apply mx-auto max-w-prose py-8 lg:py-16;
   }
+  
+  article h1 {
+    font-size: 2.5em;
+    line-height: calc(1ex / 0.42);
+    margin: calc(1ex / 0.42) 0;
+  }
+  
+  article h2 {
+    font-size: 2.25em;
+    line-height: calc(1ex / 0.42);
+    margin: calc(1ex / 0.42) 0;
+  }
+  
+  article h3 {
+    font-size: 2em;
+    line-height: calc(1ex / 0.38);
+    margin: calc(1ex / 0.38) 0;
+  }
+  
+  article h4 {
+    font-size: 1.75em;
+    line-height: calc(1ex / 0.37);
+    margin: calc(1ex / 0.37) 0;
+  }
+  
+  article p, article ul, article ol {
+    font-size: 1.25em;
+    line-height: calc(1ex / 0.32);
+    margin: calc(1ex / 0.32) 0;
+  }
+  
+  article * a {
+    @apply underline decoration-wavy underline-offset-4;
+  }
+  
+  article ul { @apply list-disc list-inside; }
+  
+  article ol { @apply list-decimal list-inside; }
+  
+  @supports (font-size-adjust: 1;) {
+    article {
+      font-size-adjust: 0.5;
+    }
+  }
+  
 }
 
 @layer components {
-  .theme-colors {
-    @apply bg-gray-900 text-green-300 dark:bg-green-300 dark:text-gray-900;
+  .badge, .button {
+    @apply text-sm font-medium text-transparent rounded inline-flex items-center;
   }
-  .highlight, .highlight div span, .highlight div span a {
-    @apply theme-colors text-sm font-medium inline-flex items-center px-2.5 py-0.5 rounded;
+  .badge {
+    @apply px-2.5 py-0.5;
+  }
+  .button {
+    @apply px-4 py-2;
+  }
+  .sunrise-skin {
+    @apply bg-gradient-to-b from-purple-900 via-rose-400 to-blue-400 text-neutral-900;
+  }
+  .day-skin {
+    @apply bg-gradient-to-b from-blue-400 via-sky-400 to-blue-400 text-neutral-900;
+  }
+  .sunset-skin {
+    @apply bg-gradient-to-b from-blue-400 via-rose-400 to-purple-900 text-neutral-900;
+  }
+  .night-skin {
+    @apply bg-gradient-to-b from-purple-900 via-violet-900 to-slate-900 text-neutral-200;
+  }
+  .sunrise-skin .badge, .sunrise-skin .button {
+    @apply bg-neutral-900 text-rose-400;
+  }
+  .day-skin .badge, .day-skin .button {
+    @apply bg-neutral-900 text-sky-400;
+  }
+  .sunset-skin .badge, .sunset-skin .button {
+    @apply bg-neutral-900 text-rose-400;
+  }
+  .night-skin .badge, .night-skin .button {
+    @apply bg-neutral-200 text-violet-900;
   }
 }
 
