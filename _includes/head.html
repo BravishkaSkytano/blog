@@ -1,39 +1,38 @@
 <head>
+  <!-- Basic page needs -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   {% seo %}
   
+  <!-- Favicons -->
   <link rel="icon" href="{{ '/assets/favicons/favicon.ico' | relative_url }}" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="76x76" href="{{ '/assets/favicons/apple-touch-icon.png' | relative_url }}"/>
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicons/favicon-32x32.png' | relative_url }}"/>
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicons/favicon-16x16.png' | relative_url }}"/>
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ '/assets/favicons/apple-touch-icon.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicons/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicons/favicon-16x16.png' | relative_url }}">
   
+  <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Moon+Dance&family=Waiting+for+the+Sunrise&display=swap">
   
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/kaleidoscope.css' | relative_url }}">
   
   <!-- Begin selecting skin -->
-  <script>
-    const hour = (new Date()).getHours();
-    if (hour >= 5 && hour < 7) {
-      document.documentElement.classList.add('sunrise-skin');
-    } else if (hour >= 7 && hour < 17) {
-      document.documentElement.classList.add('day-skin');
-    } else if (hour >= 17 && hour < 19) {
-      document.documentElement.classList.add('sunset-skin');
-    } else {
-      document.documentElement.classList.add('night-skin');
-    }
+  <script type="text/javascript">
+      const hour = (new Date()).getHours();
+      var element = document.documentElement;
+      if (hour >= 5 && hour < 7) {
+        element.classList.add("sunrise");
+      } else if (hour >= 7 && hour < 17) {
+        element.classList.add("day");
+      } else if (hour >= 17 && hour < 19) {
+        element.classList.add("sunset");
+      } else {
+        element.classList.add("night");
+      }
   </script>
   <!-- End selecting skin -->
-  <!--<script>
-    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-    } else {
-        document.documentElement.classList.remove('dark')
-    }
-  </script>-->
 </head>

@@ -36,7 +36,6 @@ defaults:
       layout: post
 
 plugins:
-  - jekyll-postcss
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap

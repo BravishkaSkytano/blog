@@ -1,34 +1,5 @@
 ---
 layout: default
 ---
-<section class="py-8 lg:py-16">
-  <figure class="md:flex p-8 md:p-0">
-    <img class="w-24 h-24 md:w-48 md:h-auto md:rounded rounded-full mx-auto" src="{{ site.avatar }}" alt="avatar" width="384" height="512">
-    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-      <blockquote>
-        <p class="text-lg font-medium">
-          {{ site.description }}
-        </p>
-      </blockquote>
-      <figcaption class="font-medium">
-        <div>{{ site.author }}</div>
-        <div class="my-2">{{ site.location }}</div>
-        <div>{{ site.bio }}</div>
-      </figcaption>
-    </div>
-  </figure>
-</section>
-
-<section>
-  <div class="py-8 lg:py-16">
-    <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-      <h1 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold">
-        {{ page.title }}
-      </h1>
-      <p class="font-light sm:text-xl">
-        {{ content }}
-      </p>
-    </div>
-    {% include posts-list.html %}
-  </div>
-</section>
+{{ content }}
+{% include posts-list.html %}
