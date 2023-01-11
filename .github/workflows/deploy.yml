@@ -2,28 +2,17 @@ name: Build and deploy to Jekyll site
 
 on:
   push:
-    branches:
-      - master
+    branches: [$default-branch]
+  
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   jekyll:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3.1
-          bundler-cache: true
-      
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          cache: 'npm'
-      
-      - run: npm install
-       
-      - name: "🚀 deploy"
+      - name: "🚀 Jekyll Actions"
         uses:  helaili/jekyll-action@v2
         with:
           token: ${{ secrets.DEPLOY_KEY }}
