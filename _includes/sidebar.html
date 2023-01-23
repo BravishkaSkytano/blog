@@ -7,26 +7,11 @@
       <ul class="nav-list">
         {% for item in site.data.nav %}
         <li class="nav-item">
-          <a class="pure-button" href="{{ item.url }}">
+          <a class="pure-button" href="{{ item.url | relative_url }}">
             {{ item.name }}
           </a>
         </li>
         {% endfor %}
-        <li class="nav-item">
-          <a class="pure-button" href="{{ '/categories/' | relative_url }}">
-            Categories
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="pure-button" href="{{ '/tags/' | relative_url }}">
-            Tags
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="pure-button" href="{{ '/feed.xml' | relative_url }}">
-            RSS
-          </a>
-        </li>
       </ul>
     </nav>
   </div>
