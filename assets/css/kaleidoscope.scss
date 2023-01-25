@@ -1,0 +1,199 @@
+---
+---
+
+@import 'variables';
+@import 'mixins';
+
+:root {
+  scroll-behavior: smooth;
+  
+  &.default { @include spread-map($theme-map-default); }
+  &.morning {  @include spread-map($theme-map-morning); }
+  &.day { @include spread-map($theme-map-day); }
+  &.evening {  @include spread-map($theme-map-evening); }
+  &.night { @include spread-map($theme-map-night); }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: theme-var($--card); }
+::-webkit-scrollbar-thumb {
+  background: theme-var($--link);
+  
+  &:hover { background: theme-var($--hover); }
+}
+
+body {
+  font-family: 'Waiting for the Sunrise', cursive;
+  background: theme-var($--background);
+  color: theme-var($--paragraph);
+}
+#layout { margin: 0; }
+
+h1, h2, h3 {
+  font-family: 'Moon Dance', cursive;
+  color: theme-var($--headline);
+}
+p, .content li {
+  font-size: 1.3rem;
+  letter-spacing: 0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: theme-var($--link);
+  
+  &:hover, &:focus {
+    color: theme-var($--hover);
+  }
+}
+
+.cloud {
+  text-align: center;
+  margin: 15px;
+
+  a {
+    font-weight: 600;
+    display: inline-block;
+  }
+}
+.cloud a:not(:last-child), .tags a:not(:last-child) { margin-right: 15px; }
+
+.pure-img-responsive {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.header {
+  text-align: center;
+  top: auto;
+  margin: 3em auto;
+}
+
+.sidebar {
+  background: theme-var($--card);
+  color: theme-var($--headline);
+  border-bottom: 2px solid theme-var($--headline);
+  padding: 1rem;
+}
+
+.brand-title, .brand-tagline { margin: 0; }
+.brand-tagline {
+  font-weight: 300;
+  color: theme-var($--link);
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+  .nav-item {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+  }
+}
+
+.pure-button {
+  background: transparent;
+  border: 2px solid theme-var($--button);
+  color: theme-var($--paragraph);
+  margin-top: 1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 85%;
+
+  &:hover, &:focus {
+    background: theme-var($--hover);
+    color: theme-var($--paragraph);
+    border: 2px solid theme-var($--button);
+    text-decoration: none;
+  }
+}
+
+.content {
+  padding: 2em 1em 0;
+  
+  .content-subhead {
+    text-transform: uppercase;
+    border-bottom: 1px solid theme-var($--link);
+    padding: 0.4em 0;
+    font-size: 80%;
+    letter-spacing: 0.1em;
+  }
+  
+  hr { border-color: theme-var($--link); }
+}
+
+.post {
+  background: theme-var($--card);
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 3px;
+  
+  .post-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  .post-description { line-height: 1.8em; }
+  
+  .post-meta {
+    margin: 0;
+    font-weight: 600;
+    color: theme-var($--headline);
+  
+    div {
+      text-align: center;
+      padding: 5px;
+      letter-spacing: 0.05em;
+    }
+  }
+  
+  .comments { margin: 25px 0; }
+}
+
+.footer {
+  text-align: center;
+  color: theme-var($--headline);
+}
+
+@media screen and (min-width: 48em) {
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .book-cover {
+    float: left;
+    max-width: 45%;
+    margin: 0 15px 15px 0;
+  }
+}
+@media screen and (min-width: 64em) {
+  .content {
+    padding: 2em 3em 0;
+    margin-left: 25%;
+  }
+
+  .header {
+    margin: 80% 2em 0;
+    text-align: right;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    border-bottom: 0;
+    border-right: 2px solid theme-var($--link);
+  }
+}

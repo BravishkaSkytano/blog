@@ -1,0 +1,63 @@
+// Colors are based on Happy Hues https://www.happyhues.co
+$--background: --background;
+$--headline: --headline;
+$--card: --card;
+$--paragraph: --paragraph;
+$--link: --link;
+$--button: --button;
+$--hover: --hover;
+
+// Default, cream theme
+$theme-map-default: (
+  $--background: #f3d2c1,
+  $--headline: #001858,
+  $--card: #fef6e4,
+  $--paragraph: #172c66,
+  $--link: #8bd3dd,
+  $--button: #001858,
+  $--hover: #f582ae,
+);
+
+// Morning, mint theme
+$theme-map-morning: (
+  $--background: #00473e,
+  $--headline: #f2f7f5,
+  $--card: #abd1c6,
+  $--paragraph: #475d5b,
+  $--link: #fa5246,
+  $--button: #00332c,
+  $--hover: #faae2b,
+);
+
+// Day, lilac theme
+$theme-map-day: (
+  $--background: #d1d1e9,
+  $--headline: #094067,
+  $--card: #d8eefe,
+  $--paragraph: #5f6c7b,
+  $--link: #6246ea,
+  $--button: #094067,
+  $--hover: #3da9fc,
+);
+
+// Evening, chocolate theme
+$theme-map-evening: (
+  $--background: #271c19,
+  $--headline: #fffffe,
+  $--card: #55423d,
+  $--paragraph: #fff3ec,
+  $--link: #ffc0ad,
+  $--button: #140d0b,
+  $--hover: #9656a1,
+);
+
+// Night, dark green theme
+$theme-map-night: (
+  $--background: #242629,
+  $--headline: #fffffe,
+  $--card: #16161a,
+  $--paragraph: #94a1b2,
+  $--link: #2cb67d,
+  $--button: #010101,
+  $--hover: #7f5af0,
+);

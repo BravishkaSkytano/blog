@@ -1,12 +1,14 @@
 ---
 layout: default
 ---
-<header class="post-header">
-  <h2 class="post-title">
-    {{ page.title }}
-  </h2>
-</header>
-
-{{ content }}
-
-{% include back2top.html %}
+<div class="post">
+  <header class="post-header">
+    <h2 class="post-title">
+      {{ page.title }}
+    </h2>
+  </header>
+  
+  {{ content }}
+  
+  {% include back2top.html %}
+</div>

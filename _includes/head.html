@@ -22,14 +22,14 @@
   
   <!-- Begin selecting skin -->
   <script type="text/javascript">
-      const hour = (new Date()).getHours();
+    const hour = (new Date()).getHours();
       var element = document.documentElement;
       if (hour >= 5 && hour < 7) {
-        element.classList.add("sunrise");
+        element.classList.add("morning");
       } else if (hour >= 7 && hour < 17) {
         element.classList.add("day");
       } else if (hour >= 17 && hour < 19) {
-        element.classList.add("sunset");
+        element.classList.add("evening");
       } else {
         element.classList.add("night");
       }
