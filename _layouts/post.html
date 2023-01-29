@@ -3,9 +3,9 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
-    <h2 class="post-title">
+    <h1 class="post-title">
       {{ page.title }}
-    </h2>
+    </h1>
     
     <div class="post-meta pure-g">
       <div class="pure-u-1 pure-u-md-1-3">
@@ -21,8 +21,14 @@ layout: default
       </div>
       {% if page.category %}
       <div class="pure-u-1 pure-u-md-1-3">
-        In <a href="{{ '/categories' | relative_url }}/#{{ page.category | slugify }}">
+        <a href="{{ '/categories' | relative_url }}/#{{ page.category | slugify }}">
           {{ page.category }}
+        </a>
+      </div>
+      {% else if page.book %}
+      <div class="pure-u-1 pure-u-md-1-3">
+        <a href="{{ '/books.html' | relative_url }}/#{{ page.book }}">
+          {{ site.data.books | where: 'id', page.book | map: 'title' }}
         </a>
       </div>
       {% endif %}{% if page.tags %}
@@ -41,7 +47,7 @@ layout: default
   {{ content }}
   
   {% if page.book %}
-  {% assign book-chapters = site.books | where: 'book', page.book %}
+  {% assign book-chapters = site.posts | where: 'book', page.book | reverse %}
   {% for chapter in book-chapters %}
     {% if chapter.url == page.url %}
       {% assign prev_page_index = forloop.index | minus: 1 %}

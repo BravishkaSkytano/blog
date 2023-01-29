@@ -5,6 +5,7 @@ tags: [theology]
 ---
 
 > Let everything that has breath praise the LORD. Praise the LORD!
+>
 > <cite>Psalm 150:6, NKJV</cite>
 
 The Book of Psalms is my favorite book in the Bible, it's full of encouragement and praise. When I think about all that the writers of Psalms, especially David, went through and how they *still* worshiped the Lord. The writers spoke wonderful words of praise to the Lord, and they displayed huge amounts of faith to Him. That alone is a testimony in itself. I could sing the beauty of Psalms all day, but right now, I want to focus on the very last chapter in this book―chapter 150.

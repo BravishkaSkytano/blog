@@ -4,7 +4,7 @@ title: Books
 ---
 <div class="cloud">
 {% for book in site.data.books %}
-{% assign book-chapters = site.books | where: 'book', book.id %}
+{% assign book-chapters = site.posts | where: 'book', book.id %}
 {% if book-chapters.size > 0 %}
   <a href="#{{ book.id }}" style="font-size: {{ book-chapters.size | times: 4 | plus: 100 }}%">
     {{ book.title }} ({{ book-chapters.size }})
@@ -16,39 +16,34 @@ title: Books
 </div>
 
 {% for book in site.data.books %}
-{% assign book-chapters = site.books | where: 'book', book.id %}
+{% assign book-chapters = site.posts | where: 'book', book.id | reverse %}
 {% if book-chapters.size > 0 %}
-<div id="{{ book.id }}"></div>
-<div class="pure-g">
-  <div class="pure-u-1 pure-u-md-1-2">
-    <h2>
+<div class="post">
+  <div id="{{ book.id }}"></div>
+  <div class="post-header">
+    <h2 class="post-title">
       {{ book.title }}
     </h2>
   </div>
-  <div class="pure-u-1 pure-u-md-1-2">
-    <p style="text-align: right;">
-      {{ book.start }} - {% if book.end %}{{ book.end }}{% else %}still writing{% endif %}
-    </p>
+  
+  <div class="clearfix">
+    {% if book.cover %}
+    <img class="pure-img-responsive float" src="{{ book.cover | relative_url }}" alt="book cover">
+    {% endif %}
+    {{ book.description | markdownify }}
   </div>
-</div>
-
-<div class="clearfix">
-  {% if book.cover %}
-  <img class="pure-img-responsive book-cover" src="{{ book.cover | relative_url }}" alt="book cover">
+  
+  <h3 class="content-subhead">Chapters</h3>
+  <ul>
+    {% for page in book-chapters %}
+    <li>
+      <a href="{{ page.url | relative_url }}">
+        {{ page.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
   {% endif %}
-  {{ book.description | markdownify }}
 </div>
-
-<h3 class="content-subhead">Chapters</h3>
-<ul>
-  {% for page in book-chapters %}
-  <li>
-    <a href="{{ page.url | relative_url }}">
-      {{ page.title }}
-    </a>
-  </li>
-  {% endfor %}
-</ul>
-{% endif %}
 {% assign book-chapters = nil %}
 {% endfor %}

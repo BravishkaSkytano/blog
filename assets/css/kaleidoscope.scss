@@ -1,11 +1,12 @@
 ---
 ---
-
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playfair+Display:ital@0;1&display=swap');
 @import 'variables';
 @import 'mixins';
 
 :root {
   scroll-behavior: smooth;
+  font-size: 100%;
   
   &.default { @include spread-map($theme-map-default); }
   &.morning {  @include spread-map($theme-map-morning); }
@@ -18,6 +19,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  transition: all 250ms ease-in-out
 }
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: theme-var($--card); }
@@ -28,30 +30,59 @@
 }
 
 body {
-  font-family: 'Waiting for the Sunrise', cursive;
   background: theme-var($--background);
   color: theme-var($--paragraph);
+  font-family: 'Playfair Display', serif;
+  line-height: 1.5;
 }
 #layout { margin: 0; }
 
 h1, h2, h3 {
-  font-family: 'Moon Dance', cursive;
+  font-family: 'Fleur De Leah', cursive;
   color: theme-var($--headline);
+  line-height: 1.1;
 }
-p, .content li {
-  font-size: 1.3rem;
-  letter-spacing: 0.02rem;
-  line-height: 1.8rem;
-  
-  em { text-transform: uppercase; }
-}
+
+h1 { font-size: 2.2rem; }
+
+h2 { font-size: 1.8rem; }
+
+h3 { font-size: 1.5rem; }
+
+p { font-size: 1.2rem; }
 
 a {
   text-decoration: none;
   color: theme-var($--link);
   
-  &:hover, &:focus {
-    color: theme-var($--hover);
+  &:hover, &:focus { color: theme-var($--hover); }
+}
+
+blockquote {
+  background: theme-var($--background);
+  padding: 20px 30px 20px 30px;
+  margin: 50px auto;
+  width: 50%;
+  max-width: 500px;
+  border: solid 2px theme-var($--link);
+  padding: 20px 30px 20px 30px;
+  box-shadow: 13px 13px 0 0 theme-var($--background),
+              15px 15px 0 0 theme-var($--link),
+              15px 11px 0 0 theme-var($--link),
+              11px 15px 0 0 theme-var($--link);
+
+  cite {
+    float: right;
+    &:before {
+      content: "~";
+      margin-right: 5px;
+    }
+  }
+  
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
   }
 }
 
@@ -126,28 +157,35 @@ a {
   .content-subhead {
     text-transform: uppercase;
     border-bottom: 1px solid theme-var($--link);
+    margin-bottom: 1rem;
     padding: 0.4rem 0;
     font-size: 80%;
     letter-spacing: 0.1em;
   }
   
-  hr { border-color: theme-var($--link); }
+  hr {
+    border-color: theme-var($--link);
+    max-width: 60ch;
+  }
 }
 
 .post {
   background: theme-var($--card);
+  margin: auto;
   margin-bottom: 2rem;
   padding: 1.7rem;
   border-radius: 3px;
+  max-width: 75ch;
+  
+  .post-header { margin-bottom: 1rem; }
   
   .post-title {
-    text-align: center;
-    font-size: 2rem;
     margin-bottom: 0.5rem;
+    text-align: center;
   }
   
   .post-meta {
-    margin: 0;
+    margin: 15px 0;
     font-weight: 600;
     color: theme-var($--headline);
   
@@ -183,13 +221,13 @@ a {
 }
 
 @media screen and (min-width: 48em) {
-  .clearfix::after {
+  .clearfix:after {
     content: "";
     clear: both;
     display: table;
   }
   
-  .img-float {
+  .float {
     float: left;
     max-width: 45%;
     margin: 0 15px 15px 0;

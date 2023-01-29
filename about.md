@@ -2,7 +2,7 @@
 layout: page
 title: About Me
 ---
-<div class="img-float">
+<div class="float">
   <img src="{{ site.avatar }}" />
 </div>
 
