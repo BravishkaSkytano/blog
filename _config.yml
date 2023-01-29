@@ -10,15 +10,11 @@ avatar: "https://www.gravatar.com/avatar/8305681be23372ec3c774233546f849f.jpg?s=
 bio: "Christian. Programmer. Student. Aspiring Writer."
 location: "Somewhere in the USA"
 start: 2019
-current: 2022
+current: 2023
 
 # Build settings
-permalink: none
-collections_dir: collections
-collections:
-  books:
-    output: true
-    permalink: /:collection/:path:output_ext
+permalink: /:year/:month/:day/:title:output_ext
+keep_files: [assets/images]
 
 defaults:
   -
@@ -27,21 +23,12 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      excerpt_separator: <!-- more -->
-  -
-    scope:
-      path: ""
-      type: "books"
-    values:
-      layout: post
+      #excerpt_separator: <!-- more -->
 
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
- 
-postcss:
-  cache: false
 
 diff_blog: "q7f864hffi8m218eaq6d623sezfgkz1vzfva4oxjeyxq9l2dwp"
 

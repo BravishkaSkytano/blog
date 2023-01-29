@@ -2,19 +2,22 @@
   url: /
 
 - name: About
-  url: /about
+  url: /about.html
 
 - name: Posts
-  url: /posts
+  url: /posts.html
 
 #- name: Books
-#  url: /books
+#  url: /books/
 
 - name: Categories
-  url: /categories
+  url: /categories.html
 
 - name: Tags
-  url: /tags
+  url: /tags.html
+  
+- name: Search
+  url: /search.html
   
 - name: RSS
   url: /feed.xml

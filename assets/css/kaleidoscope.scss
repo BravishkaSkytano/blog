@@ -40,7 +40,10 @@ h1, h2, h3 {
 }
 p, .content li {
   font-size: 1.3rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02rem;
+  line-height: 1.8rem;
+  
+  em { text-transform: uppercase; }
 }
 
 a {
@@ -72,14 +75,13 @@ a {
 .header {
   text-align: center;
   top: auto;
-  margin: 3em auto;
+  margin: 3rem auto;
 }
 
 .sidebar {
   background: theme-var($--card);
   color: theme-var($--headline);
   border-bottom: 2px solid theme-var($--headline);
-  padding: 1rem;
 }
 
 .brand-title, .brand-tagline { margin: 0; }
@@ -104,8 +106,9 @@ a {
   background: transparent;
   border: 2px solid theme-var($--button);
   color: theme-var($--paragraph);
-  margin-top: 1em;
-  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-top: 1rem;
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
   font-size: 85%;
 
@@ -118,12 +121,12 @@ a {
 }
 
 .content {
-  padding: 2em 1em 0;
+  padding: 2rem 1rem 0;
   
   .content-subhead {
     text-transform: uppercase;
     border-bottom: 1px solid theme-var($--link);
-    padding: 0.4em 0;
+    padding: 0.4rem 0;
     font-size: 80%;
     letter-spacing: 0.1em;
   }
@@ -134,16 +137,14 @@ a {
 .post {
   background: theme-var($--card);
   margin-bottom: 2rem;
-  padding: 2rem;
+  padding: 1.7rem;
   border-radius: 3px;
   
   .post-title {
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 0.5em;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
   }
-  
-  .post-description { line-height: 1.8em; }
   
   .post-meta {
     margin: 0;
@@ -153,16 +154,32 @@ a {
     div {
       text-align: center;
       padding: 5px;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.05rem;
     }
+    svg#i-clock {vertical-align: middle;}
   }
   
   .comments { margin: 25px 0; }
 }
 
 .footer {
+  margin-top: 3rem;
   text-align: center;
   color: theme-var($--headline);
+}
+
+.back2top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: theme-var($--link);
+  border-radius: 50px;
+  text-align: center;
+  
+  img {
+    width: 1rem;
+  	height: auto;
+  }
 }
 
 @media screen and (min-width: 48em) {
@@ -172,7 +189,7 @@ a {
     display: table;
   }
   
-  .book-cover {
+  .img-float {
     float: left;
     max-width: 45%;
     margin: 0 15px 15px 0;
@@ -180,12 +197,12 @@ a {
 }
 @media screen and (min-width: 64em) {
   .content {
-    padding: 2em 3em 0;
+    padding: 2rem 3rem 0;
     margin-left: 25%;
   }
 
   .header {
-    margin: 80% 2em 0;
+    margin: 80% 2rem 0;
     text-align: right;
   }
 

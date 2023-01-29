@@ -6,17 +6,26 @@ layout: default
     <h2 class="post-title">
       {{ page.title }}
     </h2>
-    {% unless page.book %}
+    
     <div class="post-meta pure-g">
       <div class="pure-u-1 pure-u-md-1-3">
-        Posted on {{ page.date | date_to_string: "ordinal", "US" }}
+        {{ page.date | date_to_string: "ordinal", "US" }}
+        <svg id="i-clock" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2"><circle cx="16" cy="16" r="14" /><path d="M16 8 L16 16 20 20" /></svg>
+        {% assign words = content | number_of_words %}
+        {% if words < 360 %}
+          1 min read.
+        {% else %}
+          {{ words | divided_by:180 }} mins read.
+        {% endif %}
       </div>
+      {% if page.category %}
       <div class="pure-u-1 pure-u-md-1-3">
         In <a href="{{ '/categories' | relative_url }}/#{{ page.category | slugify }}">
           {{ page.category }}
         </a>
       </div>
-      {% if page.tags %}
+      {% endif %}{% if page.tags %}
       <div class="pure-u-1 pure-u-md-1-3">
         {% for tag in page.tags %}
         <a href="{{ '/tags' | relative_url }}/#{{ tag | slugify }}">
@@ -26,7 +35,7 @@ layout: default
       </div>
       {% endif %}
     </div>
-    {% endunless %}
+    
   </header>
   
   {{ content }}
@@ -43,8 +52,8 @@ layout: default
   <nav class="nav" style="text-align: center;">
     <ul class="nav-list">
       <li class="nav-item">
-        <span class="pure-button">
-          {% if book-chapters.size > 1 %}Chapter <strong>{{ curr_page_index }}</strong> of <strong>{{ book-chapters.size }}</strong>{% else %}More posts coming soon!{% endif %}
+        <span class="pure-button" disabled>
+          {% if book-chapters.size > 1 %}Chapter <strong>{{ curr_page_index }}</strong> of <strong>{{ book-chapters.size }}</strong>{% else %}More chapters coming soon!{% endif %}
         </span>
       </li>
       {% for chapter in book-chapters %}
@@ -59,8 +68,34 @@ layout: default
       {% endif %}{% endfor %}
     </ul>
   </nav>
+  {% else %}
+  {% assign posts = site.posts | where: 'book', null %}
+  {% for post in posts %}
+    {% if post.url == page.url %}
+      {% assign prev_page_index = forloop.index | minus: 1 %}
+      {% assign curr_page_index = forloop.index %}
+      {% assign next_page_index = forloop.index | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  <nav class="nav" style="text-align: center;">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <span class="pure-button" disabled>
+          {% if posts.size > 1 %}Post <strong>{{ curr_page_index }}</strong> of <strong>{{ posts.size }}</strong>{% else %}More posts coming soon!{% endif %}
+        </span>
+      </li>
+      {% for post in posts %}
+      {% if prev_page_index == forloop.index %}
+      <li class="nav-item">
+        <a class="pure-button" href="{{ post.url | relative_url }}">Prev</a>
+      </li>
+      {% endif %}{% if next_page_index == forloop.index %}
+      <li class="nav-item">
+        <a class="pure-button" href="{{ post.url | relative_url }}">Next</a>
+      </li>
+      {% endif %}{% endfor %}
+    </ul>
+  </nav>
   {% endif %}
-  {% include back2top.html %}
   {% include comments.html %}
-  {% include back2top.html %}
 </div>
