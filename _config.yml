@@ -9,11 +9,11 @@ logo: "/assets/favicons/favicon-32x32.png"
 avatar: "https://www.gravatar.com/avatar/8305681be23372ec3c774233546f849f.jpg?s=200"
 bio: "Christian. Programmer. Student. Aspiring Writer."
 location: "Somewhere in the USA"
-start: 2019
+start: 2020
 current: 2023
 
 # Build settings
-permalink: /:year/:month/:day/:title:output_ext
+permalink: /:slugified_categories/:title:output_ext
 keep_files: [assets/images]
 
 defaults:
@@ -32,12 +32,12 @@ plugins:
 
 #diff_blog: "q7f864hffi8m218eaq6d623sezfgkz1vzfva4oxjeyxq9l2dwp"
 
-utterances:
-  repo: Aspiring-Writer/aspiring-writer.github.io # Github repository owner and name
+#utterances:
+  #repo: Aspiring-Writer/aspiring-writer.github.io # Github repository owner and name
   # Available values: pathname | url | title | og:title
-  issue_term: pathname
+  #issue_term: pathname
   # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
-  theme: preferred-color-scheme
+  #theme: preferred-color-scheme
 
 # Exclude from processing.cd
 # The following items will not be processed, by default.

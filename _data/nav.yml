@@ -4,8 +4,8 @@
 - name: About
   url: /about.html
 
-- name: Posts
-  url: /posts.html
+- name: Archive
+  url: /archive.html
 
 #- name: Books
 #  url: /books/

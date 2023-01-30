@@ -62,7 +62,7 @@ blockquote {
   background: theme-var($--background);
   padding: 20px 30px 20px 30px;
   margin: 50px auto;
-  width: 50%;
+  width: 75%;
   max-width: 500px;
   border: solid 2px theme-var($--link);
   padding: 20px 30px 20px 30px;
@@ -195,6 +195,13 @@ blockquote {
       letter-spacing: 0.05rem;
     }
     svg#i-clock {vertical-align: middle;}
+  }
+  
+  aside {
+    background: theme-var($--background);
+    padding: 10px 25px;
+    border: 1px solid theme-var($--button);
+    border-radius: 3px;
   }
   
   .comments { margin: 25px 0; }
