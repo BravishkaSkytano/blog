@@ -30,7 +30,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-diff_blog: "q7f864hffi8m218eaq6d623sezfgkz1vzfva4oxjeyxq9l2dwp"
+#diff_blog: "q7f864hffi8m218eaq6d623sezfgkz1vzfva4oxjeyxq9l2dwp"
 
 utterances:
   repo: Aspiring-Writer/aspiring-writer.github.io # Github repository owner and name
