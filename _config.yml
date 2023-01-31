@@ -5,7 +5,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 url: "https://aspiring-writer.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
-logo: "/assets/favicons/favicon-32x32.png"
+background: "/assets/images/background.png"
 avatar: "https://www.gravatar.com/avatar/8305681be23372ec3c774233546f849f.jpg?s=200"
 bio: "Christian. Programmer. Student. Aspiring Writer."
 location: "Somewhere in the USA"
@@ -13,8 +13,10 @@ start: 2020
 current: 2023
 
 # Build settings
-permalink: /:slugified_categories/:title:output_ext
-keep_files: [assets/images]
+permalink: none
+keep_files:
+  - assets/images
+  - assets/favicons
 
 defaults:
   -

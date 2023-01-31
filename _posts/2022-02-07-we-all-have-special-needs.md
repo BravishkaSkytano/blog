@@ -1,7 +1,6 @@
 ---
 title: We All Have Special Needs - A Review of "The Open Door"
-date: 2022-02-07
-category: Reviews - Movie
+category: movie-reviews
 tags: [special needs]
 card:
   title: The Open Door

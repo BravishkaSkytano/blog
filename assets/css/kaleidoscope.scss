@@ -86,6 +86,8 @@ blockquote {
   }
 }
 
+.capitalize { text-transform: capitalize; }
+
 .cloud {
   text-align: center;
   margin: 15px;
@@ -152,6 +154,11 @@ blockquote {
 }
 
 .content {
+  background-image: url("{{ site.background }}");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  //background: theme-var($--card);
   padding: 2rem 1rem 0;
   
   .content-subhead {
@@ -177,26 +184,6 @@ blockquote {
   border-radius: 3px;
   max-width: 75ch;
   
-  .post-header { margin-bottom: 1rem; }
-  
-  .post-title {
-    margin-bottom: 0.5rem;
-    text-align: center;
-  }
-  
-  .post-meta {
-    margin: 15px 0;
-    font-weight: 600;
-    color: theme-var($--headline);
-  
-    div {
-      text-align: center;
-      padding: 5px;
-      letter-spacing: 0.05rem;
-    }
-    svg#i-clock {vertical-align: middle;}
-  }
-  
   aside {
     background: theme-var($--background);
     padding: 10px 25px;
@@ -205,6 +192,26 @@ blockquote {
   }
   
   .comments { margin: 25px 0; }
+}
+
+.post-header { margin-bottom: 1rem; }
+
+.post-title {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.post-meta {
+  margin: 15px 0;
+  font-weight: 600;
+  color: theme-var($--headline);
+
+  div {
+    text-align: center;
+    padding: 5px;
+    letter-spacing: 0.05rem;
+  }
+  svg#i-clock {vertical-align: middle;}
 }
 
 .footer {
@@ -250,7 +257,7 @@ blockquote {
     margin: 80% 2rem 0;
     text-align: right;
   }
-
+  
   .sidebar {
     position: fixed;
     top: 0;

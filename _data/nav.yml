@@ -7,17 +7,14 @@
 - name: Archive
   url: /archive.html
 
-#- name: Books
-#  url: /books/
-
 - name: Categories
   url: /categories.html
 
 - name: Tags
   url: /tags.html
   
-- name: Search
-  url: /search.html
+#- name: Search
+  #url: /search.html
   
 - name: RSS
   url: /feed.xml

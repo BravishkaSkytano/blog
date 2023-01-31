@@ -1,0 +1,11 @@
+<nav class="nav">
+  <ul class="nav-list">
+    {% for item in site.data.nav %}
+    <li class="nav-item">
+      <a class="pure-button" href="{{ item.url | relative_url }}">
+        {{ item.name }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

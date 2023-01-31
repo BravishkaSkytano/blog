@@ -1,7 +1,13 @@
 ---
-layout: page
+layout: default
 title: Tags
 ---
+<header class="post-header">
+  <h1 class="post-title">
+    {{ page.title }}
+  </h1>
+</header>
+
 <div class="cloud">
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
