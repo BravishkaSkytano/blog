@@ -35,7 +35,13 @@ body {
   font-family: 'Playfair Display', serif;
   line-height: 1.5;
 }
-#layout { margin: 0; }
+#layout {
+  margin: 0;
+  //background-image: url("{{ site.background }}");
+  //background-repeat: no-repeat;
+  //background-attachment: fixed;
+  //background-position: center;
+}
 
 h1, h2, h3 {
   font-family: 'Fleur De Leah', cursive;
@@ -136,8 +142,8 @@ blockquote {
 }
 
 .pure-button {
-  background: transparent;
-  border: 2px solid theme-var($--button);
+  background: theme-var($--button);
+  border: 2px solid theme-var($--hover);
   color: theme-var($--paragraph);
   font-weight: 600;
   margin-top: 1rem;
@@ -154,10 +160,6 @@ blockquote {
 }
 
 .content {
-  background-image: url("{{ site.background }}");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
   //background: theme-var($--card);
   padding: 2rem 1rem 0;
   
@@ -184,14 +186,51 @@ blockquote {
   border-radius: 3px;
   max-width: 75ch;
   
-  aside {
+  h2, h3 { text-align: center; }
+  
+  .toc {
     background: theme-var($--background);
     padding: 10px 25px;
     border: 1px solid theme-var($--button);
     border-radius: 3px;
+    
+    .title {
+      text-align: center;
+      font-weight: 600;
+    }
   }
   
-  .comments { margin: 25px 0; }
+  .nav {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .related-posts {
+    display: flex;
+    justify-content: center;
+  
+    .cards {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 10px;
+      
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: theme-var($--background);
+        //color: theme-var($--paragraph);
+        height: auto;
+        border-radius: 5px;
+        padding: 1rem;
+        
+        .card-content {
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 .post-header { margin-bottom: 1rem; }
@@ -214,8 +253,18 @@ blockquote {
   svg#i-clock {vertical-align: middle;}
 }
 
+.comments {
+  background: theme-var($--card);
+  border-radius: 3px;
+  margin: auto;
+  max-width: 80ch;
+}
+
 .footer {
-  margin-top: 3rem;
+  background: theme-var($--card);
+  margin-top: 2rem;
+  padding: 1.7rem;
+  border-radius: 3px;
   text-align: center;
   color: theme-var($--headline);
 }

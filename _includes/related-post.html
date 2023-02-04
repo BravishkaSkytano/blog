@@ -1,0 +1,8 @@
+<div class="card">
+  <div class="card-content">
+    <h3>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h3>
+    {{ post.content | truncate: 280 | strip_html }}
+  </div>
+</div>

@@ -32,6 +32,11 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+related_by: categories
+related_limit: 6
+related_categories: 1
+related_tags: 1
+
 #diff_blog: "q7f864hffi8m218eaq6d623sezfgkz1vzfva4oxjeyxq9l2dwp"
 
 #utterances:

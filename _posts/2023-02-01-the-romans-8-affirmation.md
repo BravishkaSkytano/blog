@@ -2,6 +2,7 @@
 title: The Romans 8 Affirmation
 category: devotionals
 tags: [Romans]
+toc: true
 ---
 Today I read Romans 8 and saw so many promises and encouraging words that I was compelled to write them down and share. I encourage you to affirm these over yourself and your loved ones.
 
