@@ -3,7 +3,7 @@ layout: page
 title: About Me
 ---
 <div class="float">
-  <img src="{{ site.avatar }}" />
+  <img class="pure-img-responsive" src="{{ site.avatar }}" />
 </div>
 
 I am a young, Christian writer who is still trying to complete college. I love to read and write fiction stories in my spare time. Some Christian aspects will show up in my writing so do not be surprised. Most of my inspiration is God-given, I'm not sure how else to explain it. I have been writing since I was in my mid-teens (not so long ago), however, I have just recently become more dedicated to writing and publishing my work. I am very social and very fond of feedback, so please do leave comments on any of my posts.
@@ -15,3 +15,7 @@ I started seriously writing when I was about eighteen. During this time, many th
 One day, the idea of writing devotionals leaped into my mind. I immediately grew excited about the idea and reached out to some friends about what they thought. I received much enthusiasm and encouragement. Many said that I was a great writer and that meant a lot to a girl with low self-esteem like me. I started jotting down ideas and writing my devotionals. Some just came up spontaneously, others are things I struggled with for a long time and didn’t know how to talk about. My writing became my diary. My devotionals became a personal encouragement to not only myself, but those around me. I found peace and wisdom in the arms of my Father as I started to look at His Word and encourage others. I began to find myself and believe that I was something more than just a sheltered young woman. I learned how to love me.
 
 Thank you for taking the time to read this. I hope you enjoy reading my blog as much as I enjoy writing in it.
+
+<div style="text-align: right;">
+  <p>&mdash;{{ site.author }}</p>
+</div>

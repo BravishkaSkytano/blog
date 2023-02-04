@@ -20,7 +20,7 @@
       </div>
       {% if post.category %}
       <div class="pure-u-1 pure-u-md-1-2">
-        <a class="capitalize" href="{{ '/categories.html' | relative_url }}/#{{ post.category | slugify }}">
+        <a class="capitalize" href="{{ '/categories.html' | relative_url }}#{{ post.category | slugify }}">
           {{ post.category | replace: "-", " " }}
         </a>
       </div>
@@ -35,7 +35,7 @@
   {% if post.tags %}
   <p style="text-align: right;">
     {% for tag in post.tags %}
-    <a href="{{ '/tags.html' | relative_url }}/#{{ tag | slugify }}">
+    <a href="{{ '/tags.html' | relative_url }}#{{ tag | slugify }}">
       #{{ tag }}
     </a>
     {% endfor %}

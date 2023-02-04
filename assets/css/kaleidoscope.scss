@@ -47,6 +47,7 @@ h1, h2, h3 {
   font-family: 'Fleur De Leah', cursive;
   color: theme-var($--headline);
   line-height: 1.1;
+  letter-spacing: 1px;
 }
 
 h1 { font-size: 2.2rem; }
@@ -106,7 +107,7 @@ blockquote {
 .cloud a:not(:last-child), .tags a:not(:last-child) { margin-right: 15px; }
 
 .pure-img-responsive {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 5px;
 }
@@ -284,12 +285,6 @@ blockquote {
 }
 
 @media screen and (min-width: 48em) {
-  .clearfix:after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
   .float {
     float: left;
     max-width: 45%;

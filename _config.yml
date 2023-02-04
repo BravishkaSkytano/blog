@@ -7,13 +7,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 background: "/assets/images/background.png"
 avatar: "https://www.gravatar.com/avatar/8305681be23372ec3c774233546f849f.jpg?s=200"
-bio: "Christian. Programmer. Student. Aspiring Writer."
-location: "Somewhere in the USA"
 start: 2020
 current: 2023
 
 # Build settings
 permalink: none
+future: false
 keep_files:
   - assets/images
   - assets/favicons
