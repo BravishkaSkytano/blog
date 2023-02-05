@@ -27,9 +27,9 @@ title: Books
       {% if item.metadata == true %}
 <div class="clearfix">
         {% if item.cover %}
-  <figure class="float">
+  <div class="float">
     <img class="pure-img-responsive" src="{{ '/assets/images' | relative_url }}/{{ item.cover }}">
-  </figure>
+  </div>
         {% endif %}
         {% if item.start %}
   <p>
