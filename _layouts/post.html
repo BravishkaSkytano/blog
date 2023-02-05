@@ -47,52 +47,6 @@ layout: default
   
   {% include anchor_headings.html html=content anchorBody="#" %}
   
-  {% if page.book %}
-  {% assign book-chapters = site.posts | where: 'book', page.book | reverse %}
-  {% for chapter in book-chapters %}
-    {% if chapter.url == page.url %}
-      {% assign prev_page_index = forloop.index | minus: 1 %}
-      {% assign curr_page_index = forloop.index %}
-      {% assign next_page_index = forloop.index | plus: 1 %}
-    {% endif %}
-  {% endfor %}
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <span class="pure-button" disabled>
-          {% if book-chapters.size > 1 %}Chapter <strong>{{ curr_page_index }}</strong> of <strong>{{ book-chapters.size }}</strong>{% else %}More chapters coming soon!{% endif %}
-        </span>
-      </li>
-      {% for chapter in book-chapters %}
-      {% if prev_page_index == forloop.index %}
-      <li class="nav-item">
-        <a class="pure-button" href="{{ chapter.url | relative_url }}">Prev</a>
-      </li>
-      {% endif %}{% if next_page_index == forloop.index %}
-      <li class="nav-item">
-        <a class="pure-button" href="{{ chapter.url | relative_url }}">Next</a>
-      </li>
-      {% endif %}{% endfor %}
-    </ul>
-  </nav>
-  <div class="toc">
-    <div class="title">
-      This post is part of the book <em>{{ site.data.books | where: 'id', page.book | map: 'title' }}</em>
-    </div>
-    <ul>
-      {% assign book-posts = site.posts | reverse | where: 'book', page.book %}
-      {% for post in book-posts %}
-      <li>
-        {% if post.url == page.url %}
-        <strong>{{ post.title }}</strong>
-        {% else %}
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        {% endif %}
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-  {% else %}
   <hr>
   <p>Would you like to read more posts in <span class="capitalize">{{ page.category }}</span>? Check out these:</p>
   <div class="related-posts">
@@ -100,8 +54,7 @@ layout: default
       {% include related.html %}
     </div>
   </div>
-
-{% endif %}
+  
 </div>
 
 <div class="comments">

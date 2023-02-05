@@ -1,6 +1,7 @@
 ---
 ---
 @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playfair+Display:ital@0;1&display=swap');
+
 @import 'variables';
 @import 'mixins';
 
@@ -145,16 +146,16 @@ blockquote {
 .pure-button {
   background: theme-var($--button);
   border: 2px solid theme-var($--hover);
-  color: theme-var($--paragraph);
+  color: theme-var($--link);
   font-weight: 600;
   margin-top: 1rem;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
   font-size: 85%;
-
+  
   &:hover, &:focus {
     background: theme-var($--hover);
-    color: theme-var($--paragraph);
+    color: theme-var($--link);
     border: 2px solid theme-var($--button);
     text-decoration: none;
   }
@@ -234,24 +235,27 @@ blockquote {
   }
 }
 
-.post-header { margin-bottom: 1rem; }
+.post-header {
+  margin-bottom: 1rem;
 
-.post-title {
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-
-.post-meta {
-  margin: 15px 0;
-  font-weight: 600;
-  color: theme-var($--headline);
-
-  div {
+  .post-title {
+    margin-bottom: 0.5rem;
     text-align: center;
-    padding: 5px;
-    letter-spacing: 0.05rem;
   }
-  svg#i-clock {vertical-align: middle;}
+  
+  .post-meta {
+    margin: 15px 0;
+    font-weight: 600;
+    color: theme-var($--headline);
+  
+    div {
+      text-align: center;
+      padding: 5px;
+      letter-spacing: 0.05rem;
+    }
+    
+    svg#i-clock {vertical-align: middle;}
+  }
 }
 
 .comments {
@@ -285,6 +289,12 @@ blockquote {
 }
 
 @media screen and (min-width: 48em) {
+  .clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
   .float {
     float: left;
     max-width: 45%;

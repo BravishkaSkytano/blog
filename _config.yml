@@ -1,7 +1,7 @@
 title: un-Graphophobic
 author: Bravishka Skytano
 description: >- # this means to ignore newlines until "baseurl:"
-  A place to open up and share my mind.
+  A place where I can be free.
 url: "https://aspiring-writer.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
@@ -11,11 +11,12 @@ start: 2020
 current: 2023
 
 # Build settings
-permalink: none
-future: false
-keep_files:
-  - assets/images
-  - assets/favicons
+permalink: /:collection/:categories/:title:output_ext
+collections_dir: collections
+collections:
+ test-my-fire:
+  output: true
+  sort_by: chapter
 
 defaults:
   -
@@ -25,12 +26,36 @@ defaults:
     values:
       layout: "post"
       #excerpt_separator: <!-- more -->
+defaults:
+  - scope:
+      path: ""
+      type: "test-my-fire"
+    values:
+      layout: "chapter"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+keep_files:
+  - assets/images
+  - assets/favicons
 
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
 
+feed:
+  disable_in_development: true
+  collections:
+    - test-my-fire
+    
 related_by: categories
 related_limit: 6
 related_categories: 1

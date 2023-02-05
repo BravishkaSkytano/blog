@@ -1,49 +1,54 @@
 ---
-layout: page
 title: Books
 ---
 <div class="cloud">
-{% for book in site.data.books %}
-{% assign book-chapters = site.posts | where: 'book', book.id %}
-{% if book-chapters.size > 0 %}
-  <a href="#{{ book.id }}" style="font-size: {{ book-chapters.size | times: 4 | plus: 100 }}%">
-    {{ book.title }} ({{ book-chapters.size }})
+{% for collection in site.collections %}
+  {% if site.collections.size > 2 %}
+    {% if collection.label != 'posts' %}
+  <a class="capitalize" href="#{{ collection.label | first | slugify }}">
+    {{ collection.label | replace: "-", " " }}
   </a>
-  
-{% endif %}
-{% assign book-chapters = nil %}
+    {% endif %}
+  {% endif %}
 {% endfor %}
 </div>
 
-{% for book in site.data.books %}
-{% assign book-chapters = site.posts | where: 'book', book.id | reverse %}
-{% if book-chapters.size > 0 %}
-<div class="post">
-  <div id="{{ book.id }}"></div>
-  <div class="post-header">
-    <h2 class="post-title">
-      {{ book.title }}
-    </h2>
-  </div>
-  
-  <div class="clearfix">
-    {% if book.cover %}
-    <img class="pure-img-responsive float" src="{{ book.cover | relative_url }}" alt="book cover">
-    {% endif %}
-    {{ book.description | markdownify }}
-  </div>
-  
-  <h3 class="content-subhead">Chapters</h3>
-  <ul>
-    {% for page in book-chapters %}
-    <li>
-      <a href="{{ page.url | relative_url }}">
-        {{ page.title }}
-      </a>
-    </li>
+{% for collection in site.collections %}
+  {% if collection.label != 'posts' %}
+<div id="{{ collection.label }}"></div>
+<h2 class="capitalize">
+  {{ collection.label | replace: '-', ' ' }}
+  <a style="padding: 0.5rem;" href="{{ '/feed' | relative_url }}/{{ collection.label }}.xml">
+    <i class="fa-solid fa-rss"></i>
+  </a>
+</h2>
+    {% assign book = site[collection.label] %}
+    {% for item in book %}
+      {% if item.metadata == true %}
+<div class="clearfix">
+        {% if item.cover %}
+  <figure class="float">
+    <img class="pure-img-responsive" src="{{ '/assets/images' | relative_url }}/{{ item.cover }}">
+  </figure>
+        {% endif %}
+        {% if item.start %}
+  <p>
+    Started: {{ item.start | date: "%b %d, %Y" }}
+    {% if item.end %}<br> Finished: {{ item.start | date: "%b %d, %Y" }}{% endif %}
+  </p>
+        {% endif %}
+  {{ item.content }}
+      {% endif %}
     {% endfor %}
-  </ul>
-  {% endif %}
 </div>
-{% assign book-chapters = nil %}
+<ul>
+    {% for item in book %}
+      {% if item.metadata != true %}
+  <li>
+    <a href="{{ item.url }}">{{ item.title }}</a>
+  </li>
+      {% endif %}
+    {% endfor %}
+</ul>
+  {% endif %}
 {% endfor %}
