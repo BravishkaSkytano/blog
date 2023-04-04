@@ -1,0 +1,30 @@
+baseURL = "https://bravishkaskytano.github.io/"
+title = "un-Graphophobic"
+description = "A place where I can be free."
+theme = "kaleidoscope"
+
+avatar = "https://www.gravatar.com/avatar/8305681be23372ec3c774233546f849f.jpg?s=200"
+
+favicon = "/favicon.ico"
+start = "2023"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 2
+
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories"
+    weight = 3
+  
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags"
+    weight = 4
