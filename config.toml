@@ -8,7 +8,7 @@ avatar = "https://www.gravatar.com/avatar/8305681be23372ec3c774233546f849f.jpg?s
 [params]
   description = "A place where I can be free."
   favicon = "/favicon.ico"
-  start = "2023"
+  start = "2020"
 
 enableGitInfo = true
 [frontmatter]
@@ -42,7 +42,7 @@ lastmod = ["lastmod", ":git", "date", "publishDate"]
   
   [[menu.main]]
     name = "Posts"
-    url = "posts"
+    url = "/posts"
     weight = 3
   
   [[menu.main]]

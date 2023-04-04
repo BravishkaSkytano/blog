@@ -198,9 +198,6 @@ blockquote {
     padding: 10px 25px;
     border: 1px solid var(--button);
     border-radius: 3px; }
-    .post .toc .title {
-      text-align: center;
-      font-weight: 600; }
   .post .nav {
     text-align: center;
     margin: 2rem 0; }
