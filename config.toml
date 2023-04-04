@@ -1,12 +1,33 @@
 baseURL = "https://bravishkaskytano.github.io/"
 title = "un-Graphophobic"
-description = "A place where I can be free."
+
 theme = "kaleidoscope"
 
 avatar = "https://www.gravatar.com/avatar/8305681be23372ec3c774233546f849f.jpg?s=200"
 
-favicon = "/favicon.ico"
-start = "2023"
+[params]
+  description = "A place where I can be free."
+  favicon = "/favicon.ico"
+  start = "2023"
+
+enableGitInfo = true
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = ["lastmod", ":git", "date", "publishDate"]
+
+[related]
+  includeNewer = true
+  threshold = 0
+  toLower = false
+[[related.indices]]
+  name = 'categories'
+  weight = 100
+[[related.indices]]
+  name = 'tags'
+  weight = 50
+[[related.indices]]
+  name = 'date'
+  weight = 10
 
 [menu]
   [[menu.main]]
@@ -18,13 +39,18 @@ start = "2023"
     name = "About"
     url = "/about"
     weight = 2
-
+  
+  [[menu.main]]
+    name = "Posts"
+    url = "posts"
+    weight = 3
+  
   [[menu.main]]
     name = "Categories"
     url = "/categories"
-    weight = 3
+    weight = 4
   
   [[menu.main]]
     name = "Tags"
     url = "/tags"
-    weight = 4
+    weight = 5
