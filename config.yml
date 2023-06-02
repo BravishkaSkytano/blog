@@ -1,0 +1,71 @@
+baseURL: "https://bravishkaskytano.github.io/"
+title: "un-Graphophobic"
+theme: "kaleidoscope"
+
+avatar: "https://www.gravatar.com/avatar/8305681be23372ec3c774233546f849f.jpg?s=200"
+
+params:
+  mainSections: ['posts']
+  author: "Bravishka Skytano"
+  favicon: "/favicon.ico"
+  site_logo: ""
+  description: "A place where I can be free."
+  featured_posts: true
+  
+  # choose fonts from
+  main_font: "georgia"
+  title_font: "garamond"
+  header_font: "garamond"
+  
+  # choose colors from https://tachyons.io/docs/themes/skins/
+  main_bg_color: "washed-red"
+  text_color: "near-black"
+  card_bg_color: "light-green"
+  link_color: "purple"
+  button_color: "light-yellow"
+  button_text_color: "dark-green"
+  # Lower the color brightness by percentage for darkmode
+  dm_brightness: ""
+
+menu:
+  main:
+  -
+    name: "Home"
+    url: "/"
+    weight: 1
+  -
+    name: "About"
+    url: "/about"
+    weight: 2
+  -
+    name: "Posts"
+    url: "/posts"
+    weight: 3
+  -
+    name: "Categories"
+    url: "/categories"
+    weight: 4
+  -
+    name: "Tags"
+    url: "/tags"
+    weight: 5
+
+enableGitInfo: true
+frontmatter:
+  date: ["date", "publishDate", "lastmod"]
+  lastmod: ["lastmod", ":git", "date", "publishDate"]
+
+related:
+  includeNewer: true
+  threshold: 0
+  toLower: false
+  indices:
+    -
+      name: 'categories'
+      weight: 100
+    -
+      name: 'tags'
+      weight: 50
+    -
+      name: 'date'
+      weight: 10
