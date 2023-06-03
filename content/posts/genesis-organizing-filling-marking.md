@@ -1,7 +1,7 @@
 ---
 title: 'Genesis: Organizing, Filling, Marking'
 date: 2020-11-15
-categories: [devotionals]
+categories: [devotional]
 tags: [Bible, theology]
 ---
 
