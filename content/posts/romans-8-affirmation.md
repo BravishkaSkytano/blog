@@ -1,7 +1,7 @@
 ---
 title: Romans 8 Affirmation
 date: 2023-02-01
-categories: [devotionals]
+categories: [devotional]
 tags: [Bible, Romans]
 toc: true
 ---

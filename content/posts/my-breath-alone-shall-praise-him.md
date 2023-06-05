@@ -1,7 +1,7 @@
 ---
 title: My Breath Alone Shall Praise Him
 date: 2022-09-06
-categories: [devotionals]
+categories: [devotional]
 tags: [theology]
 ---
 
