@@ -6,7 +6,7 @@ avatar: "https://www.gravatar.com/avatar/8305681be23372ec3c774233546f849f.jpg?s=
 
 params:
   mainSections: ['posts']
-  author: "Bravishka Skytano"
+  author: "Yoela O."
   favicon: "/favicon.ico"
   site_logo: ""
   description: "A place where I can be free."
@@ -29,30 +29,26 @@ params:
 
 menu:
   main:
-  -
-    name: "Home"
-    url: "/"
-    weight: 1
-  -
-    name: "About"
+ -
+    name: "Me"
     url: "/about"
-    weight: 2
+    weight: 1
   -
     name: "Posts"
     url: "/posts"
-    weight: 3
-  -
-    name: "Notes"
-    url: "/notes"
-    weight: 4
+    weight: 2
   -
     name: "Categories"
     url: "/categories"
-    weight: 5
+    weight: 3
   -
     name: "Tags"
     url: "/tags"
-    weight: 6
+    weight: 4
+  -
+    name: "Notes"
+    url: "https://vsdigitalgarden.vercel.app/"
+    weight: 5
 
 enableGitInfo: true
 frontmatter:
