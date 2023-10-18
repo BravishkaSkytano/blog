@@ -1,12 +1,3 @@
 [submodule "themes/kaleidoscope"]
 	path = themes/kaleidoscope
 	url = https://github.com/BravishkaSkytano/hugo-theme-kaleidoscope.git
-[submodule "content/posts"]
-	path = content/posts
-	url = https://github.com/BravishkaSkytano/posts
-[submodule "content/notes"]
-	path = content/notes
-	url = https://github.com/BravishkaSkytano/notes
-[submodule "content/diary"]
-	path = content/diary
-	url = https://github.com/BravishkaSkytano/diary
