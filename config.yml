@@ -29,7 +29,7 @@ params:
 
 menu:
   main:
- -
+  -
     name: "Me"
     url: "/about"
     weight: 1
