@@ -16,16 +16,6 @@ params:
   main_font: "georgia"
   title_font: "garamond"
   header_font: "garamond"
-  
-  # choose colors from https://tachyons.io/docs/themes/skins/
-  main_bg_color: "washed-red"
-  text_color: "red"
-  card_bg_color: "light-green"
-  link_color: "purple"
-  button_color: "light-yellow"
-  button_text_color: "dark-green"
-  # Lower the color brightness by percentage for darkmode
-  dm_brightness: ""
 
 menu:
   main:

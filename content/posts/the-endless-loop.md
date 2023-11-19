@@ -1,7 +1,8 @@
 ---
-title: The Endless Loop
-categories: [poetry]
-tags: [depression]
+title: "The Endless Loop"
+date: 2023-01-01
+categories: ["poetry"]
+tags: ["depression"]
 ---
 I winced as another rock hit my skin.\
 I feel like it left a mark\
