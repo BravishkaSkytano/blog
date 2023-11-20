@@ -10,35 +10,62 @@ params:
   favicon: "/favicon.ico"
   site_logo: ""
   description: "A place where I can be free."
-  featured_posts: true
+  featured_posts: false
   
   # choose fonts from
   main_font: "georgia"
   title_font: "garamond"
   header_font: "garamond"
 
+# https://gohugo.io/content-management/menus/
 menu:
   main:
+  - 
+    name: About
+    pageRef: /about
+    weight: 10
+  - 
+    name: Posts
+    pageRef: /posts
+    weight: 20
+  - 
+    name: Categories
+    pageRef: /categories
+    weight: 30
+  - 
+    name: Tags
+    pageRef: /tags
+    weight: 40
+  - 
+    name: Notes
+    params:
+      rel: external
+    pre: <i class="fa fa-heart"></i>
+    url: https://vsdigitalgarden.vercel.app/
+    weight: 50
+
+  footer:
+  - 
+    name: Github
+    params:
+      rel: external
+    pre: <i class="fa-brands fa-github"></i>
+    url: https://github.com/BravishkaSkytano
+    weight: 10
   -
-    name: "Me"
-    url: "/about"
-    weight: 1
+    name: Reddit
+    params:
+      rel: external
+    pre: <i class="fa-brands fa-reddit-alien"></i>
+    url: https://www.reddit.com/user/Y_Mystake_O
+    weight: 20
   -
-    name: "Posts"
-    url: "/posts"
-    weight: 2
-  -
-    name: "Categories"
-    url: "/categories"
-    weight: 3
-  -
-    name: "Tags"
-    url: "/tags"
-    weight: 4
-  -
-    name: "Notes"
-    url: "https://vsdigitalgarden.vercel.app/"
-    weight: 5
+    name: LinkedIn
+    params:
+      rel: external
+    pre: <i class="fa-brands fa-linkedin-in"></i>
+    url: https://www.linkedin.com/in/yoela-o
+    weight: 30
 
 enableGitInfo: true
 frontmatter:
