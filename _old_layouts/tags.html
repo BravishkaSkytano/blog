@@ -1,0 +1,27 @@
+---
+layout: page
+title: Tags
+---
+<div style="text-align: center;">
+  {% assign tags = site.tags | sort %}
+  {% for tag in tags %}
+  <a href="#{{ tag[0] | slugify }}" class="margin-small capitalize"
+    style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+    {{ tag[0] }} <span class="badge">{{ tag | last | size }}</span>
+  </a>
+  {% endfor %}
+</div>
+
+{% for tag in tags %}
+<h2 id="{{ tag[0] | slugify }}" class="capitalize">
+  {{ tag[0] }}
+</h2>
+<ol>
+  {% for post in tag[1] %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <span class="badge">{{ post.date | date: "%B %-d, %Y" }}</span>
+  </li>
+  {% endfor %}
+</ol>
+{% endfor %}

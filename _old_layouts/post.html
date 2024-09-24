@@ -1,0 +1,24 @@
+---
+layout: base
+---
+<ul class="breadcrumb border">
+  <li>
+    <a href="{{ '/' | relative_url }}">Home</a>
+  </li>
+  <li>
+    <a href="{{ '/categories' | relative_url }}#{{ page.category }}">{{ page.category | capitalize }}</a>
+  </li>
+</ul>
+
+<article class="article">
+  <h1 class="article-title">{{ page.title }}</h1>
+  <p class="article-meta">
+    Written on {{ page.date | date: "%B %-d, %Y" }} | Tags:
+    {% for tag in page.tags %}
+    <a href="{{ '/tags' | relative_url }}#{{ tag }}">#{{ tag }}</a>
+    {% endfor %}
+  </p>
+  {% if page.description %}<p class="text-lead">{{ page.description }}</p>{% endif %}
+  <hr>
+  {{ content }}
+</article>

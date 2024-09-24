@@ -1,0 +1,52 @@
+:root {
+  color-scheme: light dark;
+  scroll-behavior: smooth;
+}
+
+article .article-title,
+article .article-meta,
+.card-body h3,
+.card-body h4 {
+  text-align: center;
+}
+
+.collapsible.full-width {
+  width: 100%;
+}
+
+.to-top,
+.to-bottom {
+  opacity: 1;
+  display: inline-block;
+  position: fixed;
+  bottom: 0.1em;
+  padding: 1em;
+}
+
+.to-top {
+  right: 1em;
+}
+
+.to-bottom {
+  left: 1em;
+}
+
+.to-top .paper-btn {
+  border-top-left-radius: 185px 160px;
+  border-top-right-radius: 200px 195px;
+  border-bottom-right-radius: 160px 195px;
+  border-bottom-left-radius: 185px 190px;
+  padding: 0.6em 1em;
+}
+
+.to-bottom .paper-btn {
+  border-top-right-radius: 185px 160px;
+  border-top-left-radius: 200px 195px;
+  border-bottom-left-radius: 160px 195px;
+  border-bottom-right-radius: 185px 190px;
+  padding: 0.6em 1em;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}

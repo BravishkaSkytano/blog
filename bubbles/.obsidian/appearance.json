@@ -1,0 +1,25 @@
+{
+  "accentColor": "",
+  "cssTheme": "Minimal",
+  "enabledCssSnippets": [
+    "callouts",
+    "dailyNotes",
+    "dashboard",
+    "dashboard-ReadLineLength",
+    "MCL Multi Column",
+    "MCL Wide Views",
+    "nick-milo-callouts",
+    "supercharged-links-gen",
+    "tasks-priority-checkbox",
+    "gallery",
+    "MCL Gallery Cards",
+    "clean-embeds-all",
+    "clean-embeds",
+    "tasks-due-date"
+  ],
+  "theme": "system",
+  "baseFontSizeAction": true,
+  "textFontFamily": "",
+  "monospaceFontFamily": "",
+  "interfaceFontFamily": ""
+}

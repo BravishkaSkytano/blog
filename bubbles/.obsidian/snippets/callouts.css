@@ -1,0 +1,21 @@
+/* Callouts for Omnivore Highlights */
+
+.callout[data-callout="yellow"] {
+	--callout-color: 244, 188, 91;
+	--callout-icon: lucide-highlighter;
+}
+
+.callout[data-callout="red"] {
+	--callout-color: var(--callout-error);
+	--callout-icon: lucide-highlighter;
+}
+
+.callout[data-callout="green"] {
+	--callout-color: var(--callout-success);
+	--callout-icon: lucide-highlighter;
+}
+
+.callout[data-callout="blue"] {
+	--callout-color: var(--callout-info);
+	--callout-icon: lucide-highlighter;
+}

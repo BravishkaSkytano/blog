@@ -1,0 +1,23 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "date": "date",
+    "author": "text",
+    "status": "multitext",
+    "modified": "date",
+    "isbn10": "number",
+    "rank": "number",
+    "up": "multitext",
+    "related": "multitext",
+    "start": "date",
+    "dg-home": "checkbox",
+    "published": "date",
+    "genre": "text",
+    "shelf": "text",
+    "seriesnumber": "number",
+    "rating": "number",
+    "draft": "checkbox"
+  }
+}
