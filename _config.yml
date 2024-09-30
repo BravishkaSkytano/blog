@@ -1,6 +1,6 @@
 title: "un-Graphophobic"
 #subtitle: "Example text"
-#description: "lorem upsum"
+#description: "lorem ipsum"
 
 theme: just-the-docs
 
@@ -92,24 +92,16 @@ back_to_top_text: "Back to top"
 color_scheme: dark
 
 callouts:
+  #colors: grey-lt, grey-dk, purple, blue, green, yellow, and red
+  info:
+    title: Info
+    color: yellow
+  summary:
+    title: Summary
+    color: purple
   warning:
     title: Warning
     color: red
-
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
-
-readme_index:
-  enabled: true
-
-titles_from_headings:
-  enabled: true
-  strip_title: true
-  collections: true
 
 exclude:
   # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
@@ -126,3 +118,5 @@ exclude:
   # site specific
   - .foam/
   - .vscode/
+  - .stfolder/
+  - .markdownlint.json

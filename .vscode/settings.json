@@ -1,10 +1,8 @@
 {
   "files.autoSave": "onFocusChange",
-  "editor.minimap.enabled": false,
   "editor.wrappingIndent": "indent",
   "editor.overviewRulerBorder": false,
   "editor.lineHeight": 24,
-  "foam.edit.linkReferenceDefinitions": "withExtensions",
   "[markdown]": {
     "editor.quickSuggestions": {
       "other": true,
@@ -17,14 +15,41 @@
   "files.exclude": {
     "**/_site": true,
     "bubbles/.obsidian": true,
-    "bubbles/.trash": true
+    "bubbles/.trash": false,
+    ".stfolder": true,
+    ".jekyll-cache": false
   },
   "files.watcherExclude": {
     "**/_site": true,
     "bubbles/.obsidian": true,
-    "bubbles/.trash": true
+    "bubbles/.trash": true,
+    ".stfolder": true
   },
-  "foam.files.ignore": ["_site/**/*", "bubbles/.obsidian", "bubbles/.trash"],
   "files.insertFinalNewline": true,
-  "markdown.styles": [".vscode/custom-tag-style.css"]
+  "markdown.styles": [".vscode/custom-tag-style.css"],
+  "markdownlint.config": {
+    "default": true,
+    "MD025": {
+      "front_matter_title": ""
+    },
+    "MD026": {
+      "punctuation": ".,;:"
+    },
+    "MD053": {
+      "ignored_definitions": ["//begin", "//end"]
+    }
+  },
+  "cSpell.words": [
+    "Aerians",
+    "Arion",
+    "Eldoria",
+    "Fireborn",
+    "Gemfolk",
+    "Ilmaria",
+    "Merfolk",
+    "Sunaara",
+    "Thorne",
+    "Wyrms",
+    "Zarim"
+  ]
 }
