@@ -1,0 +1,18 @@
+[garden]
+  title = "wiki-bonsai"
+  root = "i.bonsai"
+  attrs = "yaml"
+
+[doc]
+  [doc.kind]
+    [doc.kind.doc]
+      path = "/"
+      color = "#3e5c50"
+    [doc.kind.zombie]
+      emoji = "🧟"
+      color = "#959DA5"
+    [doc.kind.template]
+      path = "/templates/"
+      prefix = "t."
+      emoji = "🧩"
+      color = "#F8F0E3"

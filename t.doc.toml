@@ -1,0 +1,38 @@
+[default]
+path   = "/"
+color  = "#31AF31"
+
+[index]
+path   = "/bonsai/_index/"
+prefix = "i."
+emoji  = "🗄"
+color  = "#F0C61F"
+# emoji  = "🪵" ; bonsai.trunk
+
+[entry]
+path   = "/bonsai/_entries/"
+emoji  = "🏷"
+color  = "#31AF31"
+# emoji  = "🍃"; bonsai.leaf
+
+[book]
+path   = "/bonsai/_books/"
+prefix = "bk."
+emoji  = "📚"
+
+# # doctype resolution: path < attr < prefix
+# [example]
+# # 'path' defines the relative path in vault to what files should map to this doctype
+# path = "relative/path/to/docs/"
+# # 'attr' defines what attribute key should map to this doc type -- defaults to the name of this type entry which is 'example' here
+# attr = "example-key"
+# # 'prefix' defines what filename prefix may trigger this type (useful for cmd/ctrl+click to create new doc from template)
+# prefix = "prefix."
+# # 'suffix' to append to new doc (useful for appending unique ids)
+# suffix = "-suffix"
+# # name of the type's template (defaults to 't.<typename>')
+# template = "template-name"
+# # 'emoji' to apply in treeviews and list formats
+# emoji = "🤓"
+# # 'color' to apply in [[wikilinks]], graph nodes, and other color-coded identifiers
+# color = "#FFF"
