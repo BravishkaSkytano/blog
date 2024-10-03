@@ -1,5 +1,4 @@
 {
-  "files.autoSave": "onFocusChange",
   "editor.wrappingIndent": "indent",
   "editor.overviewRulerBorder": false,
   "editor.lineHeight": 24,
@@ -25,7 +24,6 @@
     "bubbles/.trash": true,
     ".stfolder": true
   },
-  "files.insertFinalNewline": true,
   "markdown.styles": [".vscode/custom-tag-style.css"],
   "markdownlint.config": {
     "default": true,

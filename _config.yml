@@ -9,14 +9,18 @@ theme: just-the-docs
 favicon_ico: "/assets/favicons/favicon.ico"
 
 defaults:
-  - scope:
-      path: "bubbles"
+  - 
+    scope:
       type: "pages"
     values:
       layout: "default"
 
 # Generate permalinks in format specified in: https://jekyllrb.com/docs/permalinks/#built-in-formats
 permalink: pretty
+
+# --------------------------------------------- #
+#          Config for just-the-docs theme       #
+# --------------------------------------------- #
 
 # Enable or disable the site search
 # Supports true (default) or false
@@ -102,6 +106,39 @@ callouts:
   warning:
     title: Warning
     color: red
+
+# --------------------------------------------- #
+#           Config for jekyll-wikirefs          #
+# --------------------------------------------- #
+wikilinks: #wikirefs?
+  attributes:
+    enabled: true
+  css:
+    exclude:
+      # markdown
+      - "footnote"
+      - "reversefootnote"
+    name:
+      typed: 'typed'
+      wiki: 'wiki-link'
+      web: 'web-link'
+      invalid_wiki: 'invalid-wiki-link'
+      embed_container: 'embed-container'
+      embed_title: 'embed-title'
+      embed_content: 'embed-content'
+      embed_link: 'embed-wiki-link'
+      embed_image_container: 'embed-image-container'
+      embed_image: 'embed-image'
+  enabled: true
+  exclude: []
+
+# --------------------------------------------- #
+kramdown:
+  syntax_highlighter: rouge
+  math_engine: mathjax
+
+plugins:
+  - jekyll-wikirefs
 
 exclude:
   # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
