@@ -13,23 +13,23 @@
   "git.postCommitCommand": "sync",
   "files.exclude": {
     "**/_site": true,
-    "bubbles/.obsidian": true,
-    "bubbles/.trash": false,
+    "**/.obsidian": true,
+    "**/.trash": false,
     ".stfolder": true,
     ".jekyll-cache": false
   },
   "files.watcherExclude": {
     "**/_site": true,
-    "bubbles/.obsidian": true,
-    "bubbles/.trash": true,
+    "**/.obsidian": true,
+    "**/.trash": true,
     ".stfolder": true
   },
   "markdown.styles": [".vscode/custom-tag-style.css"],
   "markdownlint.config": {
     "default": true,
-    "MD025": {
-      "front_matter_title": ""
-    },
+    // "MD025": {
+    //   "front_matter_title": ""
+    // },
     "MD026": {
       "punctuation": ".,;:"
     },
@@ -49,5 +49,17 @@
     "Thorne",
     "Wyrms",
     "Zarim"
-  ]
+  ],
+  "foam.completion.label": "title",
+  "foam.files.ignore": [
+    "node_modules/**/*",
+    "_site/**/*",
+    ".stfolder/**/*",
+    "**/.obsidian/**/*",
+    "**/.trash/**/*"
+  ],
+  //"foam.completion.useAlias": "whenPathDiffersFromTitle",
+  "foam.files.newNotePath": "currentDir",
+  "foam.openDailyNote.onStartup": true,
+  "foam.edit.linkReferenceDefinitions": "withExtensions"
 }

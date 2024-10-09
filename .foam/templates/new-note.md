@@ -2,15 +2,12 @@
 foam_template:
   name: New Note
   description: Foam's default new note template
-  filepath: 'bubbles/$FOAM_SLUG.md'
+  filepath: 'collections/_notes/$FOAM_SLUG.md'
 ---
 
 ---
 title: $FOAM_TITLE
-parent: 
 ---
-# $FOAM_TITLE
-
 Welcome to Foam templates.
 
 What you see in the heading is a placeholder

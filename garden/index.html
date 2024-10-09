@@ -1,0 +1,22 @@
+---
+layout: page
+title: Garden
+---
+
+{% assign folders = site.pages | where_exp:"item", "item.path contains 'garden'" %}
+{% assign gardenfolders = "" | split: "" %}
+
+{% for folder in folders %}
+{% assign tempvar = folder.path | split:"/" %}
+{% assign gardenfolders = gardenfolders | push: tempvar[1] %}
+{% endfor %}
+
+{% assign gardenfolders = gardenfolders | uniq | sort %}
+
+<div class="columns">
+  {% for folder in gardenfolders %}{% unless folder contains 'md' or folder contains 'html' %}
+  <a class="paper-btn margin-bottom capitalize" href="{{ site.baseurl }}/garden/{{ folder }}/">
+    {{ folder | replace: "-", " " }}
+  </a>
+  {% endunless %}{% endfor %}
+</div>

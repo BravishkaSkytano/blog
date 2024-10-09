@@ -1,0 +1,12 @@
+---
+layout: page
+title: States
+permalink: /states/
+---
+<ul>
+  {% for state in site.states %}
+  <li>
+    <a href="{{ state.url }}">{{ state.title }}</a>
+  </li>
+  {% endfor %}
+</ul>

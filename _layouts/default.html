@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+  <div class="row">
+    <div class="sm-5 md-3 col">
+      <div class="paper">
+        {% include sidebar-left.html %}
+      </div>
+    </div>
+    <div id="top" class="col-fill col">
+      <div class="paper">
+        {{ content }}
+        <hr id="bottom">
+      </div>
+    </div>
+    <div class="sm-12 md-3 col">
+      <div class="paper margin-bottom">
+        {% include sidebar-right.html %}
+      </div>
+      <div class="paper margin-bottom">
+        {% include footer.html %}
+      </div>
+    </div>
+    <div class="to-top">
+      <a href="#top" class="paper-btn margin">▲</a>
+    </div>
+    <div class="to-bottom">
+      <a href="#bottom" class="paper-btn margin">▼</a>
+    </div>
+  </div>
+</body>
+
+</html>
