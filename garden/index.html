@@ -2,7 +2,51 @@
 layout: page
 title: Garden
 ---
+<p>
+  Welcome to my digital garden! What's that? Well, a digital garden is a curated set of notes, often shared online for
+  learning and sharing purposes. My garden is mostly full of my study notes, plain ole' random notes, prose, and
+  whatever world I'm creating at the moment. So, yes, I'm tending to it nearly every day.
+</p>
 
+<p>
+  With that out of the way, just a fair warning, not everything in this garden will make sense to you. There are some
+  sections that are… shall we say, little buds that need a bit more watering and time before they're big enough to
+  actually portray their species. To help you (and me) figure out the growth status of a page, there are emojis on every
+  one that show their current state within the garden.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Emoji</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>🌱</td>
+      <td>Seedling</td>
+      <td>A new idea that is slowly emerging and waiting to be cultivated</td>
+    </tr>
+    <tr>
+      <td>🌿</td>
+      <td>Branch</td>
+      <td>Fleshed out a bit, needs some cross-pollination</td>
+    </tr>
+    <tr>
+      <td>🌸</td>
+      <td>Bloom</td>
+      <td>Beautiful, but not permanent, enjoy it while it lasts</td>
+    </tr>
+    <tr>
+      <td>🌲</td>
+      <td>Tree</td>
+      <td>Mature, sturdy, a strong parent of many other little seedlings, branches, and blooms</td>
+    </tr>
+  </tbody>
+</table>
+<hr class="margin-bottom">
 {% assign folders = site.pages | where_exp:"item", "item.path contains 'garden'" %}
 {% assign gardenfolders = "" | split: "" %}
 

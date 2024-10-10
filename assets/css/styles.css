@@ -2,6 +2,24 @@
   scroll-behavior: smooth;
 }
 
+/* make sure color vars are attached to the root of the html document */
+html {
+  /* nodes */
+  /* glow */
+  --graph-node-current-glow: yellow;
+  --graph-node-tagged-glow: green;
+  --graph-node-visited-glow: blue;
+  /* color */
+  --graph-node-stroke-color: grey;
+  --graph-node-missing-color: transparent;
+  --graph-node-unvisited-color: brown;
+  --graph-node-visited-color: green;
+  /* links */
+  --graph-link-color: brown;
+  --graph-particles-color: grey;
+  /* label text */
+  --graph-text-color: black;
+}
 article .article-title,
 article .article-meta,
 .card-body h3,
@@ -77,4 +95,22 @@ article .article-meta,
 
 .columns .paper-btn {
   width: 100%;
+}
+
+.site-tag {
+  text-align: center;
+}
+
+.site-tag a {
+  background-image: none;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.site-tag a:visited {
+  color: var(--secondary);
+}
+
+ul li.pinned::before {
+  content: "📌"
 }

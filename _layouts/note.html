@@ -7,7 +7,7 @@ layout: default
   <h1 class="article-title">{{ page.state }} {{ page.title }}</h1>
   <p class="article-meta">
     <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">
-      Last updated on {{ page.last_modified_at | date: "%B %-d, %Y" }}
+      Last updated on {{ page.last_modified_at | date_to_string: "ordinal", "US" }}
     </time>
   </p>
   {% if page.description %}
@@ -16,5 +16,27 @@ layout: default
   </p>
   {% endif %}
   <hr>
-  {{ content }}
+  <div class="markdown-body">
+    {{ content }}
+  </div>
+  
 </article>
+
+<!-- render as 👉 "link-type: title" -->
+
+{% for attr in page.attributed %}
+{{ attr.type }}:
+{% for url in attr.urls %}
+{% assign linked_doc = site.documents | where: "url", attr.url | first %}
+<a class="wiki-link" href="{{ linked_doc.url }}">{{ linked_doc.title }}</a>
+{% endfor %}
+{% endfor %}
+
+<!-- render as 👉 "link-type: title" -->
+
+{% for backlink in page.backlinks %}
+{% assign linked_doc = site.documents | where: "url", backlink.url | first %}
+{{ backlink.type }}: <a class="wiki-link" href="{{ linked_doc.url }}">{{ linked_doc.title }}</a>
+{% endfor %}
+
+<div id="jekyll-graph"></div>

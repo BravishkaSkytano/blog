@@ -1,4 +1,0 @@
----
-layout: gindex
-title: Notes
----

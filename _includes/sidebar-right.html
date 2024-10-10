@@ -1,7 +1,35 @@
 <h3 style="text-align: center;">Collections</h3>
-<p class="liner">
-  Garden
+<p class="liner">Categories</p>
+<ul>
+  {% for cat in site.categories %}
+  <li>
+    <a href="{{ site.baseurl }}/categories/#{{ cat[0] | slugify }}" class="capitalize">
+      {{ cat[0] }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+<p style="text-align: right;">
+  <a href="{{ site.baseurl }}/categories/">
+    View all categories
+  </a>
 </p>
+<p class="liner">Tags</p>
+<ul>
+  {% for tag in site.tags limit: 5 %}
+  <li>
+    <a href="{{ site.baseurl }}/tags/#{{ tag[0] | slugify }}">
+      {{ tag[0] }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+<p style="text-align: right;">
+  <a href="{{ site.baseurl }}/tags/">
+    View all tags
+  </a>
+</p>
+<p class="liner">Garden</p>
 <ul>
   {% assign folders = site.pages | where_exp:"item", "item.path contains 'garden'" %}
   {% assign gardenfolders = "" | split: "" %}
@@ -41,10 +69,10 @@
     </a>
   </li>
   {% endfor %}
-  <p style="text-align: right;">
-    <a href="{{ site.baseurl }}/{{ collection.label | slugify }}/">
-      View all {{ collection.label | replace: "-", " " }}
-    </a>
-  </p>
 </ul>
+<p style="text-align: right;">
+  <a href="{{ site.baseurl }}/{{ collection.label | slugify }}/">
+    View all {{ collection.label | replace: "-", " " }}
+  </a>
+</p>
 {% endif %}{% endfor %}

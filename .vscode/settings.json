@@ -59,7 +59,6 @@
     "**/.trash/**/*"
   ],
   //"foam.completion.useAlias": "whenPathDiffersFromTitle",
-  "foam.files.newNotePath": "currentDir",
   "foam.openDailyNote.onStartup": true,
-  "foam.edit.linkReferenceDefinitions": "withExtensions"
+  "foam.edit.linkReferenceDefinitions": "withoutExtensions"
 }
