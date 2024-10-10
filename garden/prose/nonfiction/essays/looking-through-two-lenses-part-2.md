@@ -1,11 +1,8 @@
 ---
 title: Looking Through Two Lenses Part 2
-date: 2024-08-14
-parent: Essays
+state: 🌿
 tags: LGBTQIA+ gender-dysphoria
 ---
-# Looking Through Two Lenses, Part 2: Gender Dysphoria
-
 The twenty-first century can probably be called the century when so much happened, we’re not even sure how to categorize it. ==Global economy is now a thing, private enterprises are everywhere, some kind of war happens every decade or so, global pandemics are no longer just a horror story, telework is now a norm, everyone has access to the internet, AI is entering homes, and DNA sequencing is available for the middle class.== All of those would have been fairytales in the twentieth century, and yet, that’s probably not what’s going to be remembered in the future. You know what will be remembered? That the twenty-first century was the century of feelings. We all got so in touch with our feelings and emotions that they controlled us and changed the entire world. When the twenty-second century rolls around, this century will be known for all the big movements that shook the world, like the LGBTQIA+ movement. Speaking of which, what exactly is that about? Last time I wrote about it, I examined the first two letters (lesbian and gay, aka homosexuality) through both secular and Biblical perspectives. This time, I’m going to take a look at what it means to be transgender, and try to figure out what the world and the Bible has to say about it.
 
 > [!NOTE]

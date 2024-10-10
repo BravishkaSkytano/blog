@@ -1,0 +1,4 @@
+---
+title: Affirmations
+state: 🌲
+---

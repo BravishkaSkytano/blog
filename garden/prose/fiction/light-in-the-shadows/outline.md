@@ -1,5 +1,6 @@
 ---
 title: Outline for Lights in the Shadows, Book 1
+state: 🌱
 ---
 
 {: .summary}

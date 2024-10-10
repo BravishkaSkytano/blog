@@ -1,6 +1,6 @@
 ---
 title: Coyote
-parent: Fiction
+state: 🌿
 ---
 # Primary Character Sketch: Coyote
 

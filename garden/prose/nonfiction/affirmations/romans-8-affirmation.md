@@ -1,12 +1,9 @@
 ---
 title: Romans 8 Affirmation
-date: 2023-02-01
-parent: Affirmations
+state: 🌿
 tags: Bible Romans
 toc: true
 ---
-# Romans 8 Affirmation
-
 Today I read Romans 8 and saw so many promises and encouraging words that I was compelled to write them down and share. I encourage you to affirm these over yourself and your loved ones.
 
 ## I am "free from the law of sin and death" (v. 2)

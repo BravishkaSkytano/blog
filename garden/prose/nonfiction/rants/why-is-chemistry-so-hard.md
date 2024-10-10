@@ -1,11 +1,8 @@
 ---
 title: Why Is Chemistry So Hard?
-date: 2023-04-06
-parent: Rants
+state: 🌿
 tags: school patience
 ---
-# Why Is Chemistry So Hard?
-
 Out of all the electives I could take, why did I choose chemistry? And not only did I choose chem, but I also chose Algrebra 2 and a Latin course AND a creative writing course. _Why?_ Because I wasn’t thinking, of course.
 
 Have you ever made a decision that didn’t seem like a big deal at the time but later became a big annoyance and you had to ask yourself how did you not see this coming? I’ve done that _soooooo_ many times, and ever time I ask myself how in the world did I manage to do it AGAIN!. It’s too late to reverse your decision and now you have to somehow figure out how to deal with it and not go crazy. Yup, that’s my life.

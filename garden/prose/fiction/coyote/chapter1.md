@@ -1,6 +1,6 @@
 ---
 title: Chapter 1
-parent: Coyote
+state: 🌿
 ---
 Coyote watched the young doe sniffing the ground. He looked down at the small figurine and back at the doe. With slight nicks Coyote began forming small circles on the figurine in his hand. He looked back up at the doe and smiled as he caught the female watching him. Coyote showed her the small figurine, “Almost looks like you, doesn’t it?”
 
