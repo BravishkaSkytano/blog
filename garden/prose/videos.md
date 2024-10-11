@@ -1,10 +1,9 @@
 ---
 title: Videos and Tips
-parent: Prose
-nav_order: 100
+state: 🌲
+description: A collection of videos and articles that I've gathered around the years to refer to for my writing.
+pinned: true
 ---
-# Videos and Tips
-
 ## Playlists
 
 - [New Writers: Start Here - YouTube](https://youtube.com/playlist?list=PLV6pMftb_QTlFALRRV8oSFPhc4tiU91oZ&si=CESESG3B8IK2cZPY)
@@ -19,7 +18,7 @@ nav_order: 100
 
 ### 27-Chapter 💖
 
-- [HOW TO OUTLINE | 3 act 9 block 27 chapter example - YouTube](https://youtu.be/fe3eodLF_Uo?si=MfcHf4wfuH48k2rH)
+- [HOW TO OUTLINE - 3 act 9 block 27 chapter example - YouTube](https://youtu.be/fe3eodLF_Uo?si=MfcHf4wfuH48k2rH)
 - [The Ultimate Guide to Outlining Your Story: Exploring the 27-Chapter Outline, From Kat O&#39;Keeffe - YouTube](https://youtu.be/Y3wua1KWRVI?si=G-2ucsHFfqh4WsGA)
 - [The Ultimate Guide to Outlining Your Story: Exploring the 27-Chapter Outline—UPDATED - YouTube](https://youtu.be/RNV--FikzF0?si=zHBcy_JinlNZ-zwr)
 
@@ -29,7 +28,7 @@ nav_order: 100
 
 ## Dialogue
 
-- [The Key to Writing Freakishly Good Dialogue | Video Essay - YouTube](https://youtu.be/-AhtKvgy6MA?si=U9XBRzot0MdRcWCh)
+- [The Key to Writing Freakishly Good Dialogue - Video Essay - YouTube](https://youtu.be/-AhtKvgy6MA?si=U9XBRzot0MdRcWCh)
   - summarize important info **FIRST**
   - characters speak through **FILTERS**
   - know the **personality** of your characters, even the minor ones

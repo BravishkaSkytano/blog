@@ -17,6 +17,7 @@ defaults:
       path: garden
     values:
       layout: note
+      pinned: false
   - scope:
       path: "**/*"
     values:

@@ -21,22 +21,3 @@ layout: default
   </div>
   
 </article>
-
-<!-- render as 👉 "link-type: title" -->
-
-{% for attr in page.attributed %}
-{{ attr.type }}:
-{% for url in attr.urls %}
-{% assign linked_doc = site.documents | where: "url", attr.url | first %}
-<a class="wiki-link" href="{{ linked_doc.url }}">{{ linked_doc.title }}</a>
-{% endfor %}
-{% endfor %}
-
-<!-- render as 👉 "link-type: title" -->
-
-{% for backlink in page.backlinks %}
-{% assign linked_doc = site.documents | where: "url", backlink.url | first %}
-{{ backlink.type }}: <a class="wiki-link" href="{{ linked_doc.url }}">{{ linked_doc.title }}</a>
-{% endfor %}
-
-<div id="jekyll-graph"></div>

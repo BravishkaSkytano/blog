@@ -25,9 +25,7 @@ layout: default
     {% endfor %}
   </ul>
   {% endif %}
-  {% assign notes = site.pages | where_exp: "note" , "note.path contains 'garden'" | sort: "last_modified_at_timestamp"
-  |
-  reverse %}
+  {% assign notes = site.pages | where_exp: "note" , "note.path contains 'garden'" | sort: "last_modified_at_timestamp" %}
   <p>
     <strong>Recently updated notes:</strong>
   </p>

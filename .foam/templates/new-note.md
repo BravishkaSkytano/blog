@@ -9,5 +9,4 @@ foam_template:
 title: $FOAM_TITLE
 state: ${1|🌱,🌿,🌸,🌲|}
 description: ${2}
-pinned: ${3|true,false|}
 ---

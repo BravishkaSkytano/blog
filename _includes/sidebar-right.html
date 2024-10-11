@@ -64,8 +64,9 @@
   {% assign docs = collection.docs | sort: "last_modified_at_timestamp" | reverse %}
   {% for doc in docs limit: 5 %}
   <li>
-    <a href="{{ doc.url }}">
-      {{ doc.last_modified_at | date: "%Y-%m-%d" }} — <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
+    {{ doc.last_modified_at | date: "%Y-%m-%d" }} —
+    <a href="{{ site.baseurl }}{{ doc.url }}">
+      {{ doc.title }}
     </a>
   </li>
   {% endfor %}
