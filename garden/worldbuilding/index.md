@@ -1,5 +1,8 @@
 ---
+layout: gindex
 title: Worldbuilding
+state: 🌲
+pinned: true
 ---
 > Worldbuilding is the process of creating a fictional world, often for use in speculative fiction, such as science fiction, fantasy, or horror. There are several different categories of worldbuilding, including:
 >

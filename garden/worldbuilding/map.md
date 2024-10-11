@@ -1,9 +1,6 @@
----
-title: Simple Map
----
 Here is a simple map of Ilmaria, illustrating the major regions:
 
-![map](/assets/images/Ilmaria-basic-map.png)
+![map](/assets/img/Ilmaria-basic-map.png)
 
 - **Crystaline Peaks**: Located in the northwest, marked in light blue.
 - **Eldoria Forests**: Situated in the north-central part, marked in green.
