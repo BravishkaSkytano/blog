@@ -1,3 +1,0 @@
-# Graded Absolutism
-
-#🌱

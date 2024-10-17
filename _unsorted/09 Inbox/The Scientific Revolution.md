@@ -1,1 +1,0 @@
-The scientific revolution happened in Europe between 1500 and 1750 A.D.

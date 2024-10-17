@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: xb4ko-rjtth
+created: 2024-09-17T13:37:00-04:00

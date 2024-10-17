@@ -1,3 +1,0 @@
-# Conflicting Absolutism
-
-#🌱
