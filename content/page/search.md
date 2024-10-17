@@ -1,6 +1,7 @@
 ---
 title: Search
-slug: search
+date: 2024-10-16T20:25:30
+lastmod: 2024-10-16T23:19:55
 layout: search
 outputs:
   - html
@@ -10,5 +11,4 @@ menu:
     weight: -60
     params:
       icon: search
-lastmod: 2024-10-16T20:25
 ---

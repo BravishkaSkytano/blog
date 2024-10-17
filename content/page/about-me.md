@@ -1,8 +1,8 @@
 ---
 title: About Me
 description: Christian. Student. Reader. Leader.
-date: 2024-10-16T20:08
-lastmod: 2024-10-16T20:09
+date: 2024-10-16T20:08:30
+lastmod: 2024-10-16T23:19:07
 aliases:
   - about
   - contact

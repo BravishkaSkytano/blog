@@ -1,5 +1,6 @@
 ---
 title: Links
+lastmod: 2024-10-16T23:19:45
 links:
   - title: GitHub
     description: GitHub is the world's largest software development platform.
@@ -11,5 +12,4 @@ menu:
     params:
       icon: link
 comments: false
-lastmod: 2024-10-16T20:24
 ---
