@@ -43,9 +43,11 @@ params:
         - study-notes
         - prose
         - worldbuilding
+        - misc-notes
+        - journal
     featuredImageField: banner
     rssFullContent: true
-    favicon: /favicon.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    favicon: /favicons/favicon.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
         since: 2024
