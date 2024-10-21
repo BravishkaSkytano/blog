@@ -7,7 +7,7 @@ banner: https://preview.redd.it/arqa352ph7x61.jpg?width=960&crop=smart&auto=webp
 categories:
   - yearly review
 tags:
-  - 🌲
+  - tree
 ---
   
 [↶ 2023](../2023/_index.md) ⁝ [2025 ↷](2025.md)  
