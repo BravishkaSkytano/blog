@@ -7,5 +7,5 @@ banner:
 categories:
   - story
 tags:
-  - 🌲
+  - tree
 ---

@@ -6,9 +6,9 @@ lastmod:
 categories:
   - lecture
 tags:
+  - branch
   - prophesy
   - symbolism
-  - 🌿
 ---
 ## [Daniel 7:1](Daniel%207.md#1)[](Daniel%207.md#2)[](Daniel%207.md#3)[](Daniel%207.md#4)[](Daniel%207.md#5)[](Daniel%207.md#6)[](Daniel%207.md#7)[-8](Daniel%207.md#8)  
   

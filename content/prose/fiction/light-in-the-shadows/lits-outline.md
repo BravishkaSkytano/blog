@@ -7,7 +7,7 @@ banner:
 categories:
   - story outline
 tags:
-  - 🌸
+  - bloom
   - outline
   - 27-chapter-method
 ---
