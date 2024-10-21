@@ -6,9 +6,9 @@ lastmod:
 categories:
   - essay
 tags:
+  - branch
   - expository
   - LGBTQIA
-  - 🌿
 ---
 One of the biggest changes of the century is the rise of LGBT+ lifestyles. The avalanche began when the Supreme Court legalized gay marriage, starting a ripple effect throughout the country and other parts of the world. Soon after, drag queens freely walked among the public and transgenders called out for their own rights too. The desire to escape from the “social constructs” of sex and gender to become one’s own unique greatly affected children. A decade had barely gone by before children were being indoctrinated with the belief that their sex and genders were changeable, and they could be whomever, or whatever, they wanted to be. Kids who yearned to be popular and unique chose to adopt new and different genders, and even species. This led to angry and concerned parents who spoke out against the pushing of sex education on children far below the age of consent. Parents demanded to know and have a say in school curriculum and refused to be silenced by threats of punishment. This rise in LGBT+ culture among adolescents led to a new awareness among parents regarding what goes on in school classrooms, and this desire launched H.R. 5: Parents Bill of Rights Act.  
   
