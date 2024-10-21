@@ -7,4 +7,9 @@ banner:
 categories: 
 tags:
   - tree
+menu:
+  main:
+    weight: -60
+    params:
+      icon: writing-sign
 ---
