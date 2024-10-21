@@ -6,7 +6,7 @@ lastmod:
 categories:
   - lecture
 tags:
-  - 🌿
+  - branch
   - prophesy
   - symbolism
 ---
