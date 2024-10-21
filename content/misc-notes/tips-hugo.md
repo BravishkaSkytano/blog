@@ -2,10 +2,11 @@
 title: Tips for Hugo
 description: 
 date: 2024-10-18T16:54:59
-lastmod: 2024-10-18T17:05:38
+lastmod: 2024-10-20T23:43:32
 banner: 
 categories: 
 tags: 
+share: false
 ---
 ## Content Management  
   
