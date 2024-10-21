@@ -1,11 +1,15 @@
 ---
+title: W5 Audio Lectures
+description: 
+date: 2024-09-23T18:52:00
+lastmod: 
+categories:
+  - lecture
 tags:
-  - 🥀
+  - 🌿
+  - prophesy
+  - symbolism
 ---
-# W5 Audio Lectures  
-  
-#🥀  
-  
 ## [Revelation 1](Revelation%201.md)  
 - [*The Revelation of Jesus Christ* by John F Walvoord](https://www.amazon.com/Revelation-Jesus-Christ-John-Walvoord/dp/0802473091)  
 - [*The Revelation Record* by Dr. Henry Morris](https://www.amazon.com/Revelation-Record-Scientific-Devotional-Commentary/dp/0842355111/ref=sr_1_1)  
