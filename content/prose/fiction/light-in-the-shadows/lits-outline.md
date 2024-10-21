@@ -2,14 +2,15 @@
 title: Outline for LiTS
 description: 
 date: 2024-10-14T18:14:00
-lastmod: 2024-10-19T00:14:00
+lastmod: 2024-10-20T23:10:49
 banner: 
 categories:
-  - story outline
+  - story
 tags:
   - bloom
   - outline
   - 27-chapter-method
+share: false
 ---
 ## Act 1 - Setup  
   
