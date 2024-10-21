@@ -2,10 +2,15 @@
 title: Study Notes
 description: The notes I take while studying.
 date: 2024-10-16T13:38:57
-lastmod: 2024-10-18T14:26:48
+lastmod: 2024-10-20T23:23:19
 banner: 
 categories: 
 tags: 
+menu:
+  main:
+    weight: -70
+    params:
+      icon: notes
 ---
 The main courses in school include English, social science, science, foreign language, and humanities.  
   
