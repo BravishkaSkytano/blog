@@ -1,12 +1,15 @@
 ---
-id: 202311061152
-menu: research
+title: What Is Feminism?
+description: It started as equal rights for women and then turned into giving women more rights and protections, is this movement still relevant and helpful today?
+date: 2024-09-19T18:57:00
+lastmod: 
+banner: 
+categories:
+  - essay
 tags:
-  - 🌻
-  - MeToo
+  - 🌿
+  - feminism
 ---
-# What is Feminism?  
-  
 ## INTRODUCTION  
   
 What is feminism? It started as equal rights for women and then turned into giving women more rights and protections. As Christians, it’s important that we know what the Bible has to say about a topic before we engage in it and pick sides, yet most female Christians will accept the label of feminist without opening their Bibles. In today’s world, there is an increasing attack on women and their rights, but before we call out for the feminists to wake up, we need to take a moment and consult the Bible first. Once we’ve done that, we need to understand what it means to truly be a feminist and align that with what the Bible calls females to be. Only then can we choose to say, “I am both a Christian and a feminist.”  
