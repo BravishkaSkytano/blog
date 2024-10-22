@@ -14,11 +14,13 @@ nav.breadcrumb {
     &:not(:last-child)::after {
       content: "→";
       color: var(--card-text-color-tertiary);
+      padding: 3px;
     }
 
     &:last-child::after {
       content: "↴";
       color: var(--card-text-color-tertiary);
+      padding: 3px;
     }
   }
 }
