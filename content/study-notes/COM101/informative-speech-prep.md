@@ -2,15 +2,15 @@
 title: Informative Speech Prep
 description: The introduction for my informative speech
 date: 2024-10-16T11:12:00
-lastmod: 2024-10-21T11:13:23
+lastmod: 2024-10-21T17:55:26
 banner: 
 categories:
   - essay
 tags:
+  - bloom
   - speech
   - crochet
-  - crochet-design
-  - bloom
+  - design
 ---
 Greetings, ladies and gentlemen, my name is Yoela Olson, and I've come here to ask you a simple, yet seemingly complex, question—how would you make your own bag if faced with the task? **(PAUSE)** I'm sure some of you immediately had a thought similar to "why would I do that when I could just buy one?" However, take a moment to envision this scenario with me.  
   
