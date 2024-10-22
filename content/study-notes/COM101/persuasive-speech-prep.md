@@ -7,6 +7,7 @@ banner:
 categories:
   - essay
 tags:
+  - bloom
   - speech
   - linux
   - windows
