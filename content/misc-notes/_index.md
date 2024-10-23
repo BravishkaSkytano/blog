@@ -5,10 +5,6 @@ date: 2024-10-20T23:13:19
 lastmod: 2024-10-21T12:51:58
 banner: 
 categories: 
-tags: seedling
-menu:
-  main:
-    weight: -40
-    params:
-      icon: archives
+tags:
+  - seedling
 ---
