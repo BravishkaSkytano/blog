@@ -2,7 +2,7 @@
 title: Persuasive Speech Prep
 description: An outline for my persuasive speech.
 date: 2024-10-16T11:03:00
-lastmod: 2024-10-20T23:42:50
+lastmod: 2024-10-23T17:09:14
 banner: 
 categories:
   - essay

@@ -2,7 +2,7 @@
 title: Informative Speech Prep Rewrite
 description: 
 date: 2024-10-16T11:50:00
-lastmod: 2024-10-21T11:13:43
+lastmod: 2024-10-23T17:08:49
 banner: 
 categories:
   - essay
@@ -12,7 +12,7 @@ tags:
   - crochet
   - design
 ---
-[Informative Speech Prep](./informative-speech-prep.md)  
+[Informative Speech Prep](./Informative%20Speech%20Prep.md)  
   
 I think that all of you have come across a crocheted item at least once in your life, have you ever wondered how they were made? What about how they were designed? Greetings, ladies and gentlemen, my name is Yoela Olson, and I am a crochet designer who specializes in designing bags. Designing a crochet item and actually making it are two different things. Making follows a process of replicating something that someone else designed; but, designing requires you to start from a blank slate, or template, and add your own touches. Designing is usually more difficult than making the project itself, which is why most crocheters will spend hours searching for and collecting patterns for things they want to make instead of figuring out how to make it themselves.  
   

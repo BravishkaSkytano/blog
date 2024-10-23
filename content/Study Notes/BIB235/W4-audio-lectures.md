@@ -9,6 +9,7 @@ tags:
   - branch
   - prophesy
   - symbolism
+  - apologetics
 ---
 ## [Daniel 10:1](Daniel%2010.md#1)[](Daniel%2010.md#2)[](Daniel%2010.md#3)[](Daniel%2010.md#4)[](Daniel%2010.md#5)[](Daniel%2010.md#6)[](Daniel%2010.md#7)[](Daniel%2010.md#8)[-9](Daniel%2010.md#9)  
 - Cyrus the Persian and Darius the Mede are different  
