@@ -2,7 +2,7 @@
 title: REL1010 Introduction to Old Testament
 description: 
 date: 2024-10-18T14:34:53
-lastmod: 2024-10-18T14:35:42
+lastmod: 2024-10-23T16:40:58
 banner: 
 categories:
   - course
@@ -30,3 +30,24 @@ This course provides an introduction to the theological, historical, and literar
 5. Identify the importance of the Pentateuch in the history of the Hebrew people and Judaism.  
   
 ### Section 2: From the Conquest to the Babylonian Exile  
+  
+```folder-overview  
+id: ee3b6dc9-78d9-4b90-bd7a-a1dda3a8ee0b  
+folderPath: ""  
+title: "{{folderName}} overview"  
+showTitle: false  
+depth: 3  
+includeTypes:  
+  - folder  
+  - markdown  
+  - pdf  
+style: list  
+disableFileTag: false  
+sortBy: name  
+sortByAsc: true  
+showEmptyFolders: false  
+onlyIncludeSubfolders: false  
+storeFolderCondition: true  
+showFolderNotes: false  
+disableCollapseIcon: true  
+```  

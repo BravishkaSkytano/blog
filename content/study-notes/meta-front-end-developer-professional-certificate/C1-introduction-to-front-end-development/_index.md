@@ -1,8 +1,8 @@
 ---
-title: ENG101 English
+title: C1. Introduction to Front-End Development
 description: 
-date: 2024-10-18T18:59:29
-lastmod: 2024-10-20T22:54:00
+date: 2024-10-21T11:23:59
+lastmod: 2024-10-23T18:35:08
 banner: 
 categories:
   - course
@@ -11,7 +11,7 @@ tags:
 ---
   
 ```folder-overview  
-id: 32fed52d-a42e-40b5-b6d5-657836454821  
+id: 317dda3b-ab6b-458d-a173-e8c1b1ff62e8  
 folderPath: ""  
 title: "{{folderName}} overview"  
 showTitle: false  

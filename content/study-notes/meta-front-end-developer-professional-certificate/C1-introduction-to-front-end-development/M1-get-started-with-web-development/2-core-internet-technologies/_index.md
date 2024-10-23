@@ -1,26 +1,26 @@
 ---
-title: ENG101 English
+title: 2. Core Internet Technologies
 description: 
-date: 2024-10-18T18:59:29
-lastmod: 2024-10-20T22:54:00
+date: 2024-10-22T15:48:15
+lastmod: 2024-10-23T18:30:48
 banner: 
-categories:
-  - course
+categories: 
 tags:
   - tree
+  - MOC
 ---
   
 ```folder-overview  
-id: 32fed52d-a42e-40b5-b6d5-657836454821  
+id: ebf7bc04-cb80-4350-a973-6397ffde7184  
 folderPath: ""  
 title: "{{folderName}} overview"  
 showTitle: false  
 depth: 3  
+style: list  
 includeTypes:  
   - folder  
   - markdown  
   - pdf  
-style: list  
 disableFileTag: false  
 sortBy: name  
 sortByAsc: true  

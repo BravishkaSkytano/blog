@@ -2,11 +2,15 @@
 title: Study Notes
 description: The notes I take while studying.
 date: 2024-10-16T13:38:57
-lastmod: 2024-10-21T12:22:40
+lastmod: 2024-10-23T18:24:13
 banner: https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAwOTd8MHwxfHNlYXJjaHwzfHxzdHVkeXxlbnwwfDB8fHwxNzI5NTI3NzAyfDA&ixlib=rb-4.0.3&q=80&w=1080
 categories: 
 tags:
   - tree
+links:
+  - title: Aaron Burden (@aaronburden) | Unsplash Photo Community
+    description: Photo by Aaron Burden on Unsplash
+    website: https://unsplash.com/@aaronburden?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral
 ---
 The main courses in school include English, social science, science, foreign language, and humanities.  
   
@@ -21,5 +25,23 @@ Foreign language is pretty easy, popular choices are Spanish, French, Chinese, J
   
 Subjects of humanities are religion, philosophy, and history.  
   
-  
-*Photo by [Aaron Burden](https://unsplash.com/@aaronburden?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral)*  
+```folder-overview  
+id: 84e647ea-3e95-40a4-bb3c-f800f4722cc0  
+folderPath: ""  
+title: "{{folderName}} overview"  
+showTitle: false  
+depth: 3  
+includeTypes:  
+  - folder  
+  - markdown  
+  - pdf  
+style: list  
+disableFileTag: false  
+sortBy: name  
+sortByAsc: true  
+showEmptyFolders: false  
+onlyIncludeSubfolders: false  
+storeFolderCondition: true  
+showFolderNotes: false  
+disableCollapseIcon: true  
+```  
