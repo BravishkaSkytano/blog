@@ -4,7 +4,8 @@ description:
 date: 2024-10-21T12:45:29
 lastmod: 2024-10-21T12:45:43
 banner: 
-categories: 
+categories:
+  - course
 tags:
   - seedling
 ---

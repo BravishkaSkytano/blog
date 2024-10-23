@@ -7,11 +7,6 @@ banner: https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?crop=entrop
 categories: 
 tags:
   - tree
-menu:
-  main:
-    weight: -70
-    params:
-      icon: notes
 ---
 The main courses in school include English, social science, science, foreign language, and humanities.  
   

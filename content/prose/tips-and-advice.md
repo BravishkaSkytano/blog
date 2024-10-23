@@ -8,6 +8,9 @@ categories:
 tags:
   - 27-chapter-method
   - writing-tips
+  - save-the-cat
+  - dialogue
+  - obsidian
 ---
 ## Playlists  
   
