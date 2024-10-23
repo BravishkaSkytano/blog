@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Certificate on un-Graphophobic</title><link>https://bravishkaskytano.github.io/blog/categories/certificate/</link><description>Recent content in Certificate on un-Graphophobic</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Yoela O.</copyright><lastBuildDate>Wed, 23 Oct 2024 18:35:30 -0400</lastBuildDate><atom:link href="https://bravishkaskytano.github.io/blog/categories/certificate/index.xml" rel="self" type="application/rss+xml"/><item><title>IBM SkillsBuild Cybersecurity Certificate</title><link>https://bravishkaskytano.github.io/blog/study-notes/ibm-skillsbuild-cybersecurity-certificate/</link><pubDate>Wed, 23 Oct 2024 17:10:09 -0400</pubDate><guid>https://bravishkaskytano.github.io/blog/study-notes/ibm-skillsbuild-cybersecurity-certificate/</guid><description>&lt;img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wzNjAwOTd8MHwxfHNlYXJjaHwxfHxjeWJlcnNlY3VyaXR5fGVufDB8MHx8fDE3Mjk3MTk3MzJ8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Featured image of post IBM SkillsBuild Cybersecurity Certificate" />&lt;p>As technology advances, ensuring the security of digital assets and protecting the online presence of individuals and organizations have emerged as critical priorities. Every industry now finds itself in need of skilled cybersecurity professionals. Whether you are a beginner exploring the field or an experienced professional seeking to expand your knowledge, this course will provide you with a solid foundation in cybersecurity. You will delve into key concepts, terminology, and essential principles, and engage in activities with tools, frameworks, and scenarios to help you apply and practice what you’ve learned.&lt;/p>
+&lt;h2 id="learning-outcomes">Learning Outcomes
+&lt;/h2>&lt;ul>
+&lt;li>Evaluate an organization’s data security posture &lt;/li>
+&lt;li>Perform an impact analysis to address vulnerabilities &lt;/li>
+&lt;li>Design a secure network that includes systems and security devices &lt;/li>
+&lt;li>Ensure the protection of cloud systems, data, applications, and infrastructure &lt;/li>
+&lt;li>Assemble the components required for security operations and monitoring &lt;/li>
+&lt;li>Investigate incident reports through digital forensics&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">id: daff71b2-bf58-4485-ac27-1eaa7a67ade2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">folderPath: &amp;#34;&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title: &amp;#34;{{folderName}} overview&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">showTitle: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">depth: 3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">includeTypes:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - folder
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - markdown
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - pdf
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">style: list
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">disableFileTag: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sortBy: name
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sortByAsc: true
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">showEmptyFolders: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">onlyIncludeSubfolders: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">storeFolderCondition: true
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">showFolderNotes: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">disableCollapseIcon: true
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Meta Front-End Developer Professional Certificate</title><link>https://bravishkaskytano.github.io/blog/study-notes/meta-front-end-developer-professional-certificate/</link><pubDate>Mon, 21 Oct 2024 11:17:25 -0400</pubDate><guid>https://bravishkaskytano.github.io/blog/study-notes/meta-front-end-developer-professional-certificate/</guid><description>&lt;img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" alt="Featured image of post Meta Front-End Developer Professional Certificate" />&lt;h2 id="what-youll-learn">What You&amp;rsquo;ll Learn
+&lt;/h2>&lt;ul>
+&lt;li>Create a responsive website using HTML to structure content, CSS to handle visual style, and JavaScript to develop interactive experiences.&lt;/li>
+&lt;li>Learn Bootstrap CSS Framework to create webpages and work with GitHub repositories and version control.&lt;/li>
+&lt;li>Learn to use React in relation to Javascript libraries and frameworks.&lt;/li>
+&lt;li>Prepare for a coding interview, learn best approaches to problem-solving, and build portfolio-ready projects you can share during job interviews.&lt;/li>
+&lt;/ul>
+&lt;h2 id="skills-youll-gain">Skills You&amp;rsquo;ll Gain
+&lt;/h2>&lt;ul>
+&lt;li>HTML&lt;/li>
+&lt;li>UI/UX Design&lt;/li>
+&lt;li>JavaScript&lt;/li>
+&lt;li>Cascading Style Sheets (CSS)&lt;/li>
+&lt;li>React&lt;/li>
+&lt;/ul>
+&lt;h2 id="courses-7-months-6-hours-a-week">Courses (7 Months, 6 Hours a week)
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a class="link" href="./C1-introduction-to-front-end-development/_index.md" >C1-introduction-to-front-end-development&lt;/a> (18h, 4 modules)&lt;/li>
+&lt;li>Programming with JavaScript (42h)&lt;/li>
+&lt;li>Version Control (13h)&lt;/li>
+&lt;li>HTML and CSS in depth (28h)&lt;/li>
+&lt;li>React Basics (26h)&lt;/li>
+&lt;li>Advanced React (26h)&lt;/li>
+&lt;li>Principles of UX/UI Design (21h)&lt;/li>
+&lt;li>Front-End Developer Capstone (27h)&lt;/li>
+&lt;li>Coding Interview Preparation (11h)&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">id: fe9cdbf9-347b-4cbd-91af-5ebeea1ffe54
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">folderPath: &amp;#34;&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title: &amp;#34;{{folderName}} overview&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">showTitle: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">depth: 3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">includeTypes:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - folder
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - markdown
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - pdf
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">style: list
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">disableFileTag: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sortBy: name
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sortByAsc: true
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">showEmptyFolders: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">onlyIncludeSubfolders: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">storeFolderCondition: true
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">showFolderNotes: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">disableCollapseIcon: true
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Meta Front-End Developer Professional Certificate</title><link>https://bravishkaskytano.github.io/blog/study-notes/meta-front-end-developer/</link><pubDate>Mon, 21 Oct 2024 11:17:25 -0400</pubDate><guid>https://bravishkaskytano.github.io/blog/study-notes/meta-front-end-developer/</guid><description>&lt;img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" alt="Featured image of post Meta Front-End Developer Professional Certificate" />&lt;h2 id="what-youll-learn">What You&amp;rsquo;ll Learn
+&lt;/h2>&lt;ul>
+&lt;li>Create a responsive website using HTML to structure content, CSS to handle visual style, and JavaScript to develop interactive experiences.&lt;/li>
+&lt;li>Learn Bootstrap CSS Framework to create webpages and work with GitHub repositories and version control.&lt;/li>
+&lt;li>Learn to use React in relation to Javascript libraries and frameworks.&lt;/li>
+&lt;li>Prepare for a coding interview, learn best approaches to problem-solving, and build portfolio-ready projects you can share during job interviews.&lt;/li>
+&lt;/ul>
+&lt;h2 id="skills-youll-gain">Skills You&amp;rsquo;ll Gain
+&lt;/h2>&lt;ul>
+&lt;li>HTML&lt;/li>
+&lt;li>UI/UX Design&lt;/li>
+&lt;li>JavaScript&lt;/li>
+&lt;li>Cascading Style Sheets (CSS)&lt;/li>
+&lt;li>React&lt;/li>
+&lt;/ul>
+&lt;h2 id="courses-7-months-6-hours-a-week">Courses (7 Months, 6 Hours a week)
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a class="link" href="./course-1/_index.md" >C1. Introduction to Front-End Development&lt;/a> (18h, 4 modules)&lt;/li>
+&lt;li>Programming with JavaScript (42h)&lt;/li>
+&lt;li>Version Control (13h)&lt;/li>
+&lt;li>HTML and CSS in depth (28h)&lt;/li>
+&lt;li>React Basics (26h)&lt;/li>
+&lt;li>Advanced React (26h)&lt;/li>
+&lt;li>Principles of UX/UI Design (21h)&lt;/li>
+&lt;li>Front-End Developer Capstone (27h)&lt;/li>
+&lt;li>Coding Interview Preparation (11h)&lt;/li>
+&lt;/ul></description></item></channel></rss>
