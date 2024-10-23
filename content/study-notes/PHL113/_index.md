@@ -2,7 +2,7 @@
 title: PHL113 Survey of Social Engagement
 description: 
 date: 2024-10-18T14:33:33
-lastmod: 2024-10-20T22:53:05
+lastmod: 2024-10-23T16:41:06
 banner: 
 categories:
   - course
@@ -22,3 +22,24 @@ This course is a survey of contemporary social challenges. Students are challeng
 3. Understand how answers to metaphysical questions, addressing both the positive and negative aspects of human progress, often lead to cultural conflict.  
 4. Identify biblical directives for the attributes Christians ought to pursue when engaging with the culture.  
 5. Recognize the consequences ideas have on our actions and the influence decisions have on the world around us.  
+  
+```folder-overview  
+id: 0f5f8b88-acdd-4294-88d9-b72ae5de6b02  
+folderPath: ""  
+title: "{{folderName}} overview"  
+showTitle: false  
+depth: 3  
+includeTypes:  
+  - folder  
+  - markdown  
+  - pdf  
+style: list  
+disableFileTag: false  
+sortBy: name  
+sortByAsc: true  
+showEmptyFolders: false  
+onlyIncludeSubfolders: false  
+storeFolderCondition: true  
+showFolderNotes: false  
+disableCollapseIcon: true  
+```  
