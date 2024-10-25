@@ -4,9 +4,9 @@ description: Magic in Ilmaria is a fundamental part of life, with different regi
 date: 2024-10-18T21:05:28
 lastmod: 2024-10-20T23:01:08
 banner: 
-categories: 
-tags:
+categories:
   - seedling
+tags: []
 ---
 - **Earth Magic** in the [Crystalline Peaks](Crystalline%20Peaks.md) allows for the manipulation of minerals and gemstones.  
 - **Nature Magic** in the [Eldoria Forests](Eldoria%20Forests.md) connects users with the flora and fauna.  
