@@ -2,16 +2,15 @@
 title: PHL113 Survey of Social Engagement
 description: 
 date: 2024-10-18T14:33:33
-lastmod: 2024-10-23T16:41:06
+lastmod: 2024-10-23T19:37:10
 banner: 
 categories:
-  - course
-tags:
   - bloom
+tags: []
 ---
 ## Description  
   
-A primer for thinking and acting Christianly in the cultural arena. A guide for applying a Christian mind to today’s most challenging issues: religious freedom, creation care, euthanasia, abortion, human sexuality, marriage, and more.  
+A primer for thinking and acting Christian-like in the cultural arena. A guide for applying a Christian mind to today’s most challenging issues: religious freedom, creation care, euthanasia, abortion, human sexuality, marriage, and more.  
   
 This course is a survey of contemporary social challenges. Students are challenged to think through how an authentic Christian worldview can provide a compassionate, effective witness in our culture today. Lessons from history reveal why today’s issues might not be as new as they seem. This course offers biblical ideas for conversing about significant topics with others in their relations with loved ones, neighbors and colleagues.  
   

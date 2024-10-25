@@ -5,9 +5,8 @@ date: 2024-10-23T17:10:09
 lastmod: 2024-10-23T18:28:06
 banner: https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAwOTd8MHwxfHNlYXJjaHwxfHxjeWJlcnNlY3VyaXR5fGVufDB8MHx8fDE3Mjk3MTk3MzJ8MA&ixlib=rb-4.0.3&q=80&w=1080
 categories:
-  - certificate
-tags:
   - tree
+tags: []
 links:
   - title: Adi Goldstein (@adigold1) | Unsplash Photo Community
     description: Photo is by Adi Goldstein on Unsplash

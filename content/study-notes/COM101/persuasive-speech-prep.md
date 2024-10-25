@@ -2,12 +2,11 @@
 title: Persuasive Speech Prep
 description: An outline for my persuasive speech.
 date: 2024-10-16T11:03:00
-lastmod: 2024-10-23T17:09:14
+lastmod: 2024-10-23T18:48:41
 banner: 
 categories:
-  - essay
-tags:
   - bloom
+tags:
   - speech
   - linux
   - windows

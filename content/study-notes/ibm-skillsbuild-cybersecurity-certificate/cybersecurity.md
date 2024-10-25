@@ -8,7 +8,7 @@ categories:
   - lesson
   - branch
 tags:
-  - branch
+  - cybersecurity
 ---
 Secrecy, or [confidentiality](confidentiality.md), means that only authorized people should be able to access or read specific computer systems and data.  
   

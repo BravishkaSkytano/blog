@@ -2,12 +2,11 @@
 title: Informative Speech Prep
 description: The introduction for my informative speech
 date: 2024-10-16T11:12:00
-lastmod: 2024-10-23T17:08:33
+lastmod: 2024-10-23T18:48:13
 banner: 
 categories:
-  - essay
-tags:
   - bloom
+tags:
   - speech
   - crochet
   - design

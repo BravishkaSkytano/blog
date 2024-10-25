@@ -5,10 +5,9 @@ date: 2024-10-23T17:58:34
 lastmod: 2024-10-23T18:30:11
 banner: 
 categories:
-  - lesson
   - branch
 tags:
-  - seedling
+  - cybersecurity
 ---
 [Cybersecurity](../../cybersecurity.md) is the practice of protecting and recovering data, networks, devices, and programs from malicious cyberattacks.  
   

@@ -5,9 +5,8 @@ date: 2024-10-18T14:30:52
 lastmod: 2024-10-23T16:40:50
 banner: 
 categories:
-  - course
-tags:
   - bloom
+tags: []
 ---
 ## Description  
   

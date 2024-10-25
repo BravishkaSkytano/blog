@@ -4,13 +4,15 @@ description: The notes I take while studying.
 date: 2024-10-16T13:38:57
 lastmod: 2024-10-23T18:24:13
 banner: https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAwOTd8MHwxfHNlYXJjaHwzfHxzdHVkeXxlbnwwfDB8fHwxNzI5NTI3NzAyfDA&ixlib=rb-4.0.3&q=80&w=1080
-categories: 
-tags:
+categories:
   - tree
+tags: 
 links:
   - title: Aaron Burden (@aaronburden) | Unsplash Photo Community
     description: Photo by Aaron Burden on Unsplash
     website: https://unsplash.com/@aaronburden?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral
+cssclasses:
+  - dashboard
 ---
 The main courses in school include English, social science, science, foreign language, and humanities.  
   

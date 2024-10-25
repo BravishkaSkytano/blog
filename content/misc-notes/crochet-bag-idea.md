@@ -2,12 +2,11 @@
 title: New Crochet Bag Idea
 description: I'm creating a new bag using the four-panel method.
 date: 2024-10-10T20:03:00
-lastmod: 2024-10-23T13:00:32
+lastmod: 2024-10-23T19:25:25
 banner: 
 categories:
-  - crochet pattern
-tags:
   - seedling
+tags:
   - crochet
   - design
 ---

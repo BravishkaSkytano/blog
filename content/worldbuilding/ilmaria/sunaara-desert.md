@@ -4,13 +4,14 @@ description: The southern part of Ilmaria is home to the Desert of Sunaara
 date: 2024-10-18T21:07:44
 lastmod: 2024-10-20T23:02:33
 banner: 
-categories: 
-tags:
+categories:
   - seedling
+tags:
+  - geography
 ---
 ## Geography  
   
-The Desert of Sunaara spans across the southern reaches of [Ilmaria](Ilmaria.md), bordered by the [Verdant Plains](Verdant%20Plains.md) to the north and the [Ashen Wastes](Ashen%20Wastes.md) to the east. Key geographical features include:  
+The Desert of Sunaara spans across the southern reaches of [Ilmaria](./_index.md), bordered by the [Verdant Plains](Verdant%20Plains.md) to the north and the [Ashen Wastes](Ashen%20Wastes.md) to the east. Key geographical features include:  
   
 - **The Endless Dunes**: Towering sand dunes that shift with the wind, creating an ever-changing landscape.  
 - **The Oasis of Lira**: A lush, verdant sanctuary with crystal-clear water, surrounded by palm trees and exotic flora.  
