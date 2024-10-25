@@ -5,9 +5,9 @@ date: 2024-10-21T12:45:29
 lastmod: 2024-10-23T18:31:47
 banner: 
 categories:
-  - course
-tags:
   - seedling
+  - course
+tags: 
 ---
 Front-end developers work on what is visible by the app user, by using HTML, CSS, and JavaScript.  
   
