@@ -5,12 +5,10 @@ date: 2024-10-21T11:17:25
 lastmod: 2024-10-23T18:35:30
 banner: https://images.unsplash.com/photo-1488590528505-98d2b5aba04b
 categories:
-  - certificate
-tags:
   - tree
+tags:
   - IT
   - front-end-dev
-  - MOC
 ---
 ## What You'll Learn  
   
