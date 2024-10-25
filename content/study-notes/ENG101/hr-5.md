@@ -4,9 +4,8 @@ description:
 date: 2024-09-19T18:55:00
 lastmod: 
 categories:
-  - essay
-tags:
   - branch
+tags:
   - expository
   - LGBTQIA
 ---
