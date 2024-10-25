@@ -4,9 +4,9 @@ description:
 date: 2024-09-27T18:33:00
 lastmod: 
 categories:
+  - branch
   - lecture
 tags:
-  - branch
   - prophesy
   - symbolism
 ---
