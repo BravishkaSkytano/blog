@@ -5,9 +5,9 @@ date: 2024-10-16T22:08:00
 lastmod: 2024-10-20T23:03:31
 banner: 
 categories:
-  - creatures
-tags:
   - seedling
+tags:
+  - creature
 ---
 - **Dragons**: Majestic and powerful, dragons are revered and feared. Each region has its own subspecies, adapted to their environment.  
 - **Fey**: Mischievous and magical beings that inhabit the forests and glades.  
