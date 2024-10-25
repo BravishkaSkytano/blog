@@ -5,10 +5,10 @@ date: 2024-09-19T18:57:00
 lastmod: 2024-10-20T22:59:24
 banner: 
 categories:
-  - essay
-tags:
   - branch
+tags:
   - feminism
+  - essay
   - MeToo
 ---
 ## INTRODUCTION  
