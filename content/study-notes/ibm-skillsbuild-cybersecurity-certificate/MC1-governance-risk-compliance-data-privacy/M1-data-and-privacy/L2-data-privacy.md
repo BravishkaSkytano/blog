@@ -4,9 +4,11 @@ description:
 date: 2024-10-23T18:13:08
 lastmod: 2024-10-23T18:29:42
 banner: 
-categories: 
-tags:
+categories:
   - seedling
+tags:
+  - data
+  - cybersecurity
 ---
 Types of data:  
 - Public  
