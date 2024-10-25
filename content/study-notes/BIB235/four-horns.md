@@ -3,9 +3,9 @@ title: The Four Horns
 description: 
 date: 2024-09-27T18:26:00
 lastmod: 2024-10-20T22:52:18
-categories: 
-tags:
+categories:
   - seedling
+tags: []
 ---
 >[!bible] [Daniel 8:8](Daniel%208.md#8)  
 <sup><b>8</b></sup> Thus the goat became very great, but at the height of his power, his large horn was broken off, and four prominent horns came up in its place, pointing toward the four winds of heaven.   
