@@ -4,9 +4,12 @@ date: 2024-10-23T17:18:07
 lastmod: 2024-10-23T18:29:04
 banner: 
 categories:
+  - tree
   - module
 tags:
-  - seedling
+  - data
+  - privacy
+  - cybersecurity
 ---
 ## Learning Objectives  
   
