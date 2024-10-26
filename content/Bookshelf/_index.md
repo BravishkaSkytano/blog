@@ -4,7 +4,6 @@ description:
 date: 2024-10-25T12:51:28
 lastmod: 2024-10-26T17:02:15
 banner: 
-categories: 
 tags:
   - seedling
 cssclasses:
