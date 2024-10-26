@@ -2,13 +2,11 @@
 title: W3 Audio Lectures
 description: 
 date: 2024-09-27T18:33:00
-lastmod: 
-categories:
-  - branch
-  - lecture
+lastmod: 2024-10-26T19:54:46
 tags:
   - prophesy
   - symbolism
+  - branch
 ---
 ## [Daniel 7:1](Daniel%207.md#1)[](Daniel%207.md#2)[](Daniel%207.md#3)[](Daniel%207.md#4)[](Daniel%207.md#5)[](Daniel%207.md#6)[](Daniel%207.md#7)[-8](Daniel%207.md#8)  
   
