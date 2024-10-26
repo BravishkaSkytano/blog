@@ -2,11 +2,10 @@
 title: 2. Core Internet Technologies
 description: 
 date: 2024-10-22T15:48:15
-lastmod: 2024-10-23T18:30:48
+lastmod: 2024-10-26T19:52:06
 banner: 
-categories:
+tags:
   - tree
-tags: 
 ---
   
 ```folder-overview  

@@ -2,13 +2,11 @@
 title: W4 Audio Lectures
 description: 
 date: 2024-09-25T18:50:00
-lastmod: 
-categories:
-  - branch
-  - lecture
+lastmod: 2024-10-26T19:54:55
 tags:
   - prophesy
   - symbolism
+  - branch
   - apologetics
 ---
 ## [Daniel 10:1](Daniel%2010.md#1)[](Daniel%2010.md#2)[](Daniel%2010.md#3)[](Daniel%2010.md#4)[](Daniel%2010.md#5)[](Daniel%2010.md#6)[](Daniel%2010.md#7)[](Daniel%2010.md#8)[-9](Daniel%2010.md#9)  

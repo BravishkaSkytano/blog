@@ -4,8 +4,6 @@ description: Ilmaria is divided into several distinct regions, each with its own
 date: 2024-10-16T22:10:00
 lastmod: 2024-10-20T23:03:45
 banner: 
-categories:
-  - seedling
 tags:
   - geography
 ---

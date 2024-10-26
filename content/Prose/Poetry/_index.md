@@ -9,7 +9,7 @@ tags:
 ---
 %% Begin Waypoint %%  
 - [The Endless Loop](./The%20Endless%20Loop.md)  
-- [Thinking, Thinking, Thinking...](./Thinking,%20Thinking,%20Thinking....md)  
+- [Thinking, Thinking, Thinking...](./Thinking,%20Thinking,%20Thinking.md)  
   
 %% End Waypoint %%  
   

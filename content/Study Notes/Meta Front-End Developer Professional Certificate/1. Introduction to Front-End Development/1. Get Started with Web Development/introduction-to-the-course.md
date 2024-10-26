@@ -2,12 +2,11 @@
 title: Introduction to the Course
 description: 
 date: 2024-10-21T12:45:29
-lastmod: 2024-10-23T18:31:47
+lastmod: 2024-10-26T19:53:22
 banner: 
-categories:
-  - seedling
+tags:
   - course
-tags: 
+  - seedling
 ---
 Front-end developers work on what is visible by the app user, by using HTML, CSS, and JavaScript.  
   

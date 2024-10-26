@@ -4,7 +4,6 @@ description: Why is cybersecurity important?
 date: 2024-10-16T22:11:00
 lastmod: 2024-10-26T16:08:53
 banner: 
-categories: miscellaneous
 tags:
   - bloom
 ---

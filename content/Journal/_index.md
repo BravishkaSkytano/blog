@@ -4,8 +4,6 @@ description:
 date: 2024-10-20T23:29:34
 lastmod: 2024-10-26T17:51:36
 banner: 
-categories:
-  - journal
 tags:
   - tree
 ---

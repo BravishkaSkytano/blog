@@ -4,7 +4,6 @@ description: I'm creating a new bag using the four-panel method.
 date: 2024-10-10T20:03:00
 lastmod: 2024-10-26T16:08:23
 banner: 
-categories: miscellaneous
 tags:
   - crochet
   - design
