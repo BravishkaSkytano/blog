@@ -2,13 +2,11 @@
 title: W5 Audio Lectures
 description: 
 date: 2024-09-23T18:52:00
-lastmod: 2024-10-20T22:59:14
-categories:
-  - branch
-  - lecture
+lastmod: 2024-10-26T19:55:02
 tags:
   - prophesy
   - symbolism
+  - branch
 ---
 ## [Revelation 1](Revelation%201.md)  
 - [*The Revelation of Jesus Christ* by John F Walvoord](https://www.amazon.com/Revelation-Jesus-Christ-John-Walvoord/dp/0802473091)  
