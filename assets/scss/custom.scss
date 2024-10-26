@@ -18,9 +18,18 @@ nav.breadcrumb {
     }
 
     &:last-child::after {
-      content: "↴";
+      content: "...";
       color: var(--card-text-color-tertiary);
-      padding: 3px;
+      padding: 2px;
+    }
+  }
+}
+
+table {
+  tbody {
+    img {
+      max-width: 150px;
+      height: auto;
     }
   }
 }
