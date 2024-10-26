@@ -4,8 +4,6 @@ description: Ilmaria is home to a myriad of magical creatures, including dragons
 date: 2024-10-16T22:08:00
 lastmod: 2024-10-20T23:03:31
 banner: 
-categories:
-  - seedling
 tags:
   - creature
 ---
