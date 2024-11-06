@@ -1,13 +1,14 @@
 ---
 title: Daniel W Brown - A New Introduction to Islam
 date: 2024-10-25T14:10:33
-lastmod: 2024-11-04T15:31:40
+lastmod: 2024-11-06T17:14:05
 banner: http://books.google.com/books/content?id=5HVlDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
 tags:
   - book
 categories:
   - seedling
 ---
+(title:: A New Introduction to Islam) is written by (author:: Daniel W. Brown) and published by (publisher:: John Wiley & Sons) on (publish:: 2017-02-13). It includes (pages:: 433) pages and the ISBN is (isbn:: 9781118953488).  
   
 %%  
   
