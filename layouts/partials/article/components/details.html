@@ -1,15 +1,5 @@
 <div class="article-details">
   {{ partial "article/components/breadcrumb.html" . }}
-  {{ if .Params.categories }}
-  <header class="article-category">
-    {{ range (.GetTerms "categories") }}
-    <a href="{{ .RelPermalink }}" {{ with .Params.style
-      }}style="background-color: {{ .background }}; color: {{ .color }};" {{ end }}>
-      {{ .LinkTitle }}
-    </a>
-    {{ end }}
-  </header>
-  {{ end }}
 
   <div class="article-title-wrapper">
     <h2 class="article-title">
@@ -45,6 +35,17 @@
       <time class="article-time--reading">
         {{ T "article.readingTime" .ReadingTime }}
       </time>
+    </div>
+    {{ end }}
+    {{ if .Params.categories }}
+    <div>
+      {{ range (.GetTerms "categories") }}
+      {{ partial "helper/icon" "category" }}
+      <a href="{{ .RelPermalink }}" {{ with .Params.style
+        }}style="background-color: {{ .background }}; color: {{ .color }};" {{ end }}>
+        {{ .LinkTitle }}
+      </a>
+      {{ end }}
     </div>
     {{ end }}
   </footer>

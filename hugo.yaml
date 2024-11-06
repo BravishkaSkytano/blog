@@ -41,11 +41,10 @@ permalinks:
 params:
     mainSections:
         - posts
-        - study-notes
-        - prose
-        - worldbuilding
-        - misc-notes
-        - journal
+        - 10-19-study-notes
+        - 20-29-prose
+        - 30-39-worldbuilding
+        - 40-49-sources
     featuredImageField: banner
     rssFullContent: true
     favicon: /blog/favicons/favicon.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
