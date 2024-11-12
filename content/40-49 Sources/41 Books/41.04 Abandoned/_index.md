@@ -9,11 +9,11 @@ categories:
   - tree
 ---
   
-| Cover            | Title                                                                                                                                                                                | Author                              | Series |  
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------- | ------ |  
-| ![cover\|80](\-) | [Introduction to Philosophy by Norman L Geisler and Paul D Feinberg](./Introduction%20to%20Philosophy%20by%20Norman%20L%20Geisler%20and%20Paul%20D%20Feinberg.md) | Norman L. Geisler, Paul D. Feinberg | \-     |  
+| Cover            | Title                                                                                                                                                                               | Author                              | Series |  
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- | ------ |  
+| ![cover\|80](\-) | [Introduction to Philosophy by Norman L Geisler and Paul D Feinberg](./Norman%20L%20Geisler%20and%20Paul%20D%20Feinberg%20-%20Introduction%20to%20Philosophy.md) | Norman L. Geisler, Paul D. Feinberg | \-     |  
   
   
 ***  
   
-(down::[Introduction to Philosophy by Norman L Geisler and Paul D Feinberg](./Introduction%20to%20Philosophy%20by%20Norman%20L%20Geisler%20and%20Paul%20D%20Feinberg.md))  
+(down::[Norman L Geisler and Paul D Feinberg - Introduction to Philosophy](./Norman%20L%20Geisler%20and%20Paul%20D%20Feinberg%20-%20Introduction%20to%20Philosophy.md))  
