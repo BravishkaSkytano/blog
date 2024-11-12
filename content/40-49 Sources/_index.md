@@ -10,5 +10,7 @@ categories:
 ---
   
 - [41 Books](./41%20Books/_index.md)  
-  
-^index-list  
+- [42 Articles](42%20Articles.md)  
+- [43 Videos](43%20Videos.md)  
+- [44 Bible](./44%20Bible/_index.md)  
+- [45 People](./45%20People/_index.md)  
