@@ -1,4 +1,5 @@
 ---
+title: About Me
 description: Christian. Student. Reader. Leader.
 date: 2024-10-16T20:08:30
 lastmod: 2024-11-08T18:36:38
