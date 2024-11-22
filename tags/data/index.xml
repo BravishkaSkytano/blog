@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data on un-Graphophobic</title><link>https://bravishkaskytano.github.io/blog/tags/data/</link><description>Recent content in Data on un-Graphophobic</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Yoela O.</copyright><lastBuildDate>Thu, 07 Nov 2024 20:40:21 -0500</lastBuildDate><atom:link href="https://bravishkaskytano.github.io/blog/tags/data/index.xml" rel="self" type="application/rss+xml"/><item><title>L2. Data Privacy</title><link>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/microcredential-1/1.-data-and-privacy/2.-data-privacy/</link><pubDate>Wed, 23 Oct 2024 18:13:08 -0400</pubDate><guid>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/microcredential-1/1.-data-and-privacy/2.-data-privacy/</guid><description>&lt;p>Types of data:&lt;/p>
+&lt;ul>
+&lt;li>Public&lt;/li>
+&lt;li>Confidential
+&lt;ul>
+&lt;li>Proprietary&lt;/li>
+&lt;li>Private
+&lt;ul>
+&lt;li>personally identifiable info&lt;/li>
+&lt;li>Protected health info&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Module 1: Data and Privacy</title><link>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/microcredential-1/1.-data-and-privacy/</link><pubDate>Wed, 23 Oct 2024 17:18:07 -0400</pubDate><guid>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/microcredential-1/1.-data-and-privacy/</guid><description>&lt;h2 id="learning-objectives">Learning Objectives
+&lt;/h2>&lt;ul>
+&lt;li>Determine ways in which the three key elements of cybersecurity apply to common tasks&lt;/li>
+&lt;li>Categorize the various types of sensitive data that organizations must protect&lt;/li>
+&lt;li>Apply the CIA triad to real-world situations&lt;/li>
+&lt;li>Apply file and drive encryption&lt;/li>
+&lt;li>Develop a plan for backup&lt;/li>
+&lt;/ul>
+&lt;h2 id="lessons">Lessons
+&lt;/h2>&lt;ol>
+&lt;li>&lt;a class="link" href="./1.%20Introduction%20to%20Cybersecurity.md" >1. Introduction to Cybersecurity&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="./2.%20Data%20Privacy.md" >2. Data Privacy&lt;/a>&lt;/li>
+&lt;/ol></description></item></channel></rss>

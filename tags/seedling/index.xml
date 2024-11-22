@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Seedling on un-Graphophobic</title><link>https://bravishkaskytano.github.io/blog/tags/seedling/</link><description>Recent content in Seedling on un-Graphophobic</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Yoela O.</copyright><lastBuildDate>Thu, 07 Nov 2024 20:36:21 -0500</lastBuildDate><atom:link href="https://bravishkaskytano.github.io/blog/tags/seedling/index.xml" rel="self" type="application/rss+xml"/><item><title>41.06 Markdown Books</title><link>https://bravishkaskytano.github.io/blog/40-49-sources/41-books/41.06-markdown-books/</link><pubDate>Wed, 06 Nov 2024 14:31:13 -0500</pubDate><guid>https://bravishkaskytano.github.io/blog/40-49-sources/41-books/41.06-markdown-books/</guid><description/></item><item><title>L2. Data Privacy</title><link>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/microcredential-1/1.-data-and-privacy/2.-data-privacy/</link><pubDate>Wed, 23 Oct 2024 18:13:08 -0400</pubDate><guid>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/microcredential-1/1.-data-and-privacy/2.-data-privacy/</guid><description>&lt;p>Types of data:&lt;/p>
+&lt;ul>
+&lt;li>Public&lt;/li>
+&lt;li>Confidential
+&lt;ul>
+&lt;li>Proprietary&lt;/li>
+&lt;li>Private
+&lt;ul>
+&lt;li>personally identifiable info&lt;/li>
+&lt;li>Protected health info&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Introduction to the Course</title><link>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/meta-front-end-developer-professional-certificate/1.-introduction-to-front-end-development/1.-get-started-with-web-development/introduction-to-the-course/</link><pubDate>Mon, 21 Oct 2024 12:45:29 -0400</pubDate><guid>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/meta-front-end-developer-professional-certificate/1.-introduction-to-front-end-development/1.-get-started-with-web-development/introduction-to-the-course/</guid><description>&lt;p>Front-end developers work on what is visible by the app user, by using HTML, CSS, and JavaScript.&lt;/p>
+&lt;p>Rules are split into 3 levels: junior, intermediate, and senior.&lt;/p>
+&lt;p>Backend developers work on the behind-the-scenes portion of the web app, such as web servers, database, and architecture. They work with backend languages, databases, APIs, and web servers.&lt;/p>
+&lt;p>Back-end development requires more knowledge and time.&lt;/p>
+&lt;p>Full-stack developers are proficient with front-end and back-end work. This includes the planning, architecture, design, development, deployment, and maintenance of the website or app.&lt;/p>
+&lt;p>Full-stack development roles are senior positions due to the high levels of experience required.&lt;/p></description></item><item><title>1.1 How The Internet Works</title><link>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/meta-front-end-developer-professional-certificate/1.-introduction-to-front-end-development/1.-get-started-with-web-development/1-how-the-web-works/1.1-how-the-internet-works/</link><pubDate>Wed, 16 Oct 2024 15:48:00 -0400</pubDate><guid>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/meta-front-end-developer-professional-certificate/1.-introduction-to-front-end-development/1.-get-started-with-web-development/1-how-the-web-works/1.1-how-the-internet-works/</guid><description>&lt;p>2+ devices connect to each other, either wired or wireless, to form a network.&lt;/p>
+&lt;p>Network switches allow you to connect multiple devices, and even other networks to each other.&lt;/p>
+&lt;p>Then, they connect to other network switches to form an interconnected network, otherwise known as the internet.&lt;/p>
+&lt;p>Computers that host content for the internet are called servers, and the devices we use to connect to these servers are called clients. This is known as the client-server model.&lt;/p></description></item><item><title>The Four Horns</title><link>https://bravishkaskytano.github.io/blog/10-19-study-notes/11-bible/bib235/four-horns/</link><pubDate>Fri, 27 Sep 2024 18:26:00 -0400</pubDate><guid>https://bravishkaskytano.github.io/blog/10-19-study-notes/11-bible/bib235/four-horns/</guid><description>&lt;blockquote>
+&lt;p>[!bible] &lt;a class="link" href="../../../40-49%20Sources/44%20Bible/44.27%20Daniel/Daniel%208.md#8" >Daniel 8:8&lt;/a>&lt;br>
+&lt;sup>&lt;b>8&lt;/b>&lt;/sup> Thus the goat became very great, but at the height of his power, his large horn was broken off, and four prominent horns came up in its place, pointing toward the four winds of heaven.&lt;/p>
+&lt;/blockquote>
+&lt;p>The four horns represented the four kingdoms of the Diadochi:&lt;/p>
+&lt;ol>
+&lt;li>&lt;a class="link" href="Macedonia.md" >Macedonia&lt;/a> and &lt;a class="link" href="Greece.md" >Greece&lt;/a>, ruled by &lt;a class="link" href="Cassander.md" >Cassander&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="Thrace.md" >Thrace&lt;/a>, &lt;a class="link" href="Bithynia.md" >Bithynia&lt;/a>, and most of &lt;a class="link" href="../../../../Asia%20Minor.md" >Asia Minor&lt;/a>, ruled by &lt;a class="link" href="Lysimachus.md" >Lysimachus&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="Syria.md" >Syria&lt;/a>, &lt;a class="link" href="Babylon.md" >Babylon&lt;/a> and the rest of the east, ruled by &lt;a class="link" href="Seleucus.md" >Seleucus&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="Egypt.md" >Egypt&lt;/a> and possibly &lt;a class="link" href="Palestine.md" >Palestine&lt;/a> and &lt;a class="link" href="Arabia%20Petraea.md" >Arabia Petraea&lt;/a>, ruled by &lt;a class="link" href="Ptolemy.md" >Ptolemy&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;p>Source(s): &lt;a class="link" href="Daniel%20-%20John%20F%20Walvoord.md" >Daniel - John F Walvoord&lt;/a>, chapter 8&lt;/p></description></item><item><title>Antiochus Epiphanes</title><link>https://bravishkaskytano.github.io/blog/10-19-study-notes/11-bible/bib235/antiochus-epiphanes/</link><pubDate>Mon, 23 Sep 2024 18:54:00 -0400</pubDate><guid>https://bravishkaskytano.github.io/blog/10-19-study-notes/11-bible/bib235/antiochus-epiphanes/</guid><description>&lt;p>The 8th king of &lt;a class="link" href="Syria.md" >Syria&lt;/a>, reigned 175-164 B.C. He was a great ruler who committed some of the most significant blasphemous acts against God. He claimed divinity.&lt;/p></description></item><item><title>The One-Horned Goat</title><link>https://bravishkaskytano.github.io/blog/10-19-study-notes/11-bible/bib235/one-horned-goat/</link><pubDate>Mon, 23 Sep 2024 18:12:00 -0400</pubDate><guid>https://bravishkaskytano.github.io/blog/10-19-study-notes/11-bible/bib235/one-horned-goat/</guid><description>&lt;blockquote>
+&lt;p>[!bible] &lt;a class="link" href="../../../40-49%20Sources/44%20Bible/44.27%20Daniel/Daniel%208.md#5" >Daniel 8:5-&lt;/a>&lt;a class="link" href="../../../40-49%20Sources/44%20Bible/44.27%20Daniel/Daniel%208.md#8" >8&lt;/a>&lt;br>
+&lt;sup>&lt;b>5&lt;/b>&lt;/sup> As I was contemplating all this, suddenly a goat with a prominent horn between his eyes came out of the west, crossing the surface of the entire earth without touching the ground. &lt;sup>&lt;b>6&lt;/b>&lt;/sup> He came toward the two-horned ram I had seen standing beside the canal and rushed at him with furious power. &lt;sup>&lt;b>7&lt;/b>&lt;/sup> I saw him approach the ram in a rage against him, and he struck the ram and shattered his two horns. The ram was powerless to stand against him, and the goat threw him to the ground and trampled him, and no one could deliver the ram from his power. &lt;sup>&lt;b>8&lt;/b>&lt;/sup> Thus the goat became very great, but at the height of his power, his large horn was broken off, and four prominent horns came up in its place, pointing toward the four winds of heaven. &lt;a class="link" href="../../../40-49%20Sources/44%20Bible/44.27%20Daniel/Daniel%208.md#6" >&lt;/a>&lt;a class="link" href="../../../40-49%20Sources/44%20Bible/44.27%20Daniel/Daniel%208.md#7" >&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>The single horn between the goat’s eyes represents the first king of Greece, Alexander the Great. It rapidly moved from west to east, and it’s one large horn symbolized Alexander&amp;rsquo;s single leadership. Furthermore, the goat wanted revenge for the Persian attack, and eventually, it took over the entire world before its horn was split into four.&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>Walvoord, John F. &lt;em>Daniel.&lt;/em>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item></channel></rss>

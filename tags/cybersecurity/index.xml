@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cybersecurity on un-Graphophobic</title><link>https://bravishkaskytano.github.io/blog/tags/cybersecurity/</link><description>Recent content in Cybersecurity on un-Graphophobic</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Yoela O.</copyright><lastBuildDate>Thu, 07 Nov 2024 20:44:59 -0500</lastBuildDate><atom:link href="https://bravishkaskytano.github.io/blog/tags/cybersecurity/index.xml" rel="self" type="application/rss+xml"/><item><title>L2. Data Privacy</title><link>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/microcredential-1/1.-data-and-privacy/2.-data-privacy/</link><pubDate>Wed, 23 Oct 2024 18:13:08 -0400</pubDate><guid>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/microcredential-1/1.-data-and-privacy/2.-data-privacy/</guid><description>&lt;p>Types of data:&lt;/p>
+&lt;ul>
+&lt;li>Public&lt;/li>
+&lt;li>Confidential
+&lt;ul>
+&lt;li>Proprietary&lt;/li>
+&lt;li>Private
+&lt;ul>
+&lt;li>personally identifiable info&lt;/li>
+&lt;li>Protected health info&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>L1. Introduction to Cybersecurity</title><link>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/microcredential-1/1.-data-and-privacy/1.-introduction-to-cybersecurity/</link><pubDate>Wed, 23 Oct 2024 17:58:34 -0400</pubDate><guid>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/microcredential-1/1.-data-and-privacy/1.-introduction-to-cybersecurity/</guid><description>&lt;p>&lt;a class="link" href="../../Cybersecurity.md" >Cybersecurity&lt;/a> is the practice of protecting and recovering data, networks, devices, and programs from malicious cyberattacks.&lt;/p>
+&lt;p>Anything that can lead to harmful events for your network, system, or data is called a &lt;a class="link" href="threat.md" >threat&lt;/a>. While a &lt;a class="link" href="vulnerability.md" >vulnerability&lt;/a> is a weakness in hardware, firmware, or software that hackers can exploit.&lt;/p>
+&lt;p>Someone who tries to bypass system or network security to access data would be known as a &lt;a class="link" href="hacker.md" >hacker&lt;/a>. But an unauthorized hacker who acts with malicious purposes is a &lt;a class="link" href="cyberattacker.md" >cyberattacker&lt;/a>.&lt;/p>
+&lt;p>&lt;a class="link" href="Malware.md" >Malware&lt;/a> is software or firmware intended to conduct unauthorized actions that negatively affect system security. One example of this is a &lt;a class="link" href="trojan.md" >trojan&lt;/a>, an innocent-looking program that secretly gives an attacker access to your device.&lt;/p>
+&lt;p>Key elements of cybersecurity:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>People&lt;/strong> involves cybersecurity knowledge and habits of individuals, including their choices regarding network security.&lt;/li>
+&lt;li>&lt;strong>Processes&lt;/strong> refer to the relevant processes that you&amp;rsquo;re expected to follow wherever you use your device(s).&lt;/li>
+&lt;li>&lt;strong>Technology&lt;/strong> includes to the infrastructure and tools for protecting it.&lt;/li>
+&lt;/ul></description></item><item><title>Cybersecurity</title><link>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/cybersecurity/</link><pubDate>Wed, 23 Oct 2024 17:36:10 -0400</pubDate><guid>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/cybersecurity/</guid><description>&lt;p>Secrecy, or &lt;a class="link" href="confidentiality.md" >confidentiality&lt;/a>, means that only authorized people should be able to access or read specific computer systems and data.&lt;/p>
+&lt;p>&lt;a class="link" href="Integrity.md" >Integrity&lt;/a> means that only authorized people should be able to use or modify systems and data.&lt;/p>
+&lt;p>Cybersecurity helps minimize crime and harm in the virtual world. It’s a set of techniques used to protect the secrecy, integrity, and availability of computer systems and data against threats.&lt;/p>
+&lt;p>&lt;a class="link" href="Authentication.md" >Authentication&lt;/a> is the process by which a computer understands who it is interacting with. There are 3 types: what you know, what you have, and what you are.&lt;/p>
+&lt;p>Permissions, or &lt;a class="link" href="Access%20Control%20Lists.md" >Access Control Lists&lt;/a> (ACLS) describe the access each user has to view or modify any file, or program, on a computer.&lt;/p>
+&lt;p>&lt;a class="link" href="Malicious%20software.md" >Malicious software&lt;/a> (malware) can make a program or computing system vulnerable to attacks that copy user data and allow hackers to disguise as the user.&lt;/p>
+&lt;p>Some hack for amusement and curiosity, others for monetary gain (&lt;a class="link" href="cybercriminals.md" >cybercriminals&lt;/a>), and others hack to provide a social or political goal (&lt;a class="link" href="hacktivists.md" >hacktivists&lt;/a>).&lt;/p>
+&lt;p>&lt;a class="link" href="Black%20Hat%20hackers.md" >Black Hat hackers&lt;/a> steal, exploit, and sell computer vulnerabilities and data. &lt;a class="link" href="White%20Hat%20hackers.md" >White Hat hackers&lt;/a> are hired by companies and governments to perform security evaluations, hunt for bugs, and try to close security holes.&lt;/p>
+&lt;p>Attackers use bugs in a system to gain access to computer systems to overwrite data, steal user data, crash systems, or hijack the whole system.&lt;/p>
+&lt;p>Unresolved bugs on enough systems opens up the possibility of “&lt;a class="link" href="worms.md" >worms&lt;/a>,” programs that automatically jump from computer to computer.&lt;/p>
+&lt;p>&lt;a class="link" href="Cryptography.md" >Cryptography&lt;/a> includes the most common forms of computer security. System architects employ them to make info secret and frustrate attackers.&lt;/p>
+&lt;p>A &lt;a class="link" href="cipher.md" >cipher&lt;/a> is an algorithm that converts plain text into ciphertext that can’t be read unless you have a key to undo the cipher. &lt;em>Think encryption and decryption.&lt;/em>&lt;/p>
+&lt;p>&lt;a class="link" href="Cryptographic%20techniques.md" >Cryptographic techniques&lt;/a> rely on keys known by both sender and recipient.&lt;/p>
+&lt;p>&lt;a class="link" href="Key%20exchange.md" >Key exchange&lt;/a> uses an algorithm that lets 2 computers agree on a key without sending one, using one-way functions (math operations) that are easy to do in one direction, but hard to reverse. &lt;em>Think paint mixtures.&lt;/em>&lt;/p>
+&lt;p>&lt;a class="link" href="Symmetric%20keys.md" >Symmetric keys&lt;/a> are the same on both sides and are used by the sender and receiver to encrypt and decrypt.&lt;/p>
+&lt;p>&lt;a class="link" href="Asymmetric%20encryption.md" >Asymmetric encryption&lt;/a> uses two different keys (1 public, 1 private). Senders use the public key, recipient uses their own private key.&lt;/p></description></item><item><title>Module 1: Data and Privacy</title><link>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/microcredential-1/1.-data-and-privacy/</link><pubDate>Wed, 23 Oct 2024 17:18:07 -0400</pubDate><guid>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/microcredential-1/1.-data-and-privacy/</guid><description>&lt;h2 id="learning-objectives">Learning Objectives
+&lt;/h2>&lt;ul>
+&lt;li>Determine ways in which the three key elements of cybersecurity apply to common tasks&lt;/li>
+&lt;li>Categorize the various types of sensitive data that organizations must protect&lt;/li>
+&lt;li>Apply the CIA triad to real-world situations&lt;/li>
+&lt;li>Apply file and drive encryption&lt;/li>
+&lt;li>Develop a plan for backup&lt;/li>
+&lt;/ul>
+&lt;h2 id="lessons">Lessons
+&lt;/h2>&lt;ol>
+&lt;li>&lt;a class="link" href="./1.%20Introduction%20to%20Cybersecurity.md" >1. Introduction to Cybersecurity&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="./2.%20Data%20Privacy.md" >2. Data Privacy&lt;/a>&lt;/li>
+&lt;/ol></description></item></channel></rss>

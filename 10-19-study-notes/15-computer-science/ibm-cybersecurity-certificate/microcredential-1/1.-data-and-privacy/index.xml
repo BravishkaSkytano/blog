@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Module 1: Data and Privacy on un-Graphophobic</title><link>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/microcredential-1/1.-data-and-privacy/</link><description>Recent content in Module 1: Data and Privacy on un-Graphophobic</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Yoela O.</copyright><lastBuildDate>Thu, 07 Nov 2024 20:43:28 -0500</lastBuildDate><atom:link href="https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/microcredential-1/1.-data-and-privacy/index.xml" rel="self" type="application/rss+xml"/><item><title>L2. Data Privacy</title><link>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/microcredential-1/1.-data-and-privacy/2.-data-privacy/</link><pubDate>Wed, 23 Oct 2024 18:13:08 -0400</pubDate><guid>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/microcredential-1/1.-data-and-privacy/2.-data-privacy/</guid><description>&lt;p>Types of data:&lt;/p>
+&lt;ul>
+&lt;li>Public&lt;/li>
+&lt;li>Confidential
+&lt;ul>
+&lt;li>Proprietary&lt;/li>
+&lt;li>Private
+&lt;ul>
+&lt;li>personally identifiable info&lt;/li>
+&lt;li>Protected health info&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>L1. Introduction to Cybersecurity</title><link>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/microcredential-1/1.-data-and-privacy/1.-introduction-to-cybersecurity/</link><pubDate>Wed, 23 Oct 2024 17:58:34 -0400</pubDate><guid>https://bravishkaskytano.github.io/blog/10-19-study-notes/15-computer-science/ibm-cybersecurity-certificate/microcredential-1/1.-data-and-privacy/1.-introduction-to-cybersecurity/</guid><description>&lt;p>&lt;a class="link" href="../../Cybersecurity.md" >Cybersecurity&lt;/a> is the practice of protecting and recovering data, networks, devices, and programs from malicious cyberattacks.&lt;/p>
+&lt;p>Anything that can lead to harmful events for your network, system, or data is called a &lt;a class="link" href="threat.md" >threat&lt;/a>. While a &lt;a class="link" href="vulnerability.md" >vulnerability&lt;/a> is a weakness in hardware, firmware, or software that hackers can exploit.&lt;/p>
+&lt;p>Someone who tries to bypass system or network security to access data would be known as a &lt;a class="link" href="hacker.md" >hacker&lt;/a>. But an unauthorized hacker who acts with malicious purposes is a &lt;a class="link" href="cyberattacker.md" >cyberattacker&lt;/a>.&lt;/p>
+&lt;p>&lt;a class="link" href="Malware.md" >Malware&lt;/a> is software or firmware intended to conduct unauthorized actions that negatively affect system security. One example of this is a &lt;a class="link" href="trojan.md" >trojan&lt;/a>, an innocent-looking program that secretly gives an attacker access to your device.&lt;/p>
+&lt;p>Key elements of cybersecurity:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>People&lt;/strong> involves cybersecurity knowledge and habits of individuals, including their choices regarding network security.&lt;/li>
+&lt;li>&lt;strong>Processes&lt;/strong> refer to the relevant processes that you&amp;rsquo;re expected to follow wherever you use your device(s).&lt;/li>
+&lt;li>&lt;strong>Technology&lt;/strong> includes to the infrastructure and tools for protecting it.&lt;/li>
+&lt;/ul></description></item></channel></rss>
