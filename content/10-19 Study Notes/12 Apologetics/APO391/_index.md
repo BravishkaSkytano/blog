@@ -17,6 +17,7 @@ categories:
 - [APO391 Syllabus 2024.pdf](./APO391%20Syllabus%202024.pdf)  
 - [New Introduction to Islam, A.pdf](./New%20Introduction%20to%20Islam,%20A.pdf)  
 - [Week 1 Lecture](./Week%201%20Lecture.md)  
+- [Week 5 Lecture](./Week%205%20Lecture.md)  
   
 %% End Waypoint %%  
   
