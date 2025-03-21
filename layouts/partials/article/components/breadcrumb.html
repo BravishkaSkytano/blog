@@ -1,9 +1,0 @@
-<nav aria-label="breadcrumb" class="breadcrumb">
-  <ol>
-    {{ range where .Ancestors.Reverse "RelPermalink" "ne" "/blog/" }}
-    <li>
-      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-    </li>
-    {{ end }}
-  </ol>
-</nav>
