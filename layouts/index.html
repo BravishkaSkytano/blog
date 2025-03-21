@@ -20,15 +20,7 @@
 
 <div class="posts-list">
   {{ with .Site.GetPage "/posts" }}
-  {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
-  <div class="post">
-    <p>
-    <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>
-    <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
-    {{ .Summary }}
-    </p>
-  </div>
-  {{ end }}
+  {{- partial "posts-list.html" . -}}
   {{ end }}
 </div>
 
@@ -36,15 +28,7 @@
 
 <div class="posts-list">
   {{ with .Site.GetPage "/prose" }}
-  {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
-  <div class="post">
-    <p>
-    <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>
-    <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
-    {{ .Summary }}
-    </p>
-  </div>
-  {{ end }}
+  {{- partial "posts-list.html" . -}}
   {{ end }}
 </div>
 
@@ -52,19 +36,7 @@
 
 <div class="image-grid">
   {{ with .Site.GetPage "/characters" }}
-  {{ range first 3 (sort .Data.Pages "Date" "desc")}}
-  <a href="{{ .Permalink }}" title="{{ .Title }}">
-    {{ $title := .Title }}
-    {{ $image := .Page.Resources.GetMatch .Params.image }}
-    {{ with $image }}
-    {{ $thumb := .Resize "400x" }}
-    <figure style="margin: 0;">
-      <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
-      <figcaption>{{ $title }}</figcaption>
-    </figure>
-    {{end}}
-  </a>
-  {{ end }}
+  {{- partial "gallery-list.html" . -}}
   {{ end }}
 </div>
 
@@ -72,19 +44,7 @@
 
 <div class="image-grid">
   {{ with .Site.GetPage "/worlds" }}
-  {{ range first 3 (sort .Data.Pages "Date" "desc")}}
-  <a href="{{ .Permalink }}" title="{{ .Title }}">
-    {{ $title := .Title }}
-    {{ $image := .Page.Resources.GetMatch .Params.image }}
-    {{ with $image }}
-    {{ $thumb := .Resize "400x" }}
-    <figure style="margin: 0;">
-      <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
-      <figcaption>{{ $title }}</figcaption>
-    </figure>
-    {{end}}
-  </a>
-  {{ end }}
+  {{- partial "gallery-list.html" . -}}
   {{ end }}
 </div>
 
