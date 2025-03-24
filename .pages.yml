@@ -1,0 +1,15 @@
+media: static
+content:
+  - name: posts
+    label: Posts
+    path: content/posts
+    type: collection
+    view:
+      fields: [ title, date, lastmod, draft ]
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: date, label: Date, type: date }
+      - { name: lastmod, label: Last Modified, type: date }
+      - { name: draft, label: Draft, type: boolean, default: true }
+      - { name: description, label: Description, type: text, options: { maxlength: 140 }}
+      - { name: body, label: Body, type: rich-text, options: { image: { path: static/images/posts }}}
