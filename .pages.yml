@@ -12,7 +12,7 @@ content:
       - { name: date, label: Date, type: date }
       - { name: lastmod, label: Last Modified, type: date }
       - { name: draft, label: Draft, type: boolean, default: true }
-      - { name: description, label: Description, type: text, options: { maxlength: 140 } }
+      - { name: description, label: Description, type: string, options: { maxlength: 140 } }
       - { name: tags, label: Tags, type: select }
       - { name: body, label: Body, type: rich-text, options: { image: { path: static/images/posts } } }
   - name: prose
@@ -28,7 +28,7 @@ content:
       - { name: date, label: Date, type: date }
       - { name: lastmod, label: Last Modified, type: date }
       - { name: draft, label: Draft, type: boolean, default: true }
-      - { name: description, label: Description, type: text, options: { maxlength: 140 } }
+      - { name: description, label: Description, type: string, options: { maxlength: 140 } }
       - { name: tags, label: Tags, type: select }
       - { name: body, label: Body, type: rich-text, options: { image: { path: static/images/prose } } }
   - name: characters
@@ -44,7 +44,7 @@ content:
       - { name: date, label: Date, type: date }
       - { name: lastmod, label: Last Modified, type: date }
       - { name: draft, label: Draft, type: boolean, default: true }
-      - { name: description, label: Description, type: text, options: { maxlength: 140 } }
+      - { name: description, label: Description, type: string, options: { maxlength: 140 } }
       - { name: image, label: Image, type: image, options: { path: static/images/characters } }
       - { name: type, type: string, hidden: true, default: gallery }
       - { name: body, label: Body, type: rich-text, options: { image: { path: static/images/characters } } }
@@ -61,7 +61,7 @@ content:
       - { name: date, label: Date, type: date }
       - { name: lastmod, label: Last Modified, type: date }
       - { name: draft, label: Draft, type: boolean, default: true }
-      - { name: description, label: Description, type: text, options: { maxlength: 140 } }
+      - { name: description, label: Description, type: string, options: { maxlength: 140 } }
       - { name: image, label: Image, type: image, options: { path: static/images/characters } }
       - { name: type, type: string, hidden: true, default: gallery }
       - { name: body, label: Body, type: rich-text, options: { image: { path: static/images/worlds } } }
@@ -73,5 +73,5 @@ content:
       - { name: title, label: Title, type: string }
       - { name: date, label: Date, type: date }
       - { name: lastmod, label: Last Modified, type: date }
-      - { name: description, label: Description, type: text, options: { maxlength: 140 } }
+      - { name: description, label: Description, type: string, options: { maxlength: 140 } }
       - { name: body, label: Body, type: rich-text }
