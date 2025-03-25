@@ -4,6 +4,7 @@ content:
     label: Posts
     type: collection
     path: content/posts
+    filename: "{primary}.md"
     view:
       fields: [ title, date, lastmod, draft ]
     fields:
@@ -11,13 +12,14 @@ content:
       - { name: date, label: Date, type: date }
       - { name: lastmod, label: Last Modified, type: date }
       - { name: draft, label: Draft, type: boolean, default: true }
-      - { name: description, label: Description, type: text, options: { maxlength: 140 }}
+      - { name: description, label: Description, type: text, options: { maxlength: 140 } }
       - { name: tags, label: Tags, type: select }
-      - { name: body, label: Body, type: rich-text, options: { image: { path: static/images/posts }}}
+      - { name: body, label: Body, type: rich-text, options: { image: { path: static/images/posts } } }
   - name: prose
     label: Prose
     type: collection
     path: content/prose
+    filename: "{primary}.md"
     icon: book-open-text
     view:
       fields: [ title, date, lastmod, draft ]
@@ -26,13 +28,14 @@ content:
       - { name: date, label: Date, type: date }
       - { name: lastmod, label: Last Modified, type: date }
       - { name: draft, label: Draft, type: boolean, default: true }
-      - { name: description, label: Description, type: text, options: { maxlength: 140 }}
+      - { name: description, label: Description, type: text, options: { maxlength: 140 } }
       - { name: tags, label: Tags, type: select }
-      - { name: body, label: Body, type: rich-text, options: { image: { path: static/images/prose }}}
+      - { name: body, label: Body, type: rich-text, options: { image: { path: static/images/prose } } }
   - name: characters
     label: Characters
     type: collection
     path: content/characters
+    filename: "{primary}.md"
     icon: venetian-mask
     view:
       fields: [ title, date, lastmod, draft ]
@@ -41,14 +44,15 @@ content:
       - { name: date, label: Date, type: date }
       - { name: lastmod, label: Last Modified, type: date }
       - { name: draft, label: Draft, type: boolean, default: true }
-      - { name: description, label: Description, type: text, options: { maxlength: 140 }}
-      - { name: image, label: Image, type: image, options: { path: static/images/characters }}
+      - { name: description, label: Description, type: text, options: { maxlength: 140 } }
+      - { name: image, label: Image, type: image, options: { path: static/images/characters } }
       - { name: type, type: string, hidden: true, default: gallery }
-      - { name: body, label: Body, type: rich-text, options: { image: { path: static/images/characters }}}
+      - { name: body, label: Body, type: rich-text, options: { image: { path: static/images/characters } } }
   - name: worlds
     label: Worlds
     type: collection
     path: content/worlds
+    filename: "{primary}.md"
     icon: earth
     view:
       fields: [ title, date, lastmod, draft ]
@@ -57,7 +61,17 @@ content:
       - { name: date, label: Date, type: date }
       - { name: lastmod, label: Last Modified, type: date }
       - { name: draft, label: Draft, type: boolean, default: true }
-      - { name: description, label: Description, type: text, options: { maxlength: 140 }}
-      - { name: image, label: Image, type: image, options: { path: static/images/characters }}
+      - { name: description, label: Description, type: text, options: { maxlength: 140 } }
+      - { name: image, label: Image, type: image, options: { path: static/images/characters } }
       - { name: type, type: string, hidden: true, default: gallery }
-      - { name: body, label: Body, type: rich-text, options: { image: { path: static/images/worlds }}}
+      - { name: body, label: Body, type: rich-text, options: { image: { path: static/images/worlds } } }
+  - name: about
+    label: About Me
+    type: file
+    path: content/about.md
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: date, label: Date, type: date }
+      - { name: lastmod, label: Last Modified, type: date }
+      - { name: description, label: Description, type: text, options: { maxlength: 140 } }
+      - { name: body, label: Body, type: rich-text }
