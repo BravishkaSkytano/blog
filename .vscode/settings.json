@@ -1,64 +1,30 @@
 {
-  "editor.wrappingIndent": "indent",
-  "editor.overviewRulerBorder": false,
-  "editor.lineHeight": 24,
+  // Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  // Shopify Liquid
+  "files.associations": {
+    "*.html": "liquid"
+  },
   "[markdown]": {
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": false,
-      "strings": false
-    }
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
-  "git.enableSmartCommit": true,
-  "git.postCommitCommand": "sync",
-  "files.exclude": {
-    "**/_site": true,
-    "**/.obsidian": true,
-    "**/.trash": false,
-    ".stfolder": true,
-    ".jekyll-cache": false
+  // Formatter
+  "[html][liquid]": {
+    "editor.defaultFormatter": "Shopify.theme-check-vscode"
   },
-  "files.watcherExclude": {
-    "**/_site": true,
-    "**/.obsidian": true,
-    "**/.trash": true,
-    ".stfolder": true
+  "[shellscript]": {
+    "editor.defaultFormatter": "mkhl.shfmt"
   },
-  "markdown.styles": [".vscode/custom-tag-style.css"],
-  "markdownlint.config": {
-    "default": true,
-    // "MD025": {
-    //   "front_matter_title": ""
-    // },
-    "MD026": {
-      "punctuation": ".,;:"
-    },
-    "MD053": {
-      "ignored_definitions": ["//begin", "//end"]
-    }
-  },
-  "cSpell.words": [
-    "Aerians",
-    "Arion",
-    "Eldoria",
-    "Fireborn",
-    "Gemfolk",
-    "Ilmaria",
-    "Merfolk",
-    "Sunaara",
-    "Thorne",
-    "Wyrms",
-    "Zarim"
-  ],
-  "foam.completion.label": "title",
-  "foam.files.ignore": [
-    "node_modules/**/*",
-    "_site/**/*",
-    ".stfolder/**/*",
-    "**/.obsidian/**/*",
-    "**/.trash/**/*"
-  ],
-  //"foam.completion.useAlias": "whenPathDiffersFromTitle",
-  "foam.openDailyNote.onStartup": true,
-  "foam.edit.linkReferenceDefinitions": "withoutExtensions"
+  // Disable vscode built-in stylelint
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  // Stylint extension settings
+  "stylelint.snippet": ["css", "scss"],
+  "stylelint.validate": ["css", "scss"],
+  // Run tasks in macOS
+  "terminal.integrated.profiles.osx": {
+    "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
+  }
 }

@@ -1,4 +1,0 @@
----
-title: Characters
-type: gallery
----
