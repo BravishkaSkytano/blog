@@ -48,5 +48,5 @@ I like to collect articles and videos featuring different writing tips and strat
   - do use *subtext* and **show** readers what the character is feeling  
   - **script format** might be helpful for your first manuscript  
   - don’t make all your characters **sound** the same (grammar, slang, canter, etc.)  
-  - don’t overuse [dialogue tags](dialogue%20tags.md)  
+  - don’t overuse dialogue tags
   - keep your dialogue fast-paced & to the point  

@@ -1,7 +1,7 @@
 ---
 title: Invisible Scars
 date: 2024-10-15
-categories: [Prose]
+categories: [Prose, Talks with Soren]
 tags: 
 ---
 “Do you know what the worst type of abuse is?”
