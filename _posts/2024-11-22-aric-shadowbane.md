@@ -6,19 +6,8 @@ categories: [Characters]
 tags:
 image: /assets/img/characters/aric-shadowbane-zoom.jpg
 ---
-| Traits      | Sub-traits                              |
-| ----------- | --------------------------------------- |
-| Archetype   |                                         |
-| Continent   | [Eldoria Forests](Eldoria%20Forests.md) |
-| Species     |                                         |
-| Kingdom     |                                         |
-| Eye color   |                                         |
-| Accessories |                                         |
-| Hair color  |                                         |
-| Skills      |                                         |
 
-
-Aric Shadowbane was once a noble knight from the [Kingdom of Eldoria](), a realm known for its lush forests and ancient magic. As the youngest son of the noble House Shadowbane, Aric grew up in the shadow of his elder siblings, never expected to inherit lands or titles. Instead, he found solace in the deep, mysterious woods surrounding his family's estate, where he honed his skills in stealth and swordsmanship.
+Aric Shadowbane was once a noble knight from the Kingdom of Eldoria, a realm known for its lush forests and ancient magic. As the youngest son of the noble House Shadowbane, Aric grew up in the shadow of his elder siblings, never expected to inherit lands or titles. Instead, he found solace in the deep, mysterious woods surrounding his family's estate, where he honed his skills in stealth and swordsmanship.
 
 During a fierce war with a neighboring kingdom, Aric's entire family was betrayed by one of their closest allies. The Shadowbane estate was razed, and Aric's kin were slaughtered. Aric barely escaped with his life, fleeing deep into the Blackwood, a cursed forest that no one dared to enter. It was said that those who entered the Blackwood either never returned or emerged changed, their souls tainted by the dark magic that lurked within.
 

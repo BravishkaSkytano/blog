@@ -7,20 +7,9 @@ tags:
 image: /assets/img/characters/arion-thorne-zoom.jpg
 ---
 
-| Traits      | Sub-traits                        |
-| ----------- | --------------------------------- |
-| Archetype   | Warlord                           |
-| Continent   | [Ashen Wastes](Ashen%20Wastes.md) |
-| Species     | [Fireborn](Fireborn.md)           |
-| Kingdom     |                                   |
-| Eye color   | Brown                             |
-| Accessories |                                   |
-| Hair color  |                                   |
-| Skills      | Fire magic                        |
-
 ## Backstory
 
-Lord Arion Thorne, known as the "Warlord of the Ashen Wastes," is a formidable figure in [Ilmaria](../../../../30-39%20Worldbuilding/Ilmaria/_index.md), leading his legion with unmatched strength and strategic brilliance. Born in the heart of the volcanic Ashen Wastes, Arion was forged in the fires of adversity, growing up in a land where survival demanded resilience and power.
+Lord Arion Thorne, known as the "Warlord of the Ashen Wastes," is a formidable figure in [Ilmaria]({% post_url 2024-10-14-ilmaria %}), leading his legion with unmatched strength and strategic brilliance. Born in the heart of the volcanic Ashen Wastes, Arion was forged in the fires of adversity, growing up in a land where survival demanded resilience and power.
 
 From a young age, Arion exhibited an extraordinary affinity for fire magic, a gift that marked him as a prodigy among the Fireborn. His training was harsh and relentless, sculpting him into a warrior of unparalleled might and a master of the flames. As he ascended through the ranks, his tactical genius and indomitable will earned him the respect and loyalty of his people.
 
@@ -54,6 +43,6 @@ Arion's relationship with the Elves of Eldoria is one of cautious diplomacy. Whi
 
 ## Conclusion
 
-Lord Arion Thorne is a formidable force in Ilmaria, a warlord whose strength and strategic brilliance shape the fate of the Ashen Wastes and beyond. His leadership, forged in fire and tempered by conflict, ensures that he remains a key player in the intricate tapestry of Ilmaria's power dynamics.
+Lord Arion Thorne is a formidable force in [Ilmaria]({% post_url 2024-10-14-ilmaria %}), a warlord whose strength and strategic brilliance shape the fate of the Ashen Wastes and beyond. His leadership, forged in fire and tempered by conflict, ensures that he remains a key player in the intricate tapestry of Ilmaria's power dynamics.
 
 ![full picture](/assets/img/characters/arion-thorne.jpg)

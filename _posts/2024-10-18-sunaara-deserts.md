@@ -10,7 +10,7 @@ image: /assets/img/worldbuilding/ilmaria/sunaara-deserts.jpg
 
 ![pic 2](/assets/img/worldbuilding/ilmaria/sunaara-deserts-2.jpg){: w="300" .right }
 
-The Deserts of Sunaara spans across the southern reaches of [Ilmaria]({% post_url 2024-10-14-ilmaria %}), bordered by the [Verdant Plains]() to the north and the [Ashen Wastes]() to the east. Key geographical features include:
+The Deserts of Sunaara spans across the southern reaches of [Ilmaria]({% post_url 2024-10-14-ilmaria %}), bordered by the Verdant Plains to the north and the Ashen Wastes to the east. Key geographical features include:
 
 - **The Endless Dunes**: Towering sand dunes that shift with the wind, creating an ever-changing landscape.
 - **The Oasis of Lira**: A lush, verdant sanctuary with crystal-clear water, surrounded by palm trees and exotic flora.

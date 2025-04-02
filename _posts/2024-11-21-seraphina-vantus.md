@@ -6,26 +6,6 @@ tags:
 image: /assets/img/characters/seraphina-vantus-zoom.jpg
 ---
 
-## Traits
-
-| Traits      | Sub-traits                       |
-  
-| ----------- | -------------------------------- |
-  
-| Archetype   | Guardian, Queen                  |
-  
-| Continent   | [Sunaara-Deserts](Sunaara-Deserts.md)              |
-  
-| Species     | [Human](Human.md)                        |
-  
-| Eyes        | Brown                            |
-  
-| Accessories | Scorpion armor, war paint, crown |
-  
-| Hair color  | Brown                            |
-  
-| Skills      | Assassin                         |
-  
 ## Origins
 
 In the ancient city of Tarsis, now a crumbling relic of its former glory, legends speak of a warrior known as Seraphina Vantus, the Scorpion Queen. Born into a lineage of fierce protectors of the realm, Seraphina's life was destined for greatness and strife from the very beginning.

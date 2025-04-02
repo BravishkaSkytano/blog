@@ -7,19 +7,6 @@ tags:
 image: /assets/img/characters/elara-drakenwood-zoom.jpg
 ---
 
-## Traits
-
-| Traits      | Sub-traits                              |
-| ----------- | --------------------------------------- |
-| Archetype   | Queen                                   |
-| Continent   | [Eldoria Forests](Eldoria%20Forests.md) |
-| Species     | [Elves](Elves.md)                       |
-| Kingdom     | Drakari                                 |
-| Eye color   | Green                                   |
-| Accessories | Crown, dragon                           |
-| Hair color  | Pale blonde                             |
-| Skills      | Dragon rider, arcane mage               |
-
 ## Origins
 
 Elara Drakenwood was born in the ethereal forests of Eldoria, a realm where magic flowed through the veins of the land and the sky was often adorned with the silhouettes of dragons. She belonged to an ancient race of elves known as the Drakari, who shared a unique bond with dragons. Her mother, Queen Isolde, ruled Eldoria with wisdom and grace, while her father, Thandor, was a legendary dragon rider and protector of the realm.
