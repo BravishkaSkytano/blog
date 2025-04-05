@@ -44,9 +44,6 @@ content:
           creatable: true
           multiple: true
           values: [ Bible, creature, death, depression, gender-dysphoria, grief, LGBTQIA+, prayer, school, taboo, templates, tips ]
-      - name: id
-        label: Identifier
-        type: uuid
       - name: body
         label: Body
         type: rich-text
