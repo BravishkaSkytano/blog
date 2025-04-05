@@ -53,17 +53,27 @@ content:
     type: file
     fields:
       - name: title
-        label: Website title
+        label: Site title
+        type: string
+      - name: tagline
+        label: Site tagline
         type: string
       - name: description
-        label: Website description
+        label: Site description
         type: string
-        description: Will be provused for any page with no description.
+        description: Used by SEO meta and the Atom feed.
       - name: url
-        label: Website URL
+        label: URL
         type: string
         pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
-      - name: cover
+      - name: baseurl
+        label: Site base URL
+        type: string
+      - name: avatar
+        label: Sidebar image
+        type: image
+        description: The avatar on sidebar
+      - name: social_preview_image
         label: Preview image
         type: image
         description: Image used in the social preview on social networks (e.g. Facebook, Twitter...)
