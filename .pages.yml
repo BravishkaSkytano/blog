@@ -1,77 +1,69 @@
-media: static/images
+media:
+  - name: images
+    label: Images
+    input: assets/img
+    output: /blog/assets/img
+    categories: [ image ]
+  - name: documents
+    label: Documents
+    input: assets/doc
+    output: /blog/assets/doc
+    categories: [ document ]
 content:
   - name: posts
     label: Posts
     type: collection
-    path: content/posts
-    filename: "{primary}.md"
+    path: '_posts'
     view:
-      fields: [ title, date, lastmod, draft ]
+      fields: [ title, date, categories ]
+      sort: [ date, title ]
     fields:
-      - { name: title, label: Title, type: string }
-      - { name: date, label: Date, type: date }
-      - { name: lastmod, label: Last Modified, type: date }
-      - { name: draft, label: Draft, type: boolean, default: true }
-      - { name: description, label: Description, type: string, options: { maxlength: 140 } }
-      - { name: tags, label: Tags, type: select }
-      - { name: body, label: Body, type: rich-text, options: { image: { path: static/images/posts } } }
-  - name: prose
-    label: Prose
-    type: collection
-    path: content/prose
-    filename: "{primary}.md"
-    icon: book-open-text
-    view:
-      fields: [ title, date, lastmod, draft ]
-    fields:
-      - { name: title, label: Title, type: string }
-      - { name: date, label: Date, type: date }
-      - { name: lastmod, label: Last Modified, type: date }
-      - { name: draft, label: Draft, type: boolean, default: true }
-      - { name: description, label: Description, type: string, options: { maxlength: 140 } }
-      - { name: tags, label: Tags, type: select }
-      - { name: body, label: Body, type: rich-text, options: { image: { path: static/images/prose } } }
-  - name: characters
-    label: Characters
-    type: collection
-    path: content/characters
-    filename: "{primary}.md"
-    icon: venetian-mask
-    view:
-      fields: [ title, date, lastmod, draft ]
-    fields:
-      - { name: title, label: Title, type: string }
-      - { name: date, label: Date, type: date }
-      - { name: lastmod, label: Last Modified, type: date }
-      - { name: draft, label: Draft, type: boolean, default: true }
-      - { name: description, label: Description, type: string, options: { maxlength: 140 } }
-      - { name: image, label: Image, type: image, options: { path: static/images/characters } }
-      - { name: type, type: string, hidden: true, default: gallery }
-      - { name: body, label: Body, type: rich-text, options: { image: { path: static/images/characters } } }
-  - name: worlds
-    label: Worlds
-    type: collection
-    path: content/worlds
-    filename: "{primary}.md"
-    icon: earth
-    view:
-      fields: [ title, date, lastmod, draft ]
-    fields:
-      - { name: title, label: Title, type: string }
-      - { name: date, label: Date, type: date }
-      - { name: lastmod, label: Last Modified, type: date }
-      - { name: draft, label: Draft, type: boolean, default: true }
-      - { name: description, label: Description, type: string, options: { maxlength: 140 } }
-      - { name: image, label: Image, type: image, options: { path: static/images/characters } }
-      - { name: type, type: string, hidden: true, default: gallery }
-      - { name: body, label: Body, type: rich-text, options: { image: { path: static/images/worlds } } }
-  - name: about
-    label: About Me
+      - name: title
+        label: Title
+        type: string
+      - name: date
+        label: Date
+        type: date
+      - name: description
+        label: Description (optional)
+        type: string
+      - name: image
+        label: Image
+        type: image
+      - name: categories
+        label: Categories
+        type: select
+        options:
+          multiple: true
+          creatable: true
+          values: [ Prose, Characters, Worldbuilding, Affirmations, Essays, Poetry, Rants, Ilmaria ]
+      - name: tags
+        label: Tags
+        type: select
+        options:
+          creatable: true
+          multiple: true
+          values: [ Bible, creature, death, depression, gender-dysphoria, grief, LGBTQIA+, prayer, school, taboo, templates, tips ]
+      - name: body
+        label: Body
+        type: rich-text
+  - name: config
+    label: Jekyll config
+    path: _config.yml
     type: file
-    path: content/about.md
     fields:
-      - { name: title, label: Title, type: string }
-      - { name: date, label: Date, type: date }
-      - { name: lastmod, label: Last Modified, type: date }
-      - { name: description, label: Description, type: string, options: { maxlength: 140 } }
-      - { name: body, label: Body, type: rich-text }
+      - name: title
+        label: Website title
+        type: string
+      - name: description
+        label: Website description
+        type: string
+        description: Will be provused for any page with no description.
+      - name: url
+        label: Website URL
+        type: string
+        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+      - name: cover
+        label: Preview image
+        type: image
+        description: Image used in the social preview on social networks (e.g. Facebook, Twitter...)
