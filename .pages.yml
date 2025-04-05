@@ -44,36 +44,9 @@ content:
           creatable: true
           multiple: true
           values: [ Bible, creature, death, depression, gender-dysphoria, grief, LGBTQIA+, prayer, school, taboo, templates, tips ]
+      - name: id
+        label: Identifier
+        type: uuid
       - name: body
         label: Body
         type: rich-text
-  - name: config
-    label: Jekyll config
-    path: _config.yml
-    type: file
-    fields:
-      - name: title
-        label: Site title
-        type: string
-      - name: tagline
-        label: Site tagline
-        type: string
-      - name: description
-        label: Site description
-        type: string
-        description: Used by SEO meta and the Atom feed.
-      - name: url
-        label: URL
-        type: string
-        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
-      - name: baseurl
-        label: Site base URL
-        type: string
-      - name: avatar
-        label: Sidebar image
-        type: image
-        description: The avatar on sidebar
-      - name: social_preview_image
-        label: Preview image
-        type: image
-        description: Image used in the social preview on social networks (e.g. Facebook, Twitter...)
