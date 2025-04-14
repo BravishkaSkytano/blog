@@ -14,12 +14,12 @@ timezone: America/New_York
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: un-Graphophobic # the main title
+title: Echoes of Elsewhere # the main title
 
-tagline: Write. Read. Be Free. # it will display as the subtitle
+tagline: Where distant worlds whisper back. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A place for me to write and think freely.
+  Echoes of Elsewhere beckons you into veil-thin worlds, where the borders between past and present, reality and dream, blur into the infinite. Step softly into forgotten archives, their dust-covered tomes holding secrets long lost to time. Wander through dim-lit realms, where each shadow hides a story waiting to be uncovered. Here, the echoes of ancient voices call from realms unseen, inviting you to explore places suspended in memory and possibility. Every corner is a threshold to a forgotten journey, every step a glimpse into the unseen. In Echoes of Elsewhere, the world is not what it seems, and the past lingers just out of reach, waiting for those brave enough to listen.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -88,7 +88,7 @@ pageviews:
 #     light — Use the light color scheme
 #     dark — Use the dark color scheme
 #
-theme_mode: # [light | dark]
+theme_mode: dark # [light | dark]
 
 # The CDN endpoint for media resources.
 # Notice that once it is assigned, the CDN url
@@ -98,11 +98,11 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /assets/img/logo-full-background.jpg
+avatar: /assets/img/logo.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
-social_preview_image: /assets/img/logo-full-background.jpg # string, local or CORS resources
+social_preview_image: /assets/img/logo-full.jpg # string, local or CORS resources
 
 # boolean type, the global switch for TOC in posts.
 toc: true
