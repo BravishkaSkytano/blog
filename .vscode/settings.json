@@ -2,29 +2,71 @@
   // Prettier
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  // Shopify Liquid
-  "files.associations": {
-    "*.html": "liquid"
+  // HTML Formatting
+  "[html]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid"
   },
+  // Markdown Formatting
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
-  // Formatter
-  "[html][liquid]": {
-    "editor.defaultFormatter": "Shopify.theme-check-vscode"
+  // Liquid Formatting
+  //
+  // Leave the "editor.formatOnSave" option set to false.
+  // You can enable it by pressing using the 💧 button in the status bar.
+  //
+  "[liquid]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.formatOnSave": false
   },
-  "[shellscript]": {
-    "editor.defaultFormatter": "mkhl.shfmt"
-  },
-  // Disable vscode built-in stylelint
-  "css.validate": false,
-  "scss.validate": false,
-  "less.validate": false,
-  // Stylint extension settings
-  "stylelint.snippet": ["css", "scss"],
-  "stylelint.validate": ["css", "scss"],
-  // Run tasks in macOS
-  "terminal.integrated.profiles.osx": {
-    "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
+
+  // Liquid Configuration
+  //
+  // If you are not using a .liquidrc file you can set the
+  // "liquid.config.method" setting to "workspace"
+  //
+  "liquid.config.baseDir": ".",
+  "liquid.config.method": "liquidrc",
+
+  // Liquid Completion Settings
+  //
+  // These settings will enable/disable completions from showing.
+  //
+  "liquid.completion.tags": true,
+  "liquid.completion.objects": true,
+  "liquid.completion.filters": true,
+  "liquid.completion.operators": true,
+  "liquid.completion.schema": true,
+
+  // Liquid Validations
+  //
+  // This setting will enable/disable validations in {% schema %} JSON
+  //
+  "liquid.validate.schema": true,
+
+  // Liquid Hover Descriptions
+  //
+  // These settings will enable/disable hover descriptions from showing
+  //
+  "liquid.hover.tags": true,
+  "liquid.hover.filters": true,
+  "liquid.hover.objects": true,
+  "liquid.hover.schema": true,
+
+  // Uncomment if you are not using a .liquidrc file
+  //
+  "liquid.engine": "shopify",
+
+  // Uncomment if you are not using a .liquidrc file
+  //
+  "liquid.files.shopify": {},
+  "liquid.files.11ty": {},
+
+  //  Uncomment if you are not using a .liquidrc file
+  //
+  "liquid.format.rules": {
+    "ignore":[],
+    "liquid": {},
+    "html": {}
   }
 }

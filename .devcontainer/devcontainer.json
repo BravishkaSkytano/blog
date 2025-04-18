@@ -1,29 +1,34 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/jekyll
 {
-  "name": "Jekyll",
-  "image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
-  //"onCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
-  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "name": "Jekyll blog",
+  "image": "mcr.microsoft.com/devcontainers/jekyll:3.2-bookworm",
   "customizations": {
     "vscode": {
       "settings": {
         "terminal.integrated.defaultProfile.linux": "zsh"
       },
       "extensions": [
-        // Liquid tags auto-complete
-        "killalau.vscode-liquid-snippets",
-        // Liquid syntax highlighting and formatting
-        "Shopify.theme-check-vscode",
-        // Shell
-        "timonwong.shellcheck",
-        "mkhl.shfmt",
-        // Common formatter
+        "oderwat.indent-rainbow",
+        "aaron-bond.better-comments",
+        "vscode-icons-team.vscode-icons",
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
-        "stylelint.vscode-stylelint",
+        "mhutchie.git-graph",
+        "formulahendry.auto-rename-tag",
+        "cmel.vscode-html-css",
+        "pranaygp.vscode-css-peek",
         "yzhang.markdown-all-in-one",
-        // Git
-        "mhutchie.git-graph"
+        "sissel.shopify-liquid"
       ]
     }
-  }
+  },
+  "features": {},
+  "forwardPorts": [
+    // Jekyll server
+    4000,
+    // Live reload server
+    35729
+  ],
+  "postCreateCommand": "bash .devcontainer/post-create.sh"
 }
