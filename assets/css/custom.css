@@ -1,17 +1,31 @@
-html {
+:root {
+  --nav-text-color: #000000;
+  --nav-background-color: #ffffff;
+  --footer-background-color: #ffffff;
+  --footer-text-color: #000000;
   --hero-text-color: #ffffff;
 }
 
 body {
-  font-family: "Proza Libre", sans-serif;
+  font-family: "Asul", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.asul-bold {
-  font-family: "Asul", serif;
-  font-weight: 700;
-  font-style: normal;
+header {
+  border: 3px solid #000000;
+  border-radius: 1.5rem;
+  padding: 2%;
+  margin-bottom: 5%;
+  color: var(--nav-text-color);
+  background-color: var(--nav-background-color);
+  text-align: center;
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .hero {
@@ -32,10 +46,11 @@ body {
 }
 
 footer {
-  border-top: 3px solid #000000;
+  border: 3px solid #000000;
   border-radius: 1.5rem;
   padding: 2% 10%;
-  color: var(--nav-text-color);
+  color: var(--footer-text-color);
+  background-color: var(--footer-background-color);
   text-align: center;
 }
 

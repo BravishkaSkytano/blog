@@ -1,12 +1,10 @@
 <header>
   {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
   <nav>
-    <ul>
+    <div class="button-container">
       {%- for entry in collections.all | eleventyNavigation %}
-      <li>
-        <a href="{{ entry.url }}">{{ entry.title }}</a>
-      </li>
+        <a href="{{ entry.url }}" class="nb-button default rounded">{{ entry.title }}</a>
       {%- endfor %}
-    </ul>
+    </div>
   </nav>
 </header>
