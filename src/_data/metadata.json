@@ -1,0 +1,17 @@
+{
+  "title": "Echoes of Elsewhere",
+  "tagline": "Where distant worlds whisper back.",
+  "description": "Open the door to veil-thin worlds and dim-lit realms, where forgotten archives whisper stories lost to time. Here, shadows speak, memories stir, and every step leads deeper into the unseen. Let the echoes guide you—what was lost still lingers.",
+  "logo": "/assets/img/logo.jpg",
+  "author": "Yoela O",
+  "social": {
+    "github": "https://github.com/BravishkaSkytano",
+    "facebook": "https://www.facebook.com/profile.php?id=61563914007295",
+    "linkedin": "https://www.linkedin.com/in/yoela-o"
+  },
+  "theme": {
+    "name": "default",
+    "color": "#000000",
+    "background": "#ffffff"
+  }
+}

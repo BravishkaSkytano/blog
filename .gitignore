@@ -1,10 +1,6 @@
-# Bundler cache
-.bundle
-vendor
-Gemfile.lock
+node_modules
+*.lock
+*-lock.json
 
-# Jekyll cache
-.jekyll-cache
-.jekyll-metadata
-.sass-cache
 _site
+public

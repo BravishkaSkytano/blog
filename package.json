@@ -1,0 +1,29 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Echoes of Elsewhere beckons you into veil-thin worlds, where the borders between past and present, reality and dream, blur into the infinite. Step softly into forgotten archives, their dust-covered tomes holding secrets long lost to time. Wander through dim-lit realms, where each shadow hides a story waiting to be uncovered. Here, the echoes of ancient voices call from realms unseen, inviting you to explore places suspended in memory and possibility. Every corner is a threshold to a forgotten journey, every step a glimpse into the unseen. In Echoes of Elsewhere, the world is not what it seems, and the past lingers just out of reach, waiting for those brave enough to listen.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
+    "clean": "npx rimraf _site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BravishkaSkytano/blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BravishkaSkytano/blog/issues"
+  },
+  "homepage": "https://github.com/BravishkaSkytano/blog#readme",
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy-navigation": "^1.0.4"
+  }
+}

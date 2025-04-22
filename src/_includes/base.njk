@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  {% include '_head.njk' %}
+  <body>
+    {% include '_header.njk' %}
+    {% block content %}
+      <div class="hero">
+        <div class="hero-content">
+          <h1>NeoBrutalismCSS</h1>
+          <p>Explore the world of NeoBrutalism with our comprehensive guide.</p>
+        </div>
+      </div>
+      <main class="container">
+        <section>
+          <h2>Posts</h2>
+        </section>
+      </main>
+    {% endblock content %}
+    {% include '_footer.njk' %}
+  </body>
+</html>

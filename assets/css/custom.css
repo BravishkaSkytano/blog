@@ -1,0 +1,46 @@
+html {
+  --hero-text-color: #ffffff;
+}
+
+body {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.asul-bold {
+  font-family: "Asul", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.hero {
+  border: 3px solid #000000;
+  display: flex;
+  height: 85vh;
+  border-radius: 1.5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/logo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10%;
+  color: var(--hero-text-color);
+  text-align: center;
+}
+
+footer {
+  border-top: 3px solid #000000;
+  border-radius: 1.5rem;
+  padding: 2% 10%;
+  color: var(--nav-text-color);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin: 0;
+  }
+}
