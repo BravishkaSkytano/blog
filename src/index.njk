@@ -1,0 +1,147 @@
+---
+title: Home
+eleventyNavigation:
+  key: Home
+  order: 1
+  icon: home
+---
+
+{% extends 'base.njk' %}
+{% block hero %}
+  <div class="hero">
+    <div class="hero__content">
+      <h1>{{ metadata.title }}</h1>
+      <h3>{{ metadata.tagline }}</h3>
+    </div>
+    <picture>
+      <img src="{{ metadata.logo }}" alt="Site logo" width="960" height="640"></picture>
+    </div>
+  {% endblock hero %}
+  {% block content %}
+    <section>
+      <h2>Announcements</h2>
+      <ul>
+        {%- for post in collections.announcements -%}
+          <li>
+            {{ post.date.toLocaleString( undefined, { year: 'numeric',
+      month: 'long', day: 'numeric' }) }} -
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </section>
+    <section>
+      <h2>Posts</h2>
+      <div class="grid">
+        {%- for post in collections.posts -%}
+          <div class="card">
+            <a href="{{ post.url }}">
+              <div class="card-content">
+                <div class="text-small">{{ post.date.toLocaleString( undefined, { year: 'numeric',
+      month: 'long', day: 'numeric' }) }}</div>
+                <div class="heading-group">
+                  <h3>
+                    {{ post.data.title }}
+                  </h3>
+                  <h4>
+                    {{ post.data.subtitle }}
+                  </h4>
+                </div>
+                {% if post.data.description %}
+                  {% else %}
+                {% endif %}
+                <p>{{ post.content | excerpt }}</p>
+                <p>
+                  <strong>Tags:
+                  </strong>
+                  {%- for tag in post.data.tags -%}
+                    {{ tag }}
+                    {% if not loop.last %},
+                    {% endif %}
+                  {%- endfor -%}
+                </p>
+              </div>
+            </a>
+          </div>
+        {%- endfor -%}
+      </div>
+    </section>
+    <section>
+      <h2>Characters</h2>
+      <div class="grid">
+        {%- for post in collections.characters -%}
+          <div class="card">
+            <a href="{{ post.url }}">
+              <div class="card-thumbnail">
+                <img src="{% if post.data.image %}{{ post.data.image }}{% else %}https://placehold.co/1024?text={% endif %}" loading="lazy" alt="{{ post.data.title }}" class="card-thumbnail"/>
+              </div>
+              <div class="card-content">
+                <div class="text-small">{{ post.date.toLocaleString( undefined, { year: 'numeric',
+      month: 'long', day: 'numeric' }) }}</div>
+                <div class="heading-group">
+                  <h3>
+                    {{ post.data.title }}
+                  </h3>
+                  <h4>
+                    {{ post.data.subtitle }}
+                  </h4>
+                </div>
+                {% if post.data.description %}
+                  {% else %}
+                {% endif %}
+                <p>{{ post.content | excerpt }}</p>
+                <p>
+                  <strong>Tags:
+                  </strong>
+                  {%- for tag in post.data.tags -%}
+                    {{ tag }}
+                    {% if not loop.last %},
+                    {% endif %}
+                  {%- endfor -%}
+                </p>
+              </div>
+            </a>
+          </div>
+        {%- endfor -%}
+      </div>
+    </section>
+    <section>
+      <h2>Worlds</h2>
+      <div class="grid">
+        {%- for post in collections.worlds -%}
+          <div class="card">
+            <a href="{{ post.url }}">
+              <div class="card-thumbnail">
+                <img src="{% if post.data.image %}{{ post.data.image }}{% else %}https://placehold.co/1024?text={% endif %}" loading="lazy" alt="{{ post.data.title }}" class="card-thumbnail"/>
+              </div>
+              <div class="card-content">
+                <div class="text-small">{{ post.date.toLocaleString( undefined, { year: 'numeric',
+      month: 'long', day: 'numeric' }) }}</div>
+                <div class="heading-group">
+                  <h3>
+                    {{ post.data.title }}
+                  </h3>
+                  <h4>
+                    {{ post.data.subtitle }}
+                  </h4>
+                </div>
+                {% if post.data.description %}
+                  {% else %}
+                {% endif %}
+                <p>{{ post.content | excerpt }}</p>
+                <p>
+                  <strong>Tags:
+                  </strong>
+                  {%- for tag in post.data.tags -%}
+                    {{ tag }}
+                    {% if not loop.last %},
+                    {% endif %}
+                  {%- endfor -%}
+                </p>
+              </div>
+            </a>
+          </div>
+        {%- endfor -%}
+      </div>
+    </section>
+  {% endblock content %}

@@ -4,9 +4,17 @@
   "editor.formatOnSave": true,
   // Markdown Formatting
   "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.wordWrapColumn": 100,
+    "editor.wordWrap": "bounded"
+  },
+  "[nunjuck][njk]": {
+    "editor.defaultFormatter": "eseom.nunjucks-template",
+    "editor.wordWrapColumn": 100,
+    "editor.wordWrap": "bounded"
   },
   "emmet.includeLanguages": {
+    "nunjucks": "html",
     "njk": "html"
   },
   "vsicons.associations.files": [
@@ -15,8 +23,5 @@
       "extensions": ["njk"],
       "format": "svg"
     }
-  ],
-  "[njk]": {
-    "editor.defaultFormatter": "eseom.nunjucks-template"
-  }
+  ]
 }
