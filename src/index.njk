@@ -37,8 +37,8 @@ eleventyNavigation:
           <div class="card">
             <a href="{{ post.url }}">
               <div class="card-content">
-                <div class="text-small">{{ post.date.toLocaleString( undefined, { year: 'numeric',
-      month: 'long', day: 'numeric' }) }}</div>
+                <p class="text-small">{{ post.date.toLocaleString( undefined, { year: 'numeric',
+      month: 'long', day: 'numeric' }) }}</p>
                 <div class="heading-group">
                   <h3>
                     {{ post.data.title }}
@@ -51,15 +51,17 @@ eleventyNavigation:
                   {% else %}
                 {% endif %}
                 <p>{{ post.content | excerpt }}</p>
-                <p>
-                  <strong>Tags:
-                  </strong>
-                  {%- for tag in post.data.tags -%}
-                    {{ tag }}
-                    {% if not loop.last %},
-                    {% endif %}
-                  {%- endfor -%}
-                </p>
+                {% if post.data.tags %}
+                  <p class="text-small">
+                    <strong>Tags:
+                    </strong>
+                    {%- for tag in post.data.tags -%}
+                      {{ tag }}
+                      {% if not loop.last %},
+                      {% endif %}
+                    {%- endfor -%}
+                  </p>
+                {% endif %}
               </div>
             </a>
           </div>
@@ -76,8 +78,8 @@ eleventyNavigation:
                 <img src="{% if post.data.image %}{{ post.data.image }}{% else %}https://placehold.co/1024?text={% endif %}" loading="lazy" alt="{{ post.data.title }}" class="card-thumbnail"/>
               </div>
               <div class="card-content">
-                <div class="text-small">{{ post.date.toLocaleString( undefined, { year: 'numeric',
-      month: 'long', day: 'numeric' }) }}</div>
+                <p class="text-small">{{ post.date.toLocaleString( undefined, { year: 'numeric',
+      month: 'long', day: 'numeric' }) }}</p>
                 <div class="heading-group">
                   <h3>
                     {{ post.data.title }}
@@ -90,15 +92,17 @@ eleventyNavigation:
                   {% else %}
                 {% endif %}
                 <p>{{ post.content | excerpt }}</p>
-                <p>
-                  <strong>Tags:
-                  </strong>
-                  {%- for tag in post.data.tags -%}
-                    {{ tag }}
-                    {% if not loop.last %},
-                    {% endif %}
-                  {%- endfor -%}
-                </p>
+                {% if post.data.tags %}
+                  <p class="text-small">
+                    <strong>Tags:
+                    </strong>
+                    {%- for tag in post.data.tags -%}
+                      {{ tag }}
+                      {% if not loop.last %},
+                      {% endif %}
+                    {%- endfor -%}
+                  </p>
+                {% endif %}
               </div>
             </a>
           </div>
@@ -115,8 +119,8 @@ eleventyNavigation:
                 <img src="{% if post.data.image %}{{ post.data.image }}{% else %}https://placehold.co/1024?text={% endif %}" loading="lazy" alt="{{ post.data.title }}" class="card-thumbnail"/>
               </div>
               <div class="card-content">
-                <div class="text-small">{{ post.date.toLocaleString( undefined, { year: 'numeric',
-      month: 'long', day: 'numeric' }) }}</div>
+                <p class="text-small">{{ post.date.toLocaleString( undefined, { year: 'numeric',
+      month: 'long', day: 'numeric' }) }}</p>
                 <div class="heading-group">
                   <h3>
                     {{ post.data.title }}
@@ -129,15 +133,17 @@ eleventyNavigation:
                   {% else %}
                 {% endif %}
                 <p>{{ post.content | excerpt }}</p>
-                <p>
-                  <strong>Tags:
-                  </strong>
-                  {%- for tag in post.data.tags -%}
-                    {{ tag }}
-                    {% if not loop.last %},
-                    {% endif %}
-                  {%- endfor -%}
-                </p>
+                {% if post.data.tags %}
+                  <p class="text-small">
+                    <strong>Tags:
+                    </strong>
+                    {%- for tag in post.data.tags -%}
+                      {{ tag }}
+                      {% if not loop.last %},
+                      {% endif %}
+                    {%- endfor -%}
+                  </p>
+                {% endif %}
               </div>
             </a>
           </div>

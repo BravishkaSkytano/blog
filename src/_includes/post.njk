@@ -1,0 +1,59 @@
+{% extends 'base.njk' %}
+{% block hero %}
+  <div class="hero">
+    <div class="hero__content">
+      <h1>{{ title }}</h1>
+      <h3>{{ subtitle }}</h3>
+    </div>
+    {% if image %}
+      <picture>
+        <img src="{{ image }}" alt="post image" width="960" height="640"></picture>
+      {% else %}
+        <div class="cover"></div>
+      {% endif %}
+    </div>
+  {% endblock hero %}
+  {% block content %}
+  <section class="content">
+    {{ content | safe }}
+  </section>
+  {% if related %}
+    <section>
+      <h2>You might also like:</h2>
+      <div class="grid">
+        {% for relatedPost in related %}
+          <div class="card">
+            <a href="{{ relatedPost.url }}">
+              <div class="card-content">
+                <p class="text-small">{{ relatedPost.date.toLocaleString( undefined, { year: 'numeric', month: 'long', day: 'numeric' }) }}</p>
+                <div class="heading-group">
+                  <h3>
+                    {{ relatedPost.data.title }}
+                  </h3>
+                  <h4>
+                    {{ relatedPost.data.subtitle }}
+                  </h4>
+                </div>
+                {% if relatedPost.data.description %}
+                  <p>{{ relatedPost.data.description }}</p>
+                {% else %}
+                  <p>{{ relatedPost.content | excerpt }}</p>
+                {% endif %}
+                {% if relatedPost.data.tags %}
+                  <p class="text-small">
+                    <strong>Tags:</strong>
+                    {%- for tag in relatedPost.data.tags -%}
+                      {{ tag }}
+                      {% if not loop.last %},
+                      {% endif %}
+                    {%- endfor -%}
+                  </p>
+                {% endif %}
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endif %}{% endblock content %}
