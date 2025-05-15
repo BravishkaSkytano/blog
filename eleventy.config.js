@@ -1,13 +1,20 @@
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy';
 import eleventyNavigationPlugin from '@11ty/eleventy-navigation';
-import { DateTime } from 'luxon';
-import contentRecommendation from './plugins/contentRecommendation.js';
+import contentRecommendation from './config/contentRecommendation.js';
+import pluginFilters from './config/filters.js';
 
 export default async function (eleventyConfig) {
-  eleventyConfig.setInputDirectory('src');
-  eleventyConfig.setIncludesDirectory('_includes'); // This is relative to your input directory!
-  eleventyConfig.addPassthroughCopy('assets');
-  eleventyConfig.addPassthroughCopy('bundle.css');
+  // Drafts
+  eleventyConfig.addPreprocessor('drafts', '*', (data, content) => {
+    if (data.draft && process.env.ELEVENTY_RUN_MODE === 'build') {
+      return false;
+    }
+  });
+
+  eleventyConfig.addPassthroughCopy('./assets/');
+
+  // Watch CSS files
+  eleventyConfig.addWatchTarget('./assets/css/**/*.css');
 
   // Layout aliases
   eleventyConfig.addLayoutAlias('base', 'base.njk');
@@ -18,6 +25,11 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(contentRecommendation);
+  eleventyConfig.addPlugin(pluginFilters);
+
+  eleventyConfig.addShortcode('currentBuildDate', () => {
+    return new Date().toISOString();
+  });
 
   // Collections
   eleventyConfig.addCollection('announcements', function (collectionApi) {
@@ -34,12 +46,6 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addCollection('worlds', function (collectionApi) {
     return collectionApi.getFilteredByGlob('src/worlds/**/*.md');
-  });
-
-  // Filters
-  eleventyConfig.addFilter('excerpt', (post) => {
-    const content = post.replace(/(<([^>]+)>)/gi, '');
-    return content.substr(0, content.lastIndexOf(' ', 200)) + '...';
   });
 }
 

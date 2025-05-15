@@ -3,7 +3,10 @@
   <div class="hero">
     <div class="hero__content">
       <h1>{{ title }}</h1>
-      <h3>{{ subtitle }}</h3>
+      <h2>{{ subtitle }}</h2>
+      <h3>
+        <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+      </h3>
     </div>
     {% if image %}
       <picture>
@@ -16,6 +19,15 @@
   {% block content %}
   <section class="content">
     {{ content | safe }}
+    {% if tags %}
+      <p style="text-align: right;">
+        {%- for tag in tags | filterTagList %}
+          {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+          <ion-icon name="pricetag-sharp"></ion-icon>
+          <a href="{{ tagUrl }}">{{ tag }}</a>
+        {%- endfor %}
+      </p>
+    {% endif %}
   </section>
   {% if related %}
     <section>
@@ -25,7 +37,7 @@
           <div class="card">
             <a href="{{ relatedPost.url }}">
               <div class="card-content">
-                <p class="text-small">{{ relatedPost.date.toLocaleString( undefined, { year: 'numeric', month: 'long', day: 'numeric' }) }}</p>
+                <time class="text-small" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
                 <div class="heading-group">
                   <h3>
                     {{ relatedPost.data.title }}
