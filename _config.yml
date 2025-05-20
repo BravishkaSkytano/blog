@@ -32,10 +32,8 @@ collections_dir: collections
 collections:
   characters:
     output: true
-    permalink: /:collection/:path:output_ext
-  worlds:
+  locations:
     output: true
-    permalink: /:collection/:path:output_ext
 
 defaults:
   - scope:
@@ -54,25 +52,19 @@ defaults:
       layout: "character"
   - scope:
       path: ""
-      type: "worlds"
+      type: "locations"
     values:
-      layout: "world"
+      layout: "location"
 
 plugins:
   - jekyll-avatar
   - jekyll-coffeescript
-  - jekyll-default-layout
   - jekyll-feed
-  - jekyll-gist
   - jekyll-paginate
-  - jekyll-mentions
   - jekyll-optional-front-matter
-  - jekyll-readme-index
   - jekyll-redirect-from
   - jekyll-remote-theme
   - jekyll-relative-links
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-titles-from-headings
   - jemoji
-  - jekyll-gitlab-metadata
