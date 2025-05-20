@@ -24,9 +24,9 @@
         "mhutchie.git-graph",
         "pranaygp.vscode-css-peek",
         "yzhang.markdown-all-in-one",
-        "eseom.nunjucks-template",
         "ms-azuretools.vscode-docker",
-        "GitHub.copilot"
+        "GitHub.copilot",
+        "sissel.shopify-liquid"
       ]
     }
   }
