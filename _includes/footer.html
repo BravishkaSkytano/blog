@@ -1,11 +1,11 @@
-<footer class="pv4 ph3 ph5-m ph6-l mid-gray">
+<footer class="pv4 ph3 ph5-m ph6-l white-60">
   <small class="f6 db tc">© {{ site.time | date: "%Y" }}
     <b class="ttu">{{ site.title }}</b>. Made with <a href="https://jekyllrb.com/"
-      class="f6 dib link mid-gray dim">Jekyll</a> and <a href="https://tachyons.io/"
-      class="f6 dib link mid-gray dim">TachyonsCSS</a></small>
+      class="f6 dib link moon-gray dim">Jekyll</a> and <a href="https://tachyons.io/"
+      class="f6 dib link moon-gray dim">TachyonsCSS</a></small>
   <div class="tc mt3">
     {% for link in site.data.nav %}
-    <a href="{{ link.url | relative_url }}" class="f6 dib ph2 link mid-gray dim">{{ link.title }}</a>
+    <a href="{{ link.url | relative_url }}" class="f6 dib ph2 link moon-gray dim">{{ link.title }}</a>
     {% endfor %}
   </div>
 </footer>
