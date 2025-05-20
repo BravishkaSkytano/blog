@@ -1,0 +1,25 @@
+.post-content {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem;
+
+  h2,
+  h3,
+  h4 {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  p {
+    line-height: 1.5;
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, .7);
+    max-width: 30em;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .post-content p {
+    font-size: 1.5rem;
+  }
+}

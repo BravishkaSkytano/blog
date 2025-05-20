@@ -1,0 +1,18 @@
+<header class="black-80 tc pv4">
+  <div class="dib mw5 h5 ba b--black border-box">
+    <img src="{{ site.logo | relative_url }}" alt="Site logo" />
+  </div>
+  <h1 class="mt2 mb0 baskerville i fw1 f1">
+    {{ site.title }}
+  </h1>
+  <h2 class="mt2 mb0 f6 fw4 ttu tracked">
+    {{ site.tagline }}
+  </h2>
+  <nav class="bt bb tc mw7 center mt4">
+    {% for link in site.data.nav %}
+    <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" href="{{ link.url | relative_url }}">
+      {{ link.title }}
+    </a>
+    {% endfor %}
+  </nav>
+</header>
