@@ -1,0 +1,77 @@
+title: "Echoes of Elsewhere"
+tagline: "Where distant worlds whisper back."
+description: "Open the door to veil-thin worlds and dim-lit realms, where forgotten archives whisper stories lost to time. Here, shadows speak, memories stir, and every step leads deeper into the unseen. Let the echoes guide you—what was lost still lingers."
+
+baseurl: "/blog"
+paginate: 5
+paginate_path: "/page:num"
+permalink: none #/:categories/:title:output_ext
+
+logo: /assets/img/logo.jpg
+
+#
+# Jekyll configurations
+#
+
+# You can customize it changing default layout for all pages
+# More info: https://jekyllrb.com/docs/configuration/
+#
+# git-wiki includes some internal themes that you can choose
+# check _layouts folder
+#
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+sass:
+  style: compressed
+
+collections_dir: collections
+collections:
+  characters:
+    output: true
+    permalink: /:collection/:path:output_ext
+  worlds:
+    output: true
+    permalink: /:collection/:path:output_ext
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "characters"
+    values:
+      layout: "character"
+  - scope:
+      path: ""
+      type: "worlds"
+    values:
+      layout: "world"
+
+plugins:
+  - jekyll-avatar
+  - jekyll-coffeescript
+  - jekyll-default-layout
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-mentions
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-redirect-from
+  - jekyll-remote-theme
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-titles-from-headings
+  - jemoji
+  - jekyll-gitlab-metadata
