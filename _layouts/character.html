@@ -31,18 +31,18 @@ layout: default
                 <h3 class="f4 bold center mw5">Biographical Info</h3>
                 <div class="pa3">
                   <ul class="list pl0 measure center">
-                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--white-60">
                       <span class="fw6">Full name: </span>
                       {{ page.general.full_name | default: "Unknown" }}
                     </li>
-                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--white-60">
                       <span class="fw6">Age: </span>
                       {{ page.general.age | default: "Unknown" }}
                       {% if page.general.birth_date %}
                       (Born on {{ page.general.birth_date }})
                       {% endif %}
                     </li>
-                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--white-60">
                       <span class="fw6">Aliases: </span>
                       {% if page.general.aliases %}
                       <ul>
@@ -52,7 +52,7 @@ layout: default
                       </ul>
                       {% else %}None{% endif %}
                     </li>
-                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--white-60">
                       <span class="fw6">Titles: </span>
                       {% if page.general.titles %}
                       <ul>
@@ -62,14 +62,16 @@ layout: default
                       </ul>
                       {% else %}None{% endif %}
                     </li>
-                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
-                      {% assign species = site.species | where: "slug", page.general.species | first %}
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--white-60">
                       <span class="fw6">Species: </span>
+                      {% if page.general.species %}
+                      {% assign species = site.species | where: "slug", page.general.species | first %}
                       <a class="blue link dim" href="{{ species.url | relative_url }}">
                         {{ species.title }}
                       </a>
+                      {% else %}Unknown{% endif %}
                     </li>
-                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--white-60">
                       <span class="fw6">Ethnicity: </span>
                       {{ page.general.ethnicity | default: "Unknown" }}
                     </li>
@@ -80,23 +82,23 @@ layout: default
                 <h3 class="f4 bold center mw5">Physical Description</h3>
                 <div class="pa3">
                   <ul class="list pl0 measure center">
-                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--white-60">
                       <span class="fw6">Height: </span>
                       {{ page.physical.height | default: "Unknown" }}
                     </li>
-                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--white-60">
                       <span class="fw6">Weight: </span>
                       {{ page.physical.weight | default: "Unknown" }}
                     </li>
-                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--white-60">
                       <span class="fw6">Hair Color: </span>
                       {{ page.physical.hair_color | default: "Unknown" }}
                     </li>
-                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--white-60">
                       <span class="fw6">Eye Color: </span>
                       {{ page.physical.eye_color | default: "Unknown" }}
                     </li>
-                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--white-60">
                       <span class="fw6">Distinguishing Features: </span>
                       {{ page.physical.distinguishing_features | default: "Unknown" }}
                     </li>
@@ -107,7 +109,7 @@ layout: default
                 <h3 class="f4 bold center mw5">Special Abilities</h3>
                 <div class="pa3">
                   <ul class="list pl0 measure center">
-                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--white-60">
                       <span class="fw6">Powers: </span>
                       {% if page.special.powers %}
                       <ul>
@@ -117,7 +119,7 @@ layout: default
                       </ul>
                       {% else %}None{% endif %}
                     </li>
-                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--white-60">
                       <span class="fw6">Abilities: </span>
                       {% if page.special.abilities %}
                       <ul>
@@ -134,7 +136,7 @@ layout: default
                 <h3 class="f4 bold center mw5">Relationships</h3>
                 <div class="pa3">
                   <ul class="list pl0 measure center">
-                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--white-60">
                       <span class="fw6">Father: </span>
                       {% if page.relationships.father %}
                       {% assign father = site.characters | where: "slug", page.relationships.father | first %}
@@ -143,7 +145,7 @@ layout: default
                       </a>
                       {% else %}Unknown{% endif %}
                     </li>
-                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--white-60">
                       <span class="fw6">Mother: </span>
                       {% if page.relationships.mother %}
                       {% assign mother = site.characters | where: "slug", page.relationships.mother | first %}
@@ -152,7 +154,7 @@ layout: default
                       </a>
                       {% else %}Unknown{% endif %}
                     </li>
-                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--white-60">
                       <span class="fw6">Sibling(s): </span>
                       {% if page.relationships.siblings %}
                       {% for sibling in page.relationships.siblings %}
@@ -167,7 +169,7 @@ layout: default
                       {% endfor %}
                       {% else %}None{% endif %}
                     </li>
-                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--white-60">
                       <span class="fw6">Spouse(s): </span>
                       {% if spouses %}
                       <a class="blue link dim" href="{{ spuses.url | relative_url }}">
@@ -175,7 +177,7 @@ layout: default
                       </a>
                       {% else %}None{% endif %}
                     </li>
-                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--white-60">
                       <span class="fw6">Romances: </span>
                       {% if page.relationships.romances %}
                       {% for romance in page.relationships.romances %}
