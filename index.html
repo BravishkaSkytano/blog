@@ -4,16 +4,16 @@ title: Home
 ---
 {% include header-home.html %}
 <section>
-  <div class="tc ph4">
+  <div class="tc ph4 mw4-m center">
     <h1 class="f3 f2-m f1-l fw2 moon-gray mv3">
       Characters
     </h1>
-    <h2 class="f5 f4-m f3-l fw2 white-50 mt0 lh-copy">
+    <h2 class="f5 f4-m f3-l fw2 white-60 mt0 lh-copy">
       This is the subtitle where additional information can go if you really need it.
     </h2>
   </div>
   <div class="cf pa2">
-    {% for character in site.characters %}
+    {% for character in site.characters limit: 8 %}
     <div class="fl w-100 w-third-m w-20-l pa2">
       <a href="{{ character.url | relative_url }}" class="db link dim">
         <img src="{{ character.image | relative_url }}" class="w-100 db outline white-60" />
@@ -24,6 +24,16 @@ title: Home
       </a>
     </div>
     {% endfor %}
+    {% if site.characters.size > 8 %}
+    <div class="fl w-100 w-third-m w-20-l pa2">
+      <a href="{{ '/characters/' | relative_url }}" class="db link dim">
+        <div class="ph2 ph0-ns pb3 link db">
+          <h2 class="f5 f4-ns mb0 moon-gray">View more</h2>
+          <h3 class="f6 f5 fw4 mt2 white-60">Click here to view the entire list of characters</h3>
+        </div>
+      </a>
+    </div>
+    {% endif %}
   </div>
 </section>
 <section>
@@ -31,12 +41,12 @@ title: Home
     <h1 class="f3 f2-m f1-l fw2 moon-gray mv3">
       Locations
     </h1>
-    <h2 class="f5 f4-m f3-l fw2 white-50 mt0 lh-copy">
+    <h2 class="f5 f4-m f3-l fw2 white-60 mt0 lh-copy">
       This is the subtitle where additional information can go if you really need it.
     </h2>
   </div>
   <div class="cf pa2">
-    {% for location in site.locations %}
+    {% for location in site.locations limit: 8 %}
     <div class="fl w-100 w-third-m w-20-l pa2">
       <a href="{{ location.url | relative_url }}" class="db link dim">
         <img src="{{ location.image | relative_url }}" class="w-100 db outline white-60" />
@@ -47,5 +57,15 @@ title: Home
       </a>
     </div>
     {% endfor %}
+    {% if site.locations.size > 8 %}
+    <div class="fl w-100 w-third-m w-20-l pa2">
+      <a href="{{ '/locations/' | relative_url }}" class="db link dim">
+        <div class="ph2 ph0-ns pb3 link db">
+          <h2 class="f5 f4-ns mb0 moon-gray">View more</h2>
+          <h3 class="f6 f5 fw4 mt2 white-60">Click here to view the entire list of locations</h3>
+        </div>
+      </a>
+    </div>
+    {% endif %}
   </div>
 </section>
