@@ -1,0 +1,241 @@
+---
+layout: default
+---
+<main>
+  <article>
+    <header>
+      <div class="cover bg-left bg-center-l" style="background-image: url({{ page.image | relative_url }})">
+        <div class="bg-black-70 pb5 pb6-m pb7-l">
+          <nav class="dt w-100 mw8 center">
+            <div class="dtc w2 v-mid pa3">
+              <a href="{{ '/' | relative_url }}" class="dib w2 h2 ba b--moon-gray grow-large border-box">
+                <img src="{{ site.logo | relative_url }}" alt="Site logo" />
+              </a>
+            </div>
+            <div class="dtc v-mid tr pa3">
+              {% for link in site.data.nav %}
+              <a class="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
+                href="{{ link.url | relative_url }}">
+                {{ link.title }}
+              </a>
+              {% endfor %}
+            </div>
+          </nav>
+          <div class="mt4 mt5-m mt6-l ph3">
+            <div class="tc-l">
+              <h1 class="f2 f1-l fw2 moon-gray mb0 lh-title">{{ page.title }}</h1>
+              <h2 class="fw1 f3 white-60 mt3 mb4">{{ page.subtitle }}</h2>
+            </div>
+            <div class="cf white-60">
+              <div class="fl w-100 w-50-m w-25-l">
+                <h3 class="f4 bold center mw5">Biographical Info</h3>
+                <div class="pa3">
+                  <ul class="list pl0 measure center">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                      <span class="fw6">Full name: </span>
+                      {{ page.general.full_name | default: "Unknown" }}
+                    </li>
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                      <span class="fw6">Age: </span>
+                      {{ page.general.age | default: "Unknown" }}
+                      {% if page.general.birth_date %}
+                      (Born on {{ page.general.birth_date }})
+                      {% endif %}
+                    </li>
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                      <span class="fw6">Aliases: </span>
+                      {% if page.general.aliases %}
+                      <ul>
+                        {% for alias in page.general.aliases %}
+                        <li>{{ alias }}</li>
+                        {% endfor %}
+                      </ul>
+                      {% else %}None{% endif %}
+                    </li>
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                      <span class="fw6">Titles: </span>
+                      {% if page.general.titles %}
+                      <ul>
+                        {% for title in page.general.titles %}
+                        <li>{{ title }}</li>
+                        {% endfor %}
+                      </ul>
+                      {% else %}None{% endif %}
+                    </li>
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                      {% assign species = site.species | where: "slug", page.general.species | first %}
+                      <span class="fw6">Species: </span>
+                      <a class="blue link dim" href="{{ species.url | relative_url }}">
+                        {{ species.title }}
+                      </a>
+                    </li>
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                      <span class="fw6">Ethnicity: </span>
+                      {{ page.general.ethnicity | default: "Unknown" }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="fl w-100 w-50-m w-25-l">
+                <h3 class="f4 bold center mw5">Physical Description</h3>
+                <div class="pa3">
+                  <ul class="list pl0 measure center">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                      <span class="fw6">Height: </span>
+                      {{ page.physical.height | default: "Unknown" }}
+                    </li>
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                      <span class="fw6">Weight: </span>
+                      {{ page.physical.weight | default: "Unknown" }}
+                    </li>
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                      <span class="fw6">Hair Color: </span>
+                      {{ page.physical.hair_color | default: "Unknown" }}
+                    </li>
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                      <span class="fw6">Eye Color: </span>
+                      {{ page.physical.eye_color | default: "Unknown" }}
+                    </li>
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                      <span class="fw6">Distinguishing Features: </span>
+                      {{ page.physical.distinguishing_features | default: "Unknown" }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="fl w-100 w-50-m w-25-l">
+                <h3 class="f4 bold center mw5">Special Abilities</h3>
+                <div class="pa3">
+                  <ul class="list pl0 measure center">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                      <span class="fw6">Powers: </span>
+                      {% if page.special.powers %}
+                      <ul>
+                        {% for power in page.special.powers %}
+                        <li>{{ power }}</li>
+                        {% endfor %}
+                      </ul>
+                      {% else %}None{% endif %}
+                    </li>
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                      <span class="fw6">Abilities: </span>
+                      {% if page.special.abilities %}
+                      <ul>
+                        {% for ability in page.special.abilities %}
+                        <li>{{ ability }}</li>
+                        {% endfor %}
+                      </ul>
+                      {% else %}None{% endif %}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="fl w-100 w-50-m w-25-l">
+                <h3 class="f4 bold center mw5">Relationships</h3>
+                <div class="pa3">
+                  <ul class="list pl0 measure center">
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                      <span class="fw6">Father: </span>
+                      {% if page.relationships.father %}
+                      {% assign father = site.characters | where: "slug", page.relationships.father | first %}
+                      <a class="blue link dim" href="{{ father.url | relative_url }}">
+                        {{ father.title }}
+                      </a>
+                      {% else %}Unknown{% endif %}
+                    </li>
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                      <span class="fw6">Mother: </span>
+                      {% if page.relationships.mother %}
+                      {% assign mother = site.characters | where: "slug", page.relationships.mother | first %}
+                      <a class="blue link dim" href="{{ mother.url | relative_url }}">
+                        {{ mother.title }}
+                      </a>
+                      {% else %}Unknown{% endif %}
+                    </li>
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                      <span class="fw6">Sibling(s): </span>
+                      {% if page.relationships.siblings %}
+                      {% for sibling in page.relationships.siblings %}
+                      {% assign s = site.characters | where: "slug", sibling | first %}
+                      <ul>
+                        <li>
+                          <a class="blue link dim" href="{{ s.url | relative_url }}">
+                            {{ s.title }}
+                          </a>
+                        </li>
+                      </ul>
+                      {% endfor %}
+                      {% else %}None{% endif %}
+                    </li>
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                      <span class="fw6">Spouse(s): </span>
+                      {% if spouses %}
+                      <a class="blue link dim" href="{{ spuses.url | relative_url }}">
+                        {{ spouses.title }}
+                      </a>
+                      {% else %}None{% endif %}
+                    </li>
+                    <li class="lh-copy pv1 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+                      <span class="fw6">Romances: </span>
+                      {% if page.relationships.romances %}
+                      {% for romance in page.relationships.romances %}
+                      {% assign partner = site.characters | where: "slug", romance | first %}
+                      <ul>
+                        <li>
+                          <a class="blue link dim" href="{{ partner.url | relative_url }}">
+                            {{ partner.title }}
+                          </a>
+                        </li>
+                      </ul>
+                      {% endfor %}
+                      {% else %}None{% endif %}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="ph4 ph5-m ph6-l moon-gray">
+      <div class="pv5 f4 f2-ns measure center">
+        <p class="db lh-copy fw1 mv0 f4 f3-m f2-l measure">
+          {{ page.description }}
+        </p>
+      </div>
+      {% if page.quote %}
+      <blockquote class="mh0 pr0 mt5">
+        <p class="f2 f1-l fw1 mv0 tc lh-title">
+          “{{ page.quote.text }}”
+        </p>
+        <p class="tc f6 white-60">
+          {{ page.quote.cite }}
+        </p>
+      </blockquote>
+      {% endif %}
+      <div class="measure f3 center post-content moon-gray">
+        {{ content }}
+        {% if page.image %}
+        <img src="{{ page.image | relative_url }}" class="db w-100 center outline white-60" />
+        {% endif %}
+      </div>
+    </div>
+  </article>
+  <section class="cf mt5 pv5 bt b--white-60 ph6-l">
+    <h1 class="tc f5 ttu fw6 tracked mb4 moon-gray">Other Pages in '{{ page.collection }}'</h1>
+    <div class="cf pa2">
+      {% for character in site.characters reversed %}{% if character.url != page.url %}
+      <div class="fl w-100 w-third-m w-20-l pa2">
+        <a href="{{ character.url | relative_url }}" class="db link dim">
+          <img src="{{ character.image | relative_url }}" class="w-100 db outline white-60" />
+          <div class="ph2 ph0-ns pb3 link db">
+            <h2 class="f5 f4-ns mb0 moon-gray">{{ character.title }}</h2>
+            <h3 class="f6 f5 fw4 mt2 white-60">{{ character.subtitle }}</h3>
+          </div>
+        </a>
+      </div>
+      {% endif %}{% endfor %}
+    </div>
+  </section>
+</main>
