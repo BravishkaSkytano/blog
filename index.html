@@ -3,13 +3,62 @@ layout: default
 title: Home
 ---
 {% include header-home.html %}
-<section>
+<section class="mt5">
+  <div class="tc ph4 mw4-m center">
+    <h1 class="f3 f2-m f1-l fw2 moon-gray mv3">
+      Latest Chapters by Book
+    </h1>
+  </div>
+  <div class="cf pa2">
+    {% assign books = site.books | group_by: "book" %}
+    {% for group in books limit:4 %}
+    {% assign book_index = group.items | where: "slug", "index" | first %}
+    {% assign chapters = group.items | where_exp: "item", "item.slug != 'index'" | reverse | slice: 0,5 %}
+    <div class="fl w-100 w-third-m w-20-l pa2">
+      <img src="{{ book_index.image | relative_url }}" class="w-100 db outline white-60" />
+      <div class="ph2 ph0-ns pb3 link db">
+        <h2 class="f5 f4-ns mb0 moon-gray">
+          {{ book_index.title }}
+        </h2>
+        <h4 class="f6 f5 fw4 mt2 white-60">
+          {{ book_index.description }}
+        </h4>
+        <ul class="list pl0 ml0 center mw6 ba b--white-60 br2">
+          {% for chapter in chapters %}
+          <li class="ph3 pv3 bb b--white-60">
+            <a href="{{ chapter.url | relative_url }}" class="db link dim f6 f5 fw4 white-60">
+              {{ chapter.title }}
+            </a>
+          </li>
+          {% endfor %}
+          <li class="ph3 pv3 tr">
+            <a href="{{ book_index.url | relative_url }}" class="db link dim f6 f5 fw4 white-60">
+              View all chapters
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    {% endfor %}
+    {% if books.size > 4 %}
+    <div class="fl w-100 w-third-m w-20-l pa2">
+      <a href="{{ '/books/' | relative_url }}" class="db link dim">
+        <div class="ph2 ph0-ns pb3 link db">
+          <p class="f5 f4-ns mb0 moon-gray">View more</p>
+          <p class="f6 f5 fw4 mt2 white-60">Click here to view the entire list of books</p>
+        </div>
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</section>
+<section class="mt5">
   <div class="tc ph4 mw4-m center">
     <h1 class="f3 f2-m f1-l fw2 moon-gray mv3">
       Characters
     </h1>
     <h2 class="f5 f4-m f3-l fw2 white-60 mt0 lh-copy">
-      This is the subtitle where additional information can go if you really need it.
+      {{ site.characters_desc }}
     </h2>
   </div>
   <div class="cf pa2">
@@ -18,8 +67,12 @@ title: Home
       <a href="{{ character.url | relative_url }}" class="db link dim">
         <img src="{{ character.image | relative_url }}" class="w-100 db outline white-60" />
         <div class="ph2 ph0-ns pb3 link db">
-          <h2 class="f5 f4-ns mb0 moon-gray">{{ character.title }}</h2>
-          <h3 class="f6 f5 fw4 mt2 white-60">{{ character.subtitle }}</h3>
+          <h3 class="f5 f4-ns mb0 moon-gray">
+            {{ character.title }}
+          </h3>
+          <h4 class="f6 f5 fw4 mt2 white-60">
+            {{ character.subtitle }}
+          </h4>
         </div>
       </a>
     </div>
@@ -28,21 +81,21 @@ title: Home
     <div class="fl w-100 w-third-m w-20-l pa2">
       <a href="{{ '/characters/' | relative_url }}" class="db link dim">
         <div class="ph2 ph0-ns pb3 link db">
-          <h2 class="f5 f4-ns mb0 moon-gray">View more</h2>
-          <h3 class="f6 f5 fw4 mt2 white-60">Click here to view the entire list of characters</h3>
+          <p class="f5 f4-ns mb0 moon-gray">View more</p>
+          <p class="f6 f5 fw4 mt2 white-60">Click here to view the entire list of characters</p>
         </div>
       </a>
     </div>
     {% endif %}
   </div>
 </section>
-<section>
+<section class="mt5">
   <div class="tc ph4">
     <h1 class="f3 f2-m f1-l fw2 moon-gray mv3">
       Locations
     </h1>
     <h2 class="f5 f4-m f3-l fw2 white-60 mt0 lh-copy">
-      This is the subtitle where additional information can go if you really need it.
+      {{ site.locations_desc }}
     </h2>
   </div>
   <div class="cf pa2">
@@ -51,8 +104,12 @@ title: Home
       <a href="{{ location.url | relative_url }}" class="db link dim">
         <img src="{{ location.image | relative_url }}" class="w-100 db outline white-60" />
         <div class="ph2 ph0-ns pb3 link db">
-          <h2 class="f5 f4-ns mb0 moon-gray">{{ location.title }}</h2>
-          <h3 class="f6 f5 fw4 mt2 white-60">{{ location.subtitle }}</h3>
+          <h3 class="f5 f4-ns mb0 moon-gray">
+            {{ location.title }}
+          </h3>
+          <h4 class="f6 f5 fw4 mt2 white-60">
+            {{ location.subtitle }}
+          </h4>
         </div>
       </a>
     </div>
@@ -61,8 +118,8 @@ title: Home
     <div class="fl w-100 w-third-m w-20-l pa2">
       <a href="{{ '/locations/' | relative_url }}" class="db link dim">
         <div class="ph2 ph0-ns pb3 link db">
-          <h2 class="f5 f4-ns mb0 moon-gray">View more</h2>
-          <h3 class="f6 f5 fw4 mt2 white-60">Click here to view the entire list of locations</h3>
+          <p class="f5 f4-ns mb0 moon-gray">View more</p>
+          <p class="f6 f5 fw4 mt2 white-60">Click here to view the entire list of locations</p>
         </div>
       </a>
     </div>

@@ -60,12 +60,13 @@ layout: default
       </div>
     </header>
     <div class="ph4 ph5-m ph6-l moon-gray">
+      {% if page.description %}
       <div class="pv5 f4 f2-ns measure center">
         <p class="db lh-copy fw1 mv0 f4 f3-m f2-l measure">
           {{ page.description }}
         </p>
       </div>
-      {% if page.quote %}
+      {% endif %}{% if page.quote %}
       <blockquote class="mh0 pr0 mt5">
         <p class="f2 f1-l fw1 mv0 tc lh-title">
           “{{ page.quote.text }}”

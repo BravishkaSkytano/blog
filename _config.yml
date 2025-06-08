@@ -1,3 +1,8 @@
+# bundle exec jekyll serve --livereload --baseurl=""
+# This is the configuration file for the Jekyll site.
+# It contains site-wide settings, plugins, and collections.
+# For more information, see: https://jekyllrb.com/docs/configuration/
+# For the GitHub Pages version, see: https://pages.github.com/
 title: "Echoes of Elsewhere"
 tagline: "Where distant worlds whisper back."
 description: "Open the door to veil-thin worlds and dim-lit realms, where forgotten archives whisper stories lost to time. Here, shadows speak, memories stir, and every step leads deeper into the unseen. Let the echoes guide you—what was lost still lingers."
@@ -9,6 +14,9 @@ paginate_path: "/page:num"
 permalink: none #/:categories/:title:output_ext
 
 logo: /assets/img/logo.jpg
+
+characters_desc:
+locations_desc:
 
 #
 # Jekyll configurations
@@ -30,10 +38,15 @@ sass:
 
 collections_dir: collections
 collections:
+  books:
+    output: true
+    permalink: /books/:path
   characters:
     output: true
+    permalink: /characters/:path
   locations:
     output: true
+    permalink: /locations/:path
 
 defaults:
   - scope:
@@ -42,9 +55,9 @@ defaults:
       layout: "default"
   - scope:
       path: ""
-      type: "posts"
+      type: "books"
     values:
-      layout: "post"
+      layout: "chapter"
   - scope:
       path: ""
       type: "characters"
