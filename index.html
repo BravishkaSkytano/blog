@@ -126,3 +126,40 @@ title: Home
     {% endif %}
   </div>
 </section>
+<section class="mt5">
+  <div class="tc ph4">
+    <h1 class="f3 f2-m f1-l fw2 moon-gray mv3">
+      Species
+    </h1>
+    <h2 class="f5 f4-m f3-l fw2 white-60 mt0 lh-copy">
+      {{ site.species_desc }}
+    </h2>
+  </div>
+  <div class="cf pa2">
+    {% for species in site.species limit: 8 %}
+    <div class="fl w-100 w-third-m w-20-l pa2">
+      <a href="{{ species.url | relative_url }}" class="db link dim">
+        <img src="{{ species.image | relative_url }}" class="w-100 db outline white-60" />
+        <div class="ph2 ph0-ns pb3 link db">
+          <h3 class="f5 f4-ns mb0 moon-gray">
+            {{ species.title }}
+          </h3>
+          <h4 class="f6 f5 fw4 mt2 white-60">
+            {{ species.subtitle }}
+          </h4>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+    {% if site.species.size > 8 %}
+    <div class="fl w-100 w-third-m w-20-l pa2">
+      <a href="{{ '/species/' | relative_url }}" class="db link dim">
+        <div class="ph2 ph0-ns pb3 link db">
+          <p class="f5 f4-ns mb0 moon-gray">View more</p>
+          <p class="f6 f5 fw4 mt2 white-60">Click here to view the entire list of species</p>
+        </div>
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</section>

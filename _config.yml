@@ -47,6 +47,9 @@ collections:
   locations:
     output: true
     permalink: /locations/:path
+  species:
+    output: true
+    permalink: /species/:path
 
 defaults:
   - scope:
@@ -68,6 +71,11 @@ defaults:
       type: "locations"
     values:
       layout: "location"
+  - scope:
+      path: ""
+      type: "species"
+    values:
+      layout: "species"
 
 plugins:
   - jekyll-avatar
