@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<section class="vh-100 bg-black baskerville">
+  <header class="tc ph5 lh-copy">
+    <h1 class="f1 f-headline-l code mb3 fw9 dib tracked-tight moon-gray">404</h1>
+    <h2 class="tc f1-l fw1 moon-gray">Sorry, we can't find that page in our archives.</h2>
+  </header>
+  <p class="fw1 i tc mt4 mt5-l f4 f3-l white-60">Are you looking for one of these?</p>
+  <ul class="list tc pl0 w-100 mt5">
+    {% for link in site.data.nav %}
+    <li class="dib">
+      <a href="{{ link.url | relative_url }}" class="f5 f4-ns link dim white-60 db pv2 ph3">
+        {{ link.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

@@ -1,0 +1,51 @@
+.post-content {
+
+  h2,
+  h3,
+  h4 {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  p {
+    line-height: 1.5;
+    font-size: 1.25rem;
+    max-width: 30em;
+  }
+
+  a {
+    font-weight: 600;
+    display: block;
+    color: #357edd;
+    text-decoration: none;
+    transition: opacity 0.15s ease-in;
+    opacity: 1;
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active,
+    &:focus {
+      transition: opacity .15s ease-in;
+    }
+
+    &:focus {
+      outline: 1px dotted currentColor;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: .5;
+    }
+
+    &:active {
+      opacity: .8;
+    }
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .post-content p {
+    font-size: 1.5rem;
+  }
+}

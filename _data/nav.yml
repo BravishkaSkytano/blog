@@ -1,0 +1,12 @@
+- title: Home
+  url: "/"
+- title: About
+  url: "/about.html"
+- title: Books
+  url: /books/
+- title: Characters
+  url: /characters/
+- title: Locations
+  url: /locations/
+- title: Species
+  url: /species/

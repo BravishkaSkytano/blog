@@ -1,0 +1,86 @@
+---
+layout: default
+---
+<main>
+  <article>
+    <header>
+      <div class="cover bg-left bg-center-l" style="background-image: url({{ page.image | relative_url }})">
+        <div class="bg-black-50 pb5 pb6-m pb7-l">
+          <nav class="dt w-100 mw8 center">
+            <div class="dtc w2 v-mid pa3">
+              <a href="{{ '/' | relative_url }}" class="dib w2 h2 ba b--moon-gray grow-large border-box">
+                <img src="{{ site.logo | relative_url }}" alt="Site logo" />
+              </a>
+            </div>
+            <div class="dtc v-mid tr pa3">
+              {% for link in site.data.nav %}
+              <a class="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
+                href="{{ link.url | relative_url }}">
+                {{ link.title }}
+              </a>
+              {% endfor %}
+            </div>
+          </nav>
+          <div class="mt4 mt5-m mt6-l ph3">
+            <div class="tc-l">
+              <h1 class="f2 f1-l fw2 moon-gray mb0 lh-title">{{ page.title }}</h1>
+              {% if page.subtitle %}
+              <h2 class="fw1 f3 white-60 mt3 mb4">{{ page.subtitle }}</h2>
+              {% endif %}
+              {% if page.author %}
+              <h3 class="fw1 f4 white-60 mt3 mb4">By {{ page.author }}</h3>
+              {% endif %}
+            </div>
+            <div class="mw8 center dt-ns dt--fixed-ns white-60">
+              {% if page.start %}
+              <div class="dtc-ns pa2">
+                <h3 class="f4 bold center mw5">Started on {{ page.date | date: '%B %d, %Y' }}</h3>
+              </div>
+              {% endif %}
+              <div class="dtc-ns pa2">
+                <h3 class="f4 bold center mw5">
+                  {% if page.end %}
+                  Completed on {{ page.end | date: '%B %d, %Y' }}
+                  {% else %}
+                  Status: In progress
+                  {% endif %}
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="ph4 ph5-m ph6-l moon-gray">
+      {% if page.description %}
+      <div class="pv5 f4 f2-ns measure center">
+        <p class="db lh-copy fw1 mv0 f4 f3-m f2-l measure tc">
+          {{ page.description }}
+        </p>
+      </div>
+      {% endif %}
+      <div class="measure f3 center mv5 post-content moon-gray">
+        {{ content }}
+        <div class="center mw5 mw6-ns br3 hidden ba b--white-60 mv4">
+          {% assign chapters = site.books | where: 'book', page.book | where_exp: "item", "item.slug != 'index'" %}
+          <h2 class="f4 br3 br--top moon-gray mv0 pv2 ph3">
+            Chapters ({{ chapters | size }})
+          </h2>
+          <div class="pa3 bt b--white-60">
+            <ul>
+              {% for chapter in chapters %}
+              <li>
+                {% if chapter.url == page.url %}
+                <strong>{{ chapter.title }}</strong>
+                {% else %}
+                <a href="{{ chapter.url | relative_url }}">{{ chapter.title }}</a>
+                {% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>

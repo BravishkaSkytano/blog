@@ -1,3 +1,9 @@
 {
-  "recommendations": ["ms-vscode-remote.remote-containers"]
+  "recommendations": [
+    "ms-vscode-remote.remote-containers",
+    "siris01.ayu-green",
+    "vscode-icons-team.vscode-icons",
+    "formulahendry.auto-rename-tag",
+    "aaron-bond.better-comments"
+  ]
 }

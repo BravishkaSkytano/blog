@@ -1,29 +1,36 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/jekyll
 {
   "name": "Jekyll",
-  "image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
-  //"onCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
-  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/jekyll",
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [4000],
+
+  // Uncomment the next line to run commands after the container is created.
+  "postCreateCommand": "bundle install",
+
+  // Configure tool-specific properties.
   "customizations": {
     "vscode": {
-      "settings": {
-        "terminal.integrated.defaultProfile.linux": "zsh"
-      },
       "extensions": [
-        // Liquid tags auto-complete
-        "killalau.vscode-liquid-snippets",
-        // Liquid syntax highlighting and formatting
-        "Shopify.theme-check-vscode",
-        // Shell
-        "timonwong.shellcheck",
-        "mkhl.shfmt",
-        // Common formatter
+        "oderwat.indent-rainbow",
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
-        "stylelint.vscode-stylelint",
+        "mhutchie.git-graph",
+        "pranaygp.vscode-css-peek",
         "yzhang.markdown-all-in-one",
-        // Git
-        "mhutchie.git-graph"
+        "ms-azuretools.vscode-docker",
+        "GitHub.copilot",
+        "sissel.shopify-liquid"
       ]
     }
   }
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
 }

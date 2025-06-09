@@ -2,29 +2,26 @@
   // Prettier
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  // Shopify Liquid
-  "files.associations": {
-    "*.html": "liquid"
-  },
+  // Markdown Formatting
   "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.wordWrapColumn": 100,
+    "editor.wordWrap": "bounded"
   },
-  // Formatter
-  "[html][liquid]": {
-    "editor.defaultFormatter": "Shopify.theme-check-vscode"
+  "[nunjuck][njk]": {
+    "editor.defaultFormatter": "eseom.nunjucks-template",
+    "editor.wordWrapColumn": 100,
+    "editor.wordWrap": "bounded"
   },
-  "[shellscript]": {
-    "editor.defaultFormatter": "mkhl.shfmt"
+  "emmet.includeLanguages": {
+    "nunjucks": "html",
+    "njk": "html"
   },
-  // Disable vscode built-in stylelint
-  "css.validate": false,
-  "scss.validate": false,
-  "less.validate": false,
-  // Stylint extension settings
-  "stylelint.snippet": ["css", "scss"],
-  "stylelint.validate": ["css", "scss"],
-  // Run tasks in macOS
-  "terminal.integrated.profiles.osx": {
-    "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
-  }
+  "vsicons.associations.files": [
+    {
+      "icon": "nunjucks",
+      "extensions": ["njk"],
+      "format": "svg"
+    }
+  ]
 }

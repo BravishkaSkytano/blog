@@ -1,0 +1,48 @@
+---
+layout: default
+title: Characters
+---
+<main>
+  <article>
+    <header>
+      <div class="cover bg-left bg-center-l" style="background-image: url({{ site.logo | relative_url }})">
+        <div class="bg-black-50 pb5 pb6-m pb7-l">
+          <nav class="dt w-100 mw8 center">
+            <div class="dtc w2 v-mid pa3">
+              <a href="{{ '/' | relative_url }}" class="dib w2 h2 ba b--moon-gray grow-large border-box">
+                <img src="{{ site.logo | relative_url }}" alt="Site logo" />
+              </a>
+            </div>
+            <div class="dtc v-mid tr pa3">
+              {% for link in site.data.nav %}
+              <a class="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
+                href="{{ link.url | relative_url }}">
+                {{ link.title }}
+              </a>
+              {% endfor %}
+            </div>
+          </nav>
+          <div class="mt4 mt5-m mt6-l ph3">
+            <div class="tc-l">
+              <h1 class="f2 f1-l fw2 moon-gray mb0 lh-title">{{ page.title }}</h1>
+              <h2 class="fw1 f3 white-60 mt3 mb4">{{ page.subtitle }}</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="cf pa2">
+      {% for character in site.characters %}
+      <div class="fl w-100 w-third-m w-20-l pa2">
+        <a href="{{ character.url | relative_url }}" class="db link dim">
+          <img src="{{ character.image | relative_url }}" class="w-100 db outline white-60" />
+          <div class="ph2 ph0-ns pb3 link db">
+            <h2 class="f5 f4-ns mb0 moon-gray">{{ character.title }}</h2>
+            <h3 class="f6 f5 fw4 mt2 white-60">{{ character.subtitle }}</h3>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </article>
+</main>

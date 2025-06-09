@@ -1,0 +1,103 @@
+---
+layout: default
+---
+<main>
+  <article>
+    <header>
+      <div class="cover bg-left bg-center-l" style="background-image: url({{ page.image | relative_url }})">
+        <div class="bg-black-70 pb5 pb6-m pb7-l">
+          <nav class="dt w-100 mw8 center">
+            <div class="dtc w2 v-mid pa3">
+              <a href="{{ '/' | relative_url }}" class="dib w2 h2 ba b--moon-gray grow-large border-box">
+                <img src="{{ site.logo | relative_url }}" alt="Site logo" />
+              </a>
+            </div>
+            <div class="dtc v-mid tr pa3">
+              {% for link in site.data.nav %}
+              <a class="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
+                href="{{ link.url | relative_url }}">
+                {{ link.title }}
+              </a>
+              {% endfor %}
+            </div>
+          </nav>
+          <div class="mt4 mt5-m mt6-l ph3">
+            <div class="tc-l">
+              <h1 class="f2 f1-l fw2 moon-gray mb0 lh-title">{{ page.title }}</h1>
+              <h2 class="fw1 f3 white-60 mt3 mb4">{{ page.subtitle }}</h2>
+            </div>
+            <div class="mw8 center dt-ns dt--fixed-ns white-60">
+              <div class="dtc-ns pa2">
+                <h3 class="f4 bold center mw5">General Info</h3>
+                <ul class="list pl0 ml0 center mw5 ba b--white-60 br3">
+                  {% if page.type %}<li class="ph3 pv2 bb b--white-60">Type: {{ page.type }}</li>{% endif %}
+                  {% if page.country %}<li class="ph3 pv2">Country: {{ page.country }}</li>{% endif %}
+                </ul>
+              </div>
+              <div class="dtc-ns pa2">
+                <h3 class="f4 bold center mw5">Notable Residents</h3>
+                <ul class="list pl0 ml0 center mw5 ba b--white-60 br3">
+                  {% for resident in page.residents %}
+                  <li class="ph3 pv2 bb b--white-60">
+                    {{ resident.name }} ({{ resident.title }})
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div class="dtc-ns pa2">
+                <h3 class="f4 bold center mw5">Notable Places</h3>
+                <ul class="list pl0 ml0 center mw5 ba b--white-60 br3">
+                  {% for place in page.places %}
+                  <li class="ph3 pv2{% if forloop.last %}{% else %} bb b--white-60{% endif %}">
+                    {{ place.name }} ({{ place.type }})
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="ph4 ph5-m ph6-l moon-gray">
+      {% if page.description %}
+      <div class="pv5 f4 f2-ns measure center">
+        <p class="db lh-copy fw1 mv0 f4 f3-m f2-l measure">
+          {{ page.description }}
+        </p>
+      </div>
+      {% endif %}{% if page.quote %}
+      <blockquote class="mh0 pr0 mt5">
+        <p class="f2 f1-l fw1 mv0 tc lh-title">
+          “{{ page.quote.text }}”
+        </p>
+        <p class="tc f6 white-60">
+          {{ page.quote.cite }}
+        </p>
+      </blockquote>
+      {% endif %}
+      <div class="measure f3 center mv5 post-content moon-gray">
+        {{ content }}
+        {% if page.image %}
+        <img src="{{ page.image | relative_url }}" class="db w-100 center outline white-60" />
+        {% endif %}
+      </div>
+    </div>
+  </article>
+  <section class="cf mt5 pv5 bt b--white-60 ph6-l">
+    <h1 class="tc f5 ttu fw6 tracked mb4 moon-gray">Other Pages in '{{ page.collection }}'</h1>
+    <div class="cf pa2">
+      {% for location in site.locations reversed %}{% if location.url != page.url %}
+      <div class="fl w-100 w-third-m w-20-l pa2">
+        <a href="{{ location.url | relative_url }}" class="db link dim">
+          <img src="{{ location.image | relative_url }}" class="w-100 db outline white-60" />
+          <div class="ph2 ph0-ns pb3 link db">
+            <h2 class="f5 f4-ns mb0 moon-gray">{{ location.title }}</h2>
+            <h3 class="f6 f5 fw4 mt2 white-60">{{ location.subtitle }}</h3>
+          </div>
+        </a>
+      </div>
+      {% endif %}{% endfor %}
+    </div>
+  </section>
+</main>

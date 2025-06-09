@@ -1,0 +1,108 @@
+---
+layout: default
+---
+<main>
+  <article>
+    <header>
+      <div class="cover bg-left bg-center-l" style="background-image: url({{ site.logo | relative_url }})">
+        <div class="bg-black-50 pb5 pb6-m pb7-l">
+          <nav class="dt w-100 mw8 center">
+            <div class="dtc w2 v-mid pa3">
+              <a href="{{ '/' | relative_url }}" class="dib w2 h2 ba b--moon-gray grow-large border-box">
+                <img src="{{ site.logo | relative_url }}" alt="Site logo" />
+              </a>
+            </div>
+            <div class="dtc v-mid tr pa3">
+              {% for link in site.data.nav %}
+              <a class="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
+                href="{{ link.url | relative_url }}">
+                {{ link.title }}
+              </a>
+              {% endfor %}
+            </div>
+          </nav>
+          <div class="mt4 mt5-m mt6-l ph3">
+            <div class="tc-l">
+              <h1 class="f2 f1-l fw2 moon-gray mb0 lh-title">
+                {{ page.title }}
+              </h1>
+              {% if page.subtitle %}
+              <h2 class="fw1 f3 white-60 mt3 mb4">
+                {{ page.subtitle }}
+              </h2>
+              {% endif %}
+              <h3 class="fw1 f4 white-60 mt3 mb4">
+                {{ page.book }}
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="ph4 ph5-m ph6-l">
+      <div class="measure f3 center mv5 post-content moon-gray">
+        {{ content }}
+        <hr>
+        {% assign book_index = site.books | where: 'book', page.book | where: "slug", "index" | first %}
+        <p class="i tc">
+          <a href="{{ book_index.url | relative_url }}">
+            {{ page.book }}
+          </a>
+        </p>
+        {% assign chapters = site.books | where: 'book', page.book | where_exp: "item", "item.slug != 'index'"%}
+        {% for chapter in chapters %}
+        {% if chapter.url == page.url %}
+        {% assign prev_chapter_index = forloop.index | minus: 1 %}
+        {% assign curr_chapter_index = forloop.index %}
+        {% assign next_chapter_index = forloop.index | plus: 1 %}
+        {% endif %}
+        {% endfor %}
+        <p class="tc">
+          Chapter <span class="b">{{ curr_chapter_index }}</span> of <span class="b">{{ chapters.size }}</span>
+        </p>
+        <div class="flex items-center justify-center pa4">
+          {% for chapter in chapters %}
+          {% if prev_chapter_index == forloop.index %}
+          <a href="{{ chapter.url | relative_url }}"
+            class="f5 no-underline inline-flex items-center pa3 ba border-box mr4">
+            <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor">
+              <title>chevronLeft icon</title>
+              <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
+            </svg>
+            <span class="pl1">Previous</span>
+          </a>
+          {% endif %}
+          {% if next_chapter_index == forloop.index %}
+          <a href="{{ chapter.url | relative_url }}" class="f5 no-underline inline-flex items-center pa3 ba border-box">
+            <span class="pr1">Next</span>
+            <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
+              <title>chevronRight icon</title>
+              <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+            </svg>
+          </a>
+          {% endif %}
+          {% endfor %}
+        </div>
+        <div class="center mw5 mw6-ns br3 hidden ba b--white-60 mv4">
+          {% assign chapters = site.books | where: 'book', page.book | where_exp: "item", "item.slug != 'index'" %}
+          <h2 class="f4 br3 br--top moon-gray mv0 pv2 ph3">
+            Chapters ({{ chapters | size }})
+          </h2>
+          <div class="pa3 bt b--white-60">
+            <ul>
+              {% for chapter in chapters %}
+              <li>
+                {% if chapter.url == page.url %}
+                <strong>{{ chapter.title }}</strong>
+                {% else %}
+                <a href="{{ chapter.url | relative_url }}">{{ chapter.title }}</a>
+                {% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
