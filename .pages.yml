@@ -4,18 +4,13 @@ media:
     input: assets/img
     output: /blog/assets/img
     categories: [ image ]
-  - name: documents
-    label: Documents
-    input: assets/doc
-    output: /blog/assets/doc
-    categories: [ document ]
 content:
   - name: posts
     label: Posts
     type: collection
     path: '_posts'
     view:
-      fields: [ title, date, categories ]
+      fields: [ title, date, tags ]
       sort: [ date, title ]
     fields:
       - name: title
@@ -27,23 +22,276 @@ content:
       - name: description
         label: Description (optional)
         type: string
-      - name: image
-        label: Image
-        type: image
-      - name: categories
-        label: Categories
-        type: select
-        options:
-          multiple: true
-          creatable: true
-          values: [ Prose, Characters, Worldbuilding, Affirmations, Essays, Poetry, Rants, Ilmaria ]
       - name: tags
         label: Tags
         type: select
         options:
           creatable: true
           multiple: true
-          values: [ Bible, creature, death, depression, gender-dysphoria, grief, LGBTQIA+, prayer, school, taboo, templates, tips ]
+          values: [ templates, tips ]
+      - name: body
+        label: Body
+        type: rich-text
+  - name: books
+    label: Books
+    type: collection
+    path: '_books'
+    view:
+      fields: [ title, date ]
+      sort: [ date, title ]
+    fields:
+      - name: layout
+        label: Layout
+        type: select
+        options:
+          values: [ book, chapter ]
+      - name: title
+        label: Title
+        type: string
+      - name: date
+        label: Date
+        type: date
+      - name: description
+        label: Description (optional)
+        type: string
+        required: false
+      - name: book
+        label: Book
+        type: select
+        options:
+          creatable: true
+          values: [ 'Misc', 'Poetry', 'Kidnapped and Afraid' ]
+      - name: image
+        label: Image
+        required: false
+      - name: start
+        label: Start date (for book indexes)
+        type: date
+        required: false
+      - name: end
+        label: End date (for book indexes)
+        required: false
+      - name: body
+        label: Body
+        type: rich-text
+  - name: characters
+    label: Characters
+    type: collection
+    path: '_characters'
+    view:
+      fields: [ title ]
+      sort: [ title ]
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: subtitle
+        label: Subtitle
+        type: string
+        required: false
+      - name: description
+        label: Description
+        type: string
+        required: false
+      - name: image
+        label: Image
+        required: false
+      - name: quote
+        label: Character Quote
+        type: object
+        required: false
+        fields:
+          - name: text
+            label: Text
+            type: text
+            options:
+              autoresize: true
+          - name: cite
+            label: Cite
+            type: string
+      - name: general
+        label: General Information
+        type: object
+        fields:
+          - name: full_name
+            label: Full Name
+            type: string
+          - name: age
+            label: Age
+            type: number
+          - name: birth_date
+            label: Birthdate
+            type: string
+            required: false
+          - name: species
+            label: Species
+            type: reference
+            required: false
+            options:
+              collection: species
+          - name: ethnicity
+            label: Ethnicity
+            type: string
+            required: false
+          - name: aliases
+            label: Aliases
+            type: text
+            required: false
+            options:
+              autoresize: true
+          - name: titles
+            label: Titles, if any
+            type: text
+            required: false
+            options:
+              autoresize: true
+      - name: physical
+        label: Physical Information
+        type: object
+        fields:
+          - name: height
+            label: Height
+            type: string
+          - name: weight
+            label: Weight
+            type: string
+          - name: hair_color
+            label: Hair Color
+            type: select
+            options:
+              creatable: true
+              multiple: true
+              values: [ Black, Brown, Blonde, Grey, White ]
+          - name: eye_color
+            label: Eye Color
+            type: select
+            options:
+              creatable: true
+              multiple: true
+              values: [ Brown, Green, Blue, Orange ]
+          - name: distinguishing_features
+            label: Distinguishing Features
+            type: text
+            required: false
+            options:
+              autoresize: true
+      - name: special
+        label: Special Information
+        type: object
+        required: false
+        fields:
+          - name: powers
+            label: Powers
+            type: text
+            options:
+              autoresize: true
+          - name: abilities
+            label: Abilities
+            type: text
+            options:
+              autoresize: true
+      - name: relationships
+        label: Relationships
+        type: object
+        fields:
+          - name: father
+            label: Father
+            type: reference
+            required: false
+            options:
+              collection: characters
+          - name: mother
+            label: Mother
+            type: reference
+            required: false
+            options:
+              collection: characters
+          - name: siblings
+            label: Siblings
+            type: reference
+            required: false
+            options:
+              collection: characters
+              multiple: true
+          - name: spouses
+            label: Spouse(s)
+            type: reference
+            required: false
+            options:
+              collection: characters
+              multiple: true
+          - name: romances
+            label: Romances
+            type: reference
+            required: false
+            options:
+              collection: characters
+              multiple: true
+  - name: locations
+    label: Locations
+    type: collection
+    path: '_locations'
+    view:
+      fields: [ title ]
+      sort: [ title ]
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: description
+        label: Description (optional)
+        type: string
+        required: false
+      - name: image
+        label: Image
+        required: false
+      - name: quote
+        label: Quote About The Location
+        type: object
+        required: false
+        fields:
+          - name: text
+            label: Text
+            type: text
+            options:
+              autoresize: true
+          - name: cite
+            label: Cite
+            type: string
+      - name: body
+        label: Body
+        type: rich-text
+  - name: species
+    label: Species
+    type: collection
+    path: '_species'
+    view:
+      fields: [ title ]
+      sort: [ title ]
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: description
+        label: Description (optional)
+        type: string
+        required: false
+      - name: image
+        label: Image
+        required: false
+      - name: quote
+        label: Quote About The Species
+        type: object
+        required: false
+        fields:
+          - name: text
+            label: Text
+            type: text
+            options:
+              autoresize: true
+          - name: cite
+            label: Cite
+            type: string
       - name: body
         label: Body
         type: rich-text
