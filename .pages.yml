@@ -99,6 +99,9 @@ content:
         label: Description
         type: string
         required: false
+      - name: date
+        label: Date
+        type: date
       - name: image
         label: Image
         type: image
@@ -254,6 +257,9 @@ content:
         label: Description (optional)
         type: string
         required: false
+      - name: date
+        label: Date
+        type: date
       - name: image
         label: Image
         type: image
@@ -291,6 +297,9 @@ content:
         label: Description (optional)
         type: string
         required: false
+      - name: date
+        label: Date
+        type: date
       - name: image
         label: Image
         type: image
