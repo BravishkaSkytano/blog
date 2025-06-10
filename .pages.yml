@@ -8,7 +8,7 @@ content:
   - name: posts
     label: Posts
     type: collection
-    path: '_posts'
+    path: 'collections/_posts'
     view:
       fields: [ title, date, tags ]
       sort: [ date, title ]
@@ -35,7 +35,7 @@ content:
   - name: books
     label: Books
     type: collection
-    path: '_books'
+    path: 'collections/_books'
     view:
       fields: [ title, date ]
       sort: [ date, title ]
@@ -77,7 +77,7 @@ content:
   - name: characters
     label: Characters
     type: collection
-    path: '_characters'
+    path: 'collections/_characters'
     view:
       fields: [ title ]
       sort: [ title ]
@@ -230,7 +230,7 @@ content:
   - name: locations
     label: Locations
     type: collection
-    path: '_locations'
+    path: 'collections/_locations'
     view:
       fields: [ title ]
       sort: [ title ]
@@ -264,7 +264,7 @@ content:
   - name: species
     label: Species
     type: collection
-    path: '_species'
+    path: 'collections/_species'
     view:
       fields: [ title ]
       sort: [ title ]
