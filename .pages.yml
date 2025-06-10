@@ -36,8 +36,10 @@ content:
     label: Books
     type: collection
     path: 'collections/_books'
+    filename: '{primary}.md'
     view:
       fields: [ title, date ]
+      primary: title
       sort: [ date, title ]
     fields:
       - name: layout
@@ -78,8 +80,10 @@ content:
     label: Characters
     type: collection
     path: 'collections/_characters'
+    filename: '{primary}.md'
     view:
       fields: [ title ]
+      primary: title
       sort: [ title ]
     fields:
       - name: title
@@ -231,8 +235,10 @@ content:
     label: Locations
     type: collection
     path: 'collections/_locations'
+    filename: '{primary}.md'
     view:
       fields: [ title ]
+      primary: title
       sort: [ title ]
     fields:
       - name: title
@@ -265,8 +271,10 @@ content:
     label: Species
     type: collection
     path: 'collections/_species'
+    filename: '{primary}.md'
     view:
       fields: [ title ]
+      primary: title
       sort: [ title ]
     fields:
       - name: title
