@@ -65,6 +65,7 @@ content:
           values: [ 'Misc', 'Poetry', 'Kidnapped and Afraid' ]
       - name: image
         label: Image
+        type: image
         required: false
       - name: start
         label: Start date (for book indexes)
@@ -72,6 +73,7 @@ content:
         required: false
       - name: end
         label: End date (for book indexes)
+        type: date
         required: false
       - name: body
         label: Body
@@ -99,6 +101,7 @@ content:
         required: false
       - name: image
         label: Image
+        type: image
         required: false
       - name: quote
         label: Character Quote
@@ -250,6 +253,7 @@ content:
         required: false
       - name: image
         label: Image
+        type: image
         required: false
       - name: quote
         label: Quote About The Location
@@ -286,6 +290,7 @@ content:
         required: false
       - name: image
         label: Image
+        type: image
         required: false
       - name: quote
         label: Quote About The Species
