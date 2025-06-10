@@ -3,9 +3,6 @@ title: Ilmaria's Geography
 description: Ilmaria is divided into several distinct regions, each with its own unique landscape and climate.
 date: 2024-10-16
 image: /assets/img/worldbuilding/ilmaria/ilmaria-map.jpg
-quote:
-  text: hello world
-  cite: pizza
 ---
 ## Crystalline Peaks  
 

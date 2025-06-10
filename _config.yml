@@ -7,7 +7,7 @@ title: "Echoes of Elsewhere"
 tagline: "Where distant worlds whisper back."
 description: "Open the door to veil-thin worlds and dim-lit realms, where forgotten archives whisper stories lost to time. Here, shadows speak, memories stir, and every step leads deeper into the unseen. Let the echoes guide you—what was lost still lingers."
 author: "Yoela O"
-
+url: https://bravishkaskytano.github.io
 baseurl: "/blog"
 paginate: 5
 paginate_path: "/page:num"

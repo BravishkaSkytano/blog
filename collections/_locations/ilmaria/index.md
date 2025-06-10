@@ -2,10 +2,7 @@
 title: Ilmaria
 description: A vast and vibrant fantasy world teeming with magic, ancient wonders, and diverse cultures. From its towering crystal spires to its lush, enchanted forests, Ilmaria captivates the hearts and imaginations of all who traverse its lands. This world is as dangerous as it is beautiful, with mystical creatures and hidden secrets lurking in every corner.
 date: 2024-10-14
-categories: [Worldbuilding, Ilmaria]
-tags: []
 image: /assets/img/worldbuilding/ilmaria/ilmaria.jpg
-type: World
 ---
 Ilmaria is a vast and vibrant fantasy world teeming with magic, ancient wonders, and diverse cultures. From its towering crystal spires to its lush, enchanted forests, Ilmaria captivates the hearts and imaginations of all who traverse its lands. This world is as dangerous as it is beautiful, with mystical creatures and hidden secrets lurking in every corner.  
   
