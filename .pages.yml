@@ -234,6 +234,9 @@ content:
             options:
               collection: characters
               multiple: true
+      - name: body
+        label: Body
+        type: rich-text
   - name: locations
     label: Locations
     type: collection
