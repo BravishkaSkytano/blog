@@ -18,16 +18,15 @@ logo: /assets/img/logo.jpg
 characters_desc:
 locations_desc:
 
-#
-# Jekyll configurations
-#
+# social:
+#   name: Ben Balter
+#   links:
+#     - https://twitter.com/BenBalter
+#     - https://www.facebook.com/ben.balter
+#     - https://www.linkedin.com/in/BenBalter
+#     - https://github.com/benbalter
+#     - https://keybase.io/benbalter
 
-# You can customize it changing default layout for all pages
-# More info: https://jekyllrb.com/docs/configuration/
-#
-# git-wiki includes some internal themes that you can choose
-# check _layouts folder
-#
 markdown: kramdown
 highlighter: rouge
 kramdown:
@@ -78,14 +77,8 @@ defaults:
       layout: "species"
 
 plugins:
-  - jekyll-avatar
-  - jekyll-coffeescript
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-optional-front-matter
-  - jekyll-redirect-from
-  - jekyll-remote-theme
   - jekyll-relative-links
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jemoji
