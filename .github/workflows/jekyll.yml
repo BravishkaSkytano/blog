@@ -31,11 +31,11 @@ jobs:
         id: current
         run: echo "hash=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
-      - name: Get last deployed commit from GitHub Pages branch
+      - name: Get last deployed commit from master branch
         id: last
         run: |
-          git fetch origin gh-pages
-          echo "hash=$(git rev-parse origin/gh-pages)" >> "$GITHUB_OUTPUT"
+          git fetch origin master
+          echo "hash=$(git rev-parse origin/master)" >> "$GITHUB_OUTPUT"
 
       - name: Compare commit hashes
         id: compare
