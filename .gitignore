@@ -1,6 +1,9 @@
 node_modules
 *.lock
 *-lock.json
-
+.jekyll-cache
+.jekyll-metadata
+.DS_Store
+.sass-cache
 _site
 public

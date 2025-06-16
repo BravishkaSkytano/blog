@@ -2,7 +2,6 @@
 title: Writing Tips and Advice
 description: "I like to collect articles and videos featuring different writing tips and strategies. And, since I'm a nice person, I share this list and my notes here, on my blog. Enjoy!"
 date: 2024-10-13
-book: Misc
 ---
 I like to collect articles and videos featuring different writing tips and strategies. And, since I'm a nice person, I share this list and my notes here, on my blog. Enjoy!
 <!--more-->

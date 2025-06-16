@@ -1,7 +1,6 @@
 ---
 title: Thinking, Thinking, Thinking...
 date: 2022-05-06
-book: Poetry
 ---
   
 Thoughts run around in my head.  

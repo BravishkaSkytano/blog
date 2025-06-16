@@ -1,7 +1,6 @@
 ---
 title: Quiet
 date: 2024-08-24
-book: Poetry
 ---
 Hey,\
 Let me begin by saying,\

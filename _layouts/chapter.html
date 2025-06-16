@@ -1,10 +1,20 @@
 ---
 layout: default
 ---
+{% assign path_parts = page.path | split: '/' %}
+{% assign book_id = path_parts[1] %}
+{% assign book_index = site.books | where: "book_id", book_id | where: "slug", "index" | first %}
+{% assign book_folder = page.path | split: '/' | slice: 1, 1 | first %}
+{% assign folder_match = '/' | append: book_folder | append: '/' %}
+
+{% assign chapters = site.books
+| where_exp: "item", "item.path contains folder_match"
+| where_exp: "item", "item.slug != 'index'"
+| sort: "date" %}
 <main>
   <article>
     <header>
-      <div class="cover bg-left bg-center-l" style="background-image: url({{ site.logo | relative_url }})">
+      <div class="cover bg-left bg-center-l" style="background-image: url({{ book_index.image | relative_url }})">
         <div class="bg-black-50 pb5 pb6-m pb7-l">
           <nav class="dt w-100 mw8 center">
             <div class="dtc w2 v-mid pa3">
@@ -34,6 +44,16 @@ layout: default
               <h3 class="fw1 f4 white-60 mt3 mb4">
                 {{ page.book }}
               </h3>
+              {% if page.date %}
+              <p class="f5 fw4 white-60 mt3 mb4">
+                Published:
+                {{ page.date | date: "%B %d, %Y" }}
+                {% if page.updated_on %}
+                &nbsp// Updated:
+                {{ page.updated_on | date: "%B %d, %Y" }}
+                {% endif %}
+              </p>
+              {% endif %}
             </div>
           </div>
         </div>
@@ -43,13 +63,11 @@ layout: default
       <div class="measure f3 center mv5 post-content moon-gray">
         {{ content }}
         <hr>
-        {% assign book_index = site.books | where: 'book', page.book | where: "slug", "index" | first %}
         <p class="i tc">
           <a href="{{ book_index.url | relative_url }}">
             {{ page.book }}
           </a>
         </p>
-        {% assign chapters = site.books | where: 'book', page.book | where_exp: "item", "item.slug != 'index'"%}
         {% for chapter in chapters %}
         {% if chapter.url == page.url %}
         {% assign prev_chapter_index = forloop.index | minus: 1 %}
@@ -84,7 +102,6 @@ layout: default
           {% endfor %}
         </div>
         <div class="center mw5 mw6-ns br3 hidden ba b--white-60 mv4">
-          {% assign chapters = site.books | where: 'book', page.book | where_exp: "item", "item.slug != 'index'" %}
           <h2 class="f4 br3 br--top moon-gray mv0 pv2 ph3">
             Chapters ({{ chapters | size }})
           </h2>

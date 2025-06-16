@@ -1,7 +1,6 @@
 ---
 title: Prayer is a weapon...
 date: 2020-05-03
-book: Poetry
 ---
 Prayer is a weapon.\
 You may not believe it but it's true.\

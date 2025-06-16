@@ -31,18 +31,27 @@ title: Books
         </div>
       </div>
     </header>
-    <div class="mt5">
+    <section class="mt5">
       <div class="cf pa2">
-        {% assign books = site.books | group_by: "book" %}
-        {% for group in books %}
+
+        {% assign books_by_folder = site.books | sort: "path" | group_by_exp: "item", "item.path | split: '/' | slice:
+        1, 1 | first" %}
+
+        {% for group in books_by_folder %}
+        {% assign folder = group.name %}
         {% assign book_index = group.items | where: "slug", "index" | first %}
-        {% assign chapters = group.items | where_exp: "item", "item.slug != 'index'" | slice: 0,7 %}
+        {% assign chapters = group.items | where_exp: "item", "item.slug != 'index'" | sort: "date" | reverse | slice:
+        0,5 %}
+
         <div class="fl w-100 w-third-m w-20-l pa2">
           <img src="{{ book_index.image | relative_url }}" class="w-100 db outline white-60" />
           <div class="ph2 ph0-ns pb3 link db">
             <h2 class="f5 f4-ns mb0 moon-gray">
               {{ book_index.title }}
             </h2>
+            <h4 class="f6 f5 fw4 mt2 white-60">
+              {{ book_index.description }}
+            </h4>
             <ul class="list pl0 ml0 center mw6 ba b--white-60 br2">
               {% for chapter in chapters %}
               <li class="ph3 pv3 bb b--white-60">
@@ -60,17 +69,8 @@ title: Books
           </div>
         </div>
         {% endfor %}
-        {% if books.size > 4 %}
-        <div class="fl w-100 w-third-m w-20-l pa2">
-          <a href="{{ '/books/' | relative_url }}" class="db link dim">
-            <div class="ph2 ph0-ns pb3 link db">
-              <h2 class="f5 f4-ns mb0 moon-gray">View more</h2>
-              <h3 class="f6 f5 fw4 mt2 white-60">Click here to view the entire list of books</h3>
-            </div>
-          </a>
-        </div>
-        {% endif %}
       </div>
-    </div>
+    </section>
+
   </article>
 </main>

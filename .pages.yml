@@ -2,16 +2,16 @@ media:
   - name: images
     label: Images
     input: assets/img
-    output: /blog/assets/img
-    categories: [ image ]
+    output: /assets/img
+    categories: [image]
 content:
   - name: posts
     label: Posts
     type: collection
-    path: 'collections/_posts'
+    path: "collections/_posts"
     view:
-      fields: [ title, date, tags ]
-      sort: [ date, title ]
+      fields: [title, date, tags]
+      sort: [date, title]
     fields:
       - name: title
         label: Title
@@ -28,41 +28,38 @@ content:
         options:
           creatable: true
           multiple: true
-          values: [ templates, tips ]
+          values: [templates, tips]
       - name: body
         label: Body
         type: rich-text
   - name: books
     label: Books
     type: collection
-    path: 'collections/_books'
-    filename: '{primary}.md'
+    path: "collections/_books"
+    filename: "{primary}.md"
     view:
-      fields: [ title, date ]
+      fields: [title, date]
       primary: title
-      sort: [ date, title ]
+      sort: [date, title]
     fields:
       - name: layout
         label: Layout
         type: select
         options:
-          values: [ book, chapter ]
+          values: [book, chapter]
       - name: title
         label: Title
         type: string
       - name: date
         label: Date
         type: date
+      - name: updated_on
+        label: Updated Date
+        type: date
       - name: description
         label: Description (optional)
         type: string
         required: false
-      - name: book
-        label: Book
-        type: select
-        options:
-          creatable: true
-          values: [ 'Misc', 'Poetry', 'Kidnapped and Afraid' ]
       - name: image
         label: Image
         type: image
@@ -81,12 +78,12 @@ content:
   - name: characters
     label: Characters
     type: collection
-    path: 'collections/_characters'
-    filename: '{primary}.md'
+    path: "collections/_characters"
+    filename: "{primary}.md"
     view:
-      fields: [ title ]
+      fields: [title]
       primary: title
-      sort: [ title ]
+      sort: [title]
     fields:
       - name: title
         label: Title
@@ -171,14 +168,14 @@ content:
             options:
               creatable: true
               multiple: true
-              values: [ Black, Brown, Blonde, Grey, White ]
+              values: [Black, Brown, Blonde, Grey, White]
           - name: eye_color
             label: Eye Color
             type: select
             options:
               creatable: true
               multiple: true
-              values: [ Brown, Green, Blue, Orange ]
+              values: [Brown, Green, Blue, Orange]
           - name: distinguishing_features
             label: Distinguishing Features
             type: text
@@ -243,12 +240,12 @@ content:
   - name: locations
     label: Locations
     type: collection
-    path: 'collections/_locations'
-    filename: '{primary}.md'
+    path: "collections/_locations"
+    filename: "{primary}.md"
     view:
-      fields: [ title ]
+      fields: [title]
       primary: title
-      sort: [ title ]
+      sort: [title]
     fields:
       - name: title
         label: Title
@@ -283,12 +280,12 @@ content:
   - name: species
     label: Species
     type: collection
-    path: 'collections/_species'
-    filename: '{primary}.md'
+    path: "collections/_species"
+    filename: "{primary}.md"
     view:
-      fields: [ title ]
+      fields: [title]
       primary: title
-      sort: [ title ]
+      sort: [title]
     fields:
       - name: title
         label: Title

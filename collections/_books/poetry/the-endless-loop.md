@@ -1,7 +1,6 @@
 ---
 title: The Endless Loop
 date: 2023-01-01
-book: Poetry
 ---
 I winced as another rock hit my skin.  
 I feel like it left a mark  

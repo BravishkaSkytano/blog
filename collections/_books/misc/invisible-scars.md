@@ -1,7 +1,6 @@
 ---
 title: Invisible Scars
 date: 2024-10-15
-book: Misc
 ---
 “Do you know what the worst type of abuse is?”
 

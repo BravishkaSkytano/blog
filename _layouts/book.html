@@ -1,6 +1,14 @@
 ---
 layout: default
 ---
+{% assign book_folder = page.path | split: '/' | slice: 1, 1 | first %}
+{% assign folder_match = '/' | append: book_folder | append: '/' %}
+
+{% assign chapters = site.books
+| where_exp: "item", "item.path contains folder_match"
+| where_exp: "item", "item.slug != 'index'"
+| sort: "date" %}
+
 <main>
   <article>
     <header>
@@ -62,7 +70,7 @@ layout: default
       <div class="measure f3 center mv5 post-content moon-gray">
         {{ content }}
         <div class="center mw5 mw6-ns br3 hidden ba b--white-60 mv4">
-          {% assign chapters = site.books | where: 'book', page.book | where_exp: "item", "item.slug != 'index'" %}
+          {% if chapters.size > 0 %}
           <h2 class="f4 br3 br--top moon-gray mv0 pv2 ph3">
             Chapters ({{ chapters | size }})
           </h2>
@@ -70,15 +78,14 @@ layout: default
             <ul>
               {% for chapter in chapters %}
               <li>
-                {% if chapter.url == page.url %}
-                <strong>{{ chapter.title }}</strong>
-                {% else %}
                 <a href="{{ chapter.url | relative_url }}">{{ chapter.title }}</a>
-                {% endif %}
               </li>
               {% endfor %}
             </ul>
           </div>
+          {% else %}
+          <p class="tc f4">No chapters found yet.</p>
+          {% endif %}
         </div>
       </div>
     </div>

@@ -1,7 +1,6 @@
 ---
 title: Why Did God Take My Daddy From Me?
 date: 2020-05-04
-book: Poetry
 ---
 "Why did God take him?" The girl yelled, "Why is he gone? Why would God take my Daddy from me?" She sobbed. "How can this part of God's plan for me?"
 

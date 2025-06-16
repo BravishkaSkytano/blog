@@ -3,6 +3,12 @@ name: Deploy Jekyll site to Pages
 on:
   push:
     branches: ["master"]
+    paths-ignore:
+      - ".github/**"
+      - "README.md"
+      - "LICENSE"
+      - "jekyll.yml"
+      - ".pages.yml"
   schedule:
     - cron: '0 5 * * 0' # every Monday at 5AM UTC
   workflow_dispatch:
