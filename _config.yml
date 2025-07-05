@@ -3,20 +3,18 @@
 # It contains site-wide settings, plugins, and collections.
 # For more information, see: https://jekyllrb.com/docs/configuration/
 # For the GitHub Pages version, see: https://pages.github.com/
-title: "Echoes of Elsewhere"
-tagline: "Where distant worlds whisper back."
+title: "The Worldweaver's Journal"
+tagline: "A Chronicle of Realms and Imagination."
 description: "Open the door to veil-thin worlds and dim-lit realms, where forgotten archives whisper stories lost to time. Here, shadows speak, memories stir, and every step leads deeper into the unseen. Let the echoes guide you—what was lost still lingers."
+theme: null
 author: "Yoela O"
 url: https://bravishkaskytano.github.io
 baseurl: "/blog"
 paginate: 5
-paginate_path: "/page:num"
-permalink: none #/:categories/:title:output_ext
+paginate_path: "/page:num/"
+permalink: /:collection/:name/
 
 logo: /assets/img/logo.jpg
-
-characters_desc:
-locations_desc:
 
 # social:
 #   name: Ben Balter
@@ -28,53 +26,81 @@ locations_desc:
 #     - https://keybase.io/benbalter
 
 markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-sass:
-  style: compressed
 
 collections_dir: collections
 collections:
+  stories:
+    output: true
   books:
     output: true
-    permalink: /books/:path
   characters:
     output: true
-    permalink: /characters/:path
-  locations:
+  worlds:
     output: true
-    permalink: /locations/:path
-  species:
+  magic:
     output: true
-    permalink: /species/:path
+  societies:
+    output: true
+  cultures:
+    output: true
+  geography:
+    output: true
+  creatures:
+    output: true
+  history:
+    output: true
 
 defaults:
   - scope:
-      path: "" # an empty string here means all files in the project
+      path: ""
+      type: stories
     values:
-      layout: "default"
+      layout: story
   - scope:
       path: ""
-      type: "books"
+      type: books
     values:
-      layout: "chapter"
+      layout: book
   - scope:
       path: ""
-      type: "characters"
+      type: characters
     values:
-      layout: "character"
+      layout: character
   - scope:
       path: ""
-      type: "locations"
+      type: worlds
     values:
-      layout: "location"
+      layout: world
   - scope:
       path: ""
-      type: "species"
+      type: magic
     values:
-      layout: "species"
+      layout: magic
+  - scope:
+      path: ""
+      type: societies
+    values:
+      layout: society
+  - scope:
+      path: ""
+      type: cultures
+    values:
+      layout: culture
+  - scope:
+      path: ""
+      type: geography
+    values:
+      layout: geography
+  - scope:
+      path: ""
+      type: creatures
+    values:
+      layout: creature
+  - scope:
+      path: ""
+      type: history
+    values:
+      layout: history
 
 plugins:
   - jekyll-feed

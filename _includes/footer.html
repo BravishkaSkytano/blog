@@ -1,11 +1,12 @@
-<footer class="cf pv4 ph3 ph5-m ph6-l white-60">
-  <small class="f6 db tc">© {{ site.time | date: "%Y" }}
-    <b class="ttu">{{ site.title }}</b>. Made with <a href="https://jekyllrb.com/"
-      class="f6 dib link moon-gray dim">Jekyll</a> and <a href="https://tachyons.io/"
-      class="f6 dib link moon-gray dim">TachyonsCSS</a></small>
-  <div class="tc mt3">
+<!-- Footer -->
+<footer class="pv4 ph3 ph5-ns tc bg-twilight-purple soft-gold">
+  <p class="f6">&copy; 2024-{{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+  <p class="f6">Built with ❤️ using Jekyll & TachyonsCSS</p>
+  <p class="f6 mt2">
     {% for link in site.data.nav %}
-    <a href="{{ link.url | relative_url }}" class="f6 dib ph2 link moon-gray dim">{{ link.title }}</a>
+    <a class="link soft-gold dim mh2" href="{{ link.url | relative_url }}">
+      {{ link.title }}
+    </a>
     {% endfor %}
-  </div>
+  </p>
 </footer>

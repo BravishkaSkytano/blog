@@ -1,7 +1,8 @@
 ---
 title: Sunaara Deserts
-description: The southern part of Ilmaria is home to the Desert of Sunaara
+description: The Deserts of Sunaara, known as the Golden Expanse, is a vast and arid region characterized by its rolling dunes, scorching sun, and hidden oasis. It is a land of ancient ruins, nomadic tribes, and powerful sand magic. 
 date: 2024-10-18
+updated_on: 2025-06-18
 image: /assets/img/worldbuilding/ilmaria/sunaara-deserts.jpg
 ---
 

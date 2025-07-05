@@ -2,170 +2,38 @@
 layout: default
 title: Home
 ---
-{% include header-home.html %}
-<section class="mt5">
-  <div class="tc ph4 mw4-m center">
-    <h1 class="f3 f2-m f1-l fw2 moon-gray mv3">
-      Latest Books
+<!-- Header -->
+<header class="vh-100 dt w-100 cover bg-center" style="background-image: url({{ site.logo | relative_url }})">
+  <div class="dtc v-mid tc ph3 ph4-l bg-black-80">
+    <h1 class="mt2 mb0 i fw1 f2 soft-gold">
+      {{ site.title }}
     </h1>
-  </div>
-  <div class="cf pa2">
-
-    {% assign books_by_folder = site.books | sort: "path" | group_by_exp: "item", "item.path | split: '/' | slice: 1, 1 | first" %}
-
-    {% for group in books_by_folder limit: 8 %}
-      {% assign folder = group.name %}
-      {% assign book_index = group.items | where: "slug", "index" | first %}
-      {% assign chapters = group.items | where_exp: "item", "item.slug != 'index'" | sort: "date" | reverse | slice: 0,5 %}
-
-      <div class="fl w-100 w-third-m w-20-l pa2">
-        <img src="{{ book_index.image | relative_url }}" class="w-100 db outline white-60" />
-        <div class="ph2 ph0-ns pb3 link db">
-          <h2 class="f5 f4-ns mb0 moon-gray">
-            {{ book_index.title }}
-          </h2>
-          <h4 class="f6 f5 fw4 mt2 white-60">
-            {{ book_index.description }}
-          </h4>
-          <ul class="list pl0 ml0 center mw6 ba b--white-60 br2">
-            {% for chapter in chapters %}
-            <li class="ph3 pv3 bb b--white-60">
-              <a href="{{ chapter.url | relative_url }}" class="db link dim f6 f5 fw4 white-60">
-                {{ chapter.title }}
-              </a>
-            </li>
-            {% endfor %}
-            <li class="ph3 pv3 tr">
-              <a href="{{ book_index.url | relative_url }}" class="db link dim f6 f5 fw4 white-60">
-                View all chapters
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    {% endfor %}
-
-    {% if books_by_folder.size > 4 %}
-      <div class="fl w-100 w-third-m w-20-l pa2">
-        <a href="{{ '/books/' | relative_url }}" class="db link dim">
-          <div class="ph2 ph0-ns pb3 link db">
-            <p class="f5 f4-ns mb0 moon-gray">View more</p>
-            <p class="f6 f5 fw4 mt2 white-60">Click here to view the entire list of books</p>
-          </div>
-        </a>
-      </div>
-    {% endif %}
-  </div>
-</section>
-
-<section class="mt5">
-  <div class="tc ph4 mw4-m center">
-    <h1 class="f3 f2-m f1-l fw2 moon-gray mv3">
-      Characters
-    </h1>
-    <h2 class="f5 f4-m f3-l fw2 white-60 mt0 lh-copy">
-      {{ site.characters_desc }}
+    <h2 class="mt2 mb0 f6 fw4 ttu tracked soft-gold">
+      {{ site.tagline }}
     </h2>
+    <nav class="bt bb b--soft-gold tc mw7 center mt4">
+      {% for link in site.data.nav %}
+      <a class="f6 f5-l link bg-animate soft-gold dim dib pa3 ph4-l" href="{{ link.url | relative_url }}">
+        {{ link.title }}
+      </a>
+      {% endfor %}
+    </nav>
+    <p class="measure f4 fw1 lh-copy center">
+      {{ site.description }}
+    </p>
   </div>
-  <div class="cf pa2">
-    {% for character in site.characters limit: 8 %}
-    <div class="fl w-100 w-third-m w-20-l pa2">
-      <a href="{{ character.url | relative_url }}" class="db link dim">
-        <img src="{{ character.image | relative_url }}" class="w-100 db outline white-60" />
-        <div class="ph2 ph0-ns pb3 link db">
-          <h3 class="f5 f4-ns mb0 moon-gray">
-            {{ character.title }}
-          </h3>
-          <h4 class="f6 f5 fw4 mt2 white-60">
-            {{ character.subtitle }}
-          </h4>
-        </div>
-      </a>
-    </div>
-    {% endfor %}
-    {% if site.characters.size > 8 %}
-    <div class="fl w-100 w-third-m w-20-l pa2">
-      <a href="{{ '/characters/' | relative_url }}" class="db link dim">
-        <div class="ph2 ph0-ns pb3 link db">
-          <p class="f5 f4-ns mb0 moon-gray">View more</p>
-          <p class="f6 f5 fw4 mt2 white-60">Click here to view the entire list of characters</p>
-        </div>
-      </a>
-    </div>
-    {% endif %}
+</header>
+
+{% for world in site.worlds %}
+<section class="vh-100 dt w-100 tc cover" style="background:url({{ world.image | relative_url }}) no-repeat center;">
+  <div class="dtc v-mid bg-black-80">
+    <h1 class="f1 f-headline-l fw1 i soft-gold">{{ world.title }}</h1>
+    <p class="measure f4 fw1 lh-copy center">
+      {{ world.description }}
+    </p>
+    <a class="f6 link dim ph3 pv2 mt4 dib deep-indigo bg-soft-gold" href="{{ world.url | relative_url }}">
+      Explore {{ world.title }}
+    </a>
   </div>
 </section>
-<section class="mt5">
-  <div class="tc ph4">
-    <h1 class="f3 f2-m f1-l fw2 moon-gray mv3">
-      Locations
-    </h1>
-    <h2 class="f5 f4-m f3-l fw2 white-60 mt0 lh-copy">
-      {{ site.locations_desc }}
-    </h2>
-  </div>
-  <div class="cf pa2">
-    {% for location in site.locations limit: 8 %}
-    <div class="fl w-100 w-third-m w-20-l pa2">
-      <a href="{{ location.url | relative_url }}" class="db link dim">
-        <img src="{{ location.image | relative_url }}" class="w-100 db outline white-60" />
-        <div class="ph2 ph0-ns pb3 link db">
-          <h3 class="f5 f4-ns mb0 moon-gray">
-            {{ location.title }}
-          </h3>
-          <h4 class="f6 f5 fw4 mt2 white-60">
-            {{ location.subtitle }}
-          </h4>
-        </div>
-      </a>
-    </div>
-    {% endfor %}
-    {% if site.locations.size > 8 %}
-    <div class="fl w-100 w-third-m w-20-l pa2">
-      <a href="{{ '/locations/' | relative_url }}" class="db link dim">
-        <div class="ph2 ph0-ns pb3 link db">
-          <p class="f5 f4-ns mb0 moon-gray">View more</p>
-          <p class="f6 f5 fw4 mt2 white-60">Click here to view the entire list of locations</p>
-        </div>
-      </a>
-    </div>
-    {% endif %}
-  </div>
-</section>
-<section class="mt5">
-  <div class="tc ph4">
-    <h1 class="f3 f2-m f1-l fw2 moon-gray mv3">
-      Species
-    </h1>
-    <h2 class="f5 f4-m f3-l fw2 white-60 mt0 lh-copy">
-      {{ site.species_desc }}
-    </h2>
-  </div>
-  <div class="cf pa2">
-    {% for species in site.species limit: 8 %}
-    <div class="fl w-100 w-third-m w-20-l pa2">
-      <a href="{{ species.url | relative_url }}" class="db link dim">
-        <img src="{{ species.image | relative_url }}" class="w-100 db outline white-60" />
-        <div class="ph2 ph0-ns pb3 link db">
-          <h3 class="f5 f4-ns mb0 moon-gray">
-            {{ species.title }}
-          </h3>
-          <h4 class="f6 f5 fw4 mt2 white-60">
-            {{ species.subtitle }}
-          </h4>
-        </div>
-      </a>
-    </div>
-    {% endfor %}
-    {% if site.species.size > 8 %}
-    <div class="fl w-100 w-third-m w-20-l pa2">
-      <a href="{{ '/species/' | relative_url }}" class="db link dim">
-        <div class="ph2 ph0-ns pb3 link db">
-          <p class="f5 f4-ns mb0 moon-gray">View more</p>
-          <p class="f6 f5 fw4 mt2 white-60">Click here to view the entire list of species</p>
-        </div>
-      </a>
-    </div>
-    {% endif %}
-  </div>
-</section>
+{% endfor %}

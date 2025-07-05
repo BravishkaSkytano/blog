@@ -1,3 +1,60 @@
+:root {
+  --twilight-blue: #1a1a2e;
+  --deep-indigo: #dcdaf2;
+  --twilight-purple: #d9c4f0;
+  --soft-gold: #f5eecb;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--twilight-blue);
+  color: var(--soft-gold);
+}
+
+.bg-deep-indigo {
+  background-color: var(--deep-indigo);
+}
+
+.bg-twilight-purple {
+  background-color: var(--twilight-purple);
+}
+
+.bg-soft-gold {
+  background-color: var(--soft-gold);
+}
+
+.bg-twilight-blue {
+  background-color: var(--twilight-blue);
+}
+
+.deep-indigo {
+  color: var(--deep-indigo);
+}
+
+.twilight-purple {
+  color: var(--twilight-purple);
+}
+
+.soft-gold {
+  color: var(--soft-gold);
+}
+
+.b--twilight-purple {
+  border-color: var(--twilight-purple);
+}
+
+.b--soft-gold {
+  border-color: var(--soft-gold);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Playfair Display', serif;
+  color: var(--deep-indigo);
+}
+
 .post-content {
 
   h2,
@@ -49,3 +106,8 @@
     font-size: 1.5rem;
   }
 }
+
+/*
+@media (prefers-color-scheme: dark) {
+
+} */

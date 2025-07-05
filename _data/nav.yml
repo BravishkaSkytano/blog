@@ -1,12 +1,12 @@
 - title: Home
   url: "/"
 - title: About
-  url: "/about.html"
-- title: Books
-  url: /books/
+  url: "/about/"
+- title: Stories
+  url: "/stories/"
 - title: Characters
-  url: /characters/
+  url: "/characters/"
 - title: Locations
-  url: /locations/
+  url: "/locations/"
 - title: Species
-  url: /species/
+  url: "/creatures/"

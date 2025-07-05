@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<!-- World Overview -->
+<article class="pb5">
+  <header class="tc-l ph3 ph4-ns pt4 pt5-ns">
+    <h1 class="f3 f2-m f-subheadline-l measure lh-title fw1 mt0">
+      {{ page.title }}
+    </h1>
+    <p class="f5 f4-l db fw1 mb4">
+      Published: <time datetime="{{ page.date | date: " %Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      {% if page.last_modified %}
+      | Updated: <time datetime="{{ page.last_modified | date: " %Y-%m-%d" }}">{{ page.last_modified | date: "%B %d, %Y"
+        }}</time>
+      {% endif %}
+    </p>
+    <img class="w-100 dib measure f3" src="{{ page.image | relative_url }}" alt="{{ page.title }}" />
+  </header>
+  <div class="ph3 ph4-m ph5-l">
+    <p class="f3 mb4 center measure lh-copy tc deep-indigo">
+      {{ page.description }}
+    </p>
+    <div class="measure db center f5 f4-ns lh-copy">
+      {{ content }}
+    </div>
+  </div>
+</article>
+
+<!-- Magic Systems -->
+<!-- Societies & Politics -->
+<!-- Culture & Customs -->
+<!-- Geography & Climate -->
+<!-- Creatures & Beings -->
+<!-- History & Lore -->
+<!-- Stories -->
+
+<section class="pa4">
+  <h2 class="f3 fw6 bb pb2 mb4">🌍 Worlds</h2>
+  <div class="flex flex-wrap">
+    {% assign worlds = site.worlds | sort: 'title' %}
+    {% for world in worlds %}
+    <article class="w-100 w-50-m w-25-l pa3">
+      <a href="{{ world.url | relative_url }}" class="link dim">
+        <img src="{{ world.image | relative_url }}" alt="{{ world.title }}" class="br2 shadow-custom mb2">
+        <div class="br2 shadow-custom pa3 bg-soft-gold">
+          <h3 class="f4 fw6 mt0">{{ world.title }}</h3>
+          <p class="f6 lh-copy">{{ world.description }}</p>
+        </div>
+      </a>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Optional Featured Content -->
+<section class="pa4 bg-twilight-bg">
+  <h3 class="f3 fw6 bb pb2 mb4 twilight-purple">🔥 Featured Stories</h3>
+  <div class="flex flex-wrap">
+    {% assign featured_stories = site.stories | where: "featured", true | slice: 0, 4 %}
+    {% for story in featured_stories %}
+    <article class="w-100 w-50-m w-25-l pa3">
+      <a href="{{ story.url | relative_url }}" class="link dim">
+        <img src="{{ story.image }}" alt="{{ story.title }}" class="br2 shadow-custom mb2">
+        <h4 class="f5 fw6 mt0 mb1 twilight-purple">{{ story.title }}</h4>
+        <p class="f6 lh-copy deep-indigo">{{ story.excerpt }}</p>
+      </a>
+    </article>
+    {% endfor %}
+  </div>
+</section>

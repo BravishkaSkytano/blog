@@ -1,6 +1,8 @@
 ---
 title: Seraphina Vantus
 subtitle: The Scorpion Queen
+date: 2024-03-18
+last_modified: 2025-06-15
 image: /assets/img/characters/seraphina-vantus.jpg
 general:
   full_name:

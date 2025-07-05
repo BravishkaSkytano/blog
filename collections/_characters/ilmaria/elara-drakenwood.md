@@ -2,6 +2,7 @@
 title: Elara Drakenwood
 subtitle: The Dragon Empress
 description: Elara Drakenwood, the Dragon Empress, is remembered as a legendary figure in Eldoria's history, her story inspiring generations to come. She remains a symbol of resilience, unity, and the enduring power of the bond between the Drakari and their dragon companions.
+last_modified: 2025-06-18
 image: /assets/img/characters/elara-drakenwood.jpg
 general:
   full_name:
